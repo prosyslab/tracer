@@ -4,3 +4,7 @@ plugins:
 
 title: Tracer
 description: Signature-based Static Analysis for Detecting Recurring Vulnerabilities
+
+github:
+  owner_name: "Programming Systems Lab @ KAIST"
+  owner_url: https://prosys.kaist.ac.kr
