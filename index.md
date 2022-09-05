@@ -144,7 +144,7 @@ with a high similarity score, 0.96.
 
 ## Publications
 
-* **Tracer: Signature-based Static Analysis for Detecting Recurring Vulnerabilities**
+* **Tracer: Signature-based Static Analysis for Detecting Recurring Vulnerabilities** <a href="https://prosys.kaist.ac.kr/publications/ccs22.pdf"><i class="fas fa-file-pdf"></i></a>
   [Wooseok Kang](https://kangwoosukeq.github.io), Byoungho Son, and [Kihong Heo](https://kihongheo.kaist.ac.kr)<br>
   CCS 2022: ACM Conference on Computer and Communications Security, 2022
 
