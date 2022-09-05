@@ -18,3 +18,7 @@ Then, Tracer reports a list of potential vulnerabilities ranked by the similarit
   CCS 2022: ACM Conference on Computer and Communications Security, 2022
 
 # Artifacts
+
+We provide the artifacts image, which contains datasets and programs used by evaluating Tracer.
+
+You can access the artifacts image via Dockerhub at this [link](https://hub.docker.com/repository/docker/prosyslab/tracer-artifacts).
