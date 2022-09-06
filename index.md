@@ -12,6 +12,7 @@ with the known vulnerability signatures.
 Then, Tracer reports a list of potential vulnerabilities ranked by the similarity score.
 
 ## Examples
+#### Once upon a time, there was a vulnerability...
 Here is a code snippet describing a security vulnerability found in **gimp-2.6.7** in 2009 (CVE-2009-1570).
 ```c
 gint32 ToL(guchar *puffer) {
@@ -59,6 +60,7 @@ guchar *buffer = malloc(rowbytes);
 ```
 5. Uses of the variable buffer
 
+#### Deja vu, 8 years later
 After 8 years, a similar vulnerability was found in another program, **sam2p-0.49.4** (CVE-2017-16663).
 Here is the code snippet:
 ```c
@@ -86,7 +88,7 @@ unsigned char *ReadImage(int rowbytes) {
 **How can we detect this recurring vulnerability?**
 Since they are structurally similar to each other, clone-based approaches might help here.
 
-**Then, how about this one?**
+#### Semantically recurring vulnerability
 This is yet another vulnerability found in **libXcursor-1.1.14** in 2017 (CVE-2017-16612).
 ```c
 XcursorBool _XcursorReadUInt(XcursorFile *file, XcursorUInt *u) {
@@ -114,7 +116,7 @@ XcursorImage *XcursorImageCreate(int width, int height) {
   return image;
 }
 ```
-Although this code snippet looks different from the previous cases, their vulnerable behavirs are semantically the same:
+Although this code snippet looks different from the previous cases, their vulnerable behavirs are semantically the same as before:
 1. Read a byte string from a file:<br>
 ```c
 *file->read(file, bytes, 4)
@@ -135,12 +137,16 @@ image = malloc(sizeof(XcursorImage) + width * height * sizeof(XcursorPixel))
 
 **How can we detect this recurring vulnerability?**
 
+#### Tracer, a software immune system
 For a given set of _known_ vulnerabilities, Tracer extracts vulnerable traces and establishes a signature database of them.
 When a _new unseen_ program is analyzed, Tracer compares all potentially vulnerable traces reported by the analysis
 with the known vulnerability signatures.
-Then, Tracer reports a list of potential vulnerabilities ranked by the similarity score.
-In this case, given the first vulnerbility (CVE-2019-1570), Tracer precisely detects the last one (CVE-2017-16612)
-with a high similarity score, 0.96.
+Finally, Tracer reports a list of potential vulnerabilities ranked by the similarity score.
+
+In the example case, given the first vulnerbility (CVE-2019-1570), Tracer precisely detects the last one (CVE-2017-16612)
+with a high similarity score, **0.96**.
+
+For details, see the paper below.
 
 ## Publications
 
