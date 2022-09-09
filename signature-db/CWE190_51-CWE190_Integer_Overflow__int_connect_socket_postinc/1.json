@@ -1,0 +1,73 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "IntOverflow.",
+  "severity": "ERROR",
+  "line": 50,
+  "column": 9,
+  "procedure": "CWE190_Integer_Overflow__int_connect_socket_postinc_51_bad",
+  "procedure_start_line": 47,
+  "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s06/CWE190_Integer_Overflow__int_connect_socket_postinc_51b.c",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s06/CWE190_Integer_Overflow__int_connect_socket_postinc_51a.c",
+        "line_number": 86,
+        "column_number": 26,
+        "description": "input, recv",
+        "feature": "[\"Input\",\"recv\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s06/CWE190_Integer_Overflow__int_connect_socket_postinc_51a.c",
+        "line_number": 94,
+        "column_number": 13,
+        "description": "store, &data, n$7",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 1,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s06/CWE190_Integer_Overflow__int_connect_socket_postinc_51a.c",
+        "line_number": 108,
+        "column_number": 5,
+        "description": "call, CWE190_Integer_Overflow__int_connect_socket_postinc_51b_badSink",
+        "feature": "[\"Call\",\"CWE190_Integer_Overflow__int_connect_socket_postinc_51b_badSink\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s06/CWE190_Integer_Overflow__int_connect_socket_postinc_51b.c",
+        "line_number": 48,
+        "column_number": 9,
+        "description": "store, &data, (n$3 + 1)",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"Var\"],[\"Const\",[\"Cint\",\"1\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s06/CWE190_Integer_Overflow__int_connect_socket_postinc_51b.c",
+        "line_number": 49,
+        "column_number": 9,
+        "description": "store, &result, n$2",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s06/CWE190_Integer_Overflow__int_connect_socket_postinc_51b.c",
+        "line_number": 50,
+        "column_number": 9,
+        "description": "int_overflow, printIntLine, n$0",
+        "feature": "[\"IntOverflow\",\"printIntLine\",[\"Var\"]]"
+      }
+    ]
+  ],
+  "key": "CWE190_Integer_Overflow__int_connect_socket_postinc_51a.c|CWE190_Integer_Overflow__int_connect_socket_postinc_51_bad|API_MISUSE",
+  "hash": "cd87baf8ebaa4eb67c5f0bca9ea88af4",
+  "bug_type_hum": "Api Misuse",
+  "extras": {
+    "bug_src_loc": {
+      "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s06/CWE190_Integer_Overflow__int_connect_socket_postinc_51a.c",
+      "lnum": 86,
+      "cnum": 26,
+      "enum": 0
+    }
+  }
+}

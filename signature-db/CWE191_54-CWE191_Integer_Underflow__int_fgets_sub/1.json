@@ -1,0 +1,89 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "IntUnderflow.",
+  "severity": "ERROR",
+  "line": 29,
+  "column": 9,
+  "procedure": "CWE191_Integer_Underflow__int_fgets_sub_54_bad",
+  "procedure_start_line": 27,
+  "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s02/CWE191_Integer_Underflow__int_fgets_sub_54e.c",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s02/CWE191_Integer_Underflow__int_fgets_sub_54a.c",
+        "line_number": 35,
+        "column_number": 13,
+        "description": "input, fgets",
+        "feature": "[\"Input\",\"fgets\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s02/CWE191_Integer_Underflow__int_fgets_sub_54a.c",
+        "line_number": 38,
+        "column_number": 13,
+        "description": "store, &data, n$4",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 1,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s02/CWE191_Integer_Underflow__int_fgets_sub_54a.c",
+        "line_number": 45,
+        "column_number": 5,
+        "description": "call, CWE191_Integer_Underflow__int_fgets_sub_54b_badSink",
+        "feature": "[\"Call\",\"CWE191_Integer_Underflow__int_fgets_sub_54b_badSink\"]"
+      },
+      {
+        "level": 1,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s02/CWE191_Integer_Underflow__int_fgets_sub_54b.c",
+        "line_number": 29,
+        "column_number": 5,
+        "description": "call, CWE191_Integer_Underflow__int_fgets_sub_54c_badSink",
+        "feature": "[\"Call\",\"CWE191_Integer_Underflow__int_fgets_sub_54c_badSink\"]"
+      },
+      {
+        "level": 1,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s02/CWE191_Integer_Underflow__int_fgets_sub_54c.c",
+        "line_number": 29,
+        "column_number": 5,
+        "description": "call, CWE191_Integer_Underflow__int_fgets_sub_54d_badSink",
+        "feature": "[\"Call\",\"CWE191_Integer_Underflow__int_fgets_sub_54d_badSink\"]"
+      },
+      {
+        "level": 1,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s02/CWE191_Integer_Underflow__int_fgets_sub_54d.c",
+        "line_number": 29,
+        "column_number": 5,
+        "description": "call, CWE191_Integer_Underflow__int_fgets_sub_54e_badSink",
+        "feature": "[\"Call\",\"CWE191_Integer_Underflow__int_fgets_sub_54e_badSink\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s02/CWE191_Integer_Underflow__int_fgets_sub_54e.c",
+        "line_number": 28,
+        "column_number": 9,
+        "description": "store, &result, (n$2 - 1)",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Const\",[\"Cint\",\"1\"]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s02/CWE191_Integer_Underflow__int_fgets_sub_54e.c",
+        "line_number": 29,
+        "column_number": 9,
+        "description": "int_underflow, printIntLine, n$0",
+        "feature": "[\"IntUnderflow\",\"printIntLine\",[\"Var\"]]"
+      }
+    ]
+  ],
+  "key": "CWE191_Integer_Underflow__int_fgets_sub_54a.c|CWE191_Integer_Underflow__int_fgets_sub_54_bad|API_MISUSE",
+  "hash": "75255a3e79a41af55345c07d2ea01dec",
+  "bug_type_hum": "Api Misuse",
+  "extras": {
+    "bug_src_loc": {
+      "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s02/CWE191_Integer_Underflow__int_fgets_sub_54a.c",
+      "lnum": 35,
+      "cnum": 13,
+      "enum": 0
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "UseAfterFree.",
+  "severity": "ERROR",
+  "line": 46,
+  "column": 9,
+  "procedure": "CWE415_Double_Free__malloc_free_int_15_bad",
+  "procedure_start_line": 24,
+  "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_int_15.c",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_int_15.c",
+        "line_number": 32,
+        "column_number": 23,
+        "description": "allocate, malloc",
+        "feature": "[\"Allocate\",\"malloc\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_int_15.c",
+        "line_number": 35,
+        "column_number": 9,
+        "description": "free, free, n$9",
+        "feature": "[\"Free\",\"free\",[\"Var\"]]"
+      }
+    ]
+  ],
+  "key": "CWE415_Double_Free__malloc_free_int_15.c|CWE415_Double_Free__malloc_free_int_15_bad|API_MISUSE",
+  "hash": "4c392eaa61433e6833ce04d4c1c58447",
+  "bug_type_hum": "Api Misuse"
+}

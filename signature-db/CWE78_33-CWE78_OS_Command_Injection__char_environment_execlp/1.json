@@ -1,0 +1,49 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "CmdInjection.",
+  "severity": "ERROR",
+  "line": 78,
+  "column": 9,
+  "procedure": "CWE78_OS_Command_Injection__char_environment_execlp_33::bad",
+  "procedure_start_line": 56,
+  "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE78_OS_Command_Injection/s02/CWE78_OS_Command_Injection__char_environment_execlp_33.cpp",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE78_OS_Command_Injection/s02/CWE78_OS_Command_Injection__char_environment_execlp_33.cpp",
+        "line_number": 65,
+        "column_number": 30,
+        "description": "input, getenv",
+        "feature": "[\"Input\",\"getenv\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE78_OS_Command_Injection/s02/CWE78_OS_Command_Injection__char_environment_execlp_33.cpp",
+        "line_number": 70,
+        "column_number": 13,
+        "description": "library_call, strncat, (n$5 + n$6), n$7",
+        "feature": "[\"LibraryCall\",\"strncat\",\"(n$5 + n$6), n$7\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE78_OS_Command_Injection/s02/CWE78_OS_Command_Injection__char_environment_execlp_33.cpp",
+        "line_number": 78,
+        "column_number": 9,
+        "description": "cmd_injection, execlp, n$0",
+        "feature": "[\"CmdInjection\",\"execlp\",[\"Var\"]]"
+      }
+    ]
+  ],
+  "key": "CWE78_OS_Command_Injection__char_environment_execlp_33.cpp|CWE78_OS_Command_Injection__char_environment_execlp_33::bad|API_MISUSE",
+  "hash": "38e1d85cd6c78c8ba50a90cd683d1a0e",
+  "bug_type_hum": "Api Misuse",
+  "extras": {
+    "bug_src_loc": {
+      "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE78_OS_Command_Injection/s02/CWE78_OS_Command_Injection__char_environment_execlp_33.cpp",
+      "lnum": 65,
+      "cnum": 30,
+      "enum": 0
+    }
+  }
+}

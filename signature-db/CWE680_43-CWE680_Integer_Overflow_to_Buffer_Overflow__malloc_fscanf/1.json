@@ -1,0 +1,41 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "IntOverflow.",
+  "severity": "ERROR",
+  "line": 41,
+  "column": 28,
+  "procedure": "CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_fscanf_43::bad",
+  "procedure_start_line": 30,
+  "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE680_Integer_Overflow_to_Buffer_Overflow/CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_fscanf_43.cpp",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE680_Integer_Overflow_to_Buffer_Overflow/CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_fscanf_43.cpp",
+        "line_number": 27,
+        "column_number": 5,
+        "description": "input, fscanf",
+        "feature": "[\"Input\",\"fscanf\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE680_Integer_Overflow_to_Buffer_Overflow/CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_fscanf_43.cpp",
+        "line_number": 41,
+        "column_number": 28,
+        "description": "int_overflow, malloc, (()n$15 * sizeof(t=;nbytes=4))",
+        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tint\",[\"IInt\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+      }
+    ]
+  ],
+  "key": "CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_fscanf_43.cpp|CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_fscanf_43::bad|API_MISUSE",
+  "hash": "dbfe83dedada75f8c384d0ad90032e7a",
+  "bug_type_hum": "Api Misuse",
+  "extras": {
+    "bug_src_loc": {
+      "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE680_Integer_Overflow_to_Buffer_Overflow/CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_fscanf_43.cpp",
+      "lnum": 27,
+      "cnum": 5,
+      "enum": 0
+    }
+  }
+}

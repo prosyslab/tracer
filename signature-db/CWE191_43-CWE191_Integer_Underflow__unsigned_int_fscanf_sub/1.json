@@ -1,0 +1,49 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "IntUnderflow.",
+  "severity": "ERROR",
+  "line": 39,
+  "column": 9,
+  "procedure": "CWE191_Integer_Underflow__unsigned_int_fscanf_sub_43::bad",
+  "procedure_start_line": 31,
+  "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s03/CWE191_Integer_Underflow__unsigned_int_fscanf_sub_43.cpp",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s03/CWE191_Integer_Underflow__unsigned_int_fscanf_sub_43.cpp",
+        "line_number": 28,
+        "column_number": 5,
+        "description": "input, fscanf",
+        "feature": "[\"Input\",\"fscanf\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s03/CWE191_Integer_Underflow__unsigned_int_fscanf_sub_43.cpp",
+        "line_number": 38,
+        "column_number": 9,
+        "description": "store, &result, (n$2 - ()1)",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IUInt\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"1\"]]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s03/CWE191_Integer_Underflow__unsigned_int_fscanf_sub_43.cpp",
+        "line_number": 39,
+        "column_number": 9,
+        "description": "int_underflow, printUnsignedLine, n$0",
+        "feature": "[\"IntUnderflow\",\"printUnsignedLine\",[\"Var\"]]"
+      }
+    ]
+  ],
+  "key": "CWE191_Integer_Underflow__unsigned_int_fscanf_sub_43.cpp|CWE191_Integer_Underflow__unsigned_int_fscanf_sub_43::bad|API_MISUSE",
+  "hash": "309b58be1a45d0476468da4029e8a096",
+  "bug_type_hum": "Api Misuse",
+  "extras": {
+    "bug_src_loc": {
+      "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s03/CWE191_Integer_Underflow__unsigned_int_fscanf_sub_43.cpp",
+      "lnum": 28,
+      "cnum": 5,
+      "enum": 0
+    }
+  }
+}

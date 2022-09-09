@@ -1,0 +1,41 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "CmdInjection.",
+  "severity": "ERROR",
+  "line": 59,
+  "column": 5,
+  "procedure": "CWE78_OS_Command_Injection__char_connect_socket_execl_22_bad",
+  "procedure_start_line": 50,
+  "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE78_OS_Command_Injection/s01/CWE78_OS_Command_Injection__char_connect_socket_execl_22a.c",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE78_OS_Command_Injection/s01/CWE78_OS_Command_Injection__char_connect_socket_execl_22b.c",
+        "line_number": 101,
+        "column_number": 30,
+        "description": "input, recv",
+        "feature": "[\"Input\",\"recv\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE78_OS_Command_Injection/s01/CWE78_OS_Command_Injection__char_connect_socket_execl_22a.c",
+        "line_number": 59,
+        "column_number": 5,
+        "description": "cmd_injection, execl, n$0",
+        "feature": "[\"CmdInjection\",\"execl\",[\"Var\"]]"
+      }
+    ]
+  ],
+  "key": "CWE78_OS_Command_Injection__char_connect_socket_execl_22a.c|CWE78_OS_Command_Injection__char_connect_socket_execl_22_bad|API_MISUSE",
+  "hash": "65d6d1b5eeed9e292608f1d385ef03dc",
+  "bug_type_hum": "Api Misuse",
+  "extras": {
+    "bug_src_loc": {
+      "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE78_OS_Command_Injection/s01/CWE78_OS_Command_Injection__char_connect_socket_execl_22b.c",
+      "lnum": 101,
+      "cnum": 30,
+      "enum": 0
+    }
+  }
+}

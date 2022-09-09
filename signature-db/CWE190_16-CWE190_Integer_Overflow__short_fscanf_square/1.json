@@ -1,0 +1,49 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "IntOverflow.",
+  "severity": "ERROR",
+  "line": 39,
+  "column": 13,
+  "procedure": "CWE190_Integer_Overflow__short_fscanf_square_16_bad",
+  "procedure_start_line": 24,
+  "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s04/CWE190_Integer_Overflow__short_fscanf_square_16.c",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s04/CWE190_Integer_Overflow__short_fscanf_square_16.c",
+        "line_number": 31,
+        "column_number": 9,
+        "description": "input, fscanf",
+        "feature": "[\"Input\",\"fscanf\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s04/CWE190_Integer_Overflow__short_fscanf_square_16.c",
+        "line_number": 38,
+        "column_number": 13,
+        "description": "store, &result, (n$3 * n$4)",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"*\",[\"Var\"],[\"Var\"]]]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s04/CWE190_Integer_Overflow__short_fscanf_square_16.c",
+        "line_number": 39,
+        "column_number": 13,
+        "description": "int_overflow, printIntLine, n$1",
+        "feature": "[\"IntOverflow\",\"printIntLine\",[\"Var\"]]"
+      }
+    ]
+  ],
+  "key": "CWE190_Integer_Overflow__short_fscanf_square_16.c|CWE190_Integer_Overflow__short_fscanf_square_16_bad|API_MISUSE",
+  "hash": "85a508ab16276515ad68161f7d69f3ee",
+  "bug_type_hum": "Api Misuse",
+  "extras": {
+    "bug_src_loc": {
+      "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s04/CWE190_Integer_Overflow__short_fscanf_square_16.c",
+      "lnum": 31,
+      "cnum": 9,
+      "enum": 0
+    }
+  }
+}

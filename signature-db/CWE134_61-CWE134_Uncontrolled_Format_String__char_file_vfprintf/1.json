@@ -1,0 +1,49 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "FormatString.",
+  "severity": "ERROR",
+  "line": 42,
+  "column": 9,
+  "procedure": "CWE134_Uncontrolled_Format_String__char_file_vfprintf_61_bad",
+  "procedure_start_line": 47,
+  "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s02/CWE134_Uncontrolled_Format_String__char_file_vfprintf_61a.c",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s02/CWE134_Uncontrolled_Format_String__char_file_vfprintf_61b.c",
+        "line_number": 46,
+        "column_number": 21,
+        "description": "input, fgets",
+        "feature": "[\"Input\",\"fgets\"]"
+      },
+      {
+        "level": 1,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s02/CWE134_Uncontrolled_Format_String__char_file_vfprintf_61a.c",
+        "line_number": 53,
+        "column_number": 5,
+        "description": "call, badVaSink",
+        "feature": "[\"Call\",\"badVaSink\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s02/CWE134_Uncontrolled_Format_String__char_file_vfprintf_61a.c",
+        "line_number": 42,
+        "column_number": 9,
+        "description": "format_string, vfprintf, n$2",
+        "feature": "[\"FormatString\",\"vfprintf\",[\"Var\"]]"
+      }
+    ]
+  ],
+  "key": "CWE134_Uncontrolled_Format_String__char_file_vfprintf_61a.c|CWE134_Uncontrolled_Format_String__char_file_vfprintf_61_bad|API_MISUSE",
+  "hash": "18f6e26a397d3d7c106ce327e69feb5c",
+  "bug_type_hum": "Api Misuse",
+  "extras": {
+    "bug_src_loc": {
+      "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s02/CWE134_Uncontrolled_Format_String__char_file_vfprintf_61b.c",
+      "lnum": 46,
+      "cnum": 21,
+      "enum": 0
+    }
+  }
+}

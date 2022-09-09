@@ -1,0 +1,49 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "CmdInjection.",
+  "severity": "ERROR",
+  "line": 70,
+  "column": 9,
+  "procedure": "CWE78_OS_Command_Injection__char_environment_system_15_bad",
+  "procedure_start_line": 44,
+  "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE78_OS_Command_Injection/s02/CWE78_OS_Command_Injection__char_environment_system_15.c",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE78_OS_Command_Injection/s02/CWE78_OS_Command_Injection__char_environment_system_15.c",
+        "line_number": 55,
+        "column_number": 30,
+        "description": "input, getenv",
+        "feature": "[\"Input\",\"getenv\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE78_OS_Command_Injection/s02/CWE78_OS_Command_Injection__char_environment_system_15.c",
+        "line_number": 60,
+        "column_number": 13,
+        "description": "library_call, strncat, (n$10 + n$11), n$12",
+        "feature": "[\"LibraryCall\",\"strncat\",\"(n$10 + n$11), n$12\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE78_OS_Command_Injection/s02/CWE78_OS_Command_Injection__char_environment_system_15.c",
+        "line_number": 70,
+        "column_number": 9,
+        "description": "cmd_injection, system, n$0",
+        "feature": "[\"CmdInjection\",\"system\",[\"Var\"]]"
+      }
+    ]
+  ],
+  "key": "CWE78_OS_Command_Injection__char_environment_system_15.c|CWE78_OS_Command_Injection__char_environment_system_15_bad|API_MISUSE",
+  "hash": "99547fb9b8d19e89c6009e6b9c334380",
+  "bug_type_hum": "Api Misuse",
+  "extras": {
+    "bug_src_loc": {
+      "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE78_OS_Command_Injection/s02/CWE78_OS_Command_Injection__char_environment_system_15.c",
+      "lnum": 55,
+      "cnum": 30,
+      "enum": 0
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "IntUnderflow.",
+  "severity": "ERROR",
+  "line": 475,
+  "column": 2,
+  "procedure": "fmt_okt_load_song",
+  "procedure_start_line": 332,
+  "file": "fmt/okt.c",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "fmt/okt.c",
+        "line_number": 389,
+        "column_number": 5,
+        "description": "input, slurp_read",
+        "feature": "[\"Input\",\"slurp_read\"]"
+      },
+      {
+        "level": 0,
+        "filename": "fmt/okt.c",
+        "line_number": 390,
+        "column_number": 5,
+        "description": "store, &plen, n$161",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 1,
+        "filename": "fmt/okt.c",
+        "line_number": 475,
+        "column_number": 2,
+        "description": "int_underflow, memset, ()(256 - n$4)",
+        "feature": "[\"IntUnderflow\",\"memset\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"-\",[\"Const\",[\"Cint\",\"256\"]],[\"Var\"]]]]"
+      }
+    ]
+  ],
+  "key": "okt.c|fmt_okt_load_song|API_MISUSE",
+  "hash": "965b9ce23d8405391fe9318eb58695b1",
+  "bug_type_hum": "Api Misuse",
+  "extras": {
+    "bug_src_loc": {
+      "file": "fmt/okt.c",
+      "lnum": 389,
+      "cnum": 5,
+      "enum": 0
+    }
+  }
+}

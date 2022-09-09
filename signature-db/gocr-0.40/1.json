@@ -1,0 +1,271 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "IntOverflow.",
+  "severity": "ERROR",
+  "line": 245,
+  "column": 24,
+  "procedure": "readpgm",
+  "procedure_start_line": 187,
+  "file": "src/pnm.c",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "src/pnm.c",
+        "line_number": 85,
+        "column_number": 7,
+        "description": "input, getc",
+        "feature": "[\"Input\",\"getc\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/pnm.c",
+        "line_number": 85,
+        "column_number": 5,
+        "description": "store, &c, n$32",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/pnm.c",
+        "line_number": 88,
+        "column_number": 9,
+        "description": "prune, !(n$8 == 35)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"35\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/pnm.c",
+        "line_number": 89,
+        "column_number": 22,
+        "description": "store, &return, n$5",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/pnm.c",
+        "line_number": 224,
+        "column_number": 5,
+        "description": "store, &c1, n$364",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/pnm.c",
+        "line_number": 232,
+        "column_number": 23,
+        "description": "store, &ny, (((n$341 * 10) + n$342) - 48)",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"BinOp\",\"+\",[\"BinOp\",\"*\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]],[\"Var\"]],[\"Const\",[\"Cint\",\"48\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/pnm.c",
+        "line_number": 245,
+        "column_number": 24,
+        "description": "int_overflow, malloc, ()(n$274 * n$275)",
+        "feature": "[\"IntOverflow\",\"malloc\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"*\",[\"Var\"],[\"Var\"]]]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "src/pnm.c",
+        "line_number": 85,
+        "column_number": 7,
+        "description": "input, getc",
+        "feature": "[\"Input\",\"getc\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/pnm.c",
+        "line_number": 85,
+        "column_number": 5,
+        "description": "store, &c, n$32",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/pnm.c",
+        "line_number": 88,
+        "column_number": 9,
+        "description": "prune, !(n$8 == 35)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"35\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/pnm.c",
+        "line_number": 89,
+        "column_number": 22,
+        "description": "store, &return, n$5",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/pnm.c",
+        "line_number": 224,
+        "column_number": 5,
+        "description": "store, &c1, n$364",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/pnm.c",
+        "line_number": 231,
+        "column_number": 23,
+        "description": "store, &nx, (((n$338 * 10) + n$339) - 48)",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"BinOp\",\"+\",[\"BinOp\",\"*\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]],[\"Var\"]],[\"Const\",[\"Cint\",\"48\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/pnm.c",
+        "line_number": 245,
+        "column_number": 24,
+        "description": "int_overflow, malloc, ()(n$274 * n$275)",
+        "feature": "[\"IntOverflow\",\"malloc\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"*\",[\"Var\"],[\"Var\"]]]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "src/pnm.c",
+        "line_number": 85,
+        "column_number": 7,
+        "description": "input, getc",
+        "feature": "[\"Input\",\"getc\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/pnm.c",
+        "line_number": 85,
+        "column_number": 5,
+        "description": "store, &c, n$32",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/pnm.c",
+        "line_number": 88,
+        "column_number": 9,
+        "description": "prune, !(n$8 == 35)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"35\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/pnm.c",
+        "line_number": 89,
+        "column_number": 22,
+        "description": "store, &return, n$5",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/pnm.c",
+        "line_number": 224,
+        "column_number": 5,
+        "description": "store, &c1, n$364",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/pnm.c",
+        "line_number": 231,
+        "column_number": 23,
+        "description": "store, &nx, (((n$338 * 10) + n$339) - 48)",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"BinOp\",\"+\",[\"BinOp\",\"*\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]],[\"Var\"]],[\"Const\",[\"Cint\",\"48\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/pnm.c",
+        "line_number": 238,
+        "column_number": 18,
+        "description": "prune, ((n$289 & 7) != 0)",
+        "feature": "[\"Prune\",[\"BinOp\",\"!=\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"7\"]]],[\"Const\",[\"Cint\",\"0\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/pnm.c",
+        "line_number": 245,
+        "column_number": 24,
+        "description": "int_overflow, malloc, ()(n$274 * n$275)",
+        "feature": "[\"IntOverflow\",\"malloc\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"*\",[\"Var\"],[\"Var\"]]]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "src/pnm.c",
+        "line_number": 85,
+        "column_number": 7,
+        "description": "input, getc",
+        "feature": "[\"Input\",\"getc\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/pnm.c",
+        "line_number": 85,
+        "column_number": 5,
+        "description": "store, &c, n$32",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/pnm.c",
+        "line_number": 88,
+        "column_number": 9,
+        "description": "prune, !(n$8 == 35)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"35\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/pnm.c",
+        "line_number": 89,
+        "column_number": 22,
+        "description": "store, &return, n$5",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/pnm.c",
+        "line_number": 224,
+        "column_number": 5,
+        "description": "store, &c1, n$364",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/pnm.c",
+        "line_number": 231,
+        "column_number": 23,
+        "description": "store, &nx, (((n$338 * 10) + n$339) - 48)",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"BinOp\",\"+\",[\"BinOp\",\"*\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]],[\"Var\"]],[\"Const\",[\"Cint\",\"48\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/pnm.c",
+        "line_number": 238,
+        "column_number": 18,
+        "description": "prune, !((n$289 & 7) != 0)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"!=\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"7\"]]],[\"Const\",[\"Cint\",\"0\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/pnm.c",
+        "line_number": 245,
+        "column_number": 24,
+        "description": "int_overflow, malloc, ()(n$274 * n$275)",
+        "feature": "[\"IntOverflow\",\"malloc\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"*\",[\"Var\"],[\"Var\"]]]]"
+      }
+    ]
+  ],
+  "key": "pnm.c|readpgm|API_MISUSE",
+  "hash": "d9bafc72001f1b106ddba7c6ec602828",
+  "bug_type_hum": "Api Misuse",
+  "extras": {
+    "bug_src_loc": {
+      "file": "src/pnm.c",
+      "lnum": 85,
+      "cnum": 7,
+      "enum": 0
+    }
+  }
+}

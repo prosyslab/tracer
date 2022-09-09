@@ -1,0 +1,49 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "FormatString.",
+  "severity": "ERROR",
+  "line": 37,
+  "column": 5,
+  "procedure": "CWE134_Uncontrolled_Format_String__char_file_printf_66_bad",
+  "procedure_start_line": 35,
+  "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s02/CWE134_Uncontrolled_Format_String__char_file_printf_66b.c",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s02/CWE134_Uncontrolled_Format_String__char_file_printf_66a.c",
+        "line_number": 52,
+        "column_number": 21,
+        "description": "input, fgets",
+        "feature": "[\"Input\",\"fgets\"]"
+      },
+      {
+        "level": 1,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s02/CWE134_Uncontrolled_Format_String__char_file_printf_66a.c",
+        "line_number": 64,
+        "column_number": 5,
+        "description": "call, CWE134_Uncontrolled_Format_String__char_file_printf_66b_badSink",
+        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_file_printf_66b_badSink\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s02/CWE134_Uncontrolled_Format_String__char_file_printf_66b.c",
+        "line_number": 37,
+        "column_number": 5,
+        "description": "format_string, printf, n$0",
+        "feature": "[\"FormatString\",\"printf\",[\"Var\"]]"
+      }
+    ]
+  ],
+  "key": "CWE134_Uncontrolled_Format_String__char_file_printf_66a.c|CWE134_Uncontrolled_Format_String__char_file_printf_66_bad|API_MISUSE",
+  "hash": "233f1a93721dd1998fe4592fde0d87e0",
+  "bug_type_hum": "Api Misuse",
+  "extras": {
+    "bug_src_loc": {
+      "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s02/CWE134_Uncontrolled_Format_String__char_file_printf_66a.c",
+      "lnum": 52,
+      "cnum": 21,
+      "enum": 0
+    }
+  }
+}

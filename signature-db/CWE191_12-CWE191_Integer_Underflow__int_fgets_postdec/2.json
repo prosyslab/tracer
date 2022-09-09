@@ -1,0 +1,73 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "IntUnderflow.",
+  "severity": "ERROR",
+  "line": 66,
+  "column": 13,
+  "procedure": "CWE191_Integer_Underflow__int_fgets_postdec_12_bad",
+  "procedure_start_line": 24,
+  "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s04/CWE191_Integer_Underflow__int_fgets_postdec_12.c",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s04/CWE191_Integer_Underflow__int_fgets_postdec_12.c",
+        "line_number": 34,
+        "column_number": 17,
+        "description": "input, fgets",
+        "feature": "[\"Input\",\"fgets\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s04/CWE191_Integer_Underflow__int_fgets_postdec_12.c",
+        "line_number": 37,
+        "column_number": 17,
+        "description": "store, &data, n$16",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s04/CWE191_Integer_Underflow__int_fgets_postdec_12.c",
+        "line_number": 62,
+        "column_number": 13,
+        "description": "prune, (n$5 > (-2147483647 - 1))",
+        "feature": "[\"Prune\",[\"BinOp\",\">\",[\"Var\"],[\"BinOp\",\"-\",[\"UnOp\",\"-\",[\"Const\",[\"Cint\",\"2147483647\"]]],[\"Const\",[\"Cint\",\"1\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s04/CWE191_Integer_Underflow__int_fgets_postdec_12.c",
+        "line_number": 64,
+        "column_number": 13,
+        "description": "store, &data, (n$9 - 1)",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Const\",[\"Cint\",\"1\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s04/CWE191_Integer_Underflow__int_fgets_postdec_12.c",
+        "line_number": 65,
+        "column_number": 13,
+        "description": "store, &result, n$8",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 1,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s04/CWE191_Integer_Underflow__int_fgets_postdec_12.c",
+        "line_number": 66,
+        "column_number": 13,
+        "description": "int_underflow, printIntLine, n$6",
+        "feature": "[\"IntUnderflow\",\"printIntLine\",[\"Var\"]]"
+      }
+    ]
+  ],
+  "key": "CWE191_Integer_Underflow__int_fgets_postdec_12.c|CWE191_Integer_Underflow__int_fgets_postdec_12_bad|API_MISUSE",
+  "hash": "00584b13d16234f629ce6b6a504562cf",
+  "bug_type_hum": "Api Misuse",
+  "extras": {
+    "bug_src_loc": {
+      "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s04/CWE191_Integer_Underflow__int_fgets_postdec_12.c",
+      "lnum": 34,
+      "cnum": 17,
+      "enum": 0
+    }
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "FormatString.",
+  "severity": "ERROR",
+  "line": 523,
+  "column": 2,
+  "procedure": "main",
+  "procedure_start_line": 24,
+  "file": "mp3rename.c",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "mp3rename.c",
+        "line_number": 24,
+        "column_number": 1,
+        "description": "input, main",
+        "feature": "[\"Input\",\"main\"]"
+      },
+      {
+        "level": 1,
+        "filename": "mp3rename.c",
+        "line_number": 58,
+        "column_number": 9,
+        "description": "call, set_filename",
+        "feature": "[\"Call\",\"set_filename\"]"
+      },
+      {
+        "level": 0,
+        "filename": "mp3rename.c",
+        "line_number": 523,
+        "column_number": 2,
+        "description": "format_string, fprintf, n$4",
+        "feature": "[\"FormatString\",\"fprintf\",[\"Var\"]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "mp3rename.c",
+        "line_number": 24,
+        "column_number": 1,
+        "description": "input, main",
+        "feature": "[\"Input\",\"main\"]"
+      },
+      {
+        "level": 1,
+        "filename": "mp3rename.c",
+        "line_number": 58,
+        "column_number": 9,
+        "description": "call, set_filename",
+        "feature": "[\"Call\",\"set_filename\"]"
+      },
+      {
+        "level": 0,
+        "filename": "mp3rename.c",
+        "line_number": 516,
+        "column_number": 6,
+        "description": "library_call, strcmp, n$8, \"\"",
+        "feature": "[\"LibraryCall\",\"strcmp\",\"n$8, \\\"\\\"\"]"
+      },
+      {
+        "level": 0,
+        "filename": "mp3rename.c",
+        "line_number": 523,
+        "column_number": 2,
+        "description": "format_string, fprintf, n$4",
+        "feature": "[\"FormatString\",\"fprintf\",[\"Var\"]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "mp3rename.c",
+        "line_number": 24,
+        "column_number": 1,
+        "description": "input, main",
+        "feature": "[\"Input\",\"main\"]"
+      },
+      {
+        "level": 1,
+        "filename": "mp3rename.c",
+        "line_number": 58,
+        "column_number": 9,
+        "description": "call, set_filename",
+        "feature": "[\"Call\",\"set_filename\"]"
+      },
+      {
+        "level": 0,
+        "filename": "mp3rename.c",
+        "line_number": 498,
+        "column_number": 6,
+        "description": "library_call, strcmp, n$23, \"help\"",
+        "feature": "[\"LibraryCall\",\"strcmp\",\"n$23, \\\"help\\\"\"]"
+      },
+      {
+        "level": 0,
+        "filename": "mp3rename.c",
+        "line_number": 523,
+        "column_number": 2,
+        "description": "format_string, fprintf, n$4",
+        "feature": "[\"FormatString\",\"fprintf\",[\"Var\"]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "mp3rename.c",
+        "line_number": 24,
+        "column_number": 1,
+        "description": "input, main",
+        "feature": "[\"Input\",\"main\"]"
+      },
+      {
+        "level": 1,
+        "filename": "mp3rename.c",
+        "line_number": 58,
+        "column_number": 9,
+        "description": "call, set_filename",
+        "feature": "[\"Call\",\"set_filename\"]"
+      },
+      {
+        "level": 0,
+        "filename": "mp3rename.c",
+        "line_number": 498,
+        "column_number": 6,
+        "description": "library_call, strcmp, n$23, \"help\"",
+        "feature": "[\"LibraryCall\",\"strcmp\",\"n$23, \\\"help\\\"\"]"
+      },
+      {
+        "level": 0,
+        "filename": "mp3rename.c",
+        "line_number": 516,
+        "column_number": 6,
+        "description": "library_call, strcmp, n$8, \"\"",
+        "feature": "[\"LibraryCall\",\"strcmp\",\"n$8, \\\"\\\"\"]"
+      },
+      {
+        "level": 0,
+        "filename": "mp3rename.c",
+        "line_number": 523,
+        "column_number": 2,
+        "description": "format_string, fprintf, n$4",
+        "feature": "[\"FormatString\",\"fprintf\",[\"Var\"]]"
+      }
+    ]
+  ],
+  "key": "mp3rename.c|main|API_MISUSE",
+  "hash": "abac8bb7561d2eb284c92fa4d75f732c",
+  "bug_type_hum": "Api Misuse",
+  "extras": {
+    "bug_src_loc": {
+      "file": "mp3rename.c",
+      "lnum": 24,
+      "cnum": 1,
+      "enum": 0
+    }
+  }
+}

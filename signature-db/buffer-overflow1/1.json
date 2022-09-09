@@ -1,0 +1,41 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "BufferOverflow.",
+  "severity": "ERROR",
+  "line": 12,
+  "column": 5,
+  "procedure": "main",
+  "procedure_start_line": 6,
+  "file": "tutorial/buffer-overflow1.c",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "tutorial/buffer-overflow1.c",
+        "line_number": 10,
+        "column_number": 11,
+        "description": "input, getenv",
+        "feature": "[\"Input\",\"getenv\"]"
+      },
+      {
+        "level": 0,
+        "filename": "tutorial/buffer-overflow1.c",
+        "line_number": 12,
+        "column_number": 5,
+        "description": "buffer_overflow, sprintf, n$2",
+        "feature": "[\"BufferOverflow\",\"sprintf\",[\"Var\"]]"
+      }
+    ]
+  ],
+  "key": "buffer-overflow1.c|main|API_MISUSE",
+  "hash": "5d31796cf5f821076e2daabf4427d4fc",
+  "bug_type_hum": "Api Misuse",
+  "extras": {
+    "bug_src_loc": {
+      "file": "tutorial/buffer-overflow1.c",
+      "lnum": 10,
+      "cnum": 11,
+      "enum": 0
+    }
+  }
+}

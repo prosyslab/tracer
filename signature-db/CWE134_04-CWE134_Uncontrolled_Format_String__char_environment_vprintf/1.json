@@ -1,0 +1,57 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "FormatString.",
+  "severity": "ERROR",
+  "line": 47,
+  "column": 9,
+  "procedure": "CWE134_Uncontrolled_Format_String__char_environment_vprintf_04_bad",
+  "procedure_start_line": 52,
+  "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s02/CWE134_Uncontrolled_Format_String__char_environment_vprintf_04.c",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s02/CWE134_Uncontrolled_Format_String__char_environment_vprintf_04.c",
+        "line_number": 62,
+        "column_number": 34,
+        "description": "input, getenv",
+        "feature": "[\"Input\",\"getenv\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s02/CWE134_Uncontrolled_Format_String__char_environment_vprintf_04.c",
+        "line_number": 67,
+        "column_number": 17,
+        "description": "library_call, strncat, (n$8 + n$9), n$10",
+        "feature": "[\"LibraryCall\",\"strncat\",\"(n$8 + n$9), n$10\"]"
+      },
+      {
+        "level": 1,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s02/CWE134_Uncontrolled_Format_String__char_environment_vprintf_04.c",
+        "line_number": 73,
+        "column_number": 9,
+        "description": "call, badVaSinkB",
+        "feature": "[\"Call\",\"badVaSinkB\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s02/CWE134_Uncontrolled_Format_String__char_environment_vprintf_04.c",
+        "line_number": 47,
+        "column_number": 9,
+        "description": "format_string, vprintf, n$1",
+        "feature": "[\"FormatString\",\"vprintf\",[\"Var\"]]"
+      }
+    ]
+  ],
+  "key": "CWE134_Uncontrolled_Format_String__char_environment_vprintf_04.c|CWE134_Uncontrolled_Format_String__char_environment_vprintf_04_bad|API_MISUSE",
+  "hash": "11a86f6aa8eb0e469af6bf090dec0696",
+  "bug_type_hum": "Api Misuse",
+  "extras": {
+    "bug_src_loc": {
+      "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s02/CWE134_Uncontrolled_Format_String__char_environment_vprintf_04.c",
+      "lnum": 62,
+      "cnum": 34,
+      "enum": 0
+    }
+  }
+}

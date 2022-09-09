@@ -1,0 +1,41 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "UseAfterFree.",
+  "severity": "ERROR",
+  "line": 49,
+  "column": 9,
+  "procedure": "CWE416_Use_After_Free__new_delete_struct_12::bad",
+  "procedure_start_line": 26,
+  "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_struct_12.cpp",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_struct_12.cpp",
+        "line_number": 33,
+        "column_number": 16,
+        "description": "allocate, __new",
+        "feature": "[\"Allocate\",\"__new\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_struct_12.cpp",
+        "line_number": 37,
+        "column_number": 9,
+        "description": "free, __delete, n$6",
+        "feature": "[\"Free\",\"__delete\",[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_struct_12.cpp",
+        "line_number": 49,
+        "column_number": 9,
+        "description": "library_call, printStructLine, n$1",
+        "feature": "[\"LibraryCall\",\"printStructLine\",\"n$1\"]"
+      }
+    ]
+  ],
+  "key": "CWE416_Use_After_Free__new_delete_struct_12.cpp|CWE416_Use_After_Free__new_delete_struct_12::bad|API_MISUSE",
+  "hash": "3519363f82e0073116c31fe7bc00a3a6",
+  "bug_type_hum": "Api Misuse"
+}

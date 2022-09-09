@@ -1,0 +1,57 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "IntUnderflow.",
+  "severity": "ERROR",
+  "line": 50,
+  "column": 13,
+  "procedure": "CWE191_Integer_Underflow__short_fscanf_sub_12_bad",
+  "procedure_start_line": 22,
+  "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s03/CWE191_Integer_Underflow__short_fscanf_sub_12.c",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s03/CWE191_Integer_Underflow__short_fscanf_sub_12.c",
+        "line_number": 29,
+        "column_number": 9,
+        "description": "input, fscanf",
+        "feature": "[\"Input\",\"fscanf\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s03/CWE191_Integer_Underflow__short_fscanf_sub_12.c",
+        "line_number": 47,
+        "column_number": 13,
+        "description": "prune, (n$4 > (-32767 - 1))",
+        "feature": "[\"Prune\",[\"BinOp\",\">\",[\"Var\"],[\"BinOp\",\"-\",[\"UnOp\",\"-\",[\"Const\",[\"Cint\",\"32767\"]]],[\"Const\",[\"Cint\",\"1\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s03/CWE191_Integer_Underflow__short_fscanf_sub_12.c",
+        "line_number": 49,
+        "column_number": 13,
+        "description": "store, &result, (n$7 - 1)",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Const\",[\"Cint\",\"1\"]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s03/CWE191_Integer_Underflow__short_fscanf_sub_12.c",
+        "line_number": 50,
+        "column_number": 13,
+        "description": "int_underflow, printIntLine, n$5",
+        "feature": "[\"IntUnderflow\",\"printIntLine\",[\"Var\"]]"
+      }
+    ]
+  ],
+  "key": "CWE191_Integer_Underflow__short_fscanf_sub_12.c|CWE191_Integer_Underflow__short_fscanf_sub_12_bad|API_MISUSE",
+  "hash": "73e2fec40ad0176b0821f87a17b7ea1c",
+  "bug_type_hum": "Api Misuse",
+  "extras": {
+    "bug_src_loc": {
+      "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s03/CWE191_Integer_Underflow__short_fscanf_sub_12.c",
+      "lnum": 29,
+      "cnum": 9,
+      "enum": 0
+    }
+  }
+}

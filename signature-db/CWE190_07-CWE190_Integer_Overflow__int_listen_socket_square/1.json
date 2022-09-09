@@ -1,0 +1,57 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "IntOverflow.",
+  "severity": "ERROR",
+  "line": 133,
+  "column": 13,
+  "procedure": "CWE190_Integer_Overflow__int_listen_socket_square_07_bad",
+  "procedure_start_line": 51,
+  "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s03/CWE190_Integer_Overflow__int_listen_socket_square_07.c",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s03/CWE190_Integer_Overflow__int_listen_socket_square_07.c",
+        "line_number": 101,
+        "column_number": 30,
+        "description": "input, recv",
+        "feature": "[\"Input\",\"recv\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s03/CWE190_Integer_Overflow__int_listen_socket_square_07.c",
+        "line_number": 109,
+        "column_number": 17,
+        "description": "store, &data, n$18",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s03/CWE190_Integer_Overflow__int_listen_socket_square_07.c",
+        "line_number": 132,
+        "column_number": 13,
+        "description": "store, &result, (n$3 * n$4)",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"*\",[\"Var\"],[\"Var\"]]]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s03/CWE190_Integer_Overflow__int_listen_socket_square_07.c",
+        "line_number": 133,
+        "column_number": 13,
+        "description": "int_overflow, printIntLine, n$1",
+        "feature": "[\"IntOverflow\",\"printIntLine\",[\"Var\"]]"
+      }
+    ]
+  ],
+  "key": "CWE190_Integer_Overflow__int_listen_socket_square_07.c|CWE190_Integer_Overflow__int_listen_socket_square_07_bad|API_MISUSE",
+  "hash": "b2b483134b28514435a29a2e596248a9",
+  "bug_type_hum": "Api Misuse",
+  "extras": {
+    "bug_src_loc": {
+      "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s03/CWE190_Integer_Overflow__int_listen_socket_square_07.c",
+      "lnum": 101,
+      "cnum": 30,
+      "enum": 0
+    }
+  }
+}

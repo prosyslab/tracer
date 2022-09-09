@@ -1,0 +1,65 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "IntOverflow.",
+  "severity": "ERROR",
+  "line": 56,
+  "column": 13,
+  "procedure": "CWE190_Integer_Overflow__int_fgets_multiply_07_bad",
+  "procedure_start_line": 29,
+  "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s03/CWE190_Integer_Overflow__int_fgets_multiply_07.c",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s03/CWE190_Integer_Overflow__int_fgets_multiply_07.c",
+        "line_number": 39,
+        "column_number": 17,
+        "description": "input, fgets",
+        "feature": "[\"Input\",\"fgets\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s03/CWE190_Integer_Overflow__int_fgets_multiply_07.c",
+        "line_number": 42,
+        "column_number": 17,
+        "description": "store, &data, n$12",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s03/CWE190_Integer_Overflow__int_fgets_multiply_07.c",
+        "line_number": 52,
+        "column_number": 12,
+        "description": "prune, (n$1 > 0)",
+        "feature": "[\"Prune\",[\"BinOp\",\">\",[\"Var\"],[\"Const\",[\"Cint\",\"0\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s03/CWE190_Integer_Overflow__int_fgets_multiply_07.c",
+        "line_number": 55,
+        "column_number": 13,
+        "description": "store, &result, (n$4 * 2)",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"*\",[\"Var\"],[\"Const\",[\"Cint\",\"2\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s03/CWE190_Integer_Overflow__int_fgets_multiply_07.c",
+        "line_number": 56,
+        "column_number": 13,
+        "description": "int_overflow, printIntLine, n$2",
+        "feature": "[\"IntOverflow\",\"printIntLine\",[\"Var\"]]"
+      }
+    ]
+  ],
+  "key": "CWE190_Integer_Overflow__int_fgets_multiply_07.c|CWE190_Integer_Overflow__int_fgets_multiply_07_bad|API_MISUSE",
+  "hash": "2fdf0e7d1d75d4430c0cbc44546216d6",
+  "bug_type_hum": "Api Misuse",
+  "extras": {
+    "bug_src_loc": {
+      "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s03/CWE190_Integer_Overflow__int_fgets_multiply_07.c",
+      "lnum": 39,
+      "cnum": 17,
+      "enum": 0
+    }
+  }
+}

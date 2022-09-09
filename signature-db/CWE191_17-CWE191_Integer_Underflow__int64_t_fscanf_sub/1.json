@@ -1,0 +1,49 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "IntUnderflow.",
+  "severity": "ERROR",
+  "line": 38,
+  "column": 13,
+  "procedure": "CWE191_Integer_Underflow__int64_t_fscanf_sub_17_bad",
+  "procedure_start_line": 23,
+  "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s01/CWE191_Integer_Underflow__int64_t_fscanf_sub_17.c",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s01/CWE191_Integer_Underflow__int64_t_fscanf_sub_17.c",
+        "line_number": 31,
+        "column_number": 9,
+        "description": "input, fscanf",
+        "feature": "[\"Input\",\"fscanf\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s01/CWE191_Integer_Underflow__int64_t_fscanf_sub_17.c",
+        "line_number": 37,
+        "column_number": 13,
+        "description": "store, &result, (n$4 - 1)",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Const\",[\"Cint\",\"1\"]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s01/CWE191_Integer_Underflow__int64_t_fscanf_sub_17.c",
+        "line_number": 38,
+        "column_number": 13,
+        "description": "int_underflow, printLongLongLine, n$2",
+        "feature": "[\"IntUnderflow\",\"printLongLongLine\",[\"Var\"]]"
+      }
+    ]
+  ],
+  "key": "CWE191_Integer_Underflow__int64_t_fscanf_sub_17.c|CWE191_Integer_Underflow__int64_t_fscanf_sub_17_bad|API_MISUSE",
+  "hash": "ab1d5d89500f5fefc276e6a9be20333a",
+  "bug_type_hum": "Api Misuse",
+  "extras": {
+    "bug_src_loc": {
+      "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s01/CWE191_Integer_Underflow__int64_t_fscanf_sub_17.c",
+      "lnum": 31,
+      "cnum": 9,
+      "enum": 0
+    }
+  }
+}

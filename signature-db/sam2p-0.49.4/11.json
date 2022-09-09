@@ -1,0 +1,437 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "IntOverflow.",
+  "severity": "ERROR",
+  "line": 267,
+  "column": 7,
+  "procedure": "bmp_load_image",
+  "procedure_start_line": 70,
+  "file": "input-bmp.ci",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "input-bmp.ci",
+        "line_number": 144,
+        "column_number": 12,
+        "description": "input, fread",
+        "feature": "[\"Input\",\"fread\"]"
+      },
+      {
+        "level": 1,
+        "filename": "input-bmp.ci",
+        "line_number": 148,
+        "column_number": 30,
+        "description": "call, ToL",
+        "feature": "[\"Call\",\"ToL\"]"
+      },
+      {
+        "level": 0,
+        "filename": "input-bmp.ci",
+        "line_number": 477,
+        "column_number": 3,
+        "description": "store, &return, (((n$1 | (n$3 << 8)) | (n$5 << 16)) | (n$7 << 24))",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"Var\"],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"24\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "input-bmp.ci",
+        "line_number": 148,
+        "column_number": 7,
+        "description": "store, &#GB<in_bmp.cpp>$Bitmap_Head.biHeight, ()n$121",
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]"
+      },
+      {
+        "level": 0,
+        "filename": "input-bmp.ci",
+        "line_number": 175,
+        "column_number": 7,
+        "description": "prune, (n$53 == ()0)",
+        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "input-bmp.ci",
+        "line_number": 206,
+        "column_number": 18,
+        "description": "call, ReadImage",
+        "feature": "[\"Call\",\"ReadImage\"]"
+      },
+      {
+        "level": 0,
+        "filename": "input-bmp.ci",
+        "line_number": 267,
+        "column_number": 7,
+        "description": "int_overflow, __new_array, (sizeof(t=;nbytes=1) * (()((n$296 * n$297) * 3) * sizeof(t=;nbytes=1)))",
+        "feature": "[\"IntOverflow\",\"__new_array\",[\"BinOp\",\"*\",[\"Sizeof\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}],[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"*\",[\"BinOp\",\"*\",[\"Var\"],[\"Var\"]],[\"Const\",[\"Cint\",\"3\"]]]],[\"Sizeof\",{\"desc\":[\"Tint\",[\"IUChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "input-bmp.ci",
+        "line_number": 144,
+        "column_number": 12,
+        "description": "input, fread",
+        "feature": "[\"Input\",\"fread\"]"
+      },
+      {
+        "level": 1,
+        "filename": "input-bmp.ci",
+        "line_number": 148,
+        "column_number": 30,
+        "description": "call, ToL",
+        "feature": "[\"Call\",\"ToL\"]"
+      },
+      {
+        "level": 0,
+        "filename": "input-bmp.ci",
+        "line_number": 477,
+        "column_number": 3,
+        "description": "store, &return, (((n$1 | (n$3 << 8)) | (n$5 << 16)) | (n$7 << 24))",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"Var\"],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"24\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "input-bmp.ci",
+        "line_number": 148,
+        "column_number": 7,
+        "description": "store, &#GB<in_bmp.cpp>$Bitmap_Head.biHeight, ()n$121",
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]"
+      },
+      {
+        "level": 0,
+        "filename": "input-bmp.ci",
+        "line_number": 175,
+        "column_number": 7,
+        "description": "prune, !(n$53 == ()0)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "input-bmp.ci",
+        "line_number": 206,
+        "column_number": 18,
+        "description": "call, ReadImage",
+        "feature": "[\"Call\",\"ReadImage\"]"
+      },
+      {
+        "level": 0,
+        "filename": "input-bmp.ci",
+        "line_number": 267,
+        "column_number": 7,
+        "description": "int_overflow, __new_array, (sizeof(t=;nbytes=1) * (()((n$296 * n$297) * 3) * sizeof(t=;nbytes=1)))",
+        "feature": "[\"IntOverflow\",\"__new_array\",[\"BinOp\",\"*\",[\"Sizeof\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}],[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"*\",[\"BinOp\",\"*\",[\"Var\"],[\"Var\"]],[\"Const\",[\"Cint\",\"3\"]]]],[\"Sizeof\",{\"desc\":[\"Tint\",[\"IUChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "input-bmp.ci",
+        "line_number": 144,
+        "column_number": 12,
+        "description": "input, fread",
+        "feature": "[\"Input\",\"fread\"]"
+      },
+      {
+        "level": 1,
+        "filename": "input-bmp.ci",
+        "line_number": 147,
+        "column_number": 30,
+        "description": "call, ToL",
+        "feature": "[\"Call\",\"ToL\"]"
+      },
+      {
+        "level": 1,
+        "filename": "input-bmp.ci",
+        "line_number": 148,
+        "column_number": 30,
+        "description": "call, ToL",
+        "feature": "[\"Call\",\"ToL\"]"
+      },
+      {
+        "level": 0,
+        "filename": "input-bmp.ci",
+        "line_number": 477,
+        "column_number": 3,
+        "description": "store, &return, (((n$1 | (n$3 << 8)) | (n$5 << 16)) | (n$7 << 24))",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"Var\"],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"24\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "input-bmp.ci",
+        "line_number": 148,
+        "column_number": 7,
+        "description": "store, &#GB<in_bmp.cpp>$Bitmap_Head.biHeight, ()n$121",
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]"
+      },
+      {
+        "level": 0,
+        "filename": "input-bmp.ci",
+        "line_number": 175,
+        "column_number": 7,
+        "description": "prune, (n$53 == ()0)",
+        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "input-bmp.ci",
+        "line_number": 206,
+        "column_number": 18,
+        "description": "call, ReadImage",
+        "feature": "[\"Call\",\"ReadImage\"]"
+      },
+      {
+        "level": 0,
+        "filename": "input-bmp.ci",
+        "line_number": 267,
+        "column_number": 7,
+        "description": "int_overflow, __new_array, (sizeof(t=;nbytes=1) * (()((n$296 * n$297) * 3) * sizeof(t=;nbytes=1)))",
+        "feature": "[\"IntOverflow\",\"__new_array\",[\"BinOp\",\"*\",[\"Sizeof\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}],[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"*\",[\"BinOp\",\"*\",[\"Var\"],[\"Var\"]],[\"Const\",[\"Cint\",\"3\"]]]],[\"Sizeof\",{\"desc\":[\"Tint\",[\"IUChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "input-bmp.ci",
+        "line_number": 144,
+        "column_number": 12,
+        "description": "input, fread",
+        "feature": "[\"Input\",\"fread\"]"
+      },
+      {
+        "level": 1,
+        "filename": "input-bmp.ci",
+        "line_number": 147,
+        "column_number": 30,
+        "description": "call, ToL",
+        "feature": "[\"Call\",\"ToL\"]"
+      },
+      {
+        "level": 1,
+        "filename": "input-bmp.ci",
+        "line_number": 148,
+        "column_number": 30,
+        "description": "call, ToL",
+        "feature": "[\"Call\",\"ToL\"]"
+      },
+      {
+        "level": 0,
+        "filename": "input-bmp.ci",
+        "line_number": 477,
+        "column_number": 3,
+        "description": "store, &return, (((n$1 | (n$3 << 8)) | (n$5 << 16)) | (n$7 << 24))",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"Var\"],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"24\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "input-bmp.ci",
+        "line_number": 148,
+        "column_number": 7,
+        "description": "store, &#GB<in_bmp.cpp>$Bitmap_Head.biHeight, ()n$121",
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]"
+      },
+      {
+        "level": 0,
+        "filename": "input-bmp.ci",
+        "line_number": 175,
+        "column_number": 7,
+        "description": "prune, !(n$53 == ()0)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "input-bmp.ci",
+        "line_number": 206,
+        "column_number": 18,
+        "description": "call, ReadImage",
+        "feature": "[\"Call\",\"ReadImage\"]"
+      },
+      {
+        "level": 0,
+        "filename": "input-bmp.ci",
+        "line_number": 267,
+        "column_number": 7,
+        "description": "int_overflow, __new_array, (sizeof(t=;nbytes=1) * (()((n$296 * n$297) * 3) * sizeof(t=;nbytes=1)))",
+        "feature": "[\"IntOverflow\",\"__new_array\",[\"BinOp\",\"*\",[\"Sizeof\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}],[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"*\",[\"BinOp\",\"*\",[\"Var\"],[\"Var\"]],[\"Const\",[\"Cint\",\"3\"]]]],[\"Sizeof\",{\"desc\":[\"Tint\",[\"IUChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "input-bmp.ci",
+        "line_number": 144,
+        "column_number": 12,
+        "description": "input, fread",
+        "feature": "[\"Input\",\"fread\"]"
+      },
+      {
+        "level": 1,
+        "filename": "input-bmp.ci",
+        "line_number": 147,
+        "column_number": 30,
+        "description": "call, ToL",
+        "feature": "[\"Call\",\"ToL\"]"
+      },
+      {
+        "level": 0,
+        "filename": "input-bmp.ci",
+        "line_number": 477,
+        "column_number": 3,
+        "description": "store, &return, (((n$1 | (n$3 << 8)) | (n$5 << 16)) | (n$7 << 24))",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"Var\"],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"24\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "input-bmp.ci",
+        "line_number": 147,
+        "column_number": 7,
+        "description": "store, &#GB<in_bmp.cpp>$Bitmap_Head.biWidth, ()n$122",
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]"
+      },
+      {
+        "level": 1,
+        "filename": "input-bmp.ci",
+        "line_number": 206,
+        "column_number": 18,
+        "description": "call, ReadImage",
+        "feature": "[\"Call\",\"ReadImage\"]"
+      },
+      {
+        "level": 0,
+        "filename": "input-bmp.ci",
+        "line_number": 267,
+        "column_number": 7,
+        "description": "int_overflow, __new_array, (sizeof(t=;nbytes=1) * (()((n$296 * n$297) * 3) * sizeof(t=;nbytes=1)))",
+        "feature": "[\"IntOverflow\",\"__new_array\",[\"BinOp\",\"*\",[\"Sizeof\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}],[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"*\",[\"BinOp\",\"*\",[\"Var\"],[\"Var\"]],[\"Const\",[\"Cint\",\"3\"]]]],[\"Sizeof\",{\"desc\":[\"Tint\",[\"IUChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "input-bmp.ci",
+        "line_number": 144,
+        "column_number": 12,
+        "description": "input, fread",
+        "feature": "[\"Input\",\"fread\"]"
+      },
+      {
+        "level": 1,
+        "filename": "input-bmp.ci",
+        "line_number": 147,
+        "column_number": 30,
+        "description": "call, ToL",
+        "feature": "[\"Call\",\"ToL\"]"
+      },
+      {
+        "level": 0,
+        "filename": "input-bmp.ci",
+        "line_number": 477,
+        "column_number": 3,
+        "description": "store, &return, (((n$1 | (n$3 << 8)) | (n$5 << 16)) | (n$7 << 24))",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"Var\"],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"24\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "input-bmp.ci",
+        "line_number": 147,
+        "column_number": 7,
+        "description": "store, &#GB<in_bmp.cpp>$Bitmap_Head.biWidth, ()n$122",
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]"
+      },
+      {
+        "level": 0,
+        "filename": "input-bmp.ci",
+        "line_number": 175,
+        "column_number": 36,
+        "description": "prune, (n$54 == ()0)",
+        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "input-bmp.ci",
+        "line_number": 206,
+        "column_number": 18,
+        "description": "call, ReadImage",
+        "feature": "[\"Call\",\"ReadImage\"]"
+      },
+      {
+        "level": 0,
+        "filename": "input-bmp.ci",
+        "line_number": 267,
+        "column_number": 7,
+        "description": "int_overflow, __new_array, (sizeof(t=;nbytes=1) * (()((n$296 * n$297) * 3) * sizeof(t=;nbytes=1)))",
+        "feature": "[\"IntOverflow\",\"__new_array\",[\"BinOp\",\"*\",[\"Sizeof\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}],[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"*\",[\"BinOp\",\"*\",[\"Var\"],[\"Var\"]],[\"Const\",[\"Cint\",\"3\"]]]],[\"Sizeof\",{\"desc\":[\"Tint\",[\"IUChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "input-bmp.ci",
+        "line_number": 144,
+        "column_number": 12,
+        "description": "input, fread",
+        "feature": "[\"Input\",\"fread\"]"
+      },
+      {
+        "level": 1,
+        "filename": "input-bmp.ci",
+        "line_number": 147,
+        "column_number": 30,
+        "description": "call, ToL",
+        "feature": "[\"Call\",\"ToL\"]"
+      },
+      {
+        "level": 0,
+        "filename": "input-bmp.ci",
+        "line_number": 477,
+        "column_number": 3,
+        "description": "store, &return, (((n$1 | (n$3 << 8)) | (n$5 << 16)) | (n$7 << 24))",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"Var\"],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"24\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "input-bmp.ci",
+        "line_number": 147,
+        "column_number": 7,
+        "description": "store, &#GB<in_bmp.cpp>$Bitmap_Head.biWidth, ()n$122",
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]"
+      },
+      {
+        "level": 0,
+        "filename": "input-bmp.ci",
+        "line_number": 175,
+        "column_number": 36,
+        "description": "prune, !(n$54 == ()0)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "input-bmp.ci",
+        "line_number": 206,
+        "column_number": 18,
+        "description": "call, ReadImage",
+        "feature": "[\"Call\",\"ReadImage\"]"
+      },
+      {
+        "level": 0,
+        "filename": "input-bmp.ci",
+        "line_number": 267,
+        "column_number": 7,
+        "description": "int_overflow, __new_array, (sizeof(t=;nbytes=1) * (()((n$296 * n$297) * 3) * sizeof(t=;nbytes=1)))",
+        "feature": "[\"IntOverflow\",\"__new_array\",[\"BinOp\",\"*\",[\"Sizeof\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}],[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"*\",[\"BinOp\",\"*\",[\"Var\"],[\"Var\"]],[\"Const\",[\"Cint\",\"3\"]]]],[\"Sizeof\",{\"desc\":[\"Tint\",[\"IUChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]"
+      }
+    ]
+  ],
+  "key": "input-bmp.ci|bmp_load_image|API_MISUSE",
+  "hash": "c70aedce697292cc3f22625f0002d28a",
+  "bug_type_hum": "Api Misuse",
+  "extras": {
+    "bug_src_loc": {
+      "file": "input-bmp.ci",
+      "lnum": 144,
+      "cnum": 12,
+      "enum": 0
+    }
+  }
+}

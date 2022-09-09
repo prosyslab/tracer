@@ -1,0 +1,57 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "CmdInjection.",
+  "severity": "ERROR",
+  "line": 52,
+  "column": 16,
+  "procedure": "CWE78_OS_Command_Injection__char_environment_popen_65_bad",
+  "procedure_start_line": 50,
+  "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE78_OS_Command_Injection/s02/CWE78_OS_Command_Injection__char_environment_popen_65b.c",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE78_OS_Command_Injection/s02/CWE78_OS_Command_Injection__char_environment_popen_65a.c",
+        "line_number": 60,
+        "column_number": 30,
+        "description": "input, getenv",
+        "feature": "[\"Input\",\"getenv\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE78_OS_Command_Injection/s02/CWE78_OS_Command_Injection__char_environment_popen_65a.c",
+        "line_number": 65,
+        "column_number": 13,
+        "description": "library_call, strncat, (n$4 + n$5), n$6",
+        "feature": "[\"LibraryCall\",\"strncat\",\"(n$4 + n$5), n$6\"]"
+      },
+      {
+        "level": 1,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE78_OS_Command_Injection/s02/CWE78_OS_Command_Injection__char_environment_popen_65a.c",
+        "line_number": 69,
+        "column_number": 5,
+        "description": "call, CWE78_OS_Command_Injection__char_environment_popen_65b_badSink",
+        "feature": "[\"Call\",\"CWE78_OS_Command_Injection__char_environment_popen_65b_badSink\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE78_OS_Command_Injection/s02/CWE78_OS_Command_Injection__char_environment_popen_65b.c",
+        "line_number": 52,
+        "column_number": 16,
+        "description": "cmd_injection, popen, n$5",
+        "feature": "[\"CmdInjection\",\"popen\",[\"Var\"]]"
+      }
+    ]
+  ],
+  "key": "CWE78_OS_Command_Injection__char_environment_popen_65a.c|CWE78_OS_Command_Injection__char_environment_popen_65_bad|API_MISUSE",
+  "hash": "695cf71608d98cc5137eff876114c5a4",
+  "bug_type_hum": "Api Misuse",
+  "extras": {
+    "bug_src_loc": {
+      "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE78_OS_Command_Injection/s02/CWE78_OS_Command_Injection__char_environment_popen_65a.c",
+      "lnum": 60,
+      "cnum": 30,
+      "enum": 0
+    }
+  }
+}

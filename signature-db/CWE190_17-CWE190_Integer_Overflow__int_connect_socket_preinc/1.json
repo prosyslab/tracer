@@ -1,0 +1,65 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "IntOverflow.",
+  "severity": "ERROR",
+  "line": 115,
+  "column": 13,
+  "procedure": "CWE190_Integer_Overflow__int_connect_socket_preinc_17_bad",
+  "procedure_start_line": 44,
+  "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s07/CWE190_Integer_Overflow__int_connect_socket_preinc_17.c",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s07/CWE190_Integer_Overflow__int_connect_socket_preinc_17.c",
+        "line_number": 86,
+        "column_number": 30,
+        "description": "input, recv",
+        "feature": "[\"Input\",\"recv\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s07/CWE190_Integer_Overflow__int_connect_socket_preinc_17.c",
+        "line_number": 94,
+        "column_number": 17,
+        "description": "store, &data, n$14",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s07/CWE190_Integer_Overflow__int_connect_socket_preinc_17.c",
+        "line_number": 113,
+        "column_number": 13,
+        "description": "store, &data, (n$5 + 1)",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"Var\"],[\"Const\",[\"Cint\",\"1\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s07/CWE190_Integer_Overflow__int_connect_socket_preinc_17.c",
+        "line_number": 114,
+        "column_number": 13,
+        "description": "store, &result, n$4",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s07/CWE190_Integer_Overflow__int_connect_socket_preinc_17.c",
+        "line_number": 115,
+        "column_number": 13,
+        "description": "int_overflow, printIntLine, n$2",
+        "feature": "[\"IntOverflow\",\"printIntLine\",[\"Var\"]]"
+      }
+    ]
+  ],
+  "key": "CWE190_Integer_Overflow__int_connect_socket_preinc_17.c|CWE190_Integer_Overflow__int_connect_socket_preinc_17_bad|API_MISUSE",
+  "hash": "14ce63e9ea3ca7bb9a3e1668e7b91f3e",
+  "bug_type_hum": "Api Misuse",
+  "extras": {
+    "bug_src_loc": {
+      "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s07/CWE190_Integer_Overflow__int_connect_socket_preinc_17.c",
+      "lnum": 86,
+      "cnum": 30,
+      "enum": 0
+    }
+  }
+}

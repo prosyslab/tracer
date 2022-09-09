@@ -1,0 +1,73 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "IntUnderflow.",
+  "severity": "ERROR",
+  "line": 50,
+  "column": 9,
+  "procedure": "CWE191_Integer_Underflow__int_listen_socket_predec_44_bad",
+  "procedure_start_line": 54,
+  "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s05/CWE191_Integer_Underflow__int_listen_socket_predec_44.c",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s05/CWE191_Integer_Underflow__int_listen_socket_predec_44.c",
+        "line_number": 104,
+        "column_number": 26,
+        "description": "input, recv",
+        "feature": "[\"Input\",\"recv\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s05/CWE191_Integer_Underflow__int_listen_socket_predec_44.c",
+        "line_number": 112,
+        "column_number": 13,
+        "description": "store, &data, n$13",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 1,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s05/CWE191_Integer_Underflow__int_listen_socket_predec_44.c",
+        "line_number": 131,
+        "column_number": 5,
+        "description": "call, badSink",
+        "feature": "[\"Call\",\"badSink\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s05/CWE191_Integer_Underflow__int_listen_socket_predec_44.c",
+        "line_number": 48,
+        "column_number": 9,
+        "description": "store, &data, (n$3 - 1)",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Const\",[\"Cint\",\"1\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s05/CWE191_Integer_Underflow__int_listen_socket_predec_44.c",
+        "line_number": 49,
+        "column_number": 9,
+        "description": "store, &result, n$2",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 1,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s05/CWE191_Integer_Underflow__int_listen_socket_predec_44.c",
+        "line_number": 50,
+        "column_number": 9,
+        "description": "int_underflow, printIntLine, n$0",
+        "feature": "[\"IntUnderflow\",\"printIntLine\",[\"Var\"]]"
+      }
+    ]
+  ],
+  "key": "CWE191_Integer_Underflow__int_listen_socket_predec_44.c|CWE191_Integer_Underflow__int_listen_socket_predec_44_bad|API_MISUSE",
+  "hash": "70801f4983350702533fc4102a941324",
+  "bug_type_hum": "Api Misuse",
+  "extras": {
+    "bug_src_loc": {
+      "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s05/CWE191_Integer_Underflow__int_listen_socket_predec_44.c",
+      "lnum": 104,
+      "cnum": 26,
+      "enum": 0
+    }
+  }
+}

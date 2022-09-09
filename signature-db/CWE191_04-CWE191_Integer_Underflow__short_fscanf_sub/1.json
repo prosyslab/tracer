@@ -1,0 +1,49 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "IntUnderflow.",
+  "severity": "ERROR",
+  "line": 42,
+  "column": 13,
+  "procedure": "CWE191_Integer_Underflow__short_fscanf_sub_04_bad",
+  "procedure_start_line": 28,
+  "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s03/CWE191_Integer_Underflow__short_fscanf_sub_04.c",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s03/CWE191_Integer_Underflow__short_fscanf_sub_04.c",
+        "line_number": 35,
+        "column_number": 9,
+        "description": "input, fscanf",
+        "feature": "[\"Input\",\"fscanf\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s03/CWE191_Integer_Underflow__short_fscanf_sub_04.c",
+        "line_number": 41,
+        "column_number": 13,
+        "description": "store, &result, (n$3 - 1)",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Const\",[\"Cint\",\"1\"]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s03/CWE191_Integer_Underflow__short_fscanf_sub_04.c",
+        "line_number": 42,
+        "column_number": 13,
+        "description": "int_underflow, printIntLine, n$1",
+        "feature": "[\"IntUnderflow\",\"printIntLine\",[\"Var\"]]"
+      }
+    ]
+  ],
+  "key": "CWE191_Integer_Underflow__short_fscanf_sub_04.c|CWE191_Integer_Underflow__short_fscanf_sub_04_bad|API_MISUSE",
+  "hash": "69bb48df8f88a3b5a9b3a7a27df95e86",
+  "bug_type_hum": "Api Misuse",
+  "extras": {
+    "bug_src_loc": {
+      "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s03/CWE191_Integer_Underflow__short_fscanf_sub_04.c",
+      "lnum": 35,
+      "cnum": 9,
+      "enum": 0
+    }
+  }
+}

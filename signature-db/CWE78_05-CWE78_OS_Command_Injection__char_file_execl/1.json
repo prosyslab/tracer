@@ -1,0 +1,41 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "CmdInjection.",
+  "severity": "ERROR",
+  "line": 89,
+  "column": 5,
+  "procedure": "CWE78_OS_Command_Injection__char_file_execl_05_bad",
+  "procedure_start_line": 58,
+  "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE78_OS_Command_Injection/s03/CWE78_OS_Command_Injection__char_file_execl_05.c",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE78_OS_Command_Injection/s03/CWE78_OS_Command_Injection__char_file_execl_05.c",
+        "line_number": 76,
+        "column_number": 25,
+        "description": "input, fgets",
+        "feature": "[\"Input\",\"fgets\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE78_OS_Command_Injection/s03/CWE78_OS_Command_Injection__char_file_execl_05.c",
+        "line_number": 89,
+        "column_number": 5,
+        "description": "cmd_injection, execl, n$0",
+        "feature": "[\"CmdInjection\",\"execl\",[\"Var\"]]"
+      }
+    ]
+  ],
+  "key": "CWE78_OS_Command_Injection__char_file_execl_05.c|CWE78_OS_Command_Injection__char_file_execl_05_bad|API_MISUSE",
+  "hash": "70b7fbf3b1ec8c77f08609f2c84df6dc",
+  "bug_type_hum": "Api Misuse",
+  "extras": {
+    "bug_src_loc": {
+      "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE78_OS_Command_Injection/s03/CWE78_OS_Command_Injection__char_file_execl_05.c",
+      "lnum": 76,
+      "cnum": 25,
+      "enum": 0
+    }
+  }
+}

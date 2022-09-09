@@ -1,0 +1,65 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "IntOverflow.",
+  "severity": "ERROR",
+  "line": 54,
+  "column": 17,
+  "procedure": "CWE191_Integer_Underflow__int64_t_fscanf_multiply_12_bad",
+  "procedure_start_line": 23,
+  "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s01/CWE191_Integer_Underflow__int64_t_fscanf_multiply_12.c",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s01/CWE191_Integer_Underflow__int64_t_fscanf_multiply_12.c",
+        "line_number": 30,
+        "column_number": 9,
+        "description": "input, fscanf",
+        "feature": "[\"Input\",\"fscanf\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s01/CWE191_Integer_Underflow__int64_t_fscanf_multiply_12.c",
+        "line_number": 48,
+        "column_number": 12,
+        "description": "prune, (n$7 < 0)",
+        "feature": "[\"Prune\",[\"BinOp\",\"<\",[\"Var\"],[\"Const\",[\"Cint\",\"0\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s01/CWE191_Integer_Underflow__int64_t_fscanf_multiply_12.c",
+        "line_number": 51,
+        "column_number": 17,
+        "description": "prune, (n$8 > ((-9223372036854775807 - 1) / 2))",
+        "feature": "[\"Prune\",[\"BinOp\",\">\",[\"Var\"],[\"BinOp\",\"/\",[\"BinOp\",\"-\",[\"UnOp\",\"-\",[\"Const\",[\"Cint\",\"9223372036854775807\"]]],[\"Const\",[\"Cint\",\"1\"]]],[\"Const\",[\"Cint\",\"2\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s01/CWE191_Integer_Underflow__int64_t_fscanf_multiply_12.c",
+        "line_number": 53,
+        "column_number": 17,
+        "description": "store, &result, (n$11 * 2)",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"*\",[\"Var\"],[\"Const\",[\"Cint\",\"2\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s01/CWE191_Integer_Underflow__int64_t_fscanf_multiply_12.c",
+        "line_number": 54,
+        "column_number": 17,
+        "description": "int_overflow, printLongLongLine, n$9",
+        "feature": "[\"IntOverflow\",\"printLongLongLine\",[\"Var\"]]"
+      }
+    ]
+  ],
+  "key": "CWE191_Integer_Underflow__int64_t_fscanf_multiply_12.c|CWE191_Integer_Underflow__int64_t_fscanf_multiply_12_bad|API_MISUSE",
+  "hash": "84dc50334f8526a6017894699e63e152",
+  "bug_type_hum": "Api Misuse",
+  "extras": {
+    "bug_src_loc": {
+      "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s01/CWE191_Integer_Underflow__int64_t_fscanf_multiply_12.c",
+      "lnum": 30,
+      "cnum": 9,
+      "enum": 0
+    }
+  }
+}

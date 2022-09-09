@@ -1,0 +1,41 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "CmdInjection.",
+  "severity": "ERROR",
+  "line": 82,
+  "column": 9,
+  "procedure": "CWE78_OS_Command_Injection__char_file_system_21_bad",
+  "procedure_start_line": 74,
+  "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE78_OS_Command_Injection/s03/CWE78_OS_Command_Injection__char_file_system_21.c",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE78_OS_Command_Injection/s03/CWE78_OS_Command_Injection__char_file_system_21.c",
+        "line_number": 60,
+        "column_number": 25,
+        "description": "input, fgets",
+        "feature": "[\"Input\",\"fgets\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE78_OS_Command_Injection/s03/CWE78_OS_Command_Injection__char_file_system_21.c",
+        "line_number": 82,
+        "column_number": 9,
+        "description": "cmd_injection, system, n$0",
+        "feature": "[\"CmdInjection\",\"system\",[\"Var\"]]"
+      }
+    ]
+  ],
+  "key": "CWE78_OS_Command_Injection__char_file_system_21.c|CWE78_OS_Command_Injection__char_file_system_21_bad|API_MISUSE",
+  "hash": "74ba6cbf8e1146f6ec3ec78ffbdfcc3e",
+  "bug_type_hum": "Api Misuse",
+  "extras": {
+    "bug_src_loc": {
+      "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE78_OS_Command_Injection/s03/CWE78_OS_Command_Injection__char_file_system_21.c",
+      "lnum": 60,
+      "cnum": 25,
+      "enum": 0
+    }
+  }
+}

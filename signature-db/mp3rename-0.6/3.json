@@ -1,0 +1,41 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "BufferOverflow.",
+  "severity": "ERROR",
+  "line": 508,
+  "column": 3,
+  "procedure": "set_filename",
+  "procedure_start_line": 485,
+  "file": "mp3rename.c",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "mp3rename.c",
+        "line_number": 508,
+        "column_number": 31,
+        "description": "input, getenv",
+        "feature": "[\"Input\",\"getenv\"]"
+      },
+      {
+        "level": 0,
+        "filename": "mp3rename.c",
+        "line_number": 508,
+        "column_number": 3,
+        "description": "buffer_overflow, sprintf, n$20",
+        "feature": "[\"BufferOverflow\",\"sprintf\",[\"Var\"]]"
+      }
+    ]
+  ],
+  "key": "mp3rename.c|set_filename|API_MISUSE",
+  "hash": "4a1584041413aa98073857121e5b7890",
+  "bug_type_hum": "Api Misuse",
+  "extras": {
+    "bug_src_loc": {
+      "file": "mp3rename.c",
+      "lnum": 508,
+      "cnum": 31,
+      "enum": 0
+    }
+  }
+}

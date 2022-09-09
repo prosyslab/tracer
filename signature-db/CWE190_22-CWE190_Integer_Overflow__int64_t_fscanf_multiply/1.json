@@ -1,0 +1,65 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "IntOverflow.",
+  "severity": "ERROR",
+  "line": 33,
+  "column": 13,
+  "procedure": "CWE190_Integer_Overflow__int64_t_fscanf_multiply_22_bad",
+  "procedure_start_line": 28,
+  "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s01/CWE190_Integer_Overflow__int64_t_fscanf_multiply_22b.c",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s01/CWE190_Integer_Overflow__int64_t_fscanf_multiply_22a.c",
+        "line_number": 33,
+        "column_number": 5,
+        "description": "input, fscanf",
+        "feature": "[\"Input\",\"fscanf\"]"
+      },
+      {
+        "level": 1,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s01/CWE190_Integer_Overflow__int64_t_fscanf_multiply_22a.c",
+        "line_number": 35,
+        "column_number": 5,
+        "description": "call, CWE190_Integer_Overflow__int64_t_fscanf_multiply_22_badSink",
+        "feature": "[\"Call\",\"CWE190_Integer_Overflow__int64_t_fscanf_multiply_22_badSink\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s01/CWE190_Integer_Overflow__int64_t_fscanf_multiply_22b.c",
+        "line_number": 29,
+        "column_number": 12,
+        "description": "prune, (n$1 > 0)",
+        "feature": "[\"Prune\",[\"BinOp\",\">\",[\"Var\"],[\"Const\",[\"Cint\",\"0\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s01/CWE190_Integer_Overflow__int64_t_fscanf_multiply_22b.c",
+        "line_number": 32,
+        "column_number": 13,
+        "description": "store, &result, (n$4 * 2)",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"*\",[\"Var\"],[\"Const\",[\"Cint\",\"2\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s01/CWE190_Integer_Overflow__int64_t_fscanf_multiply_22b.c",
+        "line_number": 33,
+        "column_number": 13,
+        "description": "int_overflow, printLongLongLine, n$2",
+        "feature": "[\"IntOverflow\",\"printLongLongLine\",[\"Var\"]]"
+      }
+    ]
+  ],
+  "key": "CWE190_Integer_Overflow__int64_t_fscanf_multiply_22a.c|CWE190_Integer_Overflow__int64_t_fscanf_multiply_22_bad|API_MISUSE",
+  "hash": "2dc621f8a8d5b7ffb3844f6a77d15d16",
+  "bug_type_hum": "Api Misuse",
+  "extras": {
+    "bug_src_loc": {
+      "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s01/CWE190_Integer_Overflow__int64_t_fscanf_multiply_22a.c",
+      "lnum": 33,
+      "cnum": 5,
+      "enum": 0
+    }
+  }
+}

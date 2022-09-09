@@ -1,0 +1,57 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "IntOverflow.",
+  "severity": "ERROR",
+  "line": 50,
+  "column": 13,
+  "procedure": "CWE190_Integer_Overflow__unsigned_int_fscanf_add_12_bad",
+  "procedure_start_line": 22,
+  "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s05/CWE190_Integer_Overflow__unsigned_int_fscanf_add_12.c",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s05/CWE190_Integer_Overflow__unsigned_int_fscanf_add_12.c",
+        "line_number": 29,
+        "column_number": 9,
+        "description": "input, fscanf",
+        "feature": "[\"Input\",\"fscanf\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s05/CWE190_Integer_Overflow__unsigned_int_fscanf_add_12.c",
+        "line_number": 47,
+        "column_number": 13,
+        "description": "prune, (n$4 < ((()2147483647 * 2) + 1))",
+        "feature": "[\"Prune\",[\"BinOp\",\"<\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IUInt\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"2147483647\"]]],[\"Const\",[\"Cint\",\"2\"]]],[\"Const\",[\"Cint\",\"1\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s05/CWE190_Integer_Overflow__unsigned_int_fscanf_add_12.c",
+        "line_number": 49,
+        "column_number": 13,
+        "description": "store, &result, (n$7 + ()1)",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IUInt\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"1\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s05/CWE190_Integer_Overflow__unsigned_int_fscanf_add_12.c",
+        "line_number": 50,
+        "column_number": 13,
+        "description": "int_overflow, printUnsignedLine, n$5",
+        "feature": "[\"IntOverflow\",\"printUnsignedLine\",[\"Var\"]]"
+      }
+    ]
+  ],
+  "key": "CWE190_Integer_Overflow__unsigned_int_fscanf_add_12.c|CWE190_Integer_Overflow__unsigned_int_fscanf_add_12_bad|API_MISUSE",
+  "hash": "a6aae23731e9f8178f1393f630d810dc",
+  "bug_type_hum": "Api Misuse",
+  "extras": {
+    "bug_src_loc": {
+      "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s05/CWE190_Integer_Overflow__unsigned_int_fscanf_add_12.c",
+      "lnum": 29,
+      "cnum": 9,
+      "enum": 0
+    }
+  }
+}

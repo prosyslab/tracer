@@ -1,0 +1,65 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "IntUnderflow.",
+  "severity": "ERROR",
+  "line": 51,
+  "column": 13,
+  "procedure": "CWE191_Integer_Underflow__int_fgets_sub_33::bad",
+  "procedure_start_line": 27,
+  "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s02/CWE191_Integer_Underflow__int_fgets_sub_33.cpp",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s02/CWE191_Integer_Underflow__int_fgets_sub_33.cpp",
+        "line_number": 36,
+        "column_number": 13,
+        "description": "input, fgets",
+        "feature": "[\"Input\",\"fgets\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s02/CWE191_Integer_Underflow__int_fgets_sub_33.cpp",
+        "line_number": 39,
+        "column_number": 13,
+        "description": "store, &data, n$7",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s02/CWE191_Integer_Underflow__int_fgets_sub_33.cpp",
+        "line_number": 47,
+        "column_number": 9,
+        "description": "store, &data, n$4",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s02/CWE191_Integer_Underflow__int_fgets_sub_33.cpp",
+        "line_number": 50,
+        "column_number": 13,
+        "description": "store, &result, (n$2 - 1)",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Const\",[\"Cint\",\"1\"]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s02/CWE191_Integer_Underflow__int_fgets_sub_33.cpp",
+        "line_number": 51,
+        "column_number": 13,
+        "description": "int_underflow, printIntLine, n$0",
+        "feature": "[\"IntUnderflow\",\"printIntLine\",[\"Var\"]]"
+      }
+    ]
+  ],
+  "key": "CWE191_Integer_Underflow__int_fgets_sub_33.cpp|CWE191_Integer_Underflow__int_fgets_sub_33::bad|API_MISUSE",
+  "hash": "ba8977d0c39f305e63b40f1f44e83543",
+  "bug_type_hum": "Api Misuse",
+  "extras": {
+    "bug_src_loc": {
+      "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s02/CWE191_Integer_Underflow__int_fgets_sub_33.cpp",
+      "lnum": 36,
+      "cnum": 13,
+      "enum": 0
+    }
+  }
+}

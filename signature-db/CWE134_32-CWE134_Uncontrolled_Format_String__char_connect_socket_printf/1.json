@@ -1,0 +1,41 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "FormatString.",
+  "severity": "ERROR",
+  "line": 128,
+  "column": 9,
+  "procedure": "CWE134_Uncontrolled_Format_String__char_connect_socket_printf_32_bad",
+  "procedure_start_line": 47,
+  "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_connect_socket_printf_32.c",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_connect_socket_printf_32.c",
+        "line_number": 92,
+        "column_number": 30,
+        "description": "input, recv",
+        "feature": "[\"Input\",\"recv\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_connect_socket_printf_32.c",
+        "line_number": 128,
+        "column_number": 9,
+        "description": "format_string, printf, n$0",
+        "feature": "[\"FormatString\",\"printf\",[\"Var\"]]"
+      }
+    ]
+  ],
+  "key": "CWE134_Uncontrolled_Format_String__char_connect_socket_printf_32.c|CWE134_Uncontrolled_Format_String__char_connect_socket_printf_32_bad|API_MISUSE",
+  "hash": "d533e61316196705d66629c00a763346",
+  "bug_type_hum": "Api Misuse",
+  "extras": {
+    "bug_src_loc": {
+      "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_connect_socket_printf_32.c",
+      "lnum": 92,
+      "cnum": 30,
+      "enum": 0
+    }
+  }
+}

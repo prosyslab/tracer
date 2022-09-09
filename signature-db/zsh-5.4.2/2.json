@@ -1,0 +1,1417 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "BufferOverflow.",
+  "severity": "ERROR",
+  "line": 1667,
+  "column": 4,
+  "procedure": "checkmailpath",
+  "procedure_start_line": 1632,
+  "file": "Src/utils.c",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 4963,
+        "column_number": 7,
+        "description": "input, readdir",
+        "feature": "[\"Input\",\"readdir\"]"
+      },
+      {
+        "level": 1,
+        "filename": "Src/utils.c",
+        "line_number": 4993,
+        "column_number": 12,
+        "description": "call, metafy",
+        "feature": "[\"Call\",\"metafy\"]"
+      },
+      {
+        "level": 1,
+        "filename": "Src/utils.c",
+        "line_number": 4622,
+        "column_number": 12,
+        "description": "call, hrealloc",
+        "feature": "[\"Call\",\"hrealloc\"]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/mem.c",
+        "line_number": 700,
+        "column_number": 18,
+        "description": "prune, n$237",
+        "feature": "[\"Prune\",[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/mem.c",
+        "line_number": 726,
+        "column_number": 9,
+        "description": "prune, ((n$155 + n$156) < ((()n$157 + sizeof(t=;nbytes=32)) + n$159))",
+        "feature": "[\"Prune\",[\"BinOp\",\"<\",[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/mem.c",
+        "line_number": 756,
+        "column_number": 13,
+        "description": "store, &return, n$190",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 4622,
+        "column_number": 6,
+        "description": "store, &buf, ()n$48",
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 4661,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 4993,
+        "column_number": 5,
+        "description": "store, &return, n$1",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 1663,
+        "column_number": 11,
+        "description": "store, &fn, n$43",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 1667,
+        "column_number": 4,
+        "description": "buffer_overflow, sprintf, n$60",
+        "feature": "[\"BufferOverflow\",\"sprintf\",[\"Var\"]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 4963,
+        "column_number": 7,
+        "description": "input, readdir",
+        "feature": "[\"Input\",\"readdir\"]"
+      },
+      {
+        "level": 1,
+        "filename": "Src/utils.c",
+        "line_number": 4993,
+        "column_number": 12,
+        "description": "call, metafy",
+        "feature": "[\"Call\",\"metafy\"]"
+      },
+      {
+        "level": 1,
+        "filename": "Src/utils.c",
+        "line_number": 4622,
+        "column_number": 12,
+        "description": "call, hrealloc",
+        "feature": "[\"Call\",\"hrealloc\"]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/mem.c",
+        "line_number": 700,
+        "column_number": 18,
+        "description": "prune, n$237",
+        "feature": "[\"Prune\",[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/mem.c",
+        "line_number": 726,
+        "column_number": 9,
+        "description": "prune, !((n$155 + n$156) < ((()n$157 + sizeof(t=;nbytes=32)) + n$159))",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]],[\"Var\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/mem.c",
+        "line_number": 770,
+        "column_number": 9,
+        "description": "prune, !(n$67 == (()n$68 + sizeof(t=;nbytes=32)))",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/mem.c",
+        "line_number": 867,
+        "column_number": 2,
+        "description": "store, &return, n$6",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 4622,
+        "column_number": 6,
+        "description": "store, &buf, ()n$48",
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 4661,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 4993,
+        "column_number": 5,
+        "description": "store, &return, n$1",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 1663,
+        "column_number": 11,
+        "description": "store, &fn, n$43",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 1667,
+        "column_number": 4,
+        "description": "buffer_overflow, sprintf, n$60",
+        "feature": "[\"BufferOverflow\",\"sprintf\",[\"Var\"]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 4963,
+        "column_number": 7,
+        "description": "input, readdir",
+        "feature": "[\"Input\",\"readdir\"]"
+      },
+      {
+        "level": 1,
+        "filename": "Src/utils.c",
+        "line_number": 4993,
+        "column_number": 12,
+        "description": "call, metafy",
+        "feature": "[\"Call\",\"metafy\"]"
+      },
+      {
+        "level": 1,
+        "filename": "Src/utils.c",
+        "line_number": 4622,
+        "column_number": 12,
+        "description": "call, hrealloc",
+        "feature": "[\"Call\",\"hrealloc\"]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/mem.c",
+        "line_number": 700,
+        "column_number": 18,
+        "description": "prune, n$237",
+        "feature": "[\"Prune\",[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/mem.c",
+        "line_number": 711,
+        "column_number": 6,
+        "description": "prune, (n$225 >= (()n$226 + sizeof(t=;nbytes=32)))",
+        "feature": "[\"Prune\",[\"BinOp\",\">=\",[\"Var\"],[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/mem.c",
+        "line_number": 711,
+        "column_number": 23,
+        "description": "prune, (n$227 < ((()n$228 + sizeof(t=;nbytes=32)) + (n$230 - sizeof(t=;nbytes=32))))",
+        "feature": "[\"Prune\",[\"BinOp\",\"<\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]],[\"BinOp\",\"-\",[\"Var\"],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/mem.c",
+        "line_number": 726,
+        "column_number": 9,
+        "description": "prune, ((n$155 + n$156) < ((()n$157 + sizeof(t=;nbytes=32)) + n$159))",
+        "feature": "[\"Prune\",[\"BinOp\",\"<\",[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/mem.c",
+        "line_number": 756,
+        "column_number": 13,
+        "description": "store, &return, n$190",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 4622,
+        "column_number": 6,
+        "description": "store, &buf, ()n$48",
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 4661,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 4993,
+        "column_number": 5,
+        "description": "store, &return, n$1",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 1663,
+        "column_number": 11,
+        "description": "store, &fn, n$43",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 1667,
+        "column_number": 4,
+        "description": "buffer_overflow, sprintf, n$60",
+        "feature": "[\"BufferOverflow\",\"sprintf\",[\"Var\"]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 4963,
+        "column_number": 7,
+        "description": "input, readdir",
+        "feature": "[\"Input\",\"readdir\"]"
+      },
+      {
+        "level": 1,
+        "filename": "Src/utils.c",
+        "line_number": 4993,
+        "column_number": 12,
+        "description": "call, metafy",
+        "feature": "[\"Call\",\"metafy\"]"
+      },
+      {
+        "level": 1,
+        "filename": "Src/utils.c",
+        "line_number": 4622,
+        "column_number": 12,
+        "description": "call, hrealloc",
+        "feature": "[\"Call\",\"hrealloc\"]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/mem.c",
+        "line_number": 700,
+        "column_number": 18,
+        "description": "prune, n$237",
+        "feature": "[\"Prune\",[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/mem.c",
+        "line_number": 711,
+        "column_number": 6,
+        "description": "prune, (n$225 >= (()n$226 + sizeof(t=;nbytes=32)))",
+        "feature": "[\"Prune\",[\"BinOp\",\">=\",[\"Var\"],[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/mem.c",
+        "line_number": 711,
+        "column_number": 23,
+        "description": "prune, (n$227 < ((()n$228 + sizeof(t=;nbytes=32)) + (n$230 - sizeof(t=;nbytes=32))))",
+        "feature": "[\"Prune\",[\"BinOp\",\"<\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]],[\"BinOp\",\"-\",[\"Var\"],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/mem.c",
+        "line_number": 726,
+        "column_number": 9,
+        "description": "prune, !((n$155 + n$156) < ((()n$157 + sizeof(t=;nbytes=32)) + n$159))",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]],[\"Var\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/mem.c",
+        "line_number": 770,
+        "column_number": 9,
+        "description": "prune, !(n$67 == (()n$68 + sizeof(t=;nbytes=32)))",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/mem.c",
+        "line_number": 867,
+        "column_number": 2,
+        "description": "store, &return, n$6",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 4622,
+        "column_number": 6,
+        "description": "store, &buf, ()n$48",
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 4661,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 4993,
+        "column_number": 5,
+        "description": "store, &return, n$1",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 1663,
+        "column_number": 11,
+        "description": "store, &fn, n$43",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 1667,
+        "column_number": 4,
+        "description": "buffer_overflow, sprintf, n$60",
+        "feature": "[\"BufferOverflow\",\"sprintf\",[\"Var\"]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 4963,
+        "column_number": 7,
+        "description": "input, readdir",
+        "feature": "[\"Input\",\"readdir\"]"
+      },
+      {
+        "level": 1,
+        "filename": "Src/utils.c",
+        "line_number": 4993,
+        "column_number": 12,
+        "description": "call, metafy",
+        "feature": "[\"Call\",\"metafy\"]"
+      },
+      {
+        "level": 1,
+        "filename": "Src/utils.c",
+        "line_number": 4622,
+        "column_number": 12,
+        "description": "call, hrealloc",
+        "feature": "[\"Call\",\"hrealloc\"]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/mem.c",
+        "line_number": 700,
+        "column_number": 18,
+        "description": "prune, n$237",
+        "feature": "[\"Prune\",[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/mem.c",
+        "line_number": 711,
+        "column_number": 6,
+        "description": "prune, (n$225 >= (()n$226 + sizeof(t=;nbytes=32)))",
+        "feature": "[\"Prune\",[\"BinOp\",\">=\",[\"Var\"],[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/mem.c",
+        "line_number": 711,
+        "column_number": 23,
+        "description": "prune, !(n$227 < ((()n$228 + sizeof(t=;nbytes=32)) + (n$230 - sizeof(t=;nbytes=32))))",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]],[\"BinOp\",\"-\",[\"Var\"],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/mem.c",
+        "line_number": 726,
+        "column_number": 9,
+        "description": "prune, ((n$155 + n$156) < ((()n$157 + sizeof(t=;nbytes=32)) + n$159))",
+        "feature": "[\"Prune\",[\"BinOp\",\"<\",[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/mem.c",
+        "line_number": 756,
+        "column_number": 13,
+        "description": "store, &return, n$190",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 4622,
+        "column_number": 6,
+        "description": "store, &buf, ()n$48",
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 4661,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 4993,
+        "column_number": 5,
+        "description": "store, &return, n$1",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 1663,
+        "column_number": 11,
+        "description": "store, &fn, n$43",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 1667,
+        "column_number": 4,
+        "description": "buffer_overflow, sprintf, n$60",
+        "feature": "[\"BufferOverflow\",\"sprintf\",[\"Var\"]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 4963,
+        "column_number": 7,
+        "description": "input, readdir",
+        "feature": "[\"Input\",\"readdir\"]"
+      },
+      {
+        "level": 1,
+        "filename": "Src/utils.c",
+        "line_number": 4993,
+        "column_number": 12,
+        "description": "call, metafy",
+        "feature": "[\"Call\",\"metafy\"]"
+      },
+      {
+        "level": 1,
+        "filename": "Src/utils.c",
+        "line_number": 4622,
+        "column_number": 12,
+        "description": "call, hrealloc",
+        "feature": "[\"Call\",\"hrealloc\"]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/mem.c",
+        "line_number": 700,
+        "column_number": 18,
+        "description": "prune, n$237",
+        "feature": "[\"Prune\",[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/mem.c",
+        "line_number": 711,
+        "column_number": 6,
+        "description": "prune, (n$225 >= (()n$226 + sizeof(t=;nbytes=32)))",
+        "feature": "[\"Prune\",[\"BinOp\",\">=\",[\"Var\"],[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/mem.c",
+        "line_number": 711,
+        "column_number": 23,
+        "description": "prune, !(n$227 < ((()n$228 + sizeof(t=;nbytes=32)) + (n$230 - sizeof(t=;nbytes=32))))",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]],[\"BinOp\",\"-\",[\"Var\"],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/mem.c",
+        "line_number": 726,
+        "column_number": 9,
+        "description": "prune, !((n$155 + n$156) < ((()n$157 + sizeof(t=;nbytes=32)) + n$159))",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]],[\"Var\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/mem.c",
+        "line_number": 770,
+        "column_number": 9,
+        "description": "prune, !(n$67 == (()n$68 + sizeof(t=;nbytes=32)))",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/mem.c",
+        "line_number": 867,
+        "column_number": 2,
+        "description": "store, &return, n$6",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 4622,
+        "column_number": 6,
+        "description": "store, &buf, ()n$48",
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 4661,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 4993,
+        "column_number": 5,
+        "description": "store, &return, n$1",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 1663,
+        "column_number": 11,
+        "description": "store, &fn, n$43",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 1667,
+        "column_number": 4,
+        "description": "buffer_overflow, sprintf, n$60",
+        "feature": "[\"BufferOverflow\",\"sprintf\",[\"Var\"]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 4963,
+        "column_number": 7,
+        "description": "input, readdir",
+        "feature": "[\"Input\",\"readdir\"]"
+      },
+      {
+        "level": 1,
+        "filename": "Src/utils.c",
+        "line_number": 4993,
+        "column_number": 12,
+        "description": "call, metafy",
+        "feature": "[\"Call\",\"metafy\"]"
+      },
+      {
+        "level": 1,
+        "filename": "Src/utils.c",
+        "line_number": 4622,
+        "column_number": 12,
+        "description": "call, hrealloc",
+        "feature": "[\"Call\",\"hrealloc\"]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/mem.c",
+        "line_number": 700,
+        "column_number": 18,
+        "description": "prune, n$237",
+        "feature": "[\"Prune\",[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/mem.c",
+        "line_number": 711,
+        "column_number": 6,
+        "description": "prune, (n$225 >= (()n$226 + sizeof(t=;nbytes=32)))",
+        "feature": "[\"Prune\",[\"BinOp\",\">=\",[\"Var\"],[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/mem.c",
+        "line_number": 711,
+        "column_number": 23,
+        "description": "prune, !(n$227 < ((()n$228 + sizeof(t=;nbytes=32)) + (n$230 - sizeof(t=;nbytes=32))))",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]],[\"BinOp\",\"-\",[\"Var\"],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/mem.c",
+        "line_number": 711,
+        "column_number": 6,
+        "description": "prune, (n$225 >= (()n$226 + sizeof(t=;nbytes=32)))",
+        "feature": "[\"Prune\",[\"BinOp\",\">=\",[\"Var\"],[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/mem.c",
+        "line_number": 711,
+        "column_number": 23,
+        "description": "prune, (n$227 < ((()n$228 + sizeof(t=;nbytes=32)) + (n$230 - sizeof(t=;nbytes=32))))",
+        "feature": "[\"Prune\",[\"BinOp\",\"<\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]],[\"BinOp\",\"-\",[\"Var\"],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/mem.c",
+        "line_number": 726,
+        "column_number": 9,
+        "description": "prune, ((n$155 + n$156) < ((()n$157 + sizeof(t=;nbytes=32)) + n$159))",
+        "feature": "[\"Prune\",[\"BinOp\",\"<\",[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/mem.c",
+        "line_number": 756,
+        "column_number": 13,
+        "description": "store, &return, n$190",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 4622,
+        "column_number": 6,
+        "description": "store, &buf, ()n$48",
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 4661,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 4993,
+        "column_number": 5,
+        "description": "store, &return, n$1",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 1663,
+        "column_number": 11,
+        "description": "store, &fn, n$43",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 1667,
+        "column_number": 4,
+        "description": "buffer_overflow, sprintf, n$60",
+        "feature": "[\"BufferOverflow\",\"sprintf\",[\"Var\"]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 4963,
+        "column_number": 7,
+        "description": "input, readdir",
+        "feature": "[\"Input\",\"readdir\"]"
+      },
+      {
+        "level": 1,
+        "filename": "Src/utils.c",
+        "line_number": 4993,
+        "column_number": 12,
+        "description": "call, metafy",
+        "feature": "[\"Call\",\"metafy\"]"
+      },
+      {
+        "level": 1,
+        "filename": "Src/utils.c",
+        "line_number": 4622,
+        "column_number": 12,
+        "description": "call, hrealloc",
+        "feature": "[\"Call\",\"hrealloc\"]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/mem.c",
+        "line_number": 700,
+        "column_number": 18,
+        "description": "prune, n$237",
+        "feature": "[\"Prune\",[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/mem.c",
+        "line_number": 711,
+        "column_number": 6,
+        "description": "prune, (n$225 >= (()n$226 + sizeof(t=;nbytes=32)))",
+        "feature": "[\"Prune\",[\"BinOp\",\">=\",[\"Var\"],[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/mem.c",
+        "line_number": 711,
+        "column_number": 23,
+        "description": "prune, !(n$227 < ((()n$228 + sizeof(t=;nbytes=32)) + (n$230 - sizeof(t=;nbytes=32))))",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]],[\"BinOp\",\"-\",[\"Var\"],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/mem.c",
+        "line_number": 711,
+        "column_number": 6,
+        "description": "prune, (n$225 >= (()n$226 + sizeof(t=;nbytes=32)))",
+        "feature": "[\"Prune\",[\"BinOp\",\">=\",[\"Var\"],[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/mem.c",
+        "line_number": 711,
+        "column_number": 23,
+        "description": "prune, (n$227 < ((()n$228 + sizeof(t=;nbytes=32)) + (n$230 - sizeof(t=;nbytes=32))))",
+        "feature": "[\"Prune\",[\"BinOp\",\"<\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]],[\"BinOp\",\"-\",[\"Var\"],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/mem.c",
+        "line_number": 726,
+        "column_number": 9,
+        "description": "prune, !((n$155 + n$156) < ((()n$157 + sizeof(t=;nbytes=32)) + n$159))",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]],[\"Var\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/mem.c",
+        "line_number": 770,
+        "column_number": 9,
+        "description": "prune, !(n$67 == (()n$68 + sizeof(t=;nbytes=32)))",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/mem.c",
+        "line_number": 867,
+        "column_number": 2,
+        "description": "store, &return, n$6",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 4622,
+        "column_number": 6,
+        "description": "store, &buf, ()n$48",
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 4661,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 4993,
+        "column_number": 5,
+        "description": "store, &return, n$1",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 1663,
+        "column_number": 11,
+        "description": "store, &fn, n$43",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 1667,
+        "column_number": 4,
+        "description": "buffer_overflow, sprintf, n$60",
+        "feature": "[\"BufferOverflow\",\"sprintf\",[\"Var\"]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 4963,
+        "column_number": 7,
+        "description": "input, readdir",
+        "feature": "[\"Input\",\"readdir\"]"
+      },
+      {
+        "level": 1,
+        "filename": "Src/utils.c",
+        "line_number": 4993,
+        "column_number": 12,
+        "description": "call, metafy",
+        "feature": "[\"Call\",\"metafy\"]"
+      },
+      {
+        "level": 1,
+        "filename": "Src/utils.c",
+        "line_number": 4622,
+        "column_number": 12,
+        "description": "call, hrealloc",
+        "feature": "[\"Call\",\"hrealloc\"]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/mem.c",
+        "line_number": 700,
+        "column_number": 18,
+        "description": "prune, n$237",
+        "feature": "[\"Prune\",[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/mem.c",
+        "line_number": 711,
+        "column_number": 6,
+        "description": "prune, !(n$225 >= (()n$226 + sizeof(t=;nbytes=32)))",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">=\",[\"Var\"],[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/mem.c",
+        "line_number": 726,
+        "column_number": 9,
+        "description": "prune, ((n$155 + n$156) < ((()n$157 + sizeof(t=;nbytes=32)) + n$159))",
+        "feature": "[\"Prune\",[\"BinOp\",\"<\",[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/mem.c",
+        "line_number": 756,
+        "column_number": 13,
+        "description": "store, &return, n$190",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 4622,
+        "column_number": 6,
+        "description": "store, &buf, ()n$48",
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 4661,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 4993,
+        "column_number": 5,
+        "description": "store, &return, n$1",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 1663,
+        "column_number": 11,
+        "description": "store, &fn, n$43",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 1667,
+        "column_number": 4,
+        "description": "buffer_overflow, sprintf, n$60",
+        "feature": "[\"BufferOverflow\",\"sprintf\",[\"Var\"]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 4963,
+        "column_number": 7,
+        "description": "input, readdir",
+        "feature": "[\"Input\",\"readdir\"]"
+      },
+      {
+        "level": 1,
+        "filename": "Src/utils.c",
+        "line_number": 4993,
+        "column_number": 12,
+        "description": "call, metafy",
+        "feature": "[\"Call\",\"metafy\"]"
+      },
+      {
+        "level": 1,
+        "filename": "Src/utils.c",
+        "line_number": 4622,
+        "column_number": 12,
+        "description": "call, hrealloc",
+        "feature": "[\"Call\",\"hrealloc\"]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/mem.c",
+        "line_number": 700,
+        "column_number": 18,
+        "description": "prune, n$237",
+        "feature": "[\"Prune\",[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/mem.c",
+        "line_number": 711,
+        "column_number": 6,
+        "description": "prune, !(n$225 >= (()n$226 + sizeof(t=;nbytes=32)))",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">=\",[\"Var\"],[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/mem.c",
+        "line_number": 726,
+        "column_number": 9,
+        "description": "prune, !((n$155 + n$156) < ((()n$157 + sizeof(t=;nbytes=32)) + n$159))",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]],[\"Var\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/mem.c",
+        "line_number": 770,
+        "column_number": 9,
+        "description": "prune, !(n$67 == (()n$68 + sizeof(t=;nbytes=32)))",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/mem.c",
+        "line_number": 867,
+        "column_number": 2,
+        "description": "store, &return, n$6",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 4622,
+        "column_number": 6,
+        "description": "store, &buf, ()n$48",
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 4661,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 4993,
+        "column_number": 5,
+        "description": "store, &return, n$1",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 1663,
+        "column_number": 11,
+        "description": "store, &fn, n$43",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 1667,
+        "column_number": 4,
+        "description": "buffer_overflow, sprintf, n$60",
+        "feature": "[\"BufferOverflow\",\"sprintf\",[\"Var\"]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 4963,
+        "column_number": 7,
+        "description": "input, readdir",
+        "feature": "[\"Input\",\"readdir\"]"
+      },
+      {
+        "level": 1,
+        "filename": "Src/utils.c",
+        "line_number": 4993,
+        "column_number": 12,
+        "description": "call, metafy",
+        "feature": "[\"Call\",\"metafy\"]"
+      },
+      {
+        "level": 1,
+        "filename": "Src/utils.c",
+        "line_number": 4622,
+        "column_number": 12,
+        "description": "call, hrealloc",
+        "feature": "[\"Call\",\"hrealloc\"]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/mem.c",
+        "line_number": 700,
+        "column_number": 18,
+        "description": "prune, n$237",
+        "feature": "[\"Prune\",[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/mem.c",
+        "line_number": 711,
+        "column_number": 6,
+        "description": "prune, !(n$225 >= (()n$226 + sizeof(t=;nbytes=32)))",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">=\",[\"Var\"],[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/mem.c",
+        "line_number": 711,
+        "column_number": 6,
+        "description": "prune, (n$225 >= (()n$226 + sizeof(t=;nbytes=32)))",
+        "feature": "[\"Prune\",[\"BinOp\",\">=\",[\"Var\"],[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/mem.c",
+        "line_number": 711,
+        "column_number": 23,
+        "description": "prune, (n$227 < ((()n$228 + sizeof(t=;nbytes=32)) + (n$230 - sizeof(t=;nbytes=32))))",
+        "feature": "[\"Prune\",[\"BinOp\",\"<\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]],[\"BinOp\",\"-\",[\"Var\"],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/mem.c",
+        "line_number": 726,
+        "column_number": 9,
+        "description": "prune, ((n$155 + n$156) < ((()n$157 + sizeof(t=;nbytes=32)) + n$159))",
+        "feature": "[\"Prune\",[\"BinOp\",\"<\",[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/mem.c",
+        "line_number": 756,
+        "column_number": 13,
+        "description": "store, &return, n$190",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 4622,
+        "column_number": 6,
+        "description": "store, &buf, ()n$48",
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 4661,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 4993,
+        "column_number": 5,
+        "description": "store, &return, n$1",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 1663,
+        "column_number": 11,
+        "description": "store, &fn, n$43",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 1667,
+        "column_number": 4,
+        "description": "buffer_overflow, sprintf, n$60",
+        "feature": "[\"BufferOverflow\",\"sprintf\",[\"Var\"]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 4963,
+        "column_number": 7,
+        "description": "input, readdir",
+        "feature": "[\"Input\",\"readdir\"]"
+      },
+      {
+        "level": 1,
+        "filename": "Src/utils.c",
+        "line_number": 4993,
+        "column_number": 12,
+        "description": "call, metafy",
+        "feature": "[\"Call\",\"metafy\"]"
+      },
+      {
+        "level": 1,
+        "filename": "Src/utils.c",
+        "line_number": 4622,
+        "column_number": 12,
+        "description": "call, hrealloc",
+        "feature": "[\"Call\",\"hrealloc\"]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/mem.c",
+        "line_number": 700,
+        "column_number": 18,
+        "description": "prune, n$237",
+        "feature": "[\"Prune\",[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/mem.c",
+        "line_number": 711,
+        "column_number": 6,
+        "description": "prune, !(n$225 >= (()n$226 + sizeof(t=;nbytes=32)))",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">=\",[\"Var\"],[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/mem.c",
+        "line_number": 711,
+        "column_number": 6,
+        "description": "prune, (n$225 >= (()n$226 + sizeof(t=;nbytes=32)))",
+        "feature": "[\"Prune\",[\"BinOp\",\">=\",[\"Var\"],[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/mem.c",
+        "line_number": 711,
+        "column_number": 23,
+        "description": "prune, (n$227 < ((()n$228 + sizeof(t=;nbytes=32)) + (n$230 - sizeof(t=;nbytes=32))))",
+        "feature": "[\"Prune\",[\"BinOp\",\"<\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]],[\"BinOp\",\"-\",[\"Var\"],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/mem.c",
+        "line_number": 726,
+        "column_number": 9,
+        "description": "prune, !((n$155 + n$156) < ((()n$157 + sizeof(t=;nbytes=32)) + n$159))",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]],[\"Var\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/mem.c",
+        "line_number": 770,
+        "column_number": 9,
+        "description": "prune, !(n$67 == (()n$68 + sizeof(t=;nbytes=32)))",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/mem.c",
+        "line_number": 867,
+        "column_number": 2,
+        "description": "store, &return, n$6",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 4622,
+        "column_number": 6,
+        "description": "store, &buf, ()n$48",
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 4661,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 4993,
+        "column_number": 5,
+        "description": "store, &return, n$1",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 1663,
+        "column_number": 11,
+        "description": "store, &fn, n$43",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 1667,
+        "column_number": 4,
+        "description": "buffer_overflow, sprintf, n$60",
+        "feature": "[\"BufferOverflow\",\"sprintf\",[\"Var\"]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 4963,
+        "column_number": 7,
+        "description": "input, readdir",
+        "feature": "[\"Input\",\"readdir\"]"
+      },
+      {
+        "level": 1,
+        "filename": "Src/utils.c",
+        "line_number": 4993,
+        "column_number": 12,
+        "description": "call, metafy",
+        "feature": "[\"Call\",\"metafy\"]"
+      },
+      {
+        "level": 1,
+        "filename": "Src/utils.c",
+        "line_number": 4622,
+        "column_number": 12,
+        "description": "call, hrealloc",
+        "feature": "[\"Call\",\"hrealloc\"]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/mem.c",
+        "line_number": 699,
+        "column_number": 2,
+        "description": "store, &return, n$244",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 4622,
+        "column_number": 6,
+        "description": "store, &buf, ()n$48",
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 4661,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 4993,
+        "column_number": 5,
+        "description": "store, &return, n$1",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 1663,
+        "column_number": 11,
+        "description": "store, &fn, n$43",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "Src/utils.c",
+        "line_number": 1667,
+        "column_number": 4,
+        "description": "buffer_overflow, sprintf, n$60",
+        "feature": "[\"BufferOverflow\",\"sprintf\",[\"Var\"]]"
+      }
+    ]
+  ],
+  "key": "utils.c|checkmailpath|API_MISUSE",
+  "hash": "c887250844cb9957b7a996fc52f754e4",
+  "bug_type_hum": "Api Misuse",
+  "extras": {
+    "bug_src_loc": {
+      "file": "Src/utils.c",
+      "lnum": 4963,
+      "cnum": 7,
+      "enum": 0
+    }
+  }
+}

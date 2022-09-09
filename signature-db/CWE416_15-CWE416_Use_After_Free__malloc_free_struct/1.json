@@ -1,0 +1,33 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "UseAfterFree.",
+  "severity": "ERROR",
+  "line": 54,
+  "column": 9,
+  "procedure": "CWE416_Use_After_Free__malloc_free_struct_15_bad",
+  "procedure_start_line": 24,
+  "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__malloc_free_struct_15.c",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__malloc_free_struct_15.c",
+        "line_number": 32,
+        "column_number": 33,
+        "description": "allocate, malloc",
+        "feature": "[\"Allocate\",\"malloc\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__malloc_free_struct_15.c",
+        "line_number": 43,
+        "column_number": 9,
+        "description": "free, free, n$9",
+        "feature": "[\"Free\",\"free\",[\"Var\"]]"
+      }
+    ]
+  ],
+  "key": "CWE416_Use_After_Free__malloc_free_struct_15.c|CWE416_Use_After_Free__malloc_free_struct_15_bad|API_MISUSE",
+  "hash": "c8b28859f58e01695b577b3ea8c868a7",
+  "bug_type_hum": "Api Misuse"
+}

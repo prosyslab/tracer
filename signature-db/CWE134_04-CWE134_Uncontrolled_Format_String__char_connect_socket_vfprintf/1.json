@@ -1,0 +1,49 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "FormatString.",
+  "severity": "ERROR",
+  "line": 60,
+  "column": 9,
+  "procedure": "CWE134_Uncontrolled_Format_String__char_connect_socket_vfprintf_04_bad",
+  "procedure_start_line": 65,
+  "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_connect_socket_vfprintf_04.c",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_connect_socket_vfprintf_04.c",
+        "line_number": 108,
+        "column_number": 30,
+        "description": "input, recv",
+        "feature": "[\"Input\",\"recv\"]"
+      },
+      {
+        "level": 1,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_connect_socket_vfprintf_04.c",
+        "line_number": 142,
+        "column_number": 9,
+        "description": "call, badVaSinkB",
+        "feature": "[\"Call\",\"badVaSinkB\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_connect_socket_vfprintf_04.c",
+        "line_number": 60,
+        "column_number": 9,
+        "description": "format_string, vfprintf, n$2",
+        "feature": "[\"FormatString\",\"vfprintf\",[\"Var\"]]"
+      }
+    ]
+  ],
+  "key": "CWE134_Uncontrolled_Format_String__char_connect_socket_vfprintf_04.c|CWE134_Uncontrolled_Format_String__char_connect_socket_vfprintf_04_bad|API_MISUSE",
+  "hash": "668d1747052657231af96aa4842a7e78",
+  "bug_type_hum": "Api Misuse",
+  "extras": {
+    "bug_src_loc": {
+      "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_connect_socket_vfprintf_04.c",
+      "lnum": 108,
+      "cnum": 30,
+      "enum": 0
+    }
+  }
+}

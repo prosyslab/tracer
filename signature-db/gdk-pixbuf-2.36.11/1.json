@@ -1,0 +1,1157 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "IntUnderflow.",
+  "severity": "ERROR",
+  "line": 459,
+  "column": 9,
+  "procedure": "icns_image_load",
+  "procedure_start_line": 335,
+  "file": "gdk-pixbuf/gdk-pixbuf-loader.c",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 349,
+        "column_number": 15,
+        "description": "input, fread",
+        "feature": "[\"Input\",\"fread\"]"
+      },
+      {
+        "level": 1,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 368,
+        "column_number": 14,
+        "description": "call, load_icon",
+        "feature": "[\"Call\",\"load_icon\"]"
+      },
+      {
+        "level": 1,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 251,
+        "column_number": 8,
+        "description": "call, load_resources",
+        "feature": "[\"Call\",\"load_resources\"]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 95,
+        "column_number": 7,
+        "description": "store, &blocklen, (((((n$114 & 255) << 24) | ((n$116 & 65280) << 8)) | ((n$118 & 16711680) >> 8)) | ((n$120 & 4278190080) >> 24))",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"255\"]]],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"65280\"]]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"16711680\"]]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"4278190080\"]]],[\"Const\",[\"Cint\",\"24\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 98,
+        "column_number": 11,
+        "description": "prune, !(n$107 > (n$108 - (n$109 - n$110)))",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Var\"]]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 158,
+        "column_number": 8,
+        "description": "store, n$29, (()n$30 - sizeof(t=;nbytes=8))",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"IcnsBlockHeader\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+      },
+      {
+        "level": 1,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 262,
+        "column_number": 12,
+        "description": "call, gdk_pixbuf_loader_write",
+        "feature": "[\"Call\",\"gdk_pixbuf_loader_write\"]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/gdk-pixbuf-loader.c",
+        "line_number": 507,
+        "column_number": 13,
+        "description": "prune, (n$31 > ()0)",
+        "feature": "[\"Prune\",[\"BinOp\",\">\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "gdk-pixbuf/gdk-pixbuf-loader.c",
+        "line_number": 511,
+        "column_number": 33,
+        "description": "call, gdk_pixbuf_loader_eat_header_write",
+        "feature": "[\"Call\",\"gdk_pixbuf_loader_eat_header_write\"]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/gdk-pixbuf-loader.c",
+        "line_number": 458,
+        "column_number": 19,
+        "description": "prune, !(()(4096 - n$20) < n$21)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"-\",[\"Const\",[\"Cint\",\"4096\"]],[\"Var\"]]],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/gdk-pixbuf-loader.c",
+        "line_number": 458,
+        "column_number": 19,
+        "description": "store, &n_bytes, n$24",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 1,
+        "filename": "gdk-pixbuf/gdk-pixbuf-loader.c",
+        "line_number": 459,
+        "column_number": 9,
+        "description": "int_underflow, memcpy, ()n$17",
+        "feature": "[\"IntUnderflow\",\"memcpy\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 349,
+        "column_number": 15,
+        "description": "input, fread",
+        "feature": "[\"Input\",\"fread\"]"
+      },
+      {
+        "level": 1,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 368,
+        "column_number": 14,
+        "description": "call, load_icon",
+        "feature": "[\"Call\",\"load_icon\"]"
+      },
+      {
+        "level": 1,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 251,
+        "column_number": 8,
+        "description": "call, load_resources",
+        "feature": "[\"Call\",\"load_resources\"]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 95,
+        "column_number": 7,
+        "description": "store, &blocklen, (((((n$114 & 255) << 24) | ((n$116 & 65280) << 8)) | ((n$118 & 16711680) >> 8)) | ((n$120 & 4278190080) >> 24))",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"255\"]]],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"65280\"]]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"16711680\"]]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"4278190080\"]]],[\"Const\",[\"Cint\",\"24\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 98,
+        "column_number": 11,
+        "description": "prune, !(n$107 > (n$108 - (n$109 - n$110)))",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Var\"]]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 158,
+        "column_number": 8,
+        "description": "store, n$29, (()n$30 - sizeof(t=;nbytes=8))",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"IcnsBlockHeader\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 121,
+        "column_number": 5,
+        "description": "store, n$83, (n$84 - ()4)",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"4\"]]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 262,
+        "column_number": 12,
+        "description": "call, gdk_pixbuf_loader_write",
+        "feature": "[\"Call\",\"gdk_pixbuf_loader_write\"]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/gdk-pixbuf-loader.c",
+        "line_number": 507,
+        "column_number": 13,
+        "description": "prune, (n$31 > ()0)",
+        "feature": "[\"Prune\",[\"BinOp\",\">\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "gdk-pixbuf/gdk-pixbuf-loader.c",
+        "line_number": 511,
+        "column_number": 33,
+        "description": "call, gdk_pixbuf_loader_eat_header_write",
+        "feature": "[\"Call\",\"gdk_pixbuf_loader_eat_header_write\"]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/gdk-pixbuf-loader.c",
+        "line_number": 458,
+        "column_number": 19,
+        "description": "prune, !(()(4096 - n$20) < n$21)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"-\",[\"Const\",[\"Cint\",\"4096\"]],[\"Var\"]]],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/gdk-pixbuf-loader.c",
+        "line_number": 458,
+        "column_number": 19,
+        "description": "store, &n_bytes, n$24",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 1,
+        "filename": "gdk-pixbuf/gdk-pixbuf-loader.c",
+        "line_number": 459,
+        "column_number": 9,
+        "description": "int_underflow, memcpy, ()n$17",
+        "feature": "[\"IntUnderflow\",\"memcpy\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 349,
+        "column_number": 15,
+        "description": "input, fread",
+        "feature": "[\"Input\",\"fread\"]"
+      },
+      {
+        "level": 1,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 368,
+        "column_number": 14,
+        "description": "call, load_icon",
+        "feature": "[\"Call\",\"load_icon\"]"
+      },
+      {
+        "level": 1,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 251,
+        "column_number": 8,
+        "description": "call, load_resources",
+        "feature": "[\"Call\",\"load_resources\"]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 95,
+        "column_number": 7,
+        "description": "store, &blocklen, (((((n$114 & 255) << 24) | ((n$116 & 65280) << 8)) | ((n$118 & 16711680) >> 8)) | ((n$120 & 4278190080) >> 24))",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"255\"]]],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"65280\"]]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"16711680\"]]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"4278190080\"]]],[\"Const\",[\"Cint\",\"24\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 98,
+        "column_number": 11,
+        "description": "prune, !(n$107 > (n$108 - (n$109 - n$110)))",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Var\"]]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 146,
+        "column_number": 8,
+        "description": "store, n$46, (()n$47 - sizeof(t=;nbytes=8))",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"IcnsBlockHeader\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+      },
+      {
+        "level": 1,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 262,
+        "column_number": 12,
+        "description": "call, gdk_pixbuf_loader_write",
+        "feature": "[\"Call\",\"gdk_pixbuf_loader_write\"]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/gdk-pixbuf-loader.c",
+        "line_number": 507,
+        "column_number": 13,
+        "description": "prune, (n$31 > ()0)",
+        "feature": "[\"Prune\",[\"BinOp\",\">\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "gdk-pixbuf/gdk-pixbuf-loader.c",
+        "line_number": 511,
+        "column_number": 33,
+        "description": "call, gdk_pixbuf_loader_eat_header_write",
+        "feature": "[\"Call\",\"gdk_pixbuf_loader_eat_header_write\"]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/gdk-pixbuf-loader.c",
+        "line_number": 458,
+        "column_number": 19,
+        "description": "prune, !(()(4096 - n$20) < n$21)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"-\",[\"Const\",[\"Cint\",\"4096\"]],[\"Var\"]]],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/gdk-pixbuf-loader.c",
+        "line_number": 458,
+        "column_number": 19,
+        "description": "store, &n_bytes, n$24",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 1,
+        "filename": "gdk-pixbuf/gdk-pixbuf-loader.c",
+        "line_number": 459,
+        "column_number": 9,
+        "description": "int_underflow, memcpy, ()n$17",
+        "feature": "[\"IntUnderflow\",\"memcpy\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 349,
+        "column_number": 15,
+        "description": "input, fread",
+        "feature": "[\"Input\",\"fread\"]"
+      },
+      {
+        "level": 1,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 368,
+        "column_number": 14,
+        "description": "call, load_icon",
+        "feature": "[\"Call\",\"load_icon\"]"
+      },
+      {
+        "level": 1,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 251,
+        "column_number": 8,
+        "description": "call, load_resources",
+        "feature": "[\"Call\",\"load_resources\"]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 95,
+        "column_number": 7,
+        "description": "store, &blocklen, (((((n$114 & 255) << 24) | ((n$116 & 65280) << 8)) | ((n$118 & 16711680) >> 8)) | ((n$120 & 4278190080) >> 24))",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"255\"]]],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"65280\"]]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"16711680\"]]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"4278190080\"]]],[\"Const\",[\"Cint\",\"24\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 98,
+        "column_number": 11,
+        "description": "prune, !(n$107 > (n$108 - (n$109 - n$110)))",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Var\"]]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 146,
+        "column_number": 8,
+        "description": "store, n$46, (()n$47 - sizeof(t=;nbytes=8))",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"IcnsBlockHeader\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 121,
+        "column_number": 5,
+        "description": "store, n$83, (n$84 - ()4)",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"4\"]]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 262,
+        "column_number": 12,
+        "description": "call, gdk_pixbuf_loader_write",
+        "feature": "[\"Call\",\"gdk_pixbuf_loader_write\"]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/gdk-pixbuf-loader.c",
+        "line_number": 507,
+        "column_number": 13,
+        "description": "prune, (n$31 > ()0)",
+        "feature": "[\"Prune\",[\"BinOp\",\">\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "gdk-pixbuf/gdk-pixbuf-loader.c",
+        "line_number": 511,
+        "column_number": 33,
+        "description": "call, gdk_pixbuf_loader_eat_header_write",
+        "feature": "[\"Call\",\"gdk_pixbuf_loader_eat_header_write\"]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/gdk-pixbuf-loader.c",
+        "line_number": 458,
+        "column_number": 19,
+        "description": "prune, !(()(4096 - n$20) < n$21)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"-\",[\"Const\",[\"Cint\",\"4096\"]],[\"Var\"]]],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/gdk-pixbuf-loader.c",
+        "line_number": 458,
+        "column_number": 19,
+        "description": "store, &n_bytes, n$24",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 1,
+        "filename": "gdk-pixbuf/gdk-pixbuf-loader.c",
+        "line_number": 459,
+        "column_number": 9,
+        "description": "int_underflow, memcpy, ()n$17",
+        "feature": "[\"IntUnderflow\",\"memcpy\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 349,
+        "column_number": 15,
+        "description": "input, fread",
+        "feature": "[\"Input\",\"fread\"]"
+      },
+      {
+        "level": 1,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 368,
+        "column_number": 14,
+        "description": "call, load_icon",
+        "feature": "[\"Call\",\"load_icon\"]"
+      },
+      {
+        "level": 1,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 251,
+        "column_number": 8,
+        "description": "call, load_resources",
+        "feature": "[\"Call\",\"load_resources\"]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 95,
+        "column_number": 7,
+        "description": "store, &blocklen, (((((n$114 & 255) << 24) | ((n$116 & 65280) << 8)) | ((n$118 & 16711680) >> 8)) | ((n$120 & 4278190080) >> 24))",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"255\"]]],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"65280\"]]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"16711680\"]]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"4278190080\"]]],[\"Const\",[\"Cint\",\"24\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 98,
+        "column_number": 11,
+        "description": "prune, !(n$107 > (n$108 - (n$109 - n$110)))",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Var\"]]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 134,
+        "column_number": 8,
+        "description": "store, n$63, (()n$64 - sizeof(t=;nbytes=8))",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"IcnsBlockHeader\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+      },
+      {
+        "level": 1,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 262,
+        "column_number": 12,
+        "description": "call, gdk_pixbuf_loader_write",
+        "feature": "[\"Call\",\"gdk_pixbuf_loader_write\"]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/gdk-pixbuf-loader.c",
+        "line_number": 507,
+        "column_number": 13,
+        "description": "prune, (n$31 > ()0)",
+        "feature": "[\"Prune\",[\"BinOp\",\">\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "gdk-pixbuf/gdk-pixbuf-loader.c",
+        "line_number": 511,
+        "column_number": 33,
+        "description": "call, gdk_pixbuf_loader_eat_header_write",
+        "feature": "[\"Call\",\"gdk_pixbuf_loader_eat_header_write\"]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/gdk-pixbuf-loader.c",
+        "line_number": 458,
+        "column_number": 19,
+        "description": "prune, !(()(4096 - n$20) < n$21)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"-\",[\"Const\",[\"Cint\",\"4096\"]],[\"Var\"]]],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/gdk-pixbuf-loader.c",
+        "line_number": 458,
+        "column_number": 19,
+        "description": "store, &n_bytes, n$24",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 1,
+        "filename": "gdk-pixbuf/gdk-pixbuf-loader.c",
+        "line_number": 459,
+        "column_number": 9,
+        "description": "int_underflow, memcpy, ()n$17",
+        "feature": "[\"IntUnderflow\",\"memcpy\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 349,
+        "column_number": 15,
+        "description": "input, fread",
+        "feature": "[\"Input\",\"fread\"]"
+      },
+      {
+        "level": 1,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 368,
+        "column_number": 14,
+        "description": "call, load_icon",
+        "feature": "[\"Call\",\"load_icon\"]"
+      },
+      {
+        "level": 1,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 251,
+        "column_number": 8,
+        "description": "call, load_resources",
+        "feature": "[\"Call\",\"load_resources\"]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 95,
+        "column_number": 7,
+        "description": "store, &blocklen, (((((n$114 & 255) << 24) | ((n$116 & 65280) << 8)) | ((n$118 & 16711680) >> 8)) | ((n$120 & 4278190080) >> 24))",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"255\"]]],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"65280\"]]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"16711680\"]]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"4278190080\"]]],[\"Const\",[\"Cint\",\"24\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 98,
+        "column_number": 11,
+        "description": "prune, !(n$107 > (n$108 - (n$109 - n$110)))",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Var\"]]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 134,
+        "column_number": 8,
+        "description": "store, n$63, (()n$64 - sizeof(t=;nbytes=8))",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"IcnsBlockHeader\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 121,
+        "column_number": 5,
+        "description": "store, n$83, (n$84 - ()4)",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"4\"]]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 262,
+        "column_number": 12,
+        "description": "call, gdk_pixbuf_loader_write",
+        "feature": "[\"Call\",\"gdk_pixbuf_loader_write\"]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/gdk-pixbuf-loader.c",
+        "line_number": 507,
+        "column_number": 13,
+        "description": "prune, (n$31 > ()0)",
+        "feature": "[\"Prune\",[\"BinOp\",\">\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "gdk-pixbuf/gdk-pixbuf-loader.c",
+        "line_number": 511,
+        "column_number": 33,
+        "description": "call, gdk_pixbuf_loader_eat_header_write",
+        "feature": "[\"Call\",\"gdk_pixbuf_loader_eat_header_write\"]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/gdk-pixbuf-loader.c",
+        "line_number": 458,
+        "column_number": 19,
+        "description": "prune, !(()(4096 - n$20) < n$21)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"-\",[\"Const\",[\"Cint\",\"4096\"]],[\"Var\"]]],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/gdk-pixbuf-loader.c",
+        "line_number": 458,
+        "column_number": 19,
+        "description": "store, &n_bytes, n$24",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 1,
+        "filename": "gdk-pixbuf/gdk-pixbuf-loader.c",
+        "line_number": 459,
+        "column_number": 9,
+        "description": "int_underflow, memcpy, ()n$17",
+        "feature": "[\"IntUnderflow\",\"memcpy\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 349,
+        "column_number": 15,
+        "description": "input, fread",
+        "feature": "[\"Input\",\"fread\"]"
+      },
+      {
+        "level": 1,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 368,
+        "column_number": 14,
+        "description": "call, load_icon",
+        "feature": "[\"Call\",\"load_icon\"]"
+      },
+      {
+        "level": 1,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 251,
+        "column_number": 8,
+        "description": "call, load_resources",
+        "feature": "[\"Call\",\"load_resources\"]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 95,
+        "column_number": 7,
+        "description": "store, &blocklen, (((((n$114 & 255) << 24) | ((n$116 & 65280) << 8)) | ((n$118 & 16711680) >> 8)) | ((n$120 & 4278190080) >> 24))",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"255\"]]],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"65280\"]]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"16711680\"]]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"4278190080\"]]],[\"Const\",[\"Cint\",\"24\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 98,
+        "column_number": 11,
+        "description": "prune, !(n$107 > (n$108 - (n$109 - n$110)))",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Var\"]]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 117,
+        "column_number": 8,
+        "description": "store, n$89, (()n$90 - sizeof(t=;nbytes=8))",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"IcnsBlockHeader\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+      },
+      {
+        "level": 1,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 262,
+        "column_number": 12,
+        "description": "call, gdk_pixbuf_loader_write",
+        "feature": "[\"Call\",\"gdk_pixbuf_loader_write\"]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/gdk-pixbuf-loader.c",
+        "line_number": 507,
+        "column_number": 13,
+        "description": "prune, (n$31 > ()0)",
+        "feature": "[\"Prune\",[\"BinOp\",\">\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "gdk-pixbuf/gdk-pixbuf-loader.c",
+        "line_number": 511,
+        "column_number": 33,
+        "description": "call, gdk_pixbuf_loader_eat_header_write",
+        "feature": "[\"Call\",\"gdk_pixbuf_loader_eat_header_write\"]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/gdk-pixbuf-loader.c",
+        "line_number": 458,
+        "column_number": 19,
+        "description": "prune, !(()(4096 - n$20) < n$21)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"-\",[\"Const\",[\"Cint\",\"4096\"]],[\"Var\"]]],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/gdk-pixbuf-loader.c",
+        "line_number": 458,
+        "column_number": 19,
+        "description": "store, &n_bytes, n$24",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 1,
+        "filename": "gdk-pixbuf/gdk-pixbuf-loader.c",
+        "line_number": 459,
+        "column_number": 9,
+        "description": "int_underflow, memcpy, ()n$17",
+        "feature": "[\"IntUnderflow\",\"memcpy\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 349,
+        "column_number": 15,
+        "description": "input, fread",
+        "feature": "[\"Input\",\"fread\"]"
+      },
+      {
+        "level": 1,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 368,
+        "column_number": 14,
+        "description": "call, load_icon",
+        "feature": "[\"Call\",\"load_icon\"]"
+      },
+      {
+        "level": 1,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 251,
+        "column_number": 8,
+        "description": "call, load_resources",
+        "feature": "[\"Call\",\"load_resources\"]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 95,
+        "column_number": 7,
+        "description": "store, &blocklen, (((((n$114 & 255) << 24) | ((n$116 & 65280) << 8)) | ((n$118 & 16711680) >> 8)) | ((n$120 & 4278190080) >> 24))",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"255\"]]],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"65280\"]]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"16711680\"]]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"4278190080\"]]],[\"Const\",[\"Cint\",\"24\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 98,
+        "column_number": 11,
+        "description": "prune, !(n$107 > (n$108 - (n$109 - n$110)))",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Var\"]]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 117,
+        "column_number": 8,
+        "description": "store, n$89, (()n$90 - sizeof(t=;nbytes=8))",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"IcnsBlockHeader\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 121,
+        "column_number": 5,
+        "description": "store, n$83, (n$84 - ()4)",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"4\"]]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 262,
+        "column_number": 12,
+        "description": "call, gdk_pixbuf_loader_write",
+        "feature": "[\"Call\",\"gdk_pixbuf_loader_write\"]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/gdk-pixbuf-loader.c",
+        "line_number": 507,
+        "column_number": 13,
+        "description": "prune, (n$31 > ()0)",
+        "feature": "[\"Prune\",[\"BinOp\",\">\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "gdk-pixbuf/gdk-pixbuf-loader.c",
+        "line_number": 511,
+        "column_number": 33,
+        "description": "call, gdk_pixbuf_loader_eat_header_write",
+        "feature": "[\"Call\",\"gdk_pixbuf_loader_eat_header_write\"]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/gdk-pixbuf-loader.c",
+        "line_number": 458,
+        "column_number": 19,
+        "description": "prune, !(()(4096 - n$20) < n$21)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"-\",[\"Const\",[\"Cint\",\"4096\"]],[\"Var\"]]],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/gdk-pixbuf-loader.c",
+        "line_number": 458,
+        "column_number": 19,
+        "description": "store, &n_bytes, n$24",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 1,
+        "filename": "gdk-pixbuf/gdk-pixbuf-loader.c",
+        "line_number": 459,
+        "column_number": 9,
+        "description": "int_underflow, memcpy, ()n$17",
+        "feature": "[\"IntUnderflow\",\"memcpy\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 349,
+        "column_number": 15,
+        "description": "input, fread",
+        "feature": "[\"Input\",\"fread\"]"
+      },
+      {
+        "level": 1,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 368,
+        "column_number": 14,
+        "description": "call, load_icon",
+        "feature": "[\"Call\",\"load_icon\"]"
+      },
+      {
+        "level": 1,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 251,
+        "column_number": 8,
+        "description": "call, load_resources",
+        "feature": "[\"Call\",\"load_resources\"]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 95,
+        "column_number": 7,
+        "description": "store, &blocklen, (((((n$114 & 255) << 24) | ((n$116 & 65280) << 8)) | ((n$118 & 16711680) >> 8)) | ((n$120 & 4278190080) >> 24))",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"255\"]]],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"65280\"]]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"16711680\"]]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"4278190080\"]]],[\"Const\",[\"Cint\",\"24\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 98,
+        "column_number": 11,
+        "description": "prune, !(n$107 > (n$108 - (n$109 - n$110)))",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Var\"]]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 117,
+        "column_number": 8,
+        "description": "store, n$89, (()n$90 - sizeof(t=;nbytes=8))",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"IcnsBlockHeader\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 121,
+        "column_number": 5,
+        "description": "store, n$83, (n$84 - ()4)",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"4\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 121,
+        "column_number": 5,
+        "description": "store, n$83, (n$84 - ()4)",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"4\"]]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 262,
+        "column_number": 12,
+        "description": "call, gdk_pixbuf_loader_write",
+        "feature": "[\"Call\",\"gdk_pixbuf_loader_write\"]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/gdk-pixbuf-loader.c",
+        "line_number": 507,
+        "column_number": 13,
+        "description": "prune, (n$31 > ()0)",
+        "feature": "[\"Prune\",[\"BinOp\",\">\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "gdk-pixbuf/gdk-pixbuf-loader.c",
+        "line_number": 511,
+        "column_number": 33,
+        "description": "call, gdk_pixbuf_loader_eat_header_write",
+        "feature": "[\"Call\",\"gdk_pixbuf_loader_eat_header_write\"]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/gdk-pixbuf-loader.c",
+        "line_number": 458,
+        "column_number": 19,
+        "description": "prune, !(()(4096 - n$20) < n$21)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"-\",[\"Const\",[\"Cint\",\"4096\"]],[\"Var\"]]],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/gdk-pixbuf-loader.c",
+        "line_number": 458,
+        "column_number": 19,
+        "description": "store, &n_bytes, n$24",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 1,
+        "filename": "gdk-pixbuf/gdk-pixbuf-loader.c",
+        "line_number": 459,
+        "column_number": 9,
+        "description": "int_underflow, memcpy, ()n$17",
+        "feature": "[\"IntUnderflow\",\"memcpy\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 349,
+        "column_number": 15,
+        "description": "input, fread",
+        "feature": "[\"Input\",\"fread\"]"
+      },
+      {
+        "level": 1,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 368,
+        "column_number": 14,
+        "description": "call, load_icon",
+        "feature": "[\"Call\",\"load_icon\"]"
+      },
+      {
+        "level": 1,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 251,
+        "column_number": 8,
+        "description": "call, load_resources",
+        "feature": "[\"Call\",\"load_resources\"]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 95,
+        "column_number": 7,
+        "description": "store, &blocklen, (((((n$114 & 255) << 24) | ((n$116 & 65280) << 8)) | ((n$118 & 16711680) >> 8)) | ((n$120 & 4278190080) >> 24))",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"255\"]]],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"65280\"]]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"16711680\"]]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"4278190080\"]]],[\"Const\",[\"Cint\",\"24\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 98,
+        "column_number": 11,
+        "description": "prune, !(n$107 > (n$108 - (n$109 - n$110)))",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Var\"]]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 109,
+        "column_number": 8,
+        "description": "store, n$100, (()n$101 - sizeof(t=;nbytes=8))",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"IcnsBlockHeader\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+      },
+      {
+        "level": 1,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 262,
+        "column_number": 12,
+        "description": "call, gdk_pixbuf_loader_write",
+        "feature": "[\"Call\",\"gdk_pixbuf_loader_write\"]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/gdk-pixbuf-loader.c",
+        "line_number": 507,
+        "column_number": 13,
+        "description": "prune, (n$31 > ()0)",
+        "feature": "[\"Prune\",[\"BinOp\",\">\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "gdk-pixbuf/gdk-pixbuf-loader.c",
+        "line_number": 511,
+        "column_number": 33,
+        "description": "call, gdk_pixbuf_loader_eat_header_write",
+        "feature": "[\"Call\",\"gdk_pixbuf_loader_eat_header_write\"]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/gdk-pixbuf-loader.c",
+        "line_number": 458,
+        "column_number": 19,
+        "description": "prune, !(()(4096 - n$20) < n$21)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"-\",[\"Const\",[\"Cint\",\"4096\"]],[\"Var\"]]],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/gdk-pixbuf-loader.c",
+        "line_number": 458,
+        "column_number": 19,
+        "description": "store, &n_bytes, n$24",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 1,
+        "filename": "gdk-pixbuf/gdk-pixbuf-loader.c",
+        "line_number": 459,
+        "column_number": 9,
+        "description": "int_underflow, memcpy, ()n$17",
+        "feature": "[\"IntUnderflow\",\"memcpy\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 349,
+        "column_number": 15,
+        "description": "input, fread",
+        "feature": "[\"Input\",\"fread\"]"
+      },
+      {
+        "level": 1,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 368,
+        "column_number": 14,
+        "description": "call, load_icon",
+        "feature": "[\"Call\",\"load_icon\"]"
+      },
+      {
+        "level": 1,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 251,
+        "column_number": 8,
+        "description": "call, load_resources",
+        "feature": "[\"Call\",\"load_resources\"]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 95,
+        "column_number": 7,
+        "description": "store, &blocklen, (((((n$114 & 255) << 24) | ((n$116 & 65280) << 8)) | ((n$118 & 16711680) >> 8)) | ((n$120 & 4278190080) >> 24))",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"255\"]]],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"65280\"]]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"16711680\"]]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"4278190080\"]]],[\"Const\",[\"Cint\",\"24\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 98,
+        "column_number": 11,
+        "description": "prune, !(n$107 > (n$108 - (n$109 - n$110)))",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Var\"]]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 109,
+        "column_number": 8,
+        "description": "store, n$100, (()n$101 - sizeof(t=;nbytes=8))",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"IcnsBlockHeader\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 121,
+        "column_number": 5,
+        "description": "store, n$83, (n$84 - ()4)",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"4\"]]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "gdk-pixbuf/io-icns.c",
+        "line_number": 262,
+        "column_number": 12,
+        "description": "call, gdk_pixbuf_loader_write",
+        "feature": "[\"Call\",\"gdk_pixbuf_loader_write\"]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/gdk-pixbuf-loader.c",
+        "line_number": 507,
+        "column_number": 13,
+        "description": "prune, (n$31 > ()0)",
+        "feature": "[\"Prune\",[\"BinOp\",\">\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "gdk-pixbuf/gdk-pixbuf-loader.c",
+        "line_number": 511,
+        "column_number": 33,
+        "description": "call, gdk_pixbuf_loader_eat_header_write",
+        "feature": "[\"Call\",\"gdk_pixbuf_loader_eat_header_write\"]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/gdk-pixbuf-loader.c",
+        "line_number": 458,
+        "column_number": 19,
+        "description": "prune, !(()(4096 - n$20) < n$21)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"-\",[\"Const\",[\"Cint\",\"4096\"]],[\"Var\"]]],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "gdk-pixbuf/gdk-pixbuf-loader.c",
+        "line_number": 458,
+        "column_number": 19,
+        "description": "store, &n_bytes, n$24",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 1,
+        "filename": "gdk-pixbuf/gdk-pixbuf-loader.c",
+        "line_number": 459,
+        "column_number": 9,
+        "description": "int_underflow, memcpy, ()n$17",
+        "feature": "[\"IntUnderflow\",\"memcpy\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]"
+      }
+    ]
+  ],
+  "key": "io-icns.c|icns_image_load|API_MISUSE",
+  "hash": "bb2bf96dbdefefbcc06b083e57a6e1b7",
+  "bug_type_hum": "Api Misuse",
+  "extras": {
+    "bug_src_loc": {
+      "file": "gdk-pixbuf/io-icns.c",
+      "lnum": 349,
+      "cnum": 15,
+      "enum": 0
+    }
+  }
+}

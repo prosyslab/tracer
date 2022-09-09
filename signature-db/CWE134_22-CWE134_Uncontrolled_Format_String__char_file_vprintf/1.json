@@ -1,0 +1,49 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "FormatString.",
+  "severity": "ERROR",
+  "line": 38,
+  "column": 13,
+  "procedure": "CWE134_Uncontrolled_Format_String__char_file_vprintf_22_bad",
+  "procedure_start_line": 38,
+  "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s03/CWE134_Uncontrolled_Format_String__char_file_vprintf_22b.c",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s03/CWE134_Uncontrolled_Format_String__char_file_vprintf_22a.c",
+        "line_number": 54,
+        "column_number": 21,
+        "description": "input, fgets",
+        "feature": "[\"Input\",\"fgets\"]"
+      },
+      {
+        "level": 1,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s03/CWE134_Uncontrolled_Format_String__char_file_vprintf_22a.c",
+        "line_number": 65,
+        "column_number": 5,
+        "description": "call, CWE134_Uncontrolled_Format_String__char_file_vprintf_22_badVaSink",
+        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_file_vprintf_22_badVaSink\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s03/CWE134_Uncontrolled_Format_String__char_file_vprintf_22b.c",
+        "line_number": 38,
+        "column_number": 13,
+        "description": "format_string, vprintf, n$2",
+        "feature": "[\"FormatString\",\"vprintf\",[\"Var\"]]"
+      }
+    ]
+  ],
+  "key": "CWE134_Uncontrolled_Format_String__char_file_vprintf_22a.c|CWE134_Uncontrolled_Format_String__char_file_vprintf_22_bad|API_MISUSE",
+  "hash": "533e2761328e07a7ccaf7a7814d600f2",
+  "bug_type_hum": "Api Misuse",
+  "extras": {
+    "bug_src_loc": {
+      "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s03/CWE134_Uncontrolled_Format_String__char_file_vprintf_22a.c",
+      "lnum": 54,
+      "cnum": 21,
+      "enum": 0
+    }
+  }
+}

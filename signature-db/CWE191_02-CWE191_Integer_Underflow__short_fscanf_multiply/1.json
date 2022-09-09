@@ -1,0 +1,57 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "IntOverflow.",
+  "severity": "ERROR",
+  "line": 37,
+  "column": 13,
+  "procedure": "CWE191_Integer_Underflow__short_fscanf_multiply_02_bad",
+  "procedure_start_line": 22,
+  "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s03/CWE191_Integer_Underflow__short_fscanf_multiply_02.c",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s03/CWE191_Integer_Underflow__short_fscanf_multiply_02.c",
+        "line_number": 29,
+        "column_number": 9,
+        "description": "input, fscanf",
+        "feature": "[\"Input\",\"fscanf\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s03/CWE191_Integer_Underflow__short_fscanf_multiply_02.c",
+        "line_number": 33,
+        "column_number": 12,
+        "description": "prune, (n$0 < 0)",
+        "feature": "[\"Prune\",[\"BinOp\",\"<\",[\"Var\"],[\"Const\",[\"Cint\",\"0\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s03/CWE191_Integer_Underflow__short_fscanf_multiply_02.c",
+        "line_number": 36,
+        "column_number": 13,
+        "description": "store, &result, (n$3 * 2)",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"*\",[\"Var\"],[\"Const\",[\"Cint\",\"2\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s03/CWE191_Integer_Underflow__short_fscanf_multiply_02.c",
+        "line_number": 37,
+        "column_number": 13,
+        "description": "int_overflow, printIntLine, n$1",
+        "feature": "[\"IntOverflow\",\"printIntLine\",[\"Var\"]]"
+      }
+    ]
+  ],
+  "key": "CWE191_Integer_Underflow__short_fscanf_multiply_02.c|CWE191_Integer_Underflow__short_fscanf_multiply_02_bad|API_MISUSE",
+  "hash": "4f82faca50ff20df4d25a9f0385ac4ff",
+  "bug_type_hum": "Api Misuse",
+  "extras": {
+    "bug_src_loc": {
+      "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s03/CWE191_Integer_Underflow__short_fscanf_multiply_02.c",
+      "lnum": 29,
+      "cnum": 9,
+      "enum": 0
+    }
+  }
+}

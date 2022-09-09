@@ -1,0 +1,49 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "FormatString.",
+  "severity": "ERROR",
+  "line": 39,
+  "column": 9,
+  "procedure": "CWE134_Uncontrolled_Format_String__char_file_vprintf_12_bad",
+  "procedure_start_line": 55,
+  "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s03/CWE134_Uncontrolled_Format_String__char_file_vprintf_12.c",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s03/CWE134_Uncontrolled_Format_String__char_file_vprintf_12.c",
+        "line_number": 73,
+        "column_number": 25,
+        "description": "input, fgets",
+        "feature": "[\"Input\",\"fgets\"]"
+      },
+      {
+        "level": 1,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s03/CWE134_Uncontrolled_Format_String__char_file_vprintf_12.c",
+        "line_number": 91,
+        "column_number": 9,
+        "description": "call, badVaSinkB",
+        "feature": "[\"Call\",\"badVaSinkB\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s03/CWE134_Uncontrolled_Format_String__char_file_vprintf_12.c",
+        "line_number": 39,
+        "column_number": 9,
+        "description": "format_string, vprintf, n$1",
+        "feature": "[\"FormatString\",\"vprintf\",[\"Var\"]]"
+      }
+    ]
+  ],
+  "key": "CWE134_Uncontrolled_Format_String__char_file_vprintf_12.c|CWE134_Uncontrolled_Format_String__char_file_vprintf_12_bad|API_MISUSE",
+  "hash": "0ee98f773a162881518f5b80f2837ad4",
+  "bug_type_hum": "Api Misuse",
+  "extras": {
+    "bug_src_loc": {
+      "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s03/CWE134_Uncontrolled_Format_String__char_file_vprintf_12.c",
+      "lnum": 73,
+      "cnum": 25,
+      "enum": 0
+    }
+  }
+}

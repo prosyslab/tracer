@@ -1,0 +1,49 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "CmdInjection.",
+  "severity": "ERROR",
+  "line": 66,
+  "column": 16,
+  "procedure": "CWE78_OS_Command_Injection__char_listen_socket_popen_51_bad",
+  "procedure_start_line": 62,
+  "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE78_OS_Command_Injection/s04/CWE78_OS_Command_Injection__char_listen_socket_popen_51b.c",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE78_OS_Command_Injection/s04/CWE78_OS_Command_Injection__char_listen_socket_popen_51a.c",
+        "line_number": 111,
+        "column_number": 26,
+        "description": "input, recv",
+        "feature": "[\"Input\",\"recv\"]"
+      },
+      {
+        "level": 1,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE78_OS_Command_Injection/s04/CWE78_OS_Command_Injection__char_listen_socket_popen_51a.c",
+        "line_number": 146,
+        "column_number": 5,
+        "description": "call, CWE78_OS_Command_Injection__char_listen_socket_popen_51b_badSink",
+        "feature": "[\"Call\",\"CWE78_OS_Command_Injection__char_listen_socket_popen_51b_badSink\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE78_OS_Command_Injection/s04/CWE78_OS_Command_Injection__char_listen_socket_popen_51b.c",
+        "line_number": 66,
+        "column_number": 16,
+        "description": "cmd_injection, popen, n$5",
+        "feature": "[\"CmdInjection\",\"popen\",[\"Var\"]]"
+      }
+    ]
+  ],
+  "key": "CWE78_OS_Command_Injection__char_listen_socket_popen_51a.c|CWE78_OS_Command_Injection__char_listen_socket_popen_51_bad|API_MISUSE",
+  "hash": "3d5bcde6bfe31675193a42941ead7438",
+  "bug_type_hum": "Api Misuse",
+  "extras": {
+    "bug_src_loc": {
+      "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE78_OS_Command_Injection/s04/CWE78_OS_Command_Injection__char_listen_socket_popen_51a.c",
+      "lnum": 111,
+      "cnum": 26,
+      "enum": 0
+    }
+  }
+}

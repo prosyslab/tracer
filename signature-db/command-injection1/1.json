@@ -1,0 +1,83 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "CmdInjection.",
+  "severity": "ERROR",
+  "line": 18,
+  "column": 3,
+  "procedure": "main",
+  "procedure_start_line": 8,
+  "file": "tutorial/command-injection1.c",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "tutorial/command-injection1.c",
+        "line_number": 8,
+        "column_number": 1,
+        "description": "input, main",
+        "feature": "[\"Input\",\"main\"]"
+      },
+      {
+        "level": 0,
+        "filename": "tutorial/command-injection1.c",
+        "line_number": 16,
+        "column_number": 3,
+        "description": "library_call, strncat, n$2, n$4",
+        "feature": "[\"LibraryCall\",\"strncat\",\"n$2, n$4\"]"
+      },
+      {
+        "level": 0,
+        "filename": "tutorial/command-injection1.c",
+        "line_number": 18,
+        "column_number": 3,
+        "description": "cmd_injection, system, n$0",
+        "feature": "[\"CmdInjection\",\"system\",[\"Var\"]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "tutorial/command-injection1.c",
+        "line_number": 8,
+        "column_number": 1,
+        "description": "input, main",
+        "feature": "[\"Input\",\"main\"]"
+      },
+      {
+        "level": 0,
+        "filename": "tutorial/command-injection1.c",
+        "line_number": 13,
+        "column_number": 33,
+        "description": "library_call, strlen, n$15",
+        "feature": "[\"LibraryCall\",\"strlen\",\"n$15\"]"
+      },
+      {
+        "level": 0,
+        "filename": "tutorial/command-injection1.c",
+        "line_number": 16,
+        "column_number": 3,
+        "description": "library_call, strncat, n$2, n$4",
+        "feature": "[\"LibraryCall\",\"strncat\",\"n$2, n$4\"]"
+      },
+      {
+        "level": 0,
+        "filename": "tutorial/command-injection1.c",
+        "line_number": 18,
+        "column_number": 3,
+        "description": "cmd_injection, system, n$0",
+        "feature": "[\"CmdInjection\",\"system\",[\"Var\"]]"
+      }
+    ]
+  ],
+  "key": "command-injection1.c|main|API_MISUSE",
+  "hash": "afe5f5529c49b09f379b2349bab24680",
+  "bug_type_hum": "Api Misuse",
+  "extras": {
+    "bug_src_loc": {
+      "file": "tutorial/command-injection1.c",
+      "lnum": 8,
+      "cnum": 1,
+      "enum": 0
+    }
+  }
+}

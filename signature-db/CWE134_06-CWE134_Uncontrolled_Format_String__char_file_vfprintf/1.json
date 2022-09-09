@@ -1,0 +1,49 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "FormatString.",
+  "severity": "ERROR",
+  "line": 44,
+  "column": 9,
+  "procedure": "CWE134_Uncontrolled_Format_String__char_file_vfprintf_06_bad",
+  "procedure_start_line": 49,
+  "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s02/CWE134_Uncontrolled_Format_String__char_file_vfprintf_06.c",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s02/CWE134_Uncontrolled_Format_String__char_file_vfprintf_06.c",
+        "line_number": 67,
+        "column_number": 25,
+        "description": "input, fgets",
+        "feature": "[\"Input\",\"fgets\"]"
+      },
+      {
+        "level": 1,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s02/CWE134_Uncontrolled_Format_String__char_file_vfprintf_06.c",
+        "line_number": 80,
+        "column_number": 9,
+        "description": "call, badVaSinkB",
+        "feature": "[\"Call\",\"badVaSinkB\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s02/CWE134_Uncontrolled_Format_String__char_file_vfprintf_06.c",
+        "line_number": 44,
+        "column_number": 9,
+        "description": "format_string, vfprintf, n$2",
+        "feature": "[\"FormatString\",\"vfprintf\",[\"Var\"]]"
+      }
+    ]
+  ],
+  "key": "CWE134_Uncontrolled_Format_String__char_file_vfprintf_06.c|CWE134_Uncontrolled_Format_String__char_file_vfprintf_06_bad|API_MISUSE",
+  "hash": "195bdc62cff2677452a3f13f3448885e",
+  "bug_type_hum": "Api Misuse",
+  "extras": {
+    "bug_src_loc": {
+      "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s02/CWE134_Uncontrolled_Format_String__char_file_vfprintf_06.c",
+      "lnum": 67,
+      "cnum": 25,
+      "enum": 0
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "CmdInjection.",
+  "severity": "ERROR",
+  "line": 84,
+  "column": 5,
+  "procedure": "CWE78_OS_Command_Injection__char_environment_execl_21_bad",
+  "procedure_start_line": 75,
+  "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE78_OS_Command_Injection/s02/CWE78_OS_Command_Injection__char_environment_execl_21.c",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE78_OS_Command_Injection/s02/CWE78_OS_Command_Injection__char_environment_execl_21.c",
+        "line_number": 63,
+        "column_number": 34,
+        "description": "input, getenv",
+        "feature": "[\"Input\",\"getenv\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE78_OS_Command_Injection/s02/CWE78_OS_Command_Injection__char_environment_execl_21.c",
+        "line_number": 68,
+        "column_number": 17,
+        "description": "library_call, strncat, (n$3 + n$4), n$5",
+        "feature": "[\"LibraryCall\",\"strncat\",\"(n$3 + n$4), n$5\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE78_OS_Command_Injection/s02/CWE78_OS_Command_Injection__char_environment_execl_21.c",
+        "line_number": 84,
+        "column_number": 5,
+        "description": "cmd_injection, execl, n$0",
+        "feature": "[\"CmdInjection\",\"execl\",[\"Var\"]]"
+      }
+    ]
+  ],
+  "key": "CWE78_OS_Command_Injection__char_environment_execl_21.c|CWE78_OS_Command_Injection__char_environment_execl_21_bad|API_MISUSE",
+  "hash": "9afc1dac497def3d1293fba0c432bc64",
+  "bug_type_hum": "Api Misuse",
+  "extras": {
+    "bug_src_loc": {
+      "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE78_OS_Command_Injection/s02/CWE78_OS_Command_Injection__char_environment_execl_21.c",
+      "lnum": 63,
+      "cnum": 34,
+      "enum": 0
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "FormatString.",
+  "severity": "ERROR",
+  "line": 62,
+  "column": 9,
+  "procedure": "CWE134_Uncontrolled_Format_String__char_environment_printf_04_bad",
+  "procedure_start_line": 40,
+  "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s02/CWE134_Uncontrolled_Format_String__char_environment_printf_04.c",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s02/CWE134_Uncontrolled_Format_String__char_environment_printf_04.c",
+        "line_number": 50,
+        "column_number": 34,
+        "description": "input, getenv",
+        "feature": "[\"Input\",\"getenv\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s02/CWE134_Uncontrolled_Format_String__char_environment_printf_04.c",
+        "line_number": 55,
+        "column_number": 17,
+        "description": "library_call, strncat, (n$7 + n$8), n$9",
+        "feature": "[\"LibraryCall\",\"strncat\",\"(n$7 + n$8), n$9\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s02/CWE134_Uncontrolled_Format_String__char_environment_printf_04.c",
+        "line_number": 62,
+        "column_number": 9,
+        "description": "format_string, printf, n$1",
+        "feature": "[\"FormatString\",\"printf\",[\"Var\"]]"
+      }
+    ]
+  ],
+  "key": "CWE134_Uncontrolled_Format_String__char_environment_printf_04.c|CWE134_Uncontrolled_Format_String__char_environment_printf_04_bad|API_MISUSE",
+  "hash": "ea17d6a63a3a6ccee01970808a97f43b",
+  "bug_type_hum": "Api Misuse",
+  "extras": {
+    "bug_src_loc": {
+      "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s02/CWE134_Uncontrolled_Format_String__char_environment_printf_04.c",
+      "lnum": 50,
+      "cnum": 34,
+      "enum": 0
+    }
+  }
+}

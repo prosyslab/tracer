@@ -1,0 +1,49 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "CmdInjection.",
+  "severity": "ERROR",
+  "line": 77,
+  "column": 5,
+  "procedure": "CWE78_OS_Command_Injection__char_environment_execl_42_bad",
+  "procedure_start_line": 69,
+  "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE78_OS_Command_Injection/s02/CWE78_OS_Command_Injection__char_environment_execl_42.c",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE78_OS_Command_Injection/s02/CWE78_OS_Command_Injection__char_environment_execl_42.c",
+        "line_number": 58,
+        "column_number": 30,
+        "description": "input, getenv",
+        "feature": "[\"Input\",\"getenv\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE78_OS_Command_Injection/s02/CWE78_OS_Command_Injection__char_environment_execl_42.c",
+        "line_number": 63,
+        "column_number": 13,
+        "description": "library_call, strncat, (n$2 + n$3), n$4",
+        "feature": "[\"LibraryCall\",\"strncat\",\"(n$2 + n$3), n$4\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE78_OS_Command_Injection/s02/CWE78_OS_Command_Injection__char_environment_execl_42.c",
+        "line_number": 77,
+        "column_number": 5,
+        "description": "cmd_injection, execl, n$0",
+        "feature": "[\"CmdInjection\",\"execl\",[\"Var\"]]"
+      }
+    ]
+  ],
+  "key": "CWE78_OS_Command_Injection__char_environment_execl_42.c|CWE78_OS_Command_Injection__char_environment_execl_42_bad|API_MISUSE",
+  "hash": "bea80252badcd1f92c6ca41a0e75d90e",
+  "bug_type_hum": "Api Misuse",
+  "extras": {
+    "bug_src_loc": {
+      "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE78_OS_Command_Injection/s02/CWE78_OS_Command_Injection__char_environment_execl_42.c",
+      "lnum": 58,
+      "cnum": 30,
+      "enum": 0
+    }
+  }
+}

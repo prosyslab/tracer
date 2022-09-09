@@ -1,0 +1,57 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "IntOverflow.",
+  "severity": "ERROR",
+  "line": 43,
+  "column": 13,
+  "procedure": "CWE190_Integer_Overflow__int_fscanf_preinc_12_bad",
+  "procedure_start_line": 22,
+  "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s07/CWE190_Integer_Overflow__int_fscanf_preinc_12.c",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s07/CWE190_Integer_Overflow__int_fscanf_preinc_12.c",
+        "line_number": 30,
+        "column_number": 9,
+        "description": "input, fscanf",
+        "feature": "[\"Input\",\"fscanf\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s07/CWE190_Integer_Overflow__int_fscanf_preinc_12.c",
+        "line_number": 41,
+        "column_number": 13,
+        "description": "store, &data, (n$4 + 1)",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"Var\"],[\"Const\",[\"Cint\",\"1\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s07/CWE190_Integer_Overflow__int_fscanf_preinc_12.c",
+        "line_number": 42,
+        "column_number": 13,
+        "description": "store, &result, n$3",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s07/CWE190_Integer_Overflow__int_fscanf_preinc_12.c",
+        "line_number": 43,
+        "column_number": 13,
+        "description": "int_overflow, printIntLine, n$1",
+        "feature": "[\"IntOverflow\",\"printIntLine\",[\"Var\"]]"
+      }
+    ]
+  ],
+  "key": "CWE190_Integer_Overflow__int_fscanf_preinc_12.c|CWE190_Integer_Overflow__int_fscanf_preinc_12_bad|API_MISUSE",
+  "hash": "3d8a5b65052342a2f40ae5cc9977b5fb",
+  "bug_type_hum": "Api Misuse",
+  "extras": {
+    "bug_src_loc": {
+      "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s07/CWE190_Integer_Overflow__int_fscanf_preinc_12.c",
+      "lnum": 30,
+      "cnum": 9,
+      "enum": 0
+    }
+  }
+}

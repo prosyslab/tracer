@@ -1,0 +1,41 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "DoubleFree.",
+  "severity": "ERROR",
+  "line": 34,
+  "column": 5,
+  "procedure": "CWE415_Double_Free__malloc_free_long_01_bad",
+  "procedure_start_line": 24,
+  "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_long_01.c",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_long_01.c",
+        "line_number": 29,
+        "column_number": 20,
+        "description": "allocate, malloc",
+        "feature": "[\"Allocate\",\"malloc\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_long_01.c",
+        "line_number": 32,
+        "column_number": 5,
+        "description": "free, free, n$2",
+        "feature": "[\"Free\",\"free\",[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_long_01.c",
+        "line_number": 34,
+        "column_number": 5,
+        "description": "free, free, n$0",
+        "feature": "[\"Free\",\"free\",[\"Var\"]]"
+      }
+    ]
+  ],
+  "key": "CWE415_Double_Free__malloc_free_long_01.c|CWE415_Double_Free__malloc_free_long_01_bad|API_MISUSE",
+  "hash": "afb6883126fdffe18e556aa5f473608d",
+  "bug_type_hum": "Api Misuse"
+}

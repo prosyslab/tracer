@@ -1,0 +1,331 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "FormatString.",
+  "severity": "ERROR",
+  "line": 29,
+  "column": 5,
+  "procedure": "CWE134_Uncontrolled_Format_String__char_console_printf_53_bad",
+  "procedure_start_line": 29,
+  "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_53d.c",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_53a.c",
+        "line_number": 41,
+        "column_number": 17,
+        "description": "input, fgets",
+        "feature": "[\"Input\",\"fgets\"]"
+      },
+      {
+        "level": 1,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_53a.c",
+        "line_number": 59,
+        "column_number": 5,
+        "description": "call, CWE134_Uncontrolled_Format_String__char_console_printf_53b_badSink",
+        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_console_printf_53b_badSink\"]"
+      },
+      {
+        "level": 1,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_53b.c",
+        "line_number": 31,
+        "column_number": 5,
+        "description": "call, CWE134_Uncontrolled_Format_String__char_console_printf_53c_badSink",
+        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_console_printf_53c_badSink\"]"
+      },
+      {
+        "level": 1,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_53c.c",
+        "line_number": 31,
+        "column_number": 5,
+        "description": "call, CWE134_Uncontrolled_Format_String__char_console_printf_53d_badSink",
+        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_console_printf_53d_badSink\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_53d.c",
+        "line_number": 29,
+        "column_number": 5,
+        "description": "format_string, printf, n$0",
+        "feature": "[\"FormatString\",\"printf\",[\"Var\"]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_53a.c",
+        "line_number": 41,
+        "column_number": 17,
+        "description": "input, fgets",
+        "feature": "[\"Input\",\"fgets\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_53a.c",
+        "line_number": 46,
+        "column_number": 36,
+        "description": "prune, (n$11 == 10)",
+        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_53a.c",
+        "line_number": 59,
+        "column_number": 5,
+        "description": "call, CWE134_Uncontrolled_Format_String__char_console_printf_53b_badSink",
+        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_console_printf_53b_badSink\"]"
+      },
+      {
+        "level": 1,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_53b.c",
+        "line_number": 31,
+        "column_number": 5,
+        "description": "call, CWE134_Uncontrolled_Format_String__char_console_printf_53c_badSink",
+        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_console_printf_53c_badSink\"]"
+      },
+      {
+        "level": 1,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_53c.c",
+        "line_number": 31,
+        "column_number": 5,
+        "description": "call, CWE134_Uncontrolled_Format_String__char_console_printf_53d_badSink",
+        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_console_printf_53d_badSink\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_53d.c",
+        "line_number": 29,
+        "column_number": 5,
+        "description": "format_string, printf, n$0",
+        "feature": "[\"FormatString\",\"printf\",[\"Var\"]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_53a.c",
+        "line_number": 41,
+        "column_number": 17,
+        "description": "input, fgets",
+        "feature": "[\"Input\",\"fgets\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_53a.c",
+        "line_number": 46,
+        "column_number": 36,
+        "description": "prune, !(n$11 == 10)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_53a.c",
+        "line_number": 59,
+        "column_number": 5,
+        "description": "call, CWE134_Uncontrolled_Format_String__char_console_printf_53b_badSink",
+        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_console_printf_53b_badSink\"]"
+      },
+      {
+        "level": 1,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_53b.c",
+        "line_number": 31,
+        "column_number": 5,
+        "description": "call, CWE134_Uncontrolled_Format_String__char_console_printf_53c_badSink",
+        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_console_printf_53c_badSink\"]"
+      },
+      {
+        "level": 1,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_53c.c",
+        "line_number": 31,
+        "column_number": 5,
+        "description": "call, CWE134_Uncontrolled_Format_String__char_console_printf_53d_badSink",
+        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_console_printf_53d_badSink\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_53d.c",
+        "line_number": 29,
+        "column_number": 5,
+        "description": "format_string, printf, n$0",
+        "feature": "[\"FormatString\",\"printf\",[\"Var\"]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_53a.c",
+        "line_number": 41,
+        "column_number": 17,
+        "description": "input, fgets",
+        "feature": "[\"Input\",\"fgets\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_53a.c",
+        "line_number": 45,
+        "column_number": 27,
+        "description": "library_call, strlen, n$16",
+        "feature": "[\"LibraryCall\",\"strlen\",\"n$16\"]"
+      },
+      {
+        "level": 1,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_53a.c",
+        "line_number": 59,
+        "column_number": 5,
+        "description": "call, CWE134_Uncontrolled_Format_String__char_console_printf_53b_badSink",
+        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_console_printf_53b_badSink\"]"
+      },
+      {
+        "level": 1,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_53b.c",
+        "line_number": 31,
+        "column_number": 5,
+        "description": "call, CWE134_Uncontrolled_Format_String__char_console_printf_53c_badSink",
+        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_console_printf_53c_badSink\"]"
+      },
+      {
+        "level": 1,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_53c.c",
+        "line_number": 31,
+        "column_number": 5,
+        "description": "call, CWE134_Uncontrolled_Format_String__char_console_printf_53d_badSink",
+        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_console_printf_53d_badSink\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_53d.c",
+        "line_number": 29,
+        "column_number": 5,
+        "description": "format_string, printf, n$0",
+        "feature": "[\"FormatString\",\"printf\",[\"Var\"]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_53a.c",
+        "line_number": 41,
+        "column_number": 17,
+        "description": "input, fgets",
+        "feature": "[\"Input\",\"fgets\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_53a.c",
+        "line_number": 45,
+        "column_number": 27,
+        "description": "library_call, strlen, n$16",
+        "feature": "[\"LibraryCall\",\"strlen\",\"n$16\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_53a.c",
+        "line_number": 46,
+        "column_number": 36,
+        "description": "prune, (n$11 == 10)",
+        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_53a.c",
+        "line_number": 59,
+        "column_number": 5,
+        "description": "call, CWE134_Uncontrolled_Format_String__char_console_printf_53b_badSink",
+        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_console_printf_53b_badSink\"]"
+      },
+      {
+        "level": 1,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_53b.c",
+        "line_number": 31,
+        "column_number": 5,
+        "description": "call, CWE134_Uncontrolled_Format_String__char_console_printf_53c_badSink",
+        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_console_printf_53c_badSink\"]"
+      },
+      {
+        "level": 1,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_53c.c",
+        "line_number": 31,
+        "column_number": 5,
+        "description": "call, CWE134_Uncontrolled_Format_String__char_console_printf_53d_badSink",
+        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_console_printf_53d_badSink\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_53d.c",
+        "line_number": 29,
+        "column_number": 5,
+        "description": "format_string, printf, n$0",
+        "feature": "[\"FormatString\",\"printf\",[\"Var\"]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_53a.c",
+        "line_number": 41,
+        "column_number": 17,
+        "description": "input, fgets",
+        "feature": "[\"Input\",\"fgets\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_53a.c",
+        "line_number": 45,
+        "column_number": 27,
+        "description": "library_call, strlen, n$16",
+        "feature": "[\"LibraryCall\",\"strlen\",\"n$16\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_53a.c",
+        "line_number": 46,
+        "column_number": 36,
+        "description": "prune, !(n$11 == 10)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_53a.c",
+        "line_number": 59,
+        "column_number": 5,
+        "description": "call, CWE134_Uncontrolled_Format_String__char_console_printf_53b_badSink",
+        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_console_printf_53b_badSink\"]"
+      },
+      {
+        "level": 1,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_53b.c",
+        "line_number": 31,
+        "column_number": 5,
+        "description": "call, CWE134_Uncontrolled_Format_String__char_console_printf_53c_badSink",
+        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_console_printf_53c_badSink\"]"
+      },
+      {
+        "level": 1,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_53c.c",
+        "line_number": 31,
+        "column_number": 5,
+        "description": "call, CWE134_Uncontrolled_Format_String__char_console_printf_53d_badSink",
+        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_console_printf_53d_badSink\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_53d.c",
+        "line_number": 29,
+        "column_number": 5,
+        "description": "format_string, printf, n$0",
+        "feature": "[\"FormatString\",\"printf\",[\"Var\"]]"
+      }
+    ]
+  ],
+  "key": "CWE134_Uncontrolled_Format_String__char_console_printf_53a.c|CWE134_Uncontrolled_Format_String__char_console_printf_53_bad|API_MISUSE",
+  "hash": "814b61dbdbdf1dcb600c0d0ac820c5c7",
+  "bug_type_hum": "Api Misuse",
+  "extras": {
+    "bug_src_loc": {
+      "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_53a.c",
+      "lnum": 41,
+      "cnum": 17,
+      "enum": 0
+    }
+  }
+}

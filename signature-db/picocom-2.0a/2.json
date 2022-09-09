@@ -1,0 +1,397 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "CmdInjection.",
+  "severity": "ERROR",
+  "line": 825,
+  "column": 3,
+  "procedure": "do_command",
+  "procedure_start_line": 836,
+  "file": "picocom.c",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "linenoise-1.0/linenoise.c",
+        "line_number": 976,
+        "column_number": 13,
+        "description": "input, fgets",
+        "feature": "[\"Input\",\"fgets\"]"
+      },
+      {
+        "level": 1,
+        "filename": "picocom.c",
+        "line_number": 536,
+        "column_number": 3,
+        "description": "call, add_send_receive_history",
+        "feature": "[\"Call\",\"add_send_receive_history\"]"
+      },
+      {
+        "level": 1,
+        "filename": "picocom.c",
+        "line_number": 521,
+        "column_number": 2,
+        "description": "call, linenoiseHistoryAdd",
+        "feature": "[\"Call\",\"linenoiseHistoryAdd\"]"
+      },
+      {
+        "level": 1,
+        "filename": "picocom.c",
+        "line_number": 949,
+        "column_number": 3,
+        "description": "call, run_cmd",
+        "feature": "[\"Call\",\"run_cmd\"]"
+      },
+      {
+        "level": 0,
+        "filename": "picocom.c",
+        "line_number": 825,
+        "column_number": 3,
+        "description": "cmd_injection, execl, &cmd",
+        "feature": "[\"CmdInjection\",\"execl\",[\"Var\"]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "linenoise-1.0/linenoise.c",
+        "line_number": 976,
+        "column_number": 13,
+        "description": "input, fgets",
+        "feature": "[\"Input\",\"fgets\"]"
+      },
+      {
+        "level": 1,
+        "filename": "picocom.c",
+        "line_number": 536,
+        "column_number": 3,
+        "description": "call, add_send_receive_history",
+        "feature": "[\"Call\",\"add_send_receive_history\"]"
+      },
+      {
+        "level": 1,
+        "filename": "picocom.c",
+        "line_number": 521,
+        "column_number": 2,
+        "description": "call, linenoiseHistoryAdd",
+        "feature": "[\"Call\",\"linenoiseHistoryAdd\"]"
+      },
+      {
+        "level": 0,
+        "filename": "linenoise-1.0/linenoise.c",
+        "line_number": 1030,
+        "column_number": 25,
+        "description": "library_call, strcmp, n$24, n$25",
+        "feature": "[\"LibraryCall\",\"strcmp\",\"n$24, n$25\"]"
+      },
+      {
+        "level": 1,
+        "filename": "picocom.c",
+        "line_number": 949,
+        "column_number": 3,
+        "description": "call, run_cmd",
+        "feature": "[\"Call\",\"run_cmd\"]"
+      },
+      {
+        "level": 0,
+        "filename": "picocom.c",
+        "line_number": 825,
+        "column_number": 3,
+        "description": "cmd_injection, execl, &cmd",
+        "feature": "[\"CmdInjection\",\"execl\",[\"Var\"]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "linenoise-1.0/linenoise.c",
+        "line_number": 976,
+        "column_number": 13,
+        "description": "input, fgets",
+        "feature": "[\"Input\",\"fgets\"]"
+      },
+      {
+        "level": 0,
+        "filename": "linenoise-1.0/linenoise.c",
+        "line_number": 982,
+        "column_number": 16,
+        "description": "library_call, strdup, &buf",
+        "feature": "[\"LibraryCall\",\"strdup\",\"&buf\"]"
+      },
+      {
+        "level": 1,
+        "filename": "picocom.c",
+        "line_number": 536,
+        "column_number": 3,
+        "description": "call, add_send_receive_history",
+        "feature": "[\"Call\",\"add_send_receive_history\"]"
+      },
+      {
+        "level": 1,
+        "filename": "picocom.c",
+        "line_number": 521,
+        "column_number": 2,
+        "description": "call, linenoiseHistoryAdd",
+        "feature": "[\"Call\",\"linenoiseHistoryAdd\"]"
+      },
+      {
+        "level": 1,
+        "filename": "picocom.c",
+        "line_number": 949,
+        "column_number": 3,
+        "description": "call, run_cmd",
+        "feature": "[\"Call\",\"run_cmd\"]"
+      },
+      {
+        "level": 0,
+        "filename": "picocom.c",
+        "line_number": 825,
+        "column_number": 3,
+        "description": "cmd_injection, execl, &cmd",
+        "feature": "[\"CmdInjection\",\"execl\",[\"Var\"]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "linenoise-1.0/linenoise.c",
+        "line_number": 976,
+        "column_number": 13,
+        "description": "input, fgets",
+        "feature": "[\"Input\",\"fgets\"]"
+      },
+      {
+        "level": 0,
+        "filename": "linenoise-1.0/linenoise.c",
+        "line_number": 982,
+        "column_number": 16,
+        "description": "library_call, strdup, &buf",
+        "feature": "[\"LibraryCall\",\"strdup\",\"&buf\"]"
+      },
+      {
+        "level": 1,
+        "filename": "picocom.c",
+        "line_number": 536,
+        "column_number": 3,
+        "description": "call, add_send_receive_history",
+        "feature": "[\"Call\",\"add_send_receive_history\"]"
+      },
+      {
+        "level": 1,
+        "filename": "picocom.c",
+        "line_number": 521,
+        "column_number": 2,
+        "description": "call, linenoiseHistoryAdd",
+        "feature": "[\"Call\",\"linenoiseHistoryAdd\"]"
+      },
+      {
+        "level": 0,
+        "filename": "linenoise-1.0/linenoise.c",
+        "line_number": 1030,
+        "column_number": 25,
+        "description": "library_call, strcmp, n$24, n$25",
+        "feature": "[\"LibraryCall\",\"strcmp\",\"n$24, n$25\"]"
+      },
+      {
+        "level": 1,
+        "filename": "picocom.c",
+        "line_number": 949,
+        "column_number": 3,
+        "description": "call, run_cmd",
+        "feature": "[\"Call\",\"run_cmd\"]"
+      },
+      {
+        "level": 0,
+        "filename": "picocom.c",
+        "line_number": 825,
+        "column_number": 3,
+        "description": "cmd_injection, execl, &cmd",
+        "feature": "[\"CmdInjection\",\"execl\",[\"Var\"]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "linenoise-1.0/linenoise.c",
+        "line_number": 976,
+        "column_number": 13,
+        "description": "input, fgets",
+        "feature": "[\"Input\",\"fgets\"]"
+      },
+      {
+        "level": 0,
+        "filename": "linenoise-1.0/linenoise.c",
+        "line_number": 977,
+        "column_number": 15,
+        "description": "library_call, strlen, &buf",
+        "feature": "[\"LibraryCall\",\"strlen\",\"&buf\"]"
+      },
+      {
+        "level": 1,
+        "filename": "picocom.c",
+        "line_number": 536,
+        "column_number": 3,
+        "description": "call, add_send_receive_history",
+        "feature": "[\"Call\",\"add_send_receive_history\"]"
+      },
+      {
+        "level": 1,
+        "filename": "picocom.c",
+        "line_number": 521,
+        "column_number": 2,
+        "description": "call, linenoiseHistoryAdd",
+        "feature": "[\"Call\",\"linenoiseHistoryAdd\"]"
+      },
+      {
+        "level": 1,
+        "filename": "picocom.c",
+        "line_number": 949,
+        "column_number": 3,
+        "description": "call, run_cmd",
+        "feature": "[\"Call\",\"run_cmd\"]"
+      },
+      {
+        "level": 0,
+        "filename": "picocom.c",
+        "line_number": 825,
+        "column_number": 3,
+        "description": "cmd_injection, execl, &cmd",
+        "feature": "[\"CmdInjection\",\"execl\",[\"Var\"]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "linenoise-1.0/linenoise.c",
+        "line_number": 976,
+        "column_number": 13,
+        "description": "input, fgets",
+        "feature": "[\"Input\",\"fgets\"]"
+      },
+      {
+        "level": 0,
+        "filename": "linenoise-1.0/linenoise.c",
+        "line_number": 977,
+        "column_number": 15,
+        "description": "library_call, strlen, &buf",
+        "feature": "[\"LibraryCall\",\"strlen\",\"&buf\"]"
+      },
+      {
+        "level": 0,
+        "filename": "linenoise-1.0/linenoise.c",
+        "line_number": 982,
+        "column_number": 16,
+        "description": "library_call, strdup, &buf",
+        "feature": "[\"LibraryCall\",\"strdup\",\"&buf\"]"
+      },
+      {
+        "level": 1,
+        "filename": "picocom.c",
+        "line_number": 536,
+        "column_number": 3,
+        "description": "call, add_send_receive_history",
+        "feature": "[\"Call\",\"add_send_receive_history\"]"
+      },
+      {
+        "level": 1,
+        "filename": "picocom.c",
+        "line_number": 521,
+        "column_number": 2,
+        "description": "call, linenoiseHistoryAdd",
+        "feature": "[\"Call\",\"linenoiseHistoryAdd\"]"
+      },
+      {
+        "level": 1,
+        "filename": "picocom.c",
+        "line_number": 949,
+        "column_number": 3,
+        "description": "call, run_cmd",
+        "feature": "[\"Call\",\"run_cmd\"]"
+      },
+      {
+        "level": 0,
+        "filename": "picocom.c",
+        "line_number": 825,
+        "column_number": 3,
+        "description": "cmd_injection, execl, &cmd",
+        "feature": "[\"CmdInjection\",\"execl\",[\"Var\"]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "linenoise-1.0/linenoise.c",
+        "line_number": 976,
+        "column_number": 13,
+        "description": "input, fgets",
+        "feature": "[\"Input\",\"fgets\"]"
+      },
+      {
+        "level": 0,
+        "filename": "linenoise-1.0/linenoise.c",
+        "line_number": 977,
+        "column_number": 15,
+        "description": "library_call, strlen, &buf",
+        "feature": "[\"LibraryCall\",\"strlen\",\"&buf\"]"
+      },
+      {
+        "level": 0,
+        "filename": "linenoise-1.0/linenoise.c",
+        "line_number": 982,
+        "column_number": 16,
+        "description": "library_call, strdup, &buf",
+        "feature": "[\"LibraryCall\",\"strdup\",\"&buf\"]"
+      },
+      {
+        "level": 1,
+        "filename": "picocom.c",
+        "line_number": 536,
+        "column_number": 3,
+        "description": "call, add_send_receive_history",
+        "feature": "[\"Call\",\"add_send_receive_history\"]"
+      },
+      {
+        "level": 1,
+        "filename": "picocom.c",
+        "line_number": 521,
+        "column_number": 2,
+        "description": "call, linenoiseHistoryAdd",
+        "feature": "[\"Call\",\"linenoiseHistoryAdd\"]"
+      },
+      {
+        "level": 0,
+        "filename": "linenoise-1.0/linenoise.c",
+        "line_number": 1030,
+        "column_number": 25,
+        "description": "library_call, strcmp, n$24, n$25",
+        "feature": "[\"LibraryCall\",\"strcmp\",\"n$24, n$25\"]"
+      },
+      {
+        "level": 1,
+        "filename": "picocom.c",
+        "line_number": 949,
+        "column_number": 3,
+        "description": "call, run_cmd",
+        "feature": "[\"Call\",\"run_cmd\"]"
+      },
+      {
+        "level": 0,
+        "filename": "picocom.c",
+        "line_number": 825,
+        "column_number": 3,
+        "description": "cmd_injection, execl, &cmd",
+        "feature": "[\"CmdInjection\",\"execl\",[\"Var\"]]"
+      }
+    ]
+  ],
+  "key": "picocom.c|do_command|API_MISUSE",
+  "hash": "59e31eb1f6394a7ecd454fce2bcca2c4",
+  "bug_type_hum": "Api Misuse",
+  "extras": {
+    "bug_src_loc": {
+      "file": "linenoise-1.0/linenoise.c",
+      "lnum": 976,
+      "cnum": 13,
+      "enum": 0
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "UseAfterFree.",
+  "severity": "ERROR",
+  "line": 29,
+  "column": 5,
+  "procedure": "CWE415_Double_Free__malloc_free_long_54_bad",
+  "procedure_start_line": 27,
+  "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_long_54c.c",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_long_54a.c",
+        "line_number": 32,
+        "column_number": 20,
+        "description": "allocate, malloc",
+        "feature": "[\"Allocate\",\"malloc\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_long_54a.c",
+        "line_number": 35,
+        "column_number": 5,
+        "description": "free, free, n$2",
+        "feature": "[\"Free\",\"free\",[\"Var\"]]"
+      },
+      {
+        "level": 1,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_long_54a.c",
+        "line_number": 36,
+        "column_number": 5,
+        "description": "call, CWE415_Double_Free__malloc_free_long_54b_badSink",
+        "feature": "[\"Call\",\"CWE415_Double_Free__malloc_free_long_54b_badSink\"]"
+      },
+      {
+        "level": 1,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_long_54b.c",
+        "line_number": 29,
+        "column_number": 5,
+        "description": "call, CWE415_Double_Free__malloc_free_long_54c_badSink",
+        "feature": "[\"Call\",\"CWE415_Double_Free__malloc_free_long_54c_badSink\"]"
+      }
+    ]
+  ],
+  "key": "CWE415_Double_Free__malloc_free_long_54a.c|CWE415_Double_Free__malloc_free_long_54_bad|API_MISUSE",
+  "hash": "e084322dfccb948c2e102b9de6eaee69",
+  "bug_type_hum": "Api Misuse"
+}

@@ -1,0 +1,41 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "UseAfterFree.",
+  "severity": "ERROR",
+  "line": 28,
+  "column": 5,
+  "procedure": "CWE415_Double_Free__malloc_free_struct_63_bad",
+  "procedure_start_line": 27,
+  "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_struct_63b.c",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_struct_63a.c",
+        "line_number": 32,
+        "column_number": 29,
+        "description": "allocate, malloc",
+        "feature": "[\"Allocate\",\"malloc\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_struct_63a.c",
+        "line_number": 35,
+        "column_number": 5,
+        "description": "free, free, n$1",
+        "feature": "[\"Free\",\"free\",[\"Var\"]]"
+      },
+      {
+        "level": 1,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_struct_63a.c",
+        "line_number": 36,
+        "column_number": 5,
+        "description": "call, CWE415_Double_Free__malloc_free_struct_63b_badSink",
+        "feature": "[\"Call\",\"CWE415_Double_Free__malloc_free_struct_63b_badSink\"]"
+      }
+    ]
+  ],
+  "key": "CWE415_Double_Free__malloc_free_struct_63a.c|CWE415_Double_Free__malloc_free_struct_63_bad|API_MISUSE",
+  "hash": "ba82f771bd872f25bdac7d5b8d77da58",
+  "bug_type_hum": "Api Misuse"
+}

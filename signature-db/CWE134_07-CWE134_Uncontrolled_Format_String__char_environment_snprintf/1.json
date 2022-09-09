@@ -1,0 +1,49 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "FormatString.",
+  "severity": "ERROR",
+  "line": 69,
+  "column": 13,
+  "procedure": "CWE134_Uncontrolled_Format_String__char_environment_snprintf_07_bad",
+  "procedure_start_line": 45,
+  "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s02/CWE134_Uncontrolled_Format_String__char_environment_snprintf_07.c",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s02/CWE134_Uncontrolled_Format_String__char_environment_snprintf_07.c",
+        "line_number": 55,
+        "column_number": 34,
+        "description": "input, getenv",
+        "feature": "[\"Input\",\"getenv\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s02/CWE134_Uncontrolled_Format_String__char_environment_snprintf_07.c",
+        "line_number": 60,
+        "column_number": 17,
+        "description": "library_call, strncat, (n$8 + n$9), n$10",
+        "feature": "[\"LibraryCall\",\"strncat\",\"(n$8 + n$9), n$10\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s02/CWE134_Uncontrolled_Format_String__char_environment_snprintf_07.c",
+        "line_number": 69,
+        "column_number": 13,
+        "description": "format_string, snprintf, n$2",
+        "feature": "[\"FormatString\",\"snprintf\",[\"Var\"]]"
+      }
+    ]
+  ],
+  "key": "CWE134_Uncontrolled_Format_String__char_environment_snprintf_07.c|CWE134_Uncontrolled_Format_String__char_environment_snprintf_07_bad|API_MISUSE",
+  "hash": "764ad305d9c860af7f778c27693332b7",
+  "bug_type_hum": "Api Misuse",
+  "extras": {
+    "bug_src_loc": {
+      "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s02/CWE134_Uncontrolled_Format_String__char_environment_snprintf_07.c",
+      "lnum": 55,
+      "cnum": 34,
+      "enum": 0
+    }
+  }
+}

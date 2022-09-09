@@ -1,0 +1,33 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "UseAfterFree.",
+  "severity": "ERROR",
+  "line": 41,
+  "column": 5,
+  "procedure": "CWE415_Double_Free__new_delete_array_int64_t_41::bad",
+  "procedure_start_line": 33,
+  "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__new_delete_array_int64_t_41.cpp",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__new_delete_array_int64_t_41.cpp",
+        "line_number": 38,
+        "column_number": 12,
+        "description": "allocate, __new_array",
+        "feature": "[\"Allocate\",\"__new_array\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__new_delete_array_int64_t_41.cpp",
+        "line_number": 40,
+        "column_number": 5,
+        "description": "free, __delete_array, n$2",
+        "feature": "[\"Free\",\"__delete_array\",[\"Var\"]]"
+      }
+    ]
+  ],
+  "key": "CWE415_Double_Free__new_delete_array_int64_t_41.cpp|CWE415_Double_Free__new_delete_array_int64_t_41::bad|API_MISUSE",
+  "hash": "6853acd2dc651e3204ad76ee1f2e7fec",
+  "bug_type_hum": "Api Misuse"
+}

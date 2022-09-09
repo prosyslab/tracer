@@ -1,0 +1,33 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "UseAfterFree.",
+  "severity": "ERROR",
+  "line": 42,
+  "column": 22,
+  "procedure": "CWE416_Use_After_Free__new_delete_int_17::bad",
+  "procedure_start_line": 26,
+  "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_int_17.cpp",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_int_17.cpp",
+        "line_number": 34,
+        "column_number": 16,
+        "description": "allocate, __new",
+        "feature": "[\"Allocate\",\"__new\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_int_17.cpp",
+        "line_number": 37,
+        "column_number": 9,
+        "description": "free, __delete, n$8",
+        "feature": "[\"Free\",\"__delete\",[\"Var\"]]"
+      }
+    ]
+  ],
+  "key": "CWE416_Use_After_Free__new_delete_int_17.cpp|CWE416_Use_After_Free__new_delete_int_17::bad|API_MISUSE",
+  "hash": "a0f0ca27c21697d545dd129677f64d51",
+  "bug_type_hum": "Api Misuse"
+}

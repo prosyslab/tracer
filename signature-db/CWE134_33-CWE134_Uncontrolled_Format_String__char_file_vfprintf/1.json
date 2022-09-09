@@ -1,0 +1,49 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "FormatString.",
+  "severity": "ERROR",
+  "line": 42,
+  "column": 9,
+  "procedure": "CWE134_Uncontrolled_Format_String__char_file_vfprintf_33::bad",
+  "procedure_start_line": 47,
+  "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s02/CWE134_Uncontrolled_Format_String__char_file_vfprintf_33.cpp",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s02/CWE134_Uncontrolled_Format_String__char_file_vfprintf_33.cpp",
+        "line_number": 64,
+        "column_number": 21,
+        "description": "input, fgets",
+        "feature": "[\"Input\",\"fgets\"]"
+      },
+      {
+        "level": 1,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s02/CWE134_Uncontrolled_Format_String__char_file_vfprintf_33.cpp",
+        "line_number": 76,
+        "column_number": 9,
+        "description": "call, CWE134_Uncontrolled_Format_String__char_file_vfprintf_33::badVaSink",
+        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_file_vfprintf_33::badVaSink\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s02/CWE134_Uncontrolled_Format_String__char_file_vfprintf_33.cpp",
+        "line_number": 42,
+        "column_number": 9,
+        "description": "format_string, vfprintf, n$2",
+        "feature": "[\"FormatString\",\"vfprintf\",[\"Var\"]]"
+      }
+    ]
+  ],
+  "key": "CWE134_Uncontrolled_Format_String__char_file_vfprintf_33.cpp|CWE134_Uncontrolled_Format_String__char_file_vfprintf_33::bad|API_MISUSE",
+  "hash": "d10ac9ed28cc30e932ae961bf488d5e6",
+  "bug_type_hum": "Api Misuse",
+  "extras": {
+    "bug_src_loc": {
+      "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s02/CWE134_Uncontrolled_Format_String__char_file_vfprintf_33.cpp",
+      "lnum": 64,
+      "cnum": 21,
+      "enum": 0
+    }
+  }
+}

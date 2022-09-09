@@ -1,0 +1,49 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "FormatString.",
+  "severity": "ERROR",
+  "line": 38,
+  "column": 13,
+  "procedure": "CWE134_Uncontrolled_Format_String__char_connect_socket_vfprintf_22_bad",
+  "procedure_start_line": 53,
+  "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_connect_socket_vfprintf_22b.c",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_connect_socket_vfprintf_22a.c",
+        "line_number": 94,
+        "column_number": 26,
+        "description": "input, recv",
+        "feature": "[\"Input\",\"recv\"]"
+      },
+      {
+        "level": 1,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_connect_socket_vfprintf_22a.c",
+        "line_number": 126,
+        "column_number": 5,
+        "description": "call, CWE134_Uncontrolled_Format_String__char_connect_socket_vfprintf_22_badVaSink",
+        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_connect_socket_vfprintf_22_badVaSink\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_connect_socket_vfprintf_22b.c",
+        "line_number": 38,
+        "column_number": 13,
+        "description": "format_string, vfprintf, n$3",
+        "feature": "[\"FormatString\",\"vfprintf\",[\"Var\"]]"
+      }
+    ]
+  ],
+  "key": "CWE134_Uncontrolled_Format_String__char_connect_socket_vfprintf_22a.c|CWE134_Uncontrolled_Format_String__char_connect_socket_vfprintf_22_bad|API_MISUSE",
+  "hash": "f70e39cf837e36fd7ea46ca8d7823836",
+  "bug_type_hum": "Api Misuse",
+  "extras": {
+    "bug_src_loc": {
+      "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_connect_socket_vfprintf_22a.c",
+      "lnum": 94,
+      "cnum": 26,
+      "enum": 0
+    }
+  }
+}

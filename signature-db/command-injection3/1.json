@@ -1,0 +1,99 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "CmdInjection.",
+  "severity": "ERROR",
+  "line": 16,
+  "column": 5,
+  "procedure": "main",
+  "procedure_start_line": 10,
+  "file": "tutorial/command-injection3.c",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "tutorial/command-injection3.c",
+        "line_number": 11,
+        "column_number": 16,
+        "description": "input, getenv",
+        "feature": "[\"Input\",\"getenv\"]"
+      },
+      {
+        "level": 0,
+        "filename": "tutorial/command-injection3.c",
+        "line_number": 14,
+        "column_number": 5,
+        "description": "library_call, strcpy, n$5, n$6",
+        "feature": "[\"LibraryCall\",\"strcpy\",\"n$5, n$6\"]"
+      },
+      {
+        "level": 0,
+        "filename": "tutorial/command-injection3.c",
+        "line_number": 15,
+        "column_number": 5,
+        "description": "library_call, strcat, n$3, \"init\"",
+        "feature": "[\"LibraryCall\",\"strcat\",\"n$3, \\\"init\\\"\"]"
+      },
+      {
+        "level": 0,
+        "filename": "tutorial/command-injection3.c",
+        "line_number": 16,
+        "column_number": 5,
+        "description": "cmd_injection, execl, n$1",
+        "feature": "[\"CmdInjection\",\"execl\",[\"Var\"]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "tutorial/command-injection3.c",
+        "line_number": 11,
+        "column_number": 16,
+        "description": "input, getenv",
+        "feature": "[\"Input\",\"getenv\"]"
+      },
+      {
+        "level": 0,
+        "filename": "tutorial/command-injection3.c",
+        "line_number": 12,
+        "column_number": 30,
+        "description": "library_call, strlen, n$10",
+        "feature": "[\"LibraryCall\",\"strlen\",\"n$10\"]"
+      },
+      {
+        "level": 0,
+        "filename": "tutorial/command-injection3.c",
+        "line_number": 14,
+        "column_number": 5,
+        "description": "library_call, strcpy, n$5, n$6",
+        "feature": "[\"LibraryCall\",\"strcpy\",\"n$5, n$6\"]"
+      },
+      {
+        "level": 0,
+        "filename": "tutorial/command-injection3.c",
+        "line_number": 15,
+        "column_number": 5,
+        "description": "library_call, strcat, n$3, \"init\"",
+        "feature": "[\"LibraryCall\",\"strcat\",\"n$3, \\\"init\\\"\"]"
+      },
+      {
+        "level": 0,
+        "filename": "tutorial/command-injection3.c",
+        "line_number": 16,
+        "column_number": 5,
+        "description": "cmd_injection, execl, n$1",
+        "feature": "[\"CmdInjection\",\"execl\",[\"Var\"]]"
+      }
+    ]
+  ],
+  "key": "command-injection3.c|main|API_MISUSE",
+  "hash": "193a0ca5be858f462ebb55c85251d717",
+  "bug_type_hum": "Api Misuse",
+  "extras": {
+    "bug_src_loc": {
+      "file": "tutorial/command-injection3.c",
+      "lnum": 11,
+      "cnum": 16,
+      "enum": 0
+    }
+  }
+}

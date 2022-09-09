@@ -1,0 +1,41 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "UseAfterFree.",
+  "severity": "ERROR",
+  "line": 41,
+  "column": 9,
+  "procedure": "CWE416_Use_After_Free__new_delete_char_14::bad",
+  "procedure_start_line": 26,
+  "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_14.cpp",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_14.cpp",
+        "line_number": 33,
+        "column_number": 16,
+        "description": "allocate, __new",
+        "feature": "[\"Allocate\",\"__new\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_14.cpp",
+        "line_number": 36,
+        "column_number": 9,
+        "description": "free, __delete, n$7",
+        "feature": "[\"Free\",\"__delete\",[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_14.cpp",
+        "line_number": 41,
+        "column_number": 9,
+        "description": "library_call, printHexCharLine, n$2",
+        "feature": "[\"LibraryCall\",\"printHexCharLine\",\"n$2\"]"
+      }
+    ]
+  ],
+  "key": "CWE416_Use_After_Free__new_delete_char_14.cpp|CWE416_Use_After_Free__new_delete_char_14::bad|API_MISUSE",
+  "hash": "acf3e411281d030bfa193d7c2fcc2ca9",
+  "bug_type_hum": "Api Misuse"
+}

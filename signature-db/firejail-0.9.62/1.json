@@ -1,0 +1,943 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "CmdInjection.",
+  "severity": "ERROR",
+  "line": 105,
+  "column": 2,
+  "procedure": "main",
+  "procedure_start_line": 941,
+  "file": "src/firejail/output.c",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "src/firejail/main.c",
+        "line_number": 941,
+        "column_number": 1,
+        "description": "input, main",
+        "feature": "[\"Input\",\"main\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/main.c",
+        "line_number": 1025,
+        "column_number": 6,
+        "description": "prune, (n$2637 != 45)",
+        "feature": "[\"Prune\",[\"BinOp\",\"!=\",[\"Var\"],[\"Const\",[\"Cint\",\"45\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/main.c",
+        "line_number": 1083,
+        "column_number": 9,
+        "description": "prune, (n$2567 != 45)",
+        "feature": "[\"Prune\",[\"BinOp\",\"!=\",[\"Var\"],[\"Const\",[\"Cint\",\"45\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/main.c",
+        "line_number": 1085,
+        "column_number": 11,
+        "description": "library_call, strcmp, n$2573, \"/usr/lib/openssh/sftp-server\"",
+        "feature": "[\"LibraryCall\",\"strcmp\",\"n$2573, \\\"/usr/lib/openssh/sftp-server\\\"\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/main.c",
+        "line_number": 1086,
+        "column_number": 11,
+        "description": "library_call, strncmp, n$2576, \"scp \"",
+        "feature": "[\"LibraryCall\",\"strncmp\",\"n$2576, \\\"scp \\\"\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/main.c",
+        "line_number": 1111,
+        "column_number": 6,
+        "description": "prune, !(n$2523 == 45)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"45\"]]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "src/firejail/main.c",
+        "line_number": 1156,
+        "column_number": 3,
+        "description": "call, check_output",
+        "feature": "[\"Call\",\"check_output\"]"
+      },
+      {
+        "level": 1,
+        "filename": "src/firejail/output.c",
+        "line_number": 51,
+        "column_number": 2,
+        "description": "call, invalid_filename",
+        "feature": "[\"Call\",\"invalid_filename\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/macros.c",
+        "line_number": 278,
+        "column_number": 12,
+        "description": "library_call, strlen, n$20",
+        "feature": "[\"LibraryCall\",\"strlen\",\"n$20\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/output.c",
+        "line_number": 49,
+        "column_number": 2,
+        "description": "store, &outfile, n$98",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/output.c",
+        "line_number": 50,
+        "column_number": 2,
+        "description": "store, &outfile, (n$95 + n$94)",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/output.c",
+        "line_number": 54,
+        "column_number": 6,
+        "description": "library_call, strstr, n$79",
+        "feature": "[\"LibraryCall\",\"strstr\",\"n$79\"]"
+      },
+      {
+        "level": 1,
+        "filename": "src/firejail/output.c",
+        "line_number": 54,
+        "column_number": 31,
+        "description": "call, is_link",
+        "feature": "[\"Call\",\"is_link\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/util.c",
+        "line_number": 438,
+        "column_number": 6,
+        "description": "prune, !(n$33 == 0)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"0\"]]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "src/firejail/util.c",
+        "line_number": 451,
+        "column_number": 4,
+        "description": "call, trim_trailing_slash_or_dot",
+        "feature": "[\"Call\",\"trim_trailing_slash_or_dot\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/util.c",
+        "line_number": 437,
+        "column_number": 2,
+        "description": "prune, n$37",
+        "feature": "[\"Prune\",[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/util.c",
+        "line_number": 448,
+        "column_number": 4,
+        "description": "store, &dup, n$24",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/util.c",
+        "line_number": 449,
+        "column_number": 9,
+        "description": "prune, n$16",
+        "feature": "[\"Prune\",[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/output.c",
+        "line_number": 49,
+        "column_number": 2,
+        "description": "store, &outfile, n$98",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/output.c",
+        "line_number": 50,
+        "column_number": 2,
+        "description": "store, &outfile, (n$95 + n$94)",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]]]"
+      },
+      {
+        "level": 1,
+        "filename": "src/firejail/output.c",
+        "line_number": 54,
+        "column_number": 51,
+        "description": "call, is_dir",
+        "feature": "[\"Call\",\"is_dir\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/util.c",
+        "line_number": 407,
+        "column_number": 6,
+        "description": "prune, !(n$28 == 0)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"0\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/util.c",
+        "line_number": 413,
+        "column_number": 6,
+        "description": "prune, !(n$9 == 47)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"47\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/output.c",
+        "line_number": 49,
+        "column_number": 2,
+        "description": "store, &outfile, n$98",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/output.c",
+        "line_number": 50,
+        "column_number": 2,
+        "description": "store, &outfile, (n$95 + n$94)",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/output.c",
+        "line_number": 79,
+        "column_number": 32,
+        "description": "library_call, strlen, n$48",
+        "feature": "[\"LibraryCall\",\"strlen\",\"n$48\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/output.c",
+        "line_number": 95,
+        "column_number": 3,
+        "description": "library_call, sprintf, \"2>&1 | %s/firejail/ftee %s\", \"/usr/local/lib\", n$7",
+        "feature": "[\"LibraryCall\",\"sprintf\",\"\\\"2>&1 | %s/firejail/ftee %s\\\", \\\"/usr/local/lib\\\", n$7\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/output.c",
+        "line_number": 105,
+        "column_number": 2,
+        "description": "cmd_injection, execvp, n$2",
+        "feature": "[\"CmdInjection\",\"execvp\",[\"Var\"]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "src/firejail/main.c",
+        "line_number": 941,
+        "column_number": 1,
+        "description": "input, main",
+        "feature": "[\"Input\",\"main\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/main.c",
+        "line_number": 1025,
+        "column_number": 6,
+        "description": "prune, (n$2637 != 45)",
+        "feature": "[\"Prune\",[\"BinOp\",\"!=\",[\"Var\"],[\"Const\",[\"Cint\",\"45\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/main.c",
+        "line_number": 1083,
+        "column_number": 9,
+        "description": "prune, (n$2567 != 45)",
+        "feature": "[\"Prune\",[\"BinOp\",\"!=\",[\"Var\"],[\"Const\",[\"Cint\",\"45\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/main.c",
+        "line_number": 1084,
+        "column_number": 10,
+        "description": "library_call, strcmp, n$2569, \"-c\"",
+        "feature": "[\"LibraryCall\",\"strcmp\",\"n$2569, \\\"-c\\\"\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/main.c",
+        "line_number": 1085,
+        "column_number": 11,
+        "description": "library_call, strcmp, n$2573, \"/usr/lib/openssh/sftp-server\"",
+        "feature": "[\"LibraryCall\",\"strcmp\",\"n$2573, \\\"/usr/lib/openssh/sftp-server\\\"\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/main.c",
+        "line_number": 1086,
+        "column_number": 11,
+        "description": "library_call, strncmp, n$2576, \"scp \"",
+        "feature": "[\"LibraryCall\",\"strncmp\",\"n$2576, \\\"scp \\\"\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/main.c",
+        "line_number": 1111,
+        "column_number": 6,
+        "description": "prune, !(n$2523 == 45)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"45\"]]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "src/firejail/main.c",
+        "line_number": 1156,
+        "column_number": 3,
+        "description": "call, check_output",
+        "feature": "[\"Call\",\"check_output\"]"
+      },
+      {
+        "level": 1,
+        "filename": "src/firejail/output.c",
+        "line_number": 51,
+        "column_number": 2,
+        "description": "call, invalid_filename",
+        "feature": "[\"Call\",\"invalid_filename\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/macros.c",
+        "line_number": 278,
+        "column_number": 12,
+        "description": "library_call, strlen, n$20",
+        "feature": "[\"LibraryCall\",\"strlen\",\"n$20\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/output.c",
+        "line_number": 49,
+        "column_number": 2,
+        "description": "store, &outfile, n$98",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/output.c",
+        "line_number": 50,
+        "column_number": 2,
+        "description": "store, &outfile, (n$95 + n$94)",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/output.c",
+        "line_number": 54,
+        "column_number": 6,
+        "description": "library_call, strstr, n$79",
+        "feature": "[\"LibraryCall\",\"strstr\",\"n$79\"]"
+      },
+      {
+        "level": 1,
+        "filename": "src/firejail/output.c",
+        "line_number": 54,
+        "column_number": 31,
+        "description": "call, is_link",
+        "feature": "[\"Call\",\"is_link\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/util.c",
+        "line_number": 438,
+        "column_number": 6,
+        "description": "prune, !(n$33 == 0)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"0\"]]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "src/firejail/util.c",
+        "line_number": 451,
+        "column_number": 4,
+        "description": "call, trim_trailing_slash_or_dot",
+        "feature": "[\"Call\",\"trim_trailing_slash_or_dot\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/util.c",
+        "line_number": 437,
+        "column_number": 2,
+        "description": "prune, n$37",
+        "feature": "[\"Prune\",[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/util.c",
+        "line_number": 448,
+        "column_number": 4,
+        "description": "store, &dup, n$24",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/util.c",
+        "line_number": 449,
+        "column_number": 9,
+        "description": "prune, n$16",
+        "feature": "[\"Prune\",[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/output.c",
+        "line_number": 49,
+        "column_number": 2,
+        "description": "store, &outfile, n$98",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/output.c",
+        "line_number": 50,
+        "column_number": 2,
+        "description": "store, &outfile, (n$95 + n$94)",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]]]"
+      },
+      {
+        "level": 1,
+        "filename": "src/firejail/output.c",
+        "line_number": 54,
+        "column_number": 51,
+        "description": "call, is_dir",
+        "feature": "[\"Call\",\"is_dir\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/util.c",
+        "line_number": 407,
+        "column_number": 6,
+        "description": "prune, !(n$28 == 0)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"0\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/util.c",
+        "line_number": 413,
+        "column_number": 6,
+        "description": "prune, !(n$9 == 47)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"47\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/output.c",
+        "line_number": 49,
+        "column_number": 2,
+        "description": "store, &outfile, n$98",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/output.c",
+        "line_number": 50,
+        "column_number": 2,
+        "description": "store, &outfile, (n$95 + n$94)",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/output.c",
+        "line_number": 79,
+        "column_number": 32,
+        "description": "library_call, strlen, n$48",
+        "feature": "[\"LibraryCall\",\"strlen\",\"n$48\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/output.c",
+        "line_number": 95,
+        "column_number": 3,
+        "description": "library_call, sprintf, \"2>&1 | %s/firejail/ftee %s\", \"/usr/local/lib\", n$7",
+        "feature": "[\"LibraryCall\",\"sprintf\",\"\\\"2>&1 | %s/firejail/ftee %s\\\", \\\"/usr/local/lib\\\", n$7\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/output.c",
+        "line_number": 105,
+        "column_number": 2,
+        "description": "cmd_injection, execvp, n$2",
+        "feature": "[\"CmdInjection\",\"execvp\",[\"Var\"]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "src/firejail/main.c",
+        "line_number": 941,
+        "column_number": 1,
+        "description": "input, main",
+        "feature": "[\"Input\",\"main\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/main.c",
+        "line_number": 1025,
+        "column_number": 6,
+        "description": "prune, !(n$2637 != 45)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"!=\",[\"Var\"],[\"Const\",[\"Cint\",\"45\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/main.c",
+        "line_number": 1083,
+        "column_number": 9,
+        "description": "prune, (n$2567 != 45)",
+        "feature": "[\"Prune\",[\"BinOp\",\"!=\",[\"Var\"],[\"Const\",[\"Cint\",\"45\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/main.c",
+        "line_number": 1085,
+        "column_number": 11,
+        "description": "library_call, strcmp, n$2573, \"/usr/lib/openssh/sftp-server\"",
+        "feature": "[\"LibraryCall\",\"strcmp\",\"n$2573, \\\"/usr/lib/openssh/sftp-server\\\"\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/main.c",
+        "line_number": 1086,
+        "column_number": 11,
+        "description": "library_call, strncmp, n$2576, \"scp \"",
+        "feature": "[\"LibraryCall\",\"strncmp\",\"n$2576, \\\"scp \\\"\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/main.c",
+        "line_number": 1111,
+        "column_number": 6,
+        "description": "prune, !(n$2523 == 45)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"45\"]]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "src/firejail/main.c",
+        "line_number": 1156,
+        "column_number": 3,
+        "description": "call, check_output",
+        "feature": "[\"Call\",\"check_output\"]"
+      },
+      {
+        "level": 1,
+        "filename": "src/firejail/output.c",
+        "line_number": 51,
+        "column_number": 2,
+        "description": "call, invalid_filename",
+        "feature": "[\"Call\",\"invalid_filename\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/macros.c",
+        "line_number": 278,
+        "column_number": 12,
+        "description": "library_call, strlen, n$20",
+        "feature": "[\"LibraryCall\",\"strlen\",\"n$20\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/output.c",
+        "line_number": 49,
+        "column_number": 2,
+        "description": "store, &outfile, n$98",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/output.c",
+        "line_number": 50,
+        "column_number": 2,
+        "description": "store, &outfile, (n$95 + n$94)",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/output.c",
+        "line_number": 54,
+        "column_number": 6,
+        "description": "library_call, strstr, n$79",
+        "feature": "[\"LibraryCall\",\"strstr\",\"n$79\"]"
+      },
+      {
+        "level": 1,
+        "filename": "src/firejail/output.c",
+        "line_number": 54,
+        "column_number": 31,
+        "description": "call, is_link",
+        "feature": "[\"Call\",\"is_link\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/util.c",
+        "line_number": 438,
+        "column_number": 6,
+        "description": "prune, !(n$33 == 0)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"0\"]]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "src/firejail/util.c",
+        "line_number": 451,
+        "column_number": 4,
+        "description": "call, trim_trailing_slash_or_dot",
+        "feature": "[\"Call\",\"trim_trailing_slash_or_dot\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/util.c",
+        "line_number": 437,
+        "column_number": 2,
+        "description": "prune, n$37",
+        "feature": "[\"Prune\",[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/util.c",
+        "line_number": 448,
+        "column_number": 4,
+        "description": "store, &dup, n$24",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/util.c",
+        "line_number": 449,
+        "column_number": 9,
+        "description": "prune, n$16",
+        "feature": "[\"Prune\",[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/output.c",
+        "line_number": 49,
+        "column_number": 2,
+        "description": "store, &outfile, n$98",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/output.c",
+        "line_number": 50,
+        "column_number": 2,
+        "description": "store, &outfile, (n$95 + n$94)",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]]]"
+      },
+      {
+        "level": 1,
+        "filename": "src/firejail/output.c",
+        "line_number": 54,
+        "column_number": 51,
+        "description": "call, is_dir",
+        "feature": "[\"Call\",\"is_dir\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/util.c",
+        "line_number": 407,
+        "column_number": 6,
+        "description": "prune, !(n$28 == 0)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"0\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/util.c",
+        "line_number": 413,
+        "column_number": 6,
+        "description": "prune, !(n$9 == 47)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"47\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/output.c",
+        "line_number": 49,
+        "column_number": 2,
+        "description": "store, &outfile, n$98",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/output.c",
+        "line_number": 50,
+        "column_number": 2,
+        "description": "store, &outfile, (n$95 + n$94)",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/output.c",
+        "line_number": 79,
+        "column_number": 32,
+        "description": "library_call, strlen, n$48",
+        "feature": "[\"LibraryCall\",\"strlen\",\"n$48\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/output.c",
+        "line_number": 95,
+        "column_number": 3,
+        "description": "library_call, sprintf, \"2>&1 | %s/firejail/ftee %s\", \"/usr/local/lib\", n$7",
+        "feature": "[\"LibraryCall\",\"sprintf\",\"\\\"2>&1 | %s/firejail/ftee %s\\\", \\\"/usr/local/lib\\\", n$7\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/output.c",
+        "line_number": 105,
+        "column_number": 2,
+        "description": "cmd_injection, execvp, n$2",
+        "feature": "[\"CmdInjection\",\"execvp\",[\"Var\"]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "src/firejail/main.c",
+        "line_number": 941,
+        "column_number": 1,
+        "description": "input, main",
+        "feature": "[\"Input\",\"main\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/main.c",
+        "line_number": 1025,
+        "column_number": 6,
+        "description": "prune, !(n$2637 != 45)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"!=\",[\"Var\"],[\"Const\",[\"Cint\",\"45\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/main.c",
+        "line_number": 1083,
+        "column_number": 9,
+        "description": "prune, (n$2567 != 45)",
+        "feature": "[\"Prune\",[\"BinOp\",\"!=\",[\"Var\"],[\"Const\",[\"Cint\",\"45\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/main.c",
+        "line_number": 1084,
+        "column_number": 10,
+        "description": "library_call, strcmp, n$2569, \"-c\"",
+        "feature": "[\"LibraryCall\",\"strcmp\",\"n$2569, \\\"-c\\\"\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/main.c",
+        "line_number": 1085,
+        "column_number": 11,
+        "description": "library_call, strcmp, n$2573, \"/usr/lib/openssh/sftp-server\"",
+        "feature": "[\"LibraryCall\",\"strcmp\",\"n$2573, \\\"/usr/lib/openssh/sftp-server\\\"\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/main.c",
+        "line_number": 1086,
+        "column_number": 11,
+        "description": "library_call, strncmp, n$2576, \"scp \"",
+        "feature": "[\"LibraryCall\",\"strncmp\",\"n$2576, \\\"scp \\\"\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/main.c",
+        "line_number": 1111,
+        "column_number": 6,
+        "description": "prune, !(n$2523 == 45)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"45\"]]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "src/firejail/main.c",
+        "line_number": 1156,
+        "column_number": 3,
+        "description": "call, check_output",
+        "feature": "[\"Call\",\"check_output\"]"
+      },
+      {
+        "level": 1,
+        "filename": "src/firejail/output.c",
+        "line_number": 51,
+        "column_number": 2,
+        "description": "call, invalid_filename",
+        "feature": "[\"Call\",\"invalid_filename\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/macros.c",
+        "line_number": 278,
+        "column_number": 12,
+        "description": "library_call, strlen, n$20",
+        "feature": "[\"LibraryCall\",\"strlen\",\"n$20\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/output.c",
+        "line_number": 49,
+        "column_number": 2,
+        "description": "store, &outfile, n$98",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/output.c",
+        "line_number": 50,
+        "column_number": 2,
+        "description": "store, &outfile, (n$95 + n$94)",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/output.c",
+        "line_number": 54,
+        "column_number": 6,
+        "description": "library_call, strstr, n$79",
+        "feature": "[\"LibraryCall\",\"strstr\",\"n$79\"]"
+      },
+      {
+        "level": 1,
+        "filename": "src/firejail/output.c",
+        "line_number": 54,
+        "column_number": 31,
+        "description": "call, is_link",
+        "feature": "[\"Call\",\"is_link\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/util.c",
+        "line_number": 438,
+        "column_number": 6,
+        "description": "prune, !(n$33 == 0)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"0\"]]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "src/firejail/util.c",
+        "line_number": 451,
+        "column_number": 4,
+        "description": "call, trim_trailing_slash_or_dot",
+        "feature": "[\"Call\",\"trim_trailing_slash_or_dot\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/util.c",
+        "line_number": 437,
+        "column_number": 2,
+        "description": "prune, n$37",
+        "feature": "[\"Prune\",[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/util.c",
+        "line_number": 448,
+        "column_number": 4,
+        "description": "store, &dup, n$24",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/util.c",
+        "line_number": 449,
+        "column_number": 9,
+        "description": "prune, n$16",
+        "feature": "[\"Prune\",[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/output.c",
+        "line_number": 49,
+        "column_number": 2,
+        "description": "store, &outfile, n$98",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/output.c",
+        "line_number": 50,
+        "column_number": 2,
+        "description": "store, &outfile, (n$95 + n$94)",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]]]"
+      },
+      {
+        "level": 1,
+        "filename": "src/firejail/output.c",
+        "line_number": 54,
+        "column_number": 51,
+        "description": "call, is_dir",
+        "feature": "[\"Call\",\"is_dir\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/util.c",
+        "line_number": 407,
+        "column_number": 6,
+        "description": "prune, !(n$28 == 0)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"0\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/util.c",
+        "line_number": 413,
+        "column_number": 6,
+        "description": "prune, !(n$9 == 47)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"47\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/output.c",
+        "line_number": 49,
+        "column_number": 2,
+        "description": "store, &outfile, n$98",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/output.c",
+        "line_number": 50,
+        "column_number": 2,
+        "description": "store, &outfile, (n$95 + n$94)",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/output.c",
+        "line_number": 79,
+        "column_number": 32,
+        "description": "library_call, strlen, n$48",
+        "feature": "[\"LibraryCall\",\"strlen\",\"n$48\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/output.c",
+        "line_number": 95,
+        "column_number": 3,
+        "description": "library_call, sprintf, \"2>&1 | %s/firejail/ftee %s\", \"/usr/local/lib\", n$7",
+        "feature": "[\"LibraryCall\",\"sprintf\",\"\\\"2>&1 | %s/firejail/ftee %s\\\", \\\"/usr/local/lib\\\", n$7\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/firejail/output.c",
+        "line_number": 105,
+        "column_number": 2,
+        "description": "cmd_injection, execvp, n$2",
+        "feature": "[\"CmdInjection\",\"execvp\",[\"Var\"]]"
+      }
+    ]
+  ],
+  "key": "main.c|main|API_MISUSE",
+  "hash": "915dccc5e9e4b376f8d0d175785d3a7d",
+  "bug_type_hum": "Api Misuse",
+  "extras": {
+    "bug_src_loc": {
+      "file": "src/firejail/main.c",
+      "lnum": 941,
+      "cnum": 1,
+      "enum": 0
+    }
+  }
+}

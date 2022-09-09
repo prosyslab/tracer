@@ -1,0 +1,127 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "CmdInjection.",
+  "severity": "ERROR",
+  "line": 159,
+  "column": 5,
+  "procedure": "main",
+  "procedure_start_line": 42,
+  "file": "client-src/runtar.c",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "client-src/runtar.c",
+        "line_number": 42,
+        "column_number": 1,
+        "description": "input, main",
+        "feature": "[\"Input\",\"main\"]"
+      },
+      {
+        "level": 0,
+        "filename": "client-src/runtar.c",
+        "line_number": 159,
+        "column_number": 5,
+        "description": "cmd_injection, execve, n$25",
+        "feature": "[\"CmdInjection\",\"execve\",[\"Var\"]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "client-src/runtar.c",
+        "line_number": 42,
+        "column_number": 1,
+        "description": "input, main",
+        "feature": "[\"Input\",\"main\"]"
+      },
+      {
+        "level": 0,
+        "filename": "client-src/runtar.c",
+        "line_number": 137,
+        "column_number": 9,
+        "description": "library_call, strcmp, n$77, \"NOCONFIG\"",
+        "feature": "[\"LibraryCall\",\"strcmp\",\"n$77, \\\"NOCONFIG\\\"\"]"
+      },
+      {
+        "level": 0,
+        "filename": "client-src/runtar.c",
+        "line_number": 159,
+        "column_number": 5,
+        "description": "cmd_injection, execve, n$25",
+        "feature": "[\"CmdInjection\",\"execve\",[\"Var\"]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "client-src/runtar.c",
+        "line_number": 42,
+        "column_number": 1,
+        "description": "input, main",
+        "feature": "[\"Input\",\"main\"]"
+      },
+      {
+        "level": 0,
+        "filename": "client-src/runtar.c",
+        "line_number": 86,
+        "column_number": 9,
+        "description": "library_call, strcmp, n$125, \"--create\"",
+        "feature": "[\"LibraryCall\",\"strcmp\",\"n$125, \\\"--create\\\"\"]"
+      },
+      {
+        "level": 0,
+        "filename": "client-src/runtar.c",
+        "line_number": 159,
+        "column_number": 5,
+        "description": "cmd_injection, execve, n$25",
+        "feature": "[\"CmdInjection\",\"execve\",[\"Var\"]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "client-src/runtar.c",
+        "line_number": 42,
+        "column_number": 1,
+        "description": "input, main",
+        "feature": "[\"Input\",\"main\"]"
+      },
+      {
+        "level": 0,
+        "filename": "client-src/runtar.c",
+        "line_number": 86,
+        "column_number": 9,
+        "description": "library_call, strcmp, n$125, \"--create\"",
+        "feature": "[\"LibraryCall\",\"strcmp\",\"n$125, \\\"--create\\\"\"]"
+      },
+      {
+        "level": 0,
+        "filename": "client-src/runtar.c",
+        "line_number": 137,
+        "column_number": 9,
+        "description": "library_call, strcmp, n$77, \"NOCONFIG\"",
+        "feature": "[\"LibraryCall\",\"strcmp\",\"n$77, \\\"NOCONFIG\\\"\"]"
+      },
+      {
+        "level": 0,
+        "filename": "client-src/runtar.c",
+        "line_number": 159,
+        "column_number": 5,
+        "description": "cmd_injection, execve, n$25",
+        "feature": "[\"CmdInjection\",\"execve\",[\"Var\"]]"
+      }
+    ]
+  ],
+  "key": "runtar.c|main|API_MISUSE",
+  "hash": "96e19b7a51e8ab748da23cd7b6a32197",
+  "bug_type_hum": "Api Misuse",
+  "extras": {
+    "bug_src_loc": {
+      "file": "client-src/runtar.c",
+      "lnum": 42,
+      "cnum": 1,
+      "enum": 0
+    }
+  }
+}

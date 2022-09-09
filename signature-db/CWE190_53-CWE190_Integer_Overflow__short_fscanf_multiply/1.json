@@ -1,0 +1,81 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "IntOverflow.",
+  "severity": "ERROR",
+  "line": 28,
+  "column": 9,
+  "procedure": "CWE190_Integer_Overflow__short_fscanf_multiply_53_bad",
+  "procedure_start_line": 25,
+  "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s04/CWE190_Integer_Overflow__short_fscanf_multiply_53d.c",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s04/CWE190_Integer_Overflow__short_fscanf_multiply_53a.c",
+        "line_number": 30,
+        "column_number": 5,
+        "description": "input, fscanf",
+        "feature": "[\"Input\",\"fscanf\"]"
+      },
+      {
+        "level": 1,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s04/CWE190_Integer_Overflow__short_fscanf_multiply_53a.c",
+        "line_number": 31,
+        "column_number": 5,
+        "description": "call, CWE190_Integer_Overflow__short_fscanf_multiply_53b_badSink",
+        "feature": "[\"Call\",\"CWE190_Integer_Overflow__short_fscanf_multiply_53b_badSink\"]"
+      },
+      {
+        "level": 1,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s04/CWE190_Integer_Overflow__short_fscanf_multiply_53b.c",
+        "line_number": 27,
+        "column_number": 5,
+        "description": "call, CWE190_Integer_Overflow__short_fscanf_multiply_53c_badSink",
+        "feature": "[\"Call\",\"CWE190_Integer_Overflow__short_fscanf_multiply_53c_badSink\"]"
+      },
+      {
+        "level": 1,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s04/CWE190_Integer_Overflow__short_fscanf_multiply_53c.c",
+        "line_number": 27,
+        "column_number": 5,
+        "description": "call, CWE190_Integer_Overflow__short_fscanf_multiply_53d_badSink",
+        "feature": "[\"Call\",\"CWE190_Integer_Overflow__short_fscanf_multiply_53d_badSink\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s04/CWE190_Integer_Overflow__short_fscanf_multiply_53d.c",
+        "line_number": 24,
+        "column_number": 8,
+        "description": "prune, (n$0 > 0)",
+        "feature": "[\"Prune\",[\"BinOp\",\">\",[\"Var\"],[\"Const\",[\"Cint\",\"0\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s04/CWE190_Integer_Overflow__short_fscanf_multiply_53d.c",
+        "line_number": 27,
+        "column_number": 9,
+        "description": "store, &result, (n$3 * 2)",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"*\",[\"Var\"],[\"Const\",[\"Cint\",\"2\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s04/CWE190_Integer_Overflow__short_fscanf_multiply_53d.c",
+        "line_number": 28,
+        "column_number": 9,
+        "description": "int_overflow, printIntLine, n$1",
+        "feature": "[\"IntOverflow\",\"printIntLine\",[\"Var\"]]"
+      }
+    ]
+  ],
+  "key": "CWE190_Integer_Overflow__short_fscanf_multiply_53a.c|CWE190_Integer_Overflow__short_fscanf_multiply_53_bad|API_MISUSE",
+  "hash": "db3452f25d5ac6091c78a8891968bd93",
+  "bug_type_hum": "Api Misuse",
+  "extras": {
+    "bug_src_loc": {
+      "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s04/CWE190_Integer_Overflow__short_fscanf_multiply_53a.c",
+      "lnum": 30,
+      "cnum": 5,
+      "enum": 0
+    }
+  }
+}

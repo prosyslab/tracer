@@ -1,0 +1,73 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "IntOverflow.",
+  "severity": "ERROR",
+  "line": 130,
+  "column": 17,
+  "procedure": "CWE191_Integer_Underflow__int_connect_socket_multiply_12_bad",
+  "procedure_start_line": 44,
+  "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s02/CWE191_Integer_Underflow__int_connect_socket_multiply_12.c",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s02/CWE191_Integer_Underflow__int_connect_socket_multiply_12.c",
+        "line_number": 85,
+        "column_number": 30,
+        "description": "input, recv",
+        "feature": "[\"Input\",\"recv\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s02/CWE191_Integer_Underflow__int_connect_socket_multiply_12.c",
+        "line_number": 93,
+        "column_number": 17,
+        "description": "store, &data, n$23",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s02/CWE191_Integer_Underflow__int_connect_socket_multiply_12.c",
+        "line_number": 124,
+        "column_number": 12,
+        "description": "prune, (n$7 < 0)",
+        "feature": "[\"Prune\",[\"BinOp\",\"<\",[\"Var\"],[\"Const\",[\"Cint\",\"0\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s02/CWE191_Integer_Underflow__int_connect_socket_multiply_12.c",
+        "line_number": 127,
+        "column_number": 17,
+        "description": "prune, (n$8 > ((-2147483647 - 1) / 2))",
+        "feature": "[\"Prune\",[\"BinOp\",\">\",[\"Var\"],[\"BinOp\",\"/\",[\"BinOp\",\"-\",[\"UnOp\",\"-\",[\"Const\",[\"Cint\",\"2147483647\"]]],[\"Const\",[\"Cint\",\"1\"]]],[\"Const\",[\"Cint\",\"2\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s02/CWE191_Integer_Underflow__int_connect_socket_multiply_12.c",
+        "line_number": 129,
+        "column_number": 17,
+        "description": "store, &result, (n$11 * 2)",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"*\",[\"Var\"],[\"Const\",[\"Cint\",\"2\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s02/CWE191_Integer_Underflow__int_connect_socket_multiply_12.c",
+        "line_number": 130,
+        "column_number": 17,
+        "description": "int_overflow, printIntLine, n$9",
+        "feature": "[\"IntOverflow\",\"printIntLine\",[\"Var\"]]"
+      }
+    ]
+  ],
+  "key": "CWE191_Integer_Underflow__int_connect_socket_multiply_12.c|CWE191_Integer_Underflow__int_connect_socket_multiply_12_bad|API_MISUSE",
+  "hash": "befab47fb90077792db720fd82daf16e",
+  "bug_type_hum": "Api Misuse",
+  "extras": {
+    "bug_src_loc": {
+      "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s02/CWE191_Integer_Underflow__int_connect_socket_multiply_12.c",
+      "lnum": 85,
+      "cnum": 30,
+      "enum": 0
+    }
+  }
+}

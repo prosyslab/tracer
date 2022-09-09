@@ -1,0 +1,139 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "IntOverflow.",
+  "severity": "ERROR",
+  "line": 32,
+  "column": 13,
+  "procedure": "_XcursorReadImage",
+  "procedure_start_line": 425,
+  "file": "src/file.c",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "src/file.c",
+        "line_number": 899,
+        "column_number": 12,
+        "description": "input, fread",
+        "feature": "[\"Input\",\"fread\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/file.c",
+        "line_number": 161,
+        "column_number": 5,
+        "description": "store, n$0, ()((((n$1 << 0) | (n$2 << 8)) | (n$3 << 16)) | (n$4 << 24))",
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IUInt\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"0\"]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"24\"]]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/file.c",
+        "line_number": 452,
+        "column_number": 34,
+        "description": "prune, !(n$46 > ()65536)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IUInt\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"65536\"]]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/file.c",
+        "line_number": 454,
+        "column_number": 28,
+        "description": "prune, !(n$42 == ()0)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IUInt\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/file.c",
+        "line_number": 456,
+        "column_number": 35,
+        "description": "prune, !(n$37 > n$38)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">\",[\"Var\"],[\"Var\"]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "src/file.c",
+        "line_number": 460,
+        "column_number": 13,
+        "description": "call, XcursorImageCreate",
+        "feature": "[\"Call\",\"XcursorImageCreate\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/file.c",
+        "line_number": 32,
+        "column_number": 13,
+        "description": "int_overflow, malloc, (sizeof(t=;nbytes=40) + (()(n$17 * n$18) * sizeof(t=;nbytes=4)))",
+        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"+\",[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"_XcursorImage\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}],[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"*\",[\"Var\"],[\"Var\"]]],[\"Sizeof\",{\"desc\":[\"Tint\",[\"IUInt\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "src/file.c",
+        "line_number": 899,
+        "column_number": 12,
+        "description": "input, fread",
+        "feature": "[\"Input\",\"fread\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/file.c",
+        "line_number": 161,
+        "column_number": 5,
+        "description": "store, n$0, ()((((n$1 << 0) | (n$2 << 8)) | (n$3 << 16)) | (n$4 << 24))",
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IUInt\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"0\"]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"24\"]]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/file.c",
+        "line_number": 452,
+        "column_number": 9,
+        "description": "prune, !(n$45 >= ()65536)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">=\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IUInt\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"65536\"]]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/file.c",
+        "line_number": 454,
+        "column_number": 9,
+        "description": "prune, !(n$41 == ()0)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IUInt\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/file.c",
+        "line_number": 456,
+        "column_number": 9,
+        "description": "prune, !(n$35 > n$36)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">\",[\"Var\"],[\"Var\"]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "src/file.c",
+        "line_number": 460,
+        "column_number": 13,
+        "description": "call, XcursorImageCreate",
+        "feature": "[\"Call\",\"XcursorImageCreate\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/file.c",
+        "line_number": 32,
+        "column_number": 13,
+        "description": "int_overflow, malloc, (sizeof(t=;nbytes=40) + (()(n$17 * n$18) * sizeof(t=;nbytes=4)))",
+        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"+\",[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"_XcursorImage\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}],[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"*\",[\"Var\"],[\"Var\"]]],[\"Sizeof\",{\"desc\":[\"Tint\",[\"IUInt\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]"
+      }
+    ]
+  ],
+  "key": "file.c|_XcursorReadImage|API_MISUSE",
+  "hash": "7cf9c6a868caed5f5aa7f6236b9a660c",
+  "bug_type_hum": "Api Misuse",
+  "extras": {
+    "bug_src_loc": {
+      "file": "src/file.c",
+      "lnum": 899,
+      "cnum": 12,
+      "enum": 0
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "UseAfterFree.",
+  "severity": "ERROR",
+  "line": 42,
+  "column": 9,
+  "procedure": "CWE416_Use_After_Free__new_delete_int_03::bad",
+  "procedure_start_line": 27,
+  "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_int_03.cpp",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_int_03.cpp",
+        "line_number": 34,
+        "column_number": 16,
+        "description": "allocate, __new",
+        "feature": "[\"Allocate\",\"__new\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_int_03.cpp",
+        "line_number": 37,
+        "column_number": 9,
+        "description": "free, __delete, n$5",
+        "feature": "[\"Free\",\"__delete\",[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_int_03.cpp",
+        "line_number": 42,
+        "column_number": 9,
+        "description": "library_call, printIntLine, n$1",
+        "feature": "[\"LibraryCall\",\"printIntLine\",\"n$1\"]"
+      }
+    ]
+  ],
+  "key": "CWE416_Use_After_Free__new_delete_int_03.cpp|CWE416_Use_After_Free__new_delete_int_03::bad|API_MISUSE",
+  "hash": "b60f6111c9292e0f140a04d7d4830e4b",
+  "bug_type_hum": "Api Misuse"
+}

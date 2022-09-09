@@ -1,0 +1,33 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "UseAfterFree.",
+  "severity": "ERROR",
+  "line": 51,
+  "column": 22,
+  "procedure": "CWE416_Use_After_Free__malloc_free_int_07_bad",
+  "procedure_start_line": 29,
+  "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__malloc_free_int_07.c",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__malloc_free_int_07.c",
+        "line_number": 36,
+        "column_number": 23,
+        "description": "allocate, malloc",
+        "feature": "[\"Allocate\",\"malloc\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__malloc_free_int_07.c",
+        "line_number": 46,
+        "column_number": 9,
+        "description": "free, free, n$7",
+        "feature": "[\"Free\",\"free\",[\"Var\"]]"
+      }
+    ]
+  ],
+  "key": "CWE416_Use_After_Free__malloc_free_int_07.c|CWE416_Use_After_Free__malloc_free_int_07_bad|API_MISUSE",
+  "hash": "b98f21a057e401074b87d687dbacbf73",
+  "bug_type_hum": "Api Misuse"
+}

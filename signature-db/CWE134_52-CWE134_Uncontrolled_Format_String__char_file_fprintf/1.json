@@ -1,0 +1,57 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "FormatString.",
+  "severity": "ERROR",
+  "line": 35,
+  "column": 5,
+  "procedure": "CWE134_Uncontrolled_Format_String__char_file_fprintf_52_bad",
+  "procedure_start_line": 35,
+  "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s02/CWE134_Uncontrolled_Format_String__char_file_fprintf_52c.c",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s02/CWE134_Uncontrolled_Format_String__char_file_fprintf_52a.c",
+        "line_number": 51,
+        "column_number": 21,
+        "description": "input, fgets",
+        "feature": "[\"Input\",\"fgets\"]"
+      },
+      {
+        "level": 1,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s02/CWE134_Uncontrolled_Format_String__char_file_fprintf_52a.c",
+        "line_number": 61,
+        "column_number": 5,
+        "description": "call, CWE134_Uncontrolled_Format_String__char_file_fprintf_52b_badSink",
+        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_file_fprintf_52b_badSink\"]"
+      },
+      {
+        "level": 1,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s02/CWE134_Uncontrolled_Format_String__char_file_fprintf_52b.c",
+        "line_number": 37,
+        "column_number": 5,
+        "description": "call, CWE134_Uncontrolled_Format_String__char_file_fprintf_52c_badSink",
+        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_file_fprintf_52c_badSink\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s02/CWE134_Uncontrolled_Format_String__char_file_fprintf_52c.c",
+        "line_number": 35,
+        "column_number": 5,
+        "description": "format_string, fprintf, n$1",
+        "feature": "[\"FormatString\",\"fprintf\",[\"Var\"]]"
+      }
+    ]
+  ],
+  "key": "CWE134_Uncontrolled_Format_String__char_file_fprintf_52a.c|CWE134_Uncontrolled_Format_String__char_file_fprintf_52_bad|API_MISUSE",
+  "hash": "b7fb766519571c152c03e32215e2c03d",
+  "bug_type_hum": "Api Misuse",
+  "extras": {
+    "bug_src_loc": {
+      "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE134_Uncontrolled_Format_String/s02/CWE134_Uncontrolled_Format_String__char_file_fprintf_52a.c",
+      "lnum": 51,
+      "cnum": 21,
+      "enum": 0
+    }
+  }
+}

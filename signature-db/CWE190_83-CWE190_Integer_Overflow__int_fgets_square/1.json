@@ -1,0 +1,73 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "IntOverflow.",
+  "severity": "ERROR",
+  "line": 51,
+  "column": 9,
+  "procedure": "CWE190_Integer_Overflow__int_fgets_square_83::bad",
+  "procedure_start_line": 26,
+  "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s03/CWE190_Integer_Overflow__int_fgets_square_83_bad.cpp",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s03/CWE190_Integer_Overflow__int_fgets_square_83_bad.cpp",
+        "line_number": 34,
+        "column_number": 13,
+        "description": "input, fgets",
+        "feature": "[\"Input\",\"fgets\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s03/CWE190_Integer_Overflow__int_fgets_square_83_bad.cpp",
+        "line_number": 37,
+        "column_number": 13,
+        "description": "store, n$2.data, n$3",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 1,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s03/CWE190_Integer_Overflow__int_fgets_square_83a.cpp",
+        "line_number": 32,
+        "column_number": 1,
+        "description": "call, CWE190_Integer_Overflow__int_fgets_square_83::CWE190_Integer_Overflow__int_fgets_square_83_bad::~CWE190_Integer_Overflow__int_fgets_square_83_bad",
+        "feature": "[\"Call\",\"CWE190_Integer_Overflow__int_fgets_square_83::CWE190_Integer_Overflow__int_fgets_square_83_bad::~CWE190_Integer_Overflow__int_fgets_square_83_bad\"]"
+      },
+      {
+        "level": 1,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s03/CWE190_Integer_Overflow__int_fgets_square_83_bad.cpp",
+        "line_number": 53,
+        "column_number": 1,
+        "description": "call, CWE190_Integer_Overflow__int_fgets_square_83::CWE190_Integer_Overflow__int_fgets_square_83_bad::__infer_inner_destructor_~CWE190_Integer_Overflow__int_fgets_square_83_bad",
+        "feature": "[\"Call\",\"CWE190_Integer_Overflow__int_fgets_square_83::CWE190_Integer_Overflow__int_fgets_square_83_bad::__infer_inner_destructor_~CWE190_Integer_Overflow__int_fgets_square_83_bad\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s03/CWE190_Integer_Overflow__int_fgets_square_83_bad.cpp",
+        "line_number": 50,
+        "column_number": 9,
+        "description": "store, &result, (n$5 * n$7)",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"*\",[\"Var\"],[\"Var\"]]]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s03/CWE190_Integer_Overflow__int_fgets_square_83_bad.cpp",
+        "line_number": 51,
+        "column_number": 9,
+        "description": "int_overflow, printIntLine, n$2",
+        "feature": "[\"IntOverflow\",\"printIntLine\",[\"Var\"]]"
+      }
+    ]
+  ],
+  "key": "CWE190_Integer_Overflow__int_fgets_square_83a.cpp|CWE190_Integer_Overflow__int_fgets_square_83::bad|API_MISUSE",
+  "hash": "f4adc05a2a7c1b84ca133431c019ef52",
+  "bug_type_hum": "Api Misuse",
+  "extras": {
+    "bug_src_loc": {
+      "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s03/CWE190_Integer_Overflow__int_fgets_square_83_bad.cpp",
+      "lnum": 34,
+      "cnum": 13,
+      "enum": 0
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "IntOverflow.",
+  "severity": "ERROR",
+  "line": 37,
+  "column": 9,
+  "procedure": "CWE190_Integer_Overflow__short_fscanf_multiply_62::bad",
+  "procedure_start_line": 28,
+  "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s04/CWE190_Integer_Overflow__short_fscanf_multiply_62a.cpp",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s04/CWE190_Integer_Overflow__short_fscanf_multiply_62b.cpp",
+        "line_number": 28,
+        "column_number": 5,
+        "description": "input, fscanf",
+        "feature": "[\"Input\",\"fscanf\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s04/CWE190_Integer_Overflow__short_fscanf_multiply_62a.cpp",
+        "line_number": 33,
+        "column_number": 8,
+        "description": "prune, (n$0 > 0)",
+        "feature": "[\"Prune\",[\"BinOp\",\">\",[\"Var\"],[\"Const\",[\"Cint\",\"0\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s04/CWE190_Integer_Overflow__short_fscanf_multiply_62a.cpp",
+        "line_number": 36,
+        "column_number": 9,
+        "description": "store, &result, (n$3 * 2)",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"*\",[\"Var\"],[\"Const\",[\"Cint\",\"2\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s04/CWE190_Integer_Overflow__short_fscanf_multiply_62a.cpp",
+        "line_number": 37,
+        "column_number": 9,
+        "description": "int_overflow, printIntLine, n$1",
+        "feature": "[\"IntOverflow\",\"printIntLine\",[\"Var\"]]"
+      }
+    ]
+  ],
+  "key": "CWE190_Integer_Overflow__short_fscanf_multiply_62a.cpp|CWE190_Integer_Overflow__short_fscanf_multiply_62::bad|API_MISUSE",
+  "hash": "a939518c99e478cc3635a2e8a9b73ed8",
+  "bug_type_hum": "Api Misuse",
+  "extras": {
+    "bug_src_loc": {
+      "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE190_Integer_Overflow/s04/CWE190_Integer_Overflow__short_fscanf_multiply_62b.cpp",
+      "lnum": 28,
+      "cnum": 5,
+      "enum": 0
+    }
+  }
+}

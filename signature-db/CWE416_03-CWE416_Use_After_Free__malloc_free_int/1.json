@@ -1,0 +1,41 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "UseAfterFree.",
+  "severity": "ERROR",
+  "line": 46,
+  "column": 9,
+  "procedure": "CWE416_Use_After_Free__malloc_free_int_03_bad",
+  "procedure_start_line": 24,
+  "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__malloc_free_int_03.c",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__malloc_free_int_03.c",
+        "line_number": 31,
+        "column_number": 23,
+        "description": "allocate, malloc",
+        "feature": "[\"Allocate\",\"malloc\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__malloc_free_int_03.c",
+        "line_number": 41,
+        "column_number": 9,
+        "description": "free, free, n$5",
+        "feature": "[\"Free\",\"free\",[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__malloc_free_int_03.c",
+        "line_number": 46,
+        "column_number": 9,
+        "description": "library_call, printIntLine, n$1",
+        "feature": "[\"LibraryCall\",\"printIntLine\",\"n$1\"]"
+      }
+    ]
+  ],
+  "key": "CWE416_Use_After_Free__malloc_free_int_03.c|CWE416_Use_After_Free__malloc_free_int_03_bad|API_MISUSE",
+  "hash": "3a6901e549b61468f938ff2d6ee346ef",
+  "bug_type_hum": "Api Misuse"
+}

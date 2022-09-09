@@ -1,0 +1,775 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "IntOverflow.",
+  "severity": "ERROR",
+  "line": 353,
+  "column": 43,
+  "procedure": "minitiff_read_info",
+  "procedure_start_line": 141,
+  "file": "lib/pngxtern/minitiff/tiffread.c",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 192,
+        "column_number": 13,
+        "description": "input, fread",
+        "feature": "[\"Input\",\"fread\"]"
+      },
+      {
+        "level": 1,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 196,
+        "column_number": 28,
+        "description": "call, png_get_uint_32",
+        "feature": "[\"Call\",\"png_get_uint_32\"]"
+      },
+      {
+        "level": 0,
+        "filename": "lib/libpng/pngrutil.c",
+        "line_number": 56,
+        "column_number": 4,
+        "description": "store, &i, ((((()n$2 << 24) + (()n$4 << 16)) + (()n$6 << 8)) + ()n$8)",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"8\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "lib/libpng/pngrutil.c",
+        "line_number": 61,
+        "column_number": 4,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 196,
+        "column_number": 9,
+        "description": "store, &count, n$247",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 197,
+        "column_number": 13,
+        "description": "prune, !(n$242 == ()0)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 240,
+        "column_number": 13,
+        "description": "store, n$182.strip_offsets_count, n$183",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 350,
+        "column_number": 9,
+        "description": "store, &count, n$50",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 351,
+        "column_number": 13,
+        "description": "prune, !(n$42 == ()0)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 351,
+        "column_number": 27,
+        "description": "prune, !(n$43 > n$45)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">\",[\"Var\"],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 353,
+        "column_number": 43,
+        "description": "int_overflow, malloc, (n$40 * sizeof(t=;nbytes=8))",
+        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"*\",[\"Var\"],[\"Sizeof\",{\"desc\":[\"Tint\",[\"ILong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 192,
+        "column_number": 13,
+        "description": "input, fread",
+        "feature": "[\"Input\",\"fread\"]"
+      },
+      {
+        "level": 1,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 196,
+        "column_number": 28,
+        "description": "call, bmp_get_dword",
+        "feature": "[\"Call\",\"bmp_get_dword\"]"
+      },
+      {
+        "level": 0,
+        "filename": "lib/pngxtern/pngxrbmp.c",
+        "line_number": 102,
+        "column_number": 4,
+        "description": "store, &return, (((()n$1 + (()n$3 << 8)) + (()n$5 << 16)) + (()n$7 << 24))",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"24\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 196,
+        "column_number": 9,
+        "description": "store, &count, n$247",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 197,
+        "column_number": 13,
+        "description": "prune, !(n$242 == ()0)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 240,
+        "column_number": 13,
+        "description": "store, n$182.strip_offsets_count, n$183",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 350,
+        "column_number": 9,
+        "description": "store, &count, n$50",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 351,
+        "column_number": 13,
+        "description": "prune, !(n$42 == ()0)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 351,
+        "column_number": 27,
+        "description": "prune, !(n$43 > n$45)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">\",[\"Var\"],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 353,
+        "column_number": 43,
+        "description": "int_overflow, malloc, (n$40 * sizeof(t=;nbytes=8))",
+        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"*\",[\"Var\"],[\"Sizeof\",{\"desc\":[\"Tint\",[\"ILong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 192,
+        "column_number": 13,
+        "description": "input, fread",
+        "feature": "[\"Input\",\"fread\"]"
+      },
+      {
+        "level": 1,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 195,
+        "column_number": 20,
+        "description": "call, bmp_get_word",
+        "feature": "[\"Call\",\"bmp_get_word\"]"
+      },
+      {
+        "level": 1,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 196,
+        "column_number": 28,
+        "description": "call, png_get_uint_32",
+        "feature": "[\"Call\",\"png_get_uint_32\"]"
+      },
+      {
+        "level": 0,
+        "filename": "lib/libpng/pngrutil.c",
+        "line_number": 56,
+        "column_number": 4,
+        "description": "store, &i, ((((()n$2 << 24) + (()n$4 << 16)) + (()n$6 << 8)) + ()n$8)",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"8\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "lib/libpng/pngrutil.c",
+        "line_number": 61,
+        "column_number": 4,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 196,
+        "column_number": 9,
+        "description": "store, &count, n$247",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 197,
+        "column_number": 13,
+        "description": "prune, !(n$242 == ()0)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 240,
+        "column_number": 13,
+        "description": "store, n$182.strip_offsets_count, n$183",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 350,
+        "column_number": 9,
+        "description": "store, &count, n$50",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 351,
+        "column_number": 13,
+        "description": "prune, !(n$42 == ()0)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 351,
+        "column_number": 27,
+        "description": "prune, !(n$43 > n$45)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">\",[\"Var\"],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 353,
+        "column_number": 43,
+        "description": "int_overflow, malloc, (n$40 * sizeof(t=;nbytes=8))",
+        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"*\",[\"Var\"],[\"Sizeof\",{\"desc\":[\"Tint\",[\"ILong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 192,
+        "column_number": 13,
+        "description": "input, fread",
+        "feature": "[\"Input\",\"fread\"]"
+      },
+      {
+        "level": 1,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 195,
+        "column_number": 20,
+        "description": "call, bmp_get_word",
+        "feature": "[\"Call\",\"bmp_get_word\"]"
+      },
+      {
+        "level": 1,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 196,
+        "column_number": 28,
+        "description": "call, bmp_get_dword",
+        "feature": "[\"Call\",\"bmp_get_dword\"]"
+      },
+      {
+        "level": 0,
+        "filename": "lib/pngxtern/pngxrbmp.c",
+        "line_number": 102,
+        "column_number": 4,
+        "description": "store, &return, (((()n$1 + (()n$3 << 8)) + (()n$5 << 16)) + (()n$7 << 24))",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"24\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 196,
+        "column_number": 9,
+        "description": "store, &count, n$247",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 197,
+        "column_number": 13,
+        "description": "prune, !(n$242 == ()0)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 240,
+        "column_number": 13,
+        "description": "store, n$182.strip_offsets_count, n$183",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 350,
+        "column_number": 9,
+        "description": "store, &count, n$50",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 351,
+        "column_number": 13,
+        "description": "prune, !(n$42 == ()0)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 351,
+        "column_number": 27,
+        "description": "prune, !(n$43 > n$45)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">\",[\"Var\"],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 353,
+        "column_number": 43,
+        "description": "int_overflow, malloc, (n$40 * sizeof(t=;nbytes=8))",
+        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"*\",[\"Var\"],[\"Sizeof\",{\"desc\":[\"Tint\",[\"ILong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 192,
+        "column_number": 13,
+        "description": "input, fread",
+        "feature": "[\"Input\",\"fread\"]"
+      },
+      {
+        "level": 1,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 194,
+        "column_number": 20,
+        "description": "call, bmp_get_word",
+        "feature": "[\"Call\",\"bmp_get_word\"]"
+      },
+      {
+        "level": 1,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 196,
+        "column_number": 28,
+        "description": "call, png_get_uint_32",
+        "feature": "[\"Call\",\"png_get_uint_32\"]"
+      },
+      {
+        "level": 0,
+        "filename": "lib/libpng/pngrutil.c",
+        "line_number": 56,
+        "column_number": 4,
+        "description": "store, &i, ((((()n$2 << 24) + (()n$4 << 16)) + (()n$6 << 8)) + ()n$8)",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"8\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "lib/libpng/pngrutil.c",
+        "line_number": 61,
+        "column_number": 4,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 196,
+        "column_number": 9,
+        "description": "store, &count, n$247",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 197,
+        "column_number": 13,
+        "description": "prune, !(n$242 == ()0)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 240,
+        "column_number": 13,
+        "description": "store, n$182.strip_offsets_count, n$183",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 350,
+        "column_number": 9,
+        "description": "store, &count, n$50",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 351,
+        "column_number": 13,
+        "description": "prune, !(n$42 == ()0)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 351,
+        "column_number": 27,
+        "description": "prune, !(n$43 > n$45)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">\",[\"Var\"],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 353,
+        "column_number": 43,
+        "description": "int_overflow, malloc, (n$40 * sizeof(t=;nbytes=8))",
+        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"*\",[\"Var\"],[\"Sizeof\",{\"desc\":[\"Tint\",[\"ILong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 192,
+        "column_number": 13,
+        "description": "input, fread",
+        "feature": "[\"Input\",\"fread\"]"
+      },
+      {
+        "level": 1,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 194,
+        "column_number": 20,
+        "description": "call, bmp_get_word",
+        "feature": "[\"Call\",\"bmp_get_word\"]"
+      },
+      {
+        "level": 1,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 196,
+        "column_number": 28,
+        "description": "call, bmp_get_dword",
+        "feature": "[\"Call\",\"bmp_get_dword\"]"
+      },
+      {
+        "level": 0,
+        "filename": "lib/pngxtern/pngxrbmp.c",
+        "line_number": 102,
+        "column_number": 4,
+        "description": "store, &return, (((()n$1 + (()n$3 << 8)) + (()n$5 << 16)) + (()n$7 << 24))",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"24\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 196,
+        "column_number": 9,
+        "description": "store, &count, n$247",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 197,
+        "column_number": 13,
+        "description": "prune, !(n$242 == ()0)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 240,
+        "column_number": 13,
+        "description": "store, n$182.strip_offsets_count, n$183",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 350,
+        "column_number": 9,
+        "description": "store, &count, n$50",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 351,
+        "column_number": 13,
+        "description": "prune, !(n$42 == ()0)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 351,
+        "column_number": 27,
+        "description": "prune, !(n$43 > n$45)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">\",[\"Var\"],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 353,
+        "column_number": 43,
+        "description": "int_overflow, malloc, (n$40 * sizeof(t=;nbytes=8))",
+        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"*\",[\"Var\"],[\"Sizeof\",{\"desc\":[\"Tint\",[\"ILong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 192,
+        "column_number": 13,
+        "description": "input, fread",
+        "feature": "[\"Input\",\"fread\"]"
+      },
+      {
+        "level": 1,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 194,
+        "column_number": 20,
+        "description": "call, bmp_get_word",
+        "feature": "[\"Call\",\"bmp_get_word\"]"
+      },
+      {
+        "level": 1,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 195,
+        "column_number": 20,
+        "description": "call, bmp_get_word",
+        "feature": "[\"Call\",\"bmp_get_word\"]"
+      },
+      {
+        "level": 1,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 196,
+        "column_number": 28,
+        "description": "call, png_get_uint_32",
+        "feature": "[\"Call\",\"png_get_uint_32\"]"
+      },
+      {
+        "level": 0,
+        "filename": "lib/libpng/pngrutil.c",
+        "line_number": 56,
+        "column_number": 4,
+        "description": "store, &i, ((((()n$2 << 24) + (()n$4 << 16)) + (()n$6 << 8)) + ()n$8)",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"8\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "lib/libpng/pngrutil.c",
+        "line_number": 61,
+        "column_number": 4,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 196,
+        "column_number": 9,
+        "description": "store, &count, n$247",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 197,
+        "column_number": 13,
+        "description": "prune, !(n$242 == ()0)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 240,
+        "column_number": 13,
+        "description": "store, n$182.strip_offsets_count, n$183",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 350,
+        "column_number": 9,
+        "description": "store, &count, n$50",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 351,
+        "column_number": 13,
+        "description": "prune, !(n$42 == ()0)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 351,
+        "column_number": 27,
+        "description": "prune, !(n$43 > n$45)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">\",[\"Var\"],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 353,
+        "column_number": 43,
+        "description": "int_overflow, malloc, (n$40 * sizeof(t=;nbytes=8))",
+        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"*\",[\"Var\"],[\"Sizeof\",{\"desc\":[\"Tint\",[\"ILong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 192,
+        "column_number": 13,
+        "description": "input, fread",
+        "feature": "[\"Input\",\"fread\"]"
+      },
+      {
+        "level": 1,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 194,
+        "column_number": 20,
+        "description": "call, bmp_get_word",
+        "feature": "[\"Call\",\"bmp_get_word\"]"
+      },
+      {
+        "level": 1,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 195,
+        "column_number": 20,
+        "description": "call, bmp_get_word",
+        "feature": "[\"Call\",\"bmp_get_word\"]"
+      },
+      {
+        "level": 1,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 196,
+        "column_number": 28,
+        "description": "call, bmp_get_dword",
+        "feature": "[\"Call\",\"bmp_get_dword\"]"
+      },
+      {
+        "level": 0,
+        "filename": "lib/pngxtern/pngxrbmp.c",
+        "line_number": 102,
+        "column_number": 4,
+        "description": "store, &return, (((()n$1 + (()n$3 << 8)) + (()n$5 << 16)) + (()n$7 << 24))",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"24\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 196,
+        "column_number": 9,
+        "description": "store, &count, n$247",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 197,
+        "column_number": 13,
+        "description": "prune, !(n$242 == ()0)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 240,
+        "column_number": 13,
+        "description": "store, n$182.strip_offsets_count, n$183",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 350,
+        "column_number": 9,
+        "description": "store, &count, n$50",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 351,
+        "column_number": 13,
+        "description": "prune, !(n$42 == ()0)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 351,
+        "column_number": 27,
+        "description": "prune, !(n$43 > n$45)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">\",[\"Var\"],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "lib/pngxtern/minitiff/tiffread.c",
+        "line_number": 353,
+        "column_number": 43,
+        "description": "int_overflow, malloc, (n$40 * sizeof(t=;nbytes=8))",
+        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"*\",[\"Var\"],[\"Sizeof\",{\"desc\":[\"Tint\",[\"ILong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+      }
+    ]
+  ],
+  "key": "tiffread.c|minitiff_read_info|API_MISUSE",
+  "hash": "89a19b5071180a7ee89b66dae8653b0c",
+  "bug_type_hum": "Api Misuse",
+  "extras": {
+    "bug_src_loc": {
+      "file": "lib/pngxtern/minitiff/tiffread.c",
+      "lnum": 192,
+      "cnum": 13,
+      "enum": 0
+    }
+  }
+}

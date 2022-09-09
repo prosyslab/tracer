@@ -1,0 +1,3291 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "IntOverflow.",
+  "severity": "ERROR",
+  "line": 318,
+  "column": 23,
+  "procedure": "process_files",
+  "procedure_start_line": 384,
+  "file": "src/mode_cmp.c",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "src/core_fileio.c",
+        "line_number": 107,
+        "column_number": 7,
+        "description": "input, fread",
+        "feature": "[\"Input\",\"fread\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_fileio.c",
+        "line_number": 116,
+        "column_number": 5,
+        "description": "store, n$6, ()((((n$7 << 24) | (n$8 << 16)) | (n$9 << 8)) | n$10)",
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]],[\"Var\"]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "src/core_wave.c",
+        "line_number": 222,
+        "column_number": 40,
+        "description": "call, read_value_long",
+        "feature": "[\"Call\",\"read_value_long\"]"
+      },
+      {
+        "level": 1,
+        "filename": "src/core_wave.c",
+        "line_number": 222,
+        "column_number": 40,
+        "description": "call, read_value_long",
+        "feature": "[\"Call\",\"read_value_long\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 247,
+        "column_number": 3,
+        "description": "store, n$129.data_size, n$130",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 1,
+        "filename": "src/mode_cmp.c",
+        "line_number": 396,
+        "column_number": 15,
+        "description": "call, shift_comparison",
+        "feature": "[\"Call\",\"shift_comparison\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "prune, !(n$95 < n$97)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "prune, !(n$105 < n$107)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "store, &bytes, n$111",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 318,
+        "column_number": 23,
+        "description": "int_overflow, malloc, ((()2 * n$85) * sizeof(t=;nbytes=1))",
+        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"*\",[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"2\"]]],[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tint\",[\"IUChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "src/core_fileio.c",
+        "line_number": 107,
+        "column_number": 7,
+        "description": "input, fread",
+        "feature": "[\"Input\",\"fread\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_fileio.c",
+        "line_number": 116,
+        "column_number": 5,
+        "description": "store, n$6, ()((((n$7 << 24) | (n$8 << 16)) | (n$9 << 8)) | n$10)",
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]],[\"Var\"]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "src/core_wave.c",
+        "line_number": 222,
+        "column_number": 40,
+        "description": "call, read_value_long",
+        "feature": "[\"Call\",\"read_value_long\"]"
+      },
+      {
+        "level": 1,
+        "filename": "src/core_wave.c",
+        "line_number": 222,
+        "column_number": 40,
+        "description": "call, read_value_long",
+        "feature": "[\"Call\",\"read_value_long\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 247,
+        "column_number": 3,
+        "description": "store, n$129.data_size, n$130",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 260,
+        "column_number": 7,
+        "description": "prune, (n$105 & ()1)",
+        "feature": "[\"Prune\",[\"BinOp\",\"&\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"1\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 278,
+        "column_number": 9,
+        "description": "prune, (n$79 < ()705600)",
+        "feature": "[\"Prune\",[\"BinOp\",\"<\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"705600\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 280,
+        "column_number": 9,
+        "description": "prune, ((n$73 % ()2352) != ()0)",
+        "feature": "[\"Prune\",[\"BinOp\",\"!=\",[\"BinOp\",\"%\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"2352\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 289,
+        "column_number": 7,
+        "description": "prune, (n$47 > (n$49 - ()n$51))",
+        "feature": "[\"Prune\",[\"BinOp\",\">\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 292,
+        "column_number": 7,
+        "description": "prune, ((n$39 % ()n$41) != ()0)",
+        "feature": "[\"Prune\",[\"BinOp\",\"!=\",[\"BinOp\",\"%\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "src/mode_cmp.c",
+        "line_number": 396,
+        "column_number": 15,
+        "description": "call, shift_comparison",
+        "feature": "[\"Call\",\"shift_comparison\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "prune, !(n$95 < n$97)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "prune, !(n$105 < n$107)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "store, &bytes, n$111",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 318,
+        "column_number": 23,
+        "description": "int_overflow, malloc, ((()2 * n$85) * sizeof(t=;nbytes=1))",
+        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"*\",[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"2\"]]],[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tint\",[\"IUChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "src/core_fileio.c",
+        "line_number": 107,
+        "column_number": 7,
+        "description": "input, fread",
+        "feature": "[\"Input\",\"fread\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_fileio.c",
+        "line_number": 116,
+        "column_number": 5,
+        "description": "store, n$6, ()((((n$7 << 24) | (n$8 << 16)) | (n$9 << 8)) | n$10)",
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]],[\"Var\"]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "src/core_wave.c",
+        "line_number": 222,
+        "column_number": 40,
+        "description": "call, read_value_long",
+        "feature": "[\"Call\",\"read_value_long\"]"
+      },
+      {
+        "level": 1,
+        "filename": "src/core_wave.c",
+        "line_number": 222,
+        "column_number": 40,
+        "description": "call, read_value_long",
+        "feature": "[\"Call\",\"read_value_long\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 247,
+        "column_number": 3,
+        "description": "store, n$129.data_size, n$130",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 260,
+        "column_number": 7,
+        "description": "prune, !(n$105 & ()1)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"&\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"1\"]]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 278,
+        "column_number": 9,
+        "description": "prune, (n$79 < ()705600)",
+        "feature": "[\"Prune\",[\"BinOp\",\"<\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"705600\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 280,
+        "column_number": 9,
+        "description": "prune, ((n$73 % ()2352) != ()0)",
+        "feature": "[\"Prune\",[\"BinOp\",\"!=\",[\"BinOp\",\"%\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"2352\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 289,
+        "column_number": 7,
+        "description": "prune, (n$47 > (n$49 - ()n$51))",
+        "feature": "[\"Prune\",[\"BinOp\",\">\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 292,
+        "column_number": 7,
+        "description": "prune, ((n$39 % ()n$41) != ()0)",
+        "feature": "[\"Prune\",[\"BinOp\",\"!=\",[\"BinOp\",\"%\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "src/mode_cmp.c",
+        "line_number": 396,
+        "column_number": 15,
+        "description": "call, shift_comparison",
+        "feature": "[\"Call\",\"shift_comparison\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "prune, !(n$95 < n$97)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "prune, !(n$105 < n$107)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "store, &bytes, n$111",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 318,
+        "column_number": 23,
+        "description": "int_overflow, malloc, ((()2 * n$85) * sizeof(t=;nbytes=1))",
+        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"*\",[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"2\"]]],[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tint\",[\"IUChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "src/core_fileio.c",
+        "line_number": 107,
+        "column_number": 7,
+        "description": "input, fread",
+        "feature": "[\"Input\",\"fread\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_fileio.c",
+        "line_number": 116,
+        "column_number": 5,
+        "description": "store, n$6, ()((((n$7 << 24) | (n$8 << 16)) | (n$9 << 8)) | n$10)",
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]],[\"Var\"]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "src/core_wave.c",
+        "line_number": 222,
+        "column_number": 40,
+        "description": "call, read_value_long",
+        "feature": "[\"Call\",\"read_value_long\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 247,
+        "column_number": 3,
+        "description": "store, n$129.data_size, n$130",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 1,
+        "filename": "src/mode_cmp.c",
+        "line_number": 396,
+        "column_number": 15,
+        "description": "call, shift_comparison",
+        "feature": "[\"Call\",\"shift_comparison\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "prune, !(n$95 < n$97)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "prune, !(n$105 < n$107)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "store, &bytes, n$111",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 318,
+        "column_number": 23,
+        "description": "int_overflow, malloc, ((()2 * n$85) * sizeof(t=;nbytes=1))",
+        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"*\",[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"2\"]]],[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tint\",[\"IUChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "src/core_fileio.c",
+        "line_number": 107,
+        "column_number": 7,
+        "description": "input, fread",
+        "feature": "[\"Input\",\"fread\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_fileio.c",
+        "line_number": 116,
+        "column_number": 5,
+        "description": "store, n$6, ()((((n$7 << 24) | (n$8 << 16)) | (n$9 << 8)) | n$10)",
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]],[\"Var\"]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "src/core_wave.c",
+        "line_number": 222,
+        "column_number": 40,
+        "description": "call, read_value_long",
+        "feature": "[\"Call\",\"read_value_long\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 247,
+        "column_number": 3,
+        "description": "store, n$129.data_size, n$130",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 260,
+        "column_number": 7,
+        "description": "prune, (n$105 & ()1)",
+        "feature": "[\"Prune\",[\"BinOp\",\"&\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"1\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 278,
+        "column_number": 9,
+        "description": "prune, (n$79 < ()705600)",
+        "feature": "[\"Prune\",[\"BinOp\",\"<\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"705600\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 280,
+        "column_number": 9,
+        "description": "prune, ((n$73 % ()2352) != ()0)",
+        "feature": "[\"Prune\",[\"BinOp\",\"!=\",[\"BinOp\",\"%\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"2352\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 289,
+        "column_number": 7,
+        "description": "prune, (n$47 > (n$49 - ()n$51))",
+        "feature": "[\"Prune\",[\"BinOp\",\">\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 292,
+        "column_number": 7,
+        "description": "prune, ((n$39 % ()n$41) != ()0)",
+        "feature": "[\"Prune\",[\"BinOp\",\"!=\",[\"BinOp\",\"%\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "src/mode_cmp.c",
+        "line_number": 396,
+        "column_number": 15,
+        "description": "call, shift_comparison",
+        "feature": "[\"Call\",\"shift_comparison\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "prune, !(n$95 < n$97)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "prune, !(n$105 < n$107)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "store, &bytes, n$111",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 318,
+        "column_number": 23,
+        "description": "int_overflow, malloc, ((()2 * n$85) * sizeof(t=;nbytes=1))",
+        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"*\",[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"2\"]]],[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tint\",[\"IUChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "src/core_fileio.c",
+        "line_number": 107,
+        "column_number": 7,
+        "description": "input, fread",
+        "feature": "[\"Input\",\"fread\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_fileio.c",
+        "line_number": 116,
+        "column_number": 5,
+        "description": "store, n$6, ()((((n$7 << 24) | (n$8 << 16)) | (n$9 << 8)) | n$10)",
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]],[\"Var\"]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "src/core_wave.c",
+        "line_number": 222,
+        "column_number": 40,
+        "description": "call, read_value_long",
+        "feature": "[\"Call\",\"read_value_long\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 247,
+        "column_number": 3,
+        "description": "store, n$129.data_size, n$130",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 260,
+        "column_number": 7,
+        "description": "prune, !(n$105 & ()1)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"&\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"1\"]]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 278,
+        "column_number": 9,
+        "description": "prune, (n$79 < ()705600)",
+        "feature": "[\"Prune\",[\"BinOp\",\"<\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"705600\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 280,
+        "column_number": 9,
+        "description": "prune, ((n$73 % ()2352) != ()0)",
+        "feature": "[\"Prune\",[\"BinOp\",\"!=\",[\"BinOp\",\"%\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"2352\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 289,
+        "column_number": 7,
+        "description": "prune, (n$47 > (n$49 - ()n$51))",
+        "feature": "[\"Prune\",[\"BinOp\",\">\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 292,
+        "column_number": 7,
+        "description": "prune, ((n$39 % ()n$41) != ()0)",
+        "feature": "[\"Prune\",[\"BinOp\",\"!=\",[\"BinOp\",\"%\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "src/mode_cmp.c",
+        "line_number": 396,
+        "column_number": 15,
+        "description": "call, shift_comparison",
+        "feature": "[\"Call\",\"shift_comparison\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "prune, !(n$95 < n$97)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "prune, !(n$105 < n$107)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "store, &bytes, n$111",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 318,
+        "column_number": 23,
+        "description": "int_overflow, malloc, ((()2 * n$85) * sizeof(t=;nbytes=1))",
+        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"*\",[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"2\"]]],[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tint\",[\"IUChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "src/core_fileio.c",
+        "line_number": 107,
+        "column_number": 7,
+        "description": "input, fread",
+        "feature": "[\"Input\",\"fread\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_fileio.c",
+        "line_number": 116,
+        "column_number": 5,
+        "description": "store, n$6, ()((((n$7 << 24) | (n$8 << 16)) | (n$9 << 8)) | n$10)",
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 254,
+        "column_number": 3,
+        "description": "store, n$116.rate, ()(((()n$118 * ()n$120) * ()n$122) / ()8)",
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"/\",[\"BinOp\",\"*\",[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IUInt\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Cast\",{\"desc\":[\"Tint\",[\"IUInt\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IUInt\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IUInt\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"8\"]]]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "src/mode_cmp.c",
+        "line_number": 396,
+        "column_number": 15,
+        "description": "call, shift_comparison",
+        "feature": "[\"Call\",\"shift_comparison\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 315,
+        "column_number": 3,
+        "description": "store, &cmp_size, (n$113 * n$115)",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"*\",[\"Var\"],[\"Var\"]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "prune, !(n$102 < n$103)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "store, &bytes, n$112",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 318,
+        "column_number": 23,
+        "description": "int_overflow, malloc, ((()2 * n$85) * sizeof(t=;nbytes=1))",
+        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"*\",[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"2\"]]],[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tint\",[\"IUChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "src/core_fileio.c",
+        "line_number": 107,
+        "column_number": 7,
+        "description": "input, fread",
+        "feature": "[\"Input\",\"fread\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_fileio.c",
+        "line_number": 116,
+        "column_number": 5,
+        "description": "store, n$6, ()((((n$7 << 24) | (n$8 << 16)) | (n$9 << 8)) | n$10)",
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 254,
+        "column_number": 3,
+        "description": "store, n$116.rate, ()(((()n$118 * ()n$120) * ()n$122) / ()8)",
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"/\",[\"BinOp\",\"*\",[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IUInt\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Cast\",{\"desc\":[\"Tint\",[\"IUInt\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IUInt\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IUInt\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"8\"]]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 276,
+        "column_number": 7,
+        "description": "prune, (n$71 == ()176400)",
+        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"176400\"]]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "src/mode_cmp.c",
+        "line_number": 396,
+        "column_number": 15,
+        "description": "call, shift_comparison",
+        "feature": "[\"Call\",\"shift_comparison\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 315,
+        "column_number": 3,
+        "description": "store, &cmp_size, (n$113 * n$115)",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"*\",[\"Var\"],[\"Var\"]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "prune, !(n$102 < n$103)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "store, &bytes, n$112",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 318,
+        "column_number": 23,
+        "description": "int_overflow, malloc, ((()2 * n$85) * sizeof(t=;nbytes=1))",
+        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"*\",[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"2\"]]],[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tint\",[\"IUChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "src/core_fileio.c",
+        "line_number": 107,
+        "column_number": 7,
+        "description": "input, fread",
+        "feature": "[\"Input\",\"fread\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_fileio.c",
+        "line_number": 116,
+        "column_number": 5,
+        "description": "store, n$6, ()((((n$7 << 24) | (n$8 << 16)) | (n$9 << 8)) | n$10)",
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 254,
+        "column_number": 3,
+        "description": "store, n$116.rate, ()(((()n$118 * ()n$120) * ()n$122) / ()8)",
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"/\",[\"BinOp\",\"*\",[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IUInt\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Cast\",{\"desc\":[\"Tint\",[\"IUInt\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IUInt\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IUInt\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"8\"]]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 276,
+        "column_number": 7,
+        "description": "prune, !(n$71 == ()176400)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"176400\"]]]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "src/mode_cmp.c",
+        "line_number": 396,
+        "column_number": 15,
+        "description": "call, shift_comparison",
+        "feature": "[\"Call\",\"shift_comparison\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 315,
+        "column_number": 3,
+        "description": "store, &cmp_size, (n$113 * n$115)",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"*\",[\"Var\"],[\"Var\"]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "prune, !(n$102 < n$103)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "store, &bytes, n$112",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 318,
+        "column_number": 23,
+        "description": "int_overflow, malloc, ((()2 * n$85) * sizeof(t=;nbytes=1))",
+        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"*\",[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"2\"]]],[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tint\",[\"IUChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "src/core_fileio.c",
+        "line_number": 107,
+        "column_number": 7,
+        "description": "input, fread",
+        "feature": "[\"Input\",\"fread\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_fileio.c",
+        "line_number": 116,
+        "column_number": 5,
+        "description": "store, n$6, ()((((n$7 << 24) | (n$8 << 16)) | (n$9 << 8)) | n$10)",
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 247,
+        "column_number": 3,
+        "description": "store, n$129.data_size, n$130",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 1,
+        "filename": "src/mode_cmp.c",
+        "line_number": 396,
+        "column_number": 15,
+        "description": "call, shift_comparison",
+        "feature": "[\"Call\",\"shift_comparison\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "prune, !(n$95 < n$97)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "prune, !(n$105 < n$107)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "store, &bytes, n$111",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 318,
+        "column_number": 23,
+        "description": "int_overflow, malloc, ((()2 * n$85) * sizeof(t=;nbytes=1))",
+        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"*\",[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"2\"]]],[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tint\",[\"IUChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "src/core_fileio.c",
+        "line_number": 107,
+        "column_number": 7,
+        "description": "input, fread",
+        "feature": "[\"Input\",\"fread\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_fileio.c",
+        "line_number": 116,
+        "column_number": 5,
+        "description": "store, n$6, ()((((n$7 << 24) | (n$8 << 16)) | (n$9 << 8)) | n$10)",
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 247,
+        "column_number": 3,
+        "description": "store, n$129.data_size, n$130",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 260,
+        "column_number": 7,
+        "description": "prune, (n$105 & ()1)",
+        "feature": "[\"Prune\",[\"BinOp\",\"&\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"1\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 278,
+        "column_number": 9,
+        "description": "prune, (n$79 < ()705600)",
+        "feature": "[\"Prune\",[\"BinOp\",\"<\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"705600\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 280,
+        "column_number": 9,
+        "description": "prune, ((n$73 % ()2352) != ()0)",
+        "feature": "[\"Prune\",[\"BinOp\",\"!=\",[\"BinOp\",\"%\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"2352\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 289,
+        "column_number": 7,
+        "description": "prune, (n$47 > (n$49 - ()n$51))",
+        "feature": "[\"Prune\",[\"BinOp\",\">\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 292,
+        "column_number": 7,
+        "description": "prune, ((n$39 % ()n$41) != ()0)",
+        "feature": "[\"Prune\",[\"BinOp\",\"!=\",[\"BinOp\",\"%\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "src/mode_cmp.c",
+        "line_number": 396,
+        "column_number": 15,
+        "description": "call, shift_comparison",
+        "feature": "[\"Call\",\"shift_comparison\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "prune, !(n$95 < n$97)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "prune, !(n$105 < n$107)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "store, &bytes, n$111",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 318,
+        "column_number": 23,
+        "description": "int_overflow, malloc, ((()2 * n$85) * sizeof(t=;nbytes=1))",
+        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"*\",[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"2\"]]],[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tint\",[\"IUChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "src/core_fileio.c",
+        "line_number": 107,
+        "column_number": 7,
+        "description": "input, fread",
+        "feature": "[\"Input\",\"fread\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_fileio.c",
+        "line_number": 116,
+        "column_number": 5,
+        "description": "store, n$6, ()((((n$7 << 24) | (n$8 << 16)) | (n$9 << 8)) | n$10)",
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 247,
+        "column_number": 3,
+        "description": "store, n$129.data_size, n$130",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 260,
+        "column_number": 7,
+        "description": "prune, !(n$105 & ()1)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"&\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"1\"]]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 278,
+        "column_number": 9,
+        "description": "prune, (n$79 < ()705600)",
+        "feature": "[\"Prune\",[\"BinOp\",\"<\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"705600\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 280,
+        "column_number": 9,
+        "description": "prune, ((n$73 % ()2352) != ()0)",
+        "feature": "[\"Prune\",[\"BinOp\",\"!=\",[\"BinOp\",\"%\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"2352\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 289,
+        "column_number": 7,
+        "description": "prune, (n$47 > (n$49 - ()n$51))",
+        "feature": "[\"Prune\",[\"BinOp\",\">\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 292,
+        "column_number": 7,
+        "description": "prune, ((n$39 % ()n$41) != ()0)",
+        "feature": "[\"Prune\",[\"BinOp\",\"!=\",[\"BinOp\",\"%\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "src/mode_cmp.c",
+        "line_number": 396,
+        "column_number": 15,
+        "description": "call, shift_comparison",
+        "feature": "[\"Call\",\"shift_comparison\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "prune, !(n$95 < n$97)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "prune, !(n$105 < n$107)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "store, &bytes, n$111",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 318,
+        "column_number": 23,
+        "description": "int_overflow, malloc, ((()2 * n$85) * sizeof(t=;nbytes=1))",
+        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"*\",[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"2\"]]],[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tint\",[\"IUChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "src/core_fileio.c",
+        "line_number": 107,
+        "column_number": 7,
+        "description": "input, fread",
+        "feature": "[\"Input\",\"fread\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_fileio.c",
+        "line_number": 116,
+        "column_number": 5,
+        "description": "store, n$6, ()((((n$7 << 24) | (n$8 << 16)) | (n$9 << 8)) | n$10)",
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 158,
+        "column_number": 7,
+        "description": "prune, !(n$257 < ()16)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"16\"]]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 205,
+        "column_number": 3,
+        "description": "store, &le_long, (n$189 - ()16)",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"16\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 207,
+        "column_number": 7,
+        "description": "prune, !n$171",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"Var\"]]]"
+      },
+      {
+        "level": 1,
+        "filename": "src/core_wave.c",
+        "line_number": 222,
+        "column_number": 40,
+        "description": "call, read_value_long",
+        "feature": "[\"Call\",\"read_value_long\"]"
+      },
+      {
+        "level": 1,
+        "filename": "src/core_wave.c",
+        "line_number": 222,
+        "column_number": 40,
+        "description": "call, read_value_long",
+        "feature": "[\"Call\",\"read_value_long\"]"
+      },
+      {
+        "level": 1,
+        "filename": "src/core_wave.c",
+        "line_number": 222,
+        "column_number": 40,
+        "description": "call, read_value_long",
+        "feature": "[\"Call\",\"read_value_long\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 247,
+        "column_number": 3,
+        "description": "store, n$129.data_size, n$130",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 1,
+        "filename": "src/mode_cmp.c",
+        "line_number": 396,
+        "column_number": 15,
+        "description": "call, shift_comparison",
+        "feature": "[\"Call\",\"shift_comparison\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "prune, !(n$95 < n$97)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "prune, !(n$105 < n$107)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "store, &bytes, n$111",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 318,
+        "column_number": 23,
+        "description": "int_overflow, malloc, ((()2 * n$85) * sizeof(t=;nbytes=1))",
+        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"*\",[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"2\"]]],[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tint\",[\"IUChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "src/core_fileio.c",
+        "line_number": 107,
+        "column_number": 7,
+        "description": "input, fread",
+        "feature": "[\"Input\",\"fread\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_fileio.c",
+        "line_number": 116,
+        "column_number": 5,
+        "description": "store, n$6, ()((((n$7 << 24) | (n$8 << 16)) | (n$9 << 8)) | n$10)",
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 158,
+        "column_number": 7,
+        "description": "prune, !(n$257 < ()16)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"16\"]]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 205,
+        "column_number": 3,
+        "description": "store, &le_long, (n$189 - ()16)",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"16\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 207,
+        "column_number": 7,
+        "description": "prune, !n$171",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"Var\"]]]"
+      },
+      {
+        "level": 1,
+        "filename": "src/core_wave.c",
+        "line_number": 222,
+        "column_number": 40,
+        "description": "call, read_value_long",
+        "feature": "[\"Call\",\"read_value_long\"]"
+      },
+      {
+        "level": 1,
+        "filename": "src/core_wave.c",
+        "line_number": 222,
+        "column_number": 40,
+        "description": "call, read_value_long",
+        "feature": "[\"Call\",\"read_value_long\"]"
+      },
+      {
+        "level": 1,
+        "filename": "src/core_wave.c",
+        "line_number": 222,
+        "column_number": 40,
+        "description": "call, read_value_long",
+        "feature": "[\"Call\",\"read_value_long\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 247,
+        "column_number": 3,
+        "description": "store, n$129.data_size, n$130",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 260,
+        "column_number": 7,
+        "description": "prune, (n$105 & ()1)",
+        "feature": "[\"Prune\",[\"BinOp\",\"&\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"1\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 278,
+        "column_number": 9,
+        "description": "prune, (n$79 < ()705600)",
+        "feature": "[\"Prune\",[\"BinOp\",\"<\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"705600\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 280,
+        "column_number": 9,
+        "description": "prune, ((n$73 % ()2352) != ()0)",
+        "feature": "[\"Prune\",[\"BinOp\",\"!=\",[\"BinOp\",\"%\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"2352\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 289,
+        "column_number": 7,
+        "description": "prune, (n$47 > (n$49 - ()n$51))",
+        "feature": "[\"Prune\",[\"BinOp\",\">\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 292,
+        "column_number": 7,
+        "description": "prune, ((n$39 % ()n$41) != ()0)",
+        "feature": "[\"Prune\",[\"BinOp\",\"!=\",[\"BinOp\",\"%\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "src/mode_cmp.c",
+        "line_number": 396,
+        "column_number": 15,
+        "description": "call, shift_comparison",
+        "feature": "[\"Call\",\"shift_comparison\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "prune, !(n$95 < n$97)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "prune, !(n$105 < n$107)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "store, &bytes, n$111",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 318,
+        "column_number": 23,
+        "description": "int_overflow, malloc, ((()2 * n$85) * sizeof(t=;nbytes=1))",
+        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"*\",[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"2\"]]],[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tint\",[\"IUChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "src/core_fileio.c",
+        "line_number": 107,
+        "column_number": 7,
+        "description": "input, fread",
+        "feature": "[\"Input\",\"fread\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_fileio.c",
+        "line_number": 116,
+        "column_number": 5,
+        "description": "store, n$6, ()((((n$7 << 24) | (n$8 << 16)) | (n$9 << 8)) | n$10)",
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 158,
+        "column_number": 7,
+        "description": "prune, !(n$257 < ()16)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"16\"]]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 205,
+        "column_number": 3,
+        "description": "store, &le_long, (n$189 - ()16)",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"16\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 207,
+        "column_number": 7,
+        "description": "prune, !n$171",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"Var\"]]]"
+      },
+      {
+        "level": 1,
+        "filename": "src/core_wave.c",
+        "line_number": 222,
+        "column_number": 40,
+        "description": "call, read_value_long",
+        "feature": "[\"Call\",\"read_value_long\"]"
+      },
+      {
+        "level": 1,
+        "filename": "src/core_wave.c",
+        "line_number": 222,
+        "column_number": 40,
+        "description": "call, read_value_long",
+        "feature": "[\"Call\",\"read_value_long\"]"
+      },
+      {
+        "level": 1,
+        "filename": "src/core_wave.c",
+        "line_number": 222,
+        "column_number": 40,
+        "description": "call, read_value_long",
+        "feature": "[\"Call\",\"read_value_long\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 247,
+        "column_number": 3,
+        "description": "store, n$129.data_size, n$130",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 260,
+        "column_number": 7,
+        "description": "prune, !(n$105 & ()1)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"&\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"1\"]]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 278,
+        "column_number": 9,
+        "description": "prune, (n$79 < ()705600)",
+        "feature": "[\"Prune\",[\"BinOp\",\"<\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"705600\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 280,
+        "column_number": 9,
+        "description": "prune, ((n$73 % ()2352) != ()0)",
+        "feature": "[\"Prune\",[\"BinOp\",\"!=\",[\"BinOp\",\"%\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"2352\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 289,
+        "column_number": 7,
+        "description": "prune, (n$47 > (n$49 - ()n$51))",
+        "feature": "[\"Prune\",[\"BinOp\",\">\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 292,
+        "column_number": 7,
+        "description": "prune, ((n$39 % ()n$41) != ()0)",
+        "feature": "[\"Prune\",[\"BinOp\",\"!=\",[\"BinOp\",\"%\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "src/mode_cmp.c",
+        "line_number": 396,
+        "column_number": 15,
+        "description": "call, shift_comparison",
+        "feature": "[\"Call\",\"shift_comparison\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "prune, !(n$95 < n$97)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "prune, !(n$105 < n$107)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "store, &bytes, n$111",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 318,
+        "column_number": 23,
+        "description": "int_overflow, malloc, ((()2 * n$85) * sizeof(t=;nbytes=1))",
+        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"*\",[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"2\"]]],[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tint\",[\"IUChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "src/core_fileio.c",
+        "line_number": 107,
+        "column_number": 7,
+        "description": "input, fread",
+        "feature": "[\"Input\",\"fread\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_fileio.c",
+        "line_number": 116,
+        "column_number": 5,
+        "description": "store, n$6, ()((((n$7 << 24) | (n$8 << 16)) | (n$9 << 8)) | n$10)",
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 158,
+        "column_number": 7,
+        "description": "prune, !(n$257 < ()16)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"16\"]]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 205,
+        "column_number": 3,
+        "description": "store, &le_long, (n$189 - ()16)",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"16\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 207,
+        "column_number": 7,
+        "description": "prune, !n$171",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"Var\"]]]"
+      },
+      {
+        "level": 1,
+        "filename": "src/core_wave.c",
+        "line_number": 222,
+        "column_number": 40,
+        "description": "call, read_value_long",
+        "feature": "[\"Call\",\"read_value_long\"]"
+      },
+      {
+        "level": 1,
+        "filename": "src/core_wave.c",
+        "line_number": 222,
+        "column_number": 40,
+        "description": "call, read_value_long",
+        "feature": "[\"Call\",\"read_value_long\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 247,
+        "column_number": 3,
+        "description": "store, n$129.data_size, n$130",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 1,
+        "filename": "src/mode_cmp.c",
+        "line_number": 396,
+        "column_number": 15,
+        "description": "call, shift_comparison",
+        "feature": "[\"Call\",\"shift_comparison\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "prune, !(n$95 < n$97)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "prune, !(n$105 < n$107)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "store, &bytes, n$111",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 318,
+        "column_number": 23,
+        "description": "int_overflow, malloc, ((()2 * n$85) * sizeof(t=;nbytes=1))",
+        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"*\",[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"2\"]]],[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tint\",[\"IUChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "src/core_fileio.c",
+        "line_number": 107,
+        "column_number": 7,
+        "description": "input, fread",
+        "feature": "[\"Input\",\"fread\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_fileio.c",
+        "line_number": 116,
+        "column_number": 5,
+        "description": "store, n$6, ()((((n$7 << 24) | (n$8 << 16)) | (n$9 << 8)) | n$10)",
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 158,
+        "column_number": 7,
+        "description": "prune, !(n$257 < ()16)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"16\"]]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 205,
+        "column_number": 3,
+        "description": "store, &le_long, (n$189 - ()16)",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"16\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 207,
+        "column_number": 7,
+        "description": "prune, !n$171",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"Var\"]]]"
+      },
+      {
+        "level": 1,
+        "filename": "src/core_wave.c",
+        "line_number": 222,
+        "column_number": 40,
+        "description": "call, read_value_long",
+        "feature": "[\"Call\",\"read_value_long\"]"
+      },
+      {
+        "level": 1,
+        "filename": "src/core_wave.c",
+        "line_number": 222,
+        "column_number": 40,
+        "description": "call, read_value_long",
+        "feature": "[\"Call\",\"read_value_long\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 247,
+        "column_number": 3,
+        "description": "store, n$129.data_size, n$130",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 260,
+        "column_number": 7,
+        "description": "prune, (n$105 & ()1)",
+        "feature": "[\"Prune\",[\"BinOp\",\"&\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"1\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 278,
+        "column_number": 9,
+        "description": "prune, (n$79 < ()705600)",
+        "feature": "[\"Prune\",[\"BinOp\",\"<\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"705600\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 280,
+        "column_number": 9,
+        "description": "prune, ((n$73 % ()2352) != ()0)",
+        "feature": "[\"Prune\",[\"BinOp\",\"!=\",[\"BinOp\",\"%\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"2352\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 289,
+        "column_number": 7,
+        "description": "prune, (n$47 > (n$49 - ()n$51))",
+        "feature": "[\"Prune\",[\"BinOp\",\">\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 292,
+        "column_number": 7,
+        "description": "prune, ((n$39 % ()n$41) != ()0)",
+        "feature": "[\"Prune\",[\"BinOp\",\"!=\",[\"BinOp\",\"%\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "src/mode_cmp.c",
+        "line_number": 396,
+        "column_number": 15,
+        "description": "call, shift_comparison",
+        "feature": "[\"Call\",\"shift_comparison\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "prune, !(n$95 < n$97)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "prune, !(n$105 < n$107)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "store, &bytes, n$111",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 318,
+        "column_number": 23,
+        "description": "int_overflow, malloc, ((()2 * n$85) * sizeof(t=;nbytes=1))",
+        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"*\",[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"2\"]]],[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tint\",[\"IUChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "src/core_fileio.c",
+        "line_number": 107,
+        "column_number": 7,
+        "description": "input, fread",
+        "feature": "[\"Input\",\"fread\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_fileio.c",
+        "line_number": 116,
+        "column_number": 5,
+        "description": "store, n$6, ()((((n$7 << 24) | (n$8 << 16)) | (n$9 << 8)) | n$10)",
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 158,
+        "column_number": 7,
+        "description": "prune, !(n$257 < ()16)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"16\"]]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 205,
+        "column_number": 3,
+        "description": "store, &le_long, (n$189 - ()16)",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"16\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 207,
+        "column_number": 7,
+        "description": "prune, !n$171",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"Var\"]]]"
+      },
+      {
+        "level": 1,
+        "filename": "src/core_wave.c",
+        "line_number": 222,
+        "column_number": 40,
+        "description": "call, read_value_long",
+        "feature": "[\"Call\",\"read_value_long\"]"
+      },
+      {
+        "level": 1,
+        "filename": "src/core_wave.c",
+        "line_number": 222,
+        "column_number": 40,
+        "description": "call, read_value_long",
+        "feature": "[\"Call\",\"read_value_long\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 247,
+        "column_number": 3,
+        "description": "store, n$129.data_size, n$130",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 260,
+        "column_number": 7,
+        "description": "prune, !(n$105 & ()1)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"&\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"1\"]]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 278,
+        "column_number": 9,
+        "description": "prune, (n$79 < ()705600)",
+        "feature": "[\"Prune\",[\"BinOp\",\"<\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"705600\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 280,
+        "column_number": 9,
+        "description": "prune, ((n$73 % ()2352) != ()0)",
+        "feature": "[\"Prune\",[\"BinOp\",\"!=\",[\"BinOp\",\"%\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"2352\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 289,
+        "column_number": 7,
+        "description": "prune, (n$47 > (n$49 - ()n$51))",
+        "feature": "[\"Prune\",[\"BinOp\",\">\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 292,
+        "column_number": 7,
+        "description": "prune, ((n$39 % ()n$41) != ()0)",
+        "feature": "[\"Prune\",[\"BinOp\",\"!=\",[\"BinOp\",\"%\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "src/mode_cmp.c",
+        "line_number": 396,
+        "column_number": 15,
+        "description": "call, shift_comparison",
+        "feature": "[\"Call\",\"shift_comparison\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "prune, !(n$95 < n$97)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "prune, !(n$105 < n$107)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "store, &bytes, n$111",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 318,
+        "column_number": 23,
+        "description": "int_overflow, malloc, ((()2 * n$85) * sizeof(t=;nbytes=1))",
+        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"*\",[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"2\"]]],[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tint\",[\"IUChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "src/core_fileio.c",
+        "line_number": 107,
+        "column_number": 7,
+        "description": "input, fread",
+        "feature": "[\"Input\",\"fread\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_fileio.c",
+        "line_number": 116,
+        "column_number": 5,
+        "description": "store, n$6, ()((((n$7 << 24) | (n$8 << 16)) | (n$9 << 8)) | n$10)",
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 158,
+        "column_number": 7,
+        "description": "prune, !(n$257 < ()16)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"16\"]]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 205,
+        "column_number": 3,
+        "description": "store, &le_long, (n$189 - ()16)",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"16\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 207,
+        "column_number": 7,
+        "description": "prune, !n$171",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"Var\"]]]"
+      },
+      {
+        "level": 1,
+        "filename": "src/core_wave.c",
+        "line_number": 222,
+        "column_number": 40,
+        "description": "call, read_value_long",
+        "feature": "[\"Call\",\"read_value_long\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 247,
+        "column_number": 3,
+        "description": "store, n$129.data_size, n$130",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 1,
+        "filename": "src/mode_cmp.c",
+        "line_number": 396,
+        "column_number": 15,
+        "description": "call, shift_comparison",
+        "feature": "[\"Call\",\"shift_comparison\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "prune, !(n$95 < n$97)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "prune, !(n$105 < n$107)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "store, &bytes, n$111",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 318,
+        "column_number": 23,
+        "description": "int_overflow, malloc, ((()2 * n$85) * sizeof(t=;nbytes=1))",
+        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"*\",[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"2\"]]],[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tint\",[\"IUChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "src/core_fileio.c",
+        "line_number": 107,
+        "column_number": 7,
+        "description": "input, fread",
+        "feature": "[\"Input\",\"fread\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_fileio.c",
+        "line_number": 116,
+        "column_number": 5,
+        "description": "store, n$6, ()((((n$7 << 24) | (n$8 << 16)) | (n$9 << 8)) | n$10)",
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 158,
+        "column_number": 7,
+        "description": "prune, !(n$257 < ()16)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"16\"]]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 205,
+        "column_number": 3,
+        "description": "store, &le_long, (n$189 - ()16)",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"16\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 207,
+        "column_number": 7,
+        "description": "prune, !n$171",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"Var\"]]]"
+      },
+      {
+        "level": 1,
+        "filename": "src/core_wave.c",
+        "line_number": 222,
+        "column_number": 40,
+        "description": "call, read_value_long",
+        "feature": "[\"Call\",\"read_value_long\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 247,
+        "column_number": 3,
+        "description": "store, n$129.data_size, n$130",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 260,
+        "column_number": 7,
+        "description": "prune, (n$105 & ()1)",
+        "feature": "[\"Prune\",[\"BinOp\",\"&\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"1\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 278,
+        "column_number": 9,
+        "description": "prune, (n$79 < ()705600)",
+        "feature": "[\"Prune\",[\"BinOp\",\"<\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"705600\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 280,
+        "column_number": 9,
+        "description": "prune, ((n$73 % ()2352) != ()0)",
+        "feature": "[\"Prune\",[\"BinOp\",\"!=\",[\"BinOp\",\"%\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"2352\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 289,
+        "column_number": 7,
+        "description": "prune, (n$47 > (n$49 - ()n$51))",
+        "feature": "[\"Prune\",[\"BinOp\",\">\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 292,
+        "column_number": 7,
+        "description": "prune, ((n$39 % ()n$41) != ()0)",
+        "feature": "[\"Prune\",[\"BinOp\",\"!=\",[\"BinOp\",\"%\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "src/mode_cmp.c",
+        "line_number": 396,
+        "column_number": 15,
+        "description": "call, shift_comparison",
+        "feature": "[\"Call\",\"shift_comparison\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "prune, !(n$95 < n$97)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "prune, !(n$105 < n$107)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "store, &bytes, n$111",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 318,
+        "column_number": 23,
+        "description": "int_overflow, malloc, ((()2 * n$85) * sizeof(t=;nbytes=1))",
+        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"*\",[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"2\"]]],[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tint\",[\"IUChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "src/core_fileio.c",
+        "line_number": 107,
+        "column_number": 7,
+        "description": "input, fread",
+        "feature": "[\"Input\",\"fread\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_fileio.c",
+        "line_number": 116,
+        "column_number": 5,
+        "description": "store, n$6, ()((((n$7 << 24) | (n$8 << 16)) | (n$9 << 8)) | n$10)",
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 158,
+        "column_number": 7,
+        "description": "prune, !(n$257 < ()16)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"16\"]]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 205,
+        "column_number": 3,
+        "description": "store, &le_long, (n$189 - ()16)",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"16\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 207,
+        "column_number": 7,
+        "description": "prune, !n$171",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"Var\"]]]"
+      },
+      {
+        "level": 1,
+        "filename": "src/core_wave.c",
+        "line_number": 222,
+        "column_number": 40,
+        "description": "call, read_value_long",
+        "feature": "[\"Call\",\"read_value_long\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 247,
+        "column_number": 3,
+        "description": "store, n$129.data_size, n$130",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 260,
+        "column_number": 7,
+        "description": "prune, !(n$105 & ()1)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"&\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"1\"]]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 278,
+        "column_number": 9,
+        "description": "prune, (n$79 < ()705600)",
+        "feature": "[\"Prune\",[\"BinOp\",\"<\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"705600\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 280,
+        "column_number": 9,
+        "description": "prune, ((n$73 % ()2352) != ()0)",
+        "feature": "[\"Prune\",[\"BinOp\",\"!=\",[\"BinOp\",\"%\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"2352\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 289,
+        "column_number": 7,
+        "description": "prune, (n$47 > (n$49 - ()n$51))",
+        "feature": "[\"Prune\",[\"BinOp\",\">\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 292,
+        "column_number": 7,
+        "description": "prune, ((n$39 % ()n$41) != ()0)",
+        "feature": "[\"Prune\",[\"BinOp\",\"!=\",[\"BinOp\",\"%\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "src/mode_cmp.c",
+        "line_number": 396,
+        "column_number": 15,
+        "description": "call, shift_comparison",
+        "feature": "[\"Call\",\"shift_comparison\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "prune, !(n$95 < n$97)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "prune, !(n$105 < n$107)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "store, &bytes, n$111",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 318,
+        "column_number": 23,
+        "description": "int_overflow, malloc, ((()2 * n$85) * sizeof(t=;nbytes=1))",
+        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"*\",[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"2\"]]],[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tint\",[\"IUChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "src/core_fileio.c",
+        "line_number": 107,
+        "column_number": 7,
+        "description": "input, fread",
+        "feature": "[\"Input\",\"fread\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_fileio.c",
+        "line_number": 116,
+        "column_number": 5,
+        "description": "store, n$6, ()((((n$7 << 24) | (n$8 << 16)) | (n$9 << 8)) | n$10)",
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 158,
+        "column_number": 7,
+        "description": "prune, !(n$257 < ()16)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"16\"]]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 205,
+        "column_number": 3,
+        "description": "store, &le_long, (n$189 - ()16)",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"16\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 207,
+        "column_number": 7,
+        "description": "prune, !n$171",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"Var\"]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 247,
+        "column_number": 3,
+        "description": "store, n$129.data_size, n$130",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 1,
+        "filename": "src/mode_cmp.c",
+        "line_number": 396,
+        "column_number": 15,
+        "description": "call, shift_comparison",
+        "feature": "[\"Call\",\"shift_comparison\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "prune, !(n$95 < n$97)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "prune, !(n$105 < n$107)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "store, &bytes, n$111",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 318,
+        "column_number": 23,
+        "description": "int_overflow, malloc, ((()2 * n$85) * sizeof(t=;nbytes=1))",
+        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"*\",[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"2\"]]],[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tint\",[\"IUChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "src/core_fileio.c",
+        "line_number": 107,
+        "column_number": 7,
+        "description": "input, fread",
+        "feature": "[\"Input\",\"fread\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_fileio.c",
+        "line_number": 116,
+        "column_number": 5,
+        "description": "store, n$6, ()((((n$7 << 24) | (n$8 << 16)) | (n$9 << 8)) | n$10)",
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 158,
+        "column_number": 7,
+        "description": "prune, !(n$257 < ()16)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"16\"]]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 205,
+        "column_number": 3,
+        "description": "store, &le_long, (n$189 - ()16)",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"16\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 207,
+        "column_number": 7,
+        "description": "prune, !n$171",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"Var\"]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 247,
+        "column_number": 3,
+        "description": "store, n$129.data_size, n$130",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 260,
+        "column_number": 7,
+        "description": "prune, (n$105 & ()1)",
+        "feature": "[\"Prune\",[\"BinOp\",\"&\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"1\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 278,
+        "column_number": 9,
+        "description": "prune, (n$79 < ()705600)",
+        "feature": "[\"Prune\",[\"BinOp\",\"<\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"705600\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 280,
+        "column_number": 9,
+        "description": "prune, ((n$73 % ()2352) != ()0)",
+        "feature": "[\"Prune\",[\"BinOp\",\"!=\",[\"BinOp\",\"%\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"2352\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 289,
+        "column_number": 7,
+        "description": "prune, (n$47 > (n$49 - ()n$51))",
+        "feature": "[\"Prune\",[\"BinOp\",\">\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 292,
+        "column_number": 7,
+        "description": "prune, ((n$39 % ()n$41) != ()0)",
+        "feature": "[\"Prune\",[\"BinOp\",\"!=\",[\"BinOp\",\"%\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "src/mode_cmp.c",
+        "line_number": 396,
+        "column_number": 15,
+        "description": "call, shift_comparison",
+        "feature": "[\"Call\",\"shift_comparison\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "prune, !(n$95 < n$97)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "prune, !(n$105 < n$107)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "store, &bytes, n$111",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 318,
+        "column_number": 23,
+        "description": "int_overflow, malloc, ((()2 * n$85) * sizeof(t=;nbytes=1))",
+        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"*\",[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"2\"]]],[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tint\",[\"IUChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "src/core_fileio.c",
+        "line_number": 107,
+        "column_number": 7,
+        "description": "input, fread",
+        "feature": "[\"Input\",\"fread\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_fileio.c",
+        "line_number": 116,
+        "column_number": 5,
+        "description": "store, n$6, ()((((n$7 << 24) | (n$8 << 16)) | (n$9 << 8)) | n$10)",
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 158,
+        "column_number": 7,
+        "description": "prune, !(n$257 < ()16)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"16\"]]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 205,
+        "column_number": 3,
+        "description": "store, &le_long, (n$189 - ()16)",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"16\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 207,
+        "column_number": 7,
+        "description": "prune, !n$171",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"Var\"]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 247,
+        "column_number": 3,
+        "description": "store, n$129.data_size, n$130",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 260,
+        "column_number": 7,
+        "description": "prune, !(n$105 & ()1)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"&\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"1\"]]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 278,
+        "column_number": 9,
+        "description": "prune, (n$79 < ()705600)",
+        "feature": "[\"Prune\",[\"BinOp\",\"<\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"705600\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 280,
+        "column_number": 9,
+        "description": "prune, ((n$73 % ()2352) != ()0)",
+        "feature": "[\"Prune\",[\"BinOp\",\"!=\",[\"BinOp\",\"%\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"2352\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 289,
+        "column_number": 7,
+        "description": "prune, (n$47 > (n$49 - ()n$51))",
+        "feature": "[\"Prune\",[\"BinOp\",\">\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 292,
+        "column_number": 7,
+        "description": "prune, ((n$39 % ()n$41) != ()0)",
+        "feature": "[\"Prune\",[\"BinOp\",\"!=\",[\"BinOp\",\"%\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "src/mode_cmp.c",
+        "line_number": 396,
+        "column_number": 15,
+        "description": "call, shift_comparison",
+        "feature": "[\"Call\",\"shift_comparison\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "prune, !(n$95 < n$97)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "prune, !(n$105 < n$107)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "store, &bytes, n$111",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 318,
+        "column_number": 23,
+        "description": "int_overflow, malloc, ((()2 * n$85) * sizeof(t=;nbytes=1))",
+        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"*\",[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"2\"]]],[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tint\",[\"IUChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "src/core_fileio.c",
+        "line_number": 107,
+        "column_number": 7,
+        "description": "input, fread",
+        "feature": "[\"Input\",\"fread\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_fileio.c",
+        "line_number": 113,
+        "column_number": 5,
+        "description": "store, n$14, ()((((n$15 << 24) | (n$16 << 16)) | (n$17 << 8)) | n$18)",
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/format_aiff.c",
+        "line_number": 151,
+        "column_number": 3,
+        "description": "store, n$15.data_size, ((()n$16 * n$17) * ()(n$18 / 8))",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"*\",[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Var\"]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"/\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/format_aiff.c",
+        "line_number": 157,
+        "column_number": 7,
+        "description": "prune, (n$4 & ()1)",
+        "feature": "[\"Prune\",[\"BinOp\",\"&\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"1\"]]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "src/mode_cmp.c",
+        "line_number": 396,
+        "column_number": 15,
+        "description": "call, shift_comparison",
+        "feature": "[\"Call\",\"shift_comparison\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "prune, !(n$95 < n$97)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "prune, !(n$105 < n$107)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "store, &bytes, n$111",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 318,
+        "column_number": 23,
+        "description": "int_overflow, malloc, ((()2 * n$85) * sizeof(t=;nbytes=1))",
+        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"*\",[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"2\"]]],[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tint\",[\"IUChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "src/core_fileio.c",
+        "line_number": 107,
+        "column_number": 7,
+        "description": "input, fread",
+        "feature": "[\"Input\",\"fread\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_fileio.c",
+        "line_number": 113,
+        "column_number": 5,
+        "description": "store, n$14, ()((((n$15 << 24) | (n$16 << 16)) | (n$17 << 8)) | n$18)",
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/format_aiff.c",
+        "line_number": 151,
+        "column_number": 3,
+        "description": "store, n$15.data_size, ((()n$16 * n$17) * ()(n$18 / 8))",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"*\",[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Var\"]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"/\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/format_aiff.c",
+        "line_number": 157,
+        "column_number": 7,
+        "description": "prune, (n$4 & ()1)",
+        "feature": "[\"Prune\",[\"BinOp\",\"&\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"1\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 260,
+        "column_number": 7,
+        "description": "prune, (n$105 & ()1)",
+        "feature": "[\"Prune\",[\"BinOp\",\"&\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"1\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 278,
+        "column_number": 9,
+        "description": "prune, (n$79 < ()705600)",
+        "feature": "[\"Prune\",[\"BinOp\",\"<\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"705600\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 280,
+        "column_number": 9,
+        "description": "prune, ((n$73 % ()2352) != ()0)",
+        "feature": "[\"Prune\",[\"BinOp\",\"!=\",[\"BinOp\",\"%\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"2352\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 289,
+        "column_number": 7,
+        "description": "prune, (n$47 > (n$49 - ()n$51))",
+        "feature": "[\"Prune\",[\"BinOp\",\">\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 292,
+        "column_number": 7,
+        "description": "prune, ((n$39 % ()n$41) != ()0)",
+        "feature": "[\"Prune\",[\"BinOp\",\"!=\",[\"BinOp\",\"%\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "src/mode_cmp.c",
+        "line_number": 396,
+        "column_number": 15,
+        "description": "call, shift_comparison",
+        "feature": "[\"Call\",\"shift_comparison\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "prune, !(n$95 < n$97)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "prune, !(n$105 < n$107)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "store, &bytes, n$111",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 318,
+        "column_number": 23,
+        "description": "int_overflow, malloc, ((()2 * n$85) * sizeof(t=;nbytes=1))",
+        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"*\",[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"2\"]]],[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tint\",[\"IUChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "src/core_fileio.c",
+        "line_number": 107,
+        "column_number": 7,
+        "description": "input, fread",
+        "feature": "[\"Input\",\"fread\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_fileio.c",
+        "line_number": 113,
+        "column_number": 5,
+        "description": "store, n$14, ()((((n$15 << 24) | (n$16 << 16)) | (n$17 << 8)) | n$18)",
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/format_aiff.c",
+        "line_number": 151,
+        "column_number": 3,
+        "description": "store, n$15.data_size, ((()n$16 * n$17) * ()(n$18 / 8))",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"*\",[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Var\"]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"/\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/format_aiff.c",
+        "line_number": 157,
+        "column_number": 7,
+        "description": "prune, (n$4 & ()1)",
+        "feature": "[\"Prune\",[\"BinOp\",\"&\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"1\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 260,
+        "column_number": 7,
+        "description": "prune, !(n$105 & ()1)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"&\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"1\"]]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 278,
+        "column_number": 9,
+        "description": "prune, (n$79 < ()705600)",
+        "feature": "[\"Prune\",[\"BinOp\",\"<\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"705600\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 280,
+        "column_number": 9,
+        "description": "prune, ((n$73 % ()2352) != ()0)",
+        "feature": "[\"Prune\",[\"BinOp\",\"!=\",[\"BinOp\",\"%\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"2352\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 289,
+        "column_number": 7,
+        "description": "prune, (n$47 > (n$49 - ()n$51))",
+        "feature": "[\"Prune\",[\"BinOp\",\">\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 292,
+        "column_number": 7,
+        "description": "prune, ((n$39 % ()n$41) != ()0)",
+        "feature": "[\"Prune\",[\"BinOp\",\"!=\",[\"BinOp\",\"%\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "src/mode_cmp.c",
+        "line_number": 396,
+        "column_number": 15,
+        "description": "call, shift_comparison",
+        "feature": "[\"Call\",\"shift_comparison\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "prune, !(n$95 < n$97)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "prune, !(n$105 < n$107)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "store, &bytes, n$111",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 318,
+        "column_number": 23,
+        "description": "int_overflow, malloc, ((()2 * n$85) * sizeof(t=;nbytes=1))",
+        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"*\",[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"2\"]]],[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tint\",[\"IUChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "src/core_fileio.c",
+        "line_number": 107,
+        "column_number": 7,
+        "description": "input, fread",
+        "feature": "[\"Input\",\"fread\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_fileio.c",
+        "line_number": 113,
+        "column_number": 5,
+        "description": "store, n$14, ()((((n$15 << 24) | (n$16 << 16)) | (n$17 << 8)) | n$18)",
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/format_aiff.c",
+        "line_number": 151,
+        "column_number": 3,
+        "description": "store, n$15.data_size, ((()n$16 * n$17) * ()(n$18 / 8))",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"*\",[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Var\"]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"/\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/format_aiff.c",
+        "line_number": 157,
+        "column_number": 7,
+        "description": "prune, !(n$4 & ()1)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"&\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"1\"]]]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "src/mode_cmp.c",
+        "line_number": 396,
+        "column_number": 15,
+        "description": "call, shift_comparison",
+        "feature": "[\"Call\",\"shift_comparison\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "prune, !(n$95 < n$97)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "prune, !(n$105 < n$107)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "store, &bytes, n$111",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 318,
+        "column_number": 23,
+        "description": "int_overflow, malloc, ((()2 * n$85) * sizeof(t=;nbytes=1))",
+        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"*\",[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"2\"]]],[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tint\",[\"IUChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "src/core_fileio.c",
+        "line_number": 107,
+        "column_number": 7,
+        "description": "input, fread",
+        "feature": "[\"Input\",\"fread\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_fileio.c",
+        "line_number": 113,
+        "column_number": 5,
+        "description": "store, n$14, ()((((n$15 << 24) | (n$16 << 16)) | (n$17 << 8)) | n$18)",
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/format_aiff.c",
+        "line_number": 151,
+        "column_number": 3,
+        "description": "store, n$15.data_size, ((()n$16 * n$17) * ()(n$18 / 8))",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"*\",[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Var\"]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"/\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/format_aiff.c",
+        "line_number": 157,
+        "column_number": 7,
+        "description": "prune, !(n$4 & ()1)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"&\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"1\"]]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 260,
+        "column_number": 7,
+        "description": "prune, (n$105 & ()1)",
+        "feature": "[\"Prune\",[\"BinOp\",\"&\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"1\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 278,
+        "column_number": 9,
+        "description": "prune, (n$79 < ()705600)",
+        "feature": "[\"Prune\",[\"BinOp\",\"<\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"705600\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 280,
+        "column_number": 9,
+        "description": "prune, ((n$73 % ()2352) != ()0)",
+        "feature": "[\"Prune\",[\"BinOp\",\"!=\",[\"BinOp\",\"%\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"2352\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 289,
+        "column_number": 7,
+        "description": "prune, (n$47 > (n$49 - ()n$51))",
+        "feature": "[\"Prune\",[\"BinOp\",\">\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 292,
+        "column_number": 7,
+        "description": "prune, ((n$39 % ()n$41) != ()0)",
+        "feature": "[\"Prune\",[\"BinOp\",\"!=\",[\"BinOp\",\"%\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "src/mode_cmp.c",
+        "line_number": 396,
+        "column_number": 15,
+        "description": "call, shift_comparison",
+        "feature": "[\"Call\",\"shift_comparison\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "prune, !(n$95 < n$97)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "prune, !(n$105 < n$107)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "store, &bytes, n$111",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 318,
+        "column_number": 23,
+        "description": "int_overflow, malloc, ((()2 * n$85) * sizeof(t=;nbytes=1))",
+        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"*\",[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"2\"]]],[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tint\",[\"IUChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "src/core_fileio.c",
+        "line_number": 107,
+        "column_number": 7,
+        "description": "input, fread",
+        "feature": "[\"Input\",\"fread\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_fileio.c",
+        "line_number": 113,
+        "column_number": 5,
+        "description": "store, n$14, ()((((n$15 << 24) | (n$16 << 16)) | (n$17 << 8)) | n$18)",
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/format_aiff.c",
+        "line_number": 151,
+        "column_number": 3,
+        "description": "store, n$15.data_size, ((()n$16 * n$17) * ()(n$18 / 8))",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"*\",[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Var\"]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"/\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/format_aiff.c",
+        "line_number": 157,
+        "column_number": 7,
+        "description": "prune, !(n$4 & ()1)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"&\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"1\"]]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 260,
+        "column_number": 7,
+        "description": "prune, !(n$105 & ()1)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"&\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"1\"]]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 278,
+        "column_number": 9,
+        "description": "prune, (n$79 < ()705600)",
+        "feature": "[\"Prune\",[\"BinOp\",\"<\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"705600\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 280,
+        "column_number": 9,
+        "description": "prune, ((n$73 % ()2352) != ()0)",
+        "feature": "[\"Prune\",[\"BinOp\",\"!=\",[\"BinOp\",\"%\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"2352\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 289,
+        "column_number": 7,
+        "description": "prune, (n$47 > (n$49 - ()n$51))",
+        "feature": "[\"Prune\",[\"BinOp\",\">\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/core_wave.c",
+        "line_number": 292,
+        "column_number": 7,
+        "description": "prune, ((n$39 % ()n$41) != ()0)",
+        "feature": "[\"Prune\",[\"BinOp\",\"!=\",[\"BinOp\",\"%\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "src/mode_cmp.c",
+        "line_number": 396,
+        "column_number": 15,
+        "description": "call, shift_comparison",
+        "feature": "[\"Call\",\"shift_comparison\"]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "prune, !(n$95 < n$97)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "prune, !(n$105 < n$107)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"Var\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 316,
+        "column_number": 11,
+        "description": "store, &bytes, n$111",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "src/mode_cmp.c",
+        "line_number": 318,
+        "column_number": 23,
+        "description": "int_overflow, malloc, ((()2 * n$85) * sizeof(t=;nbytes=1))",
+        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"*\",[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"2\"]]],[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tint\",[\"IUChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+      }
+    ]
+  ],
+  "key": "mode_cmp.c|process_files|API_MISUSE",
+  "hash": "474da38faebd16ee822b5fbcbb5fa9b8",
+  "bug_type_hum": "Api Misuse",
+  "extras": {
+    "bug_src_loc": {
+      "file": "src/core_fileio.c",
+      "lnum": 107,
+      "cnum": 7,
+      "enum": 0
+    }
+  }
+}

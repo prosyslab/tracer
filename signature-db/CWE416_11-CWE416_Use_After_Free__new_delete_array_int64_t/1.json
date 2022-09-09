@@ -1,0 +1,41 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "UseAfterFree.",
+  "severity": "ERROR",
+  "line": 47,
+  "column": 9,
+  "procedure": "CWE416_Use_After_Free__new_delete_array_int64_t_11::bad",
+  "procedure_start_line": 26,
+  "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_int64_t_11.cpp",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_int64_t_11.cpp",
+        "line_number": 33,
+        "column_number": 16,
+        "description": "allocate, __new_array",
+        "feature": "[\"Allocate\",\"__new_array\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_int64_t_11.cpp",
+        "line_number": 42,
+        "column_number": 9,
+        "description": "free, __delete_array, n$7",
+        "feature": "[\"Free\",\"__delete_array\",[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_int64_t_11.cpp",
+        "line_number": 47,
+        "column_number": 9,
+        "description": "library_call, printLongLongLine, n$2",
+        "feature": "[\"LibraryCall\",\"printLongLongLine\",\"n$2\"]"
+      }
+    ]
+  ],
+  "key": "CWE416_Use_After_Free__new_delete_array_int64_t_11.cpp|CWE416_Use_After_Free__new_delete_array_int64_t_11::bad|API_MISUSE",
+  "hash": "bb73ac428cf8ae6f503bae37e9109d59",
+  "bug_type_hum": "Api Misuse"
+}

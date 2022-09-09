@@ -1,0 +1,57 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "IntUnderflow.",
+  "severity": "ERROR",
+  "line": 37,
+  "column": 13,
+  "procedure": "CWE191_Integer_Underflow__unsigned_int_fscanf_sub_33::bad",
+  "procedure_start_line": 25,
+  "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s03/CWE191_Integer_Underflow__unsigned_int_fscanf_sub_33.cpp",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s03/CWE191_Integer_Underflow__unsigned_int_fscanf_sub_33.cpp",
+        "line_number": 31,
+        "column_number": 5,
+        "description": "input, fscanf",
+        "feature": "[\"Input\",\"fscanf\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s03/CWE191_Integer_Underflow__unsigned_int_fscanf_sub_33.cpp",
+        "line_number": 33,
+        "column_number": 9,
+        "description": "store, &data, n$4",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s03/CWE191_Integer_Underflow__unsigned_int_fscanf_sub_33.cpp",
+        "line_number": 36,
+        "column_number": 13,
+        "description": "store, &result, (n$2 - ()1)",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IUInt\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"1\"]]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s03/CWE191_Integer_Underflow__unsigned_int_fscanf_sub_33.cpp",
+        "line_number": 37,
+        "column_number": 13,
+        "description": "int_underflow, printUnsignedLine, n$0",
+        "feature": "[\"IntUnderflow\",\"printUnsignedLine\",[\"Var\"]]"
+      }
+    ]
+  ],
+  "key": "CWE191_Integer_Underflow__unsigned_int_fscanf_sub_33.cpp|CWE191_Integer_Underflow__unsigned_int_fscanf_sub_33::bad|API_MISUSE",
+  "hash": "ab91c3369430a9083c3517150348b8c9",
+  "bug_type_hum": "Api Misuse",
+  "extras": {
+    "bug_src_loc": {
+      "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s03/CWE191_Integer_Underflow__unsigned_int_fscanf_sub_33.cpp",
+      "lnum": 31,
+      "cnum": 5,
+      "enum": 0
+    }
+  }
+}

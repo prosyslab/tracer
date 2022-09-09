@@ -1,0 +1,3463 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "FormatString.",
+  "severity": "ERROR",
+  "line": 834,
+  "column": 5,
+  "procedure": "CmdKeywords",
+  "procedure_start_line": 1788,
+  "file": "main.c",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 439,
+        "column_number": 19,
+        "description": "input, getc",
+        "feature": "[\"Input\",\"getc\"]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 439,
+        "column_number": 9,
+        "description": "store, &thechar, n$51",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 449,
+        "column_number": 13,
+        "description": "prune, !(n$23 == 13)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"13\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 454,
+        "column_number": 20,
+        "description": "prune, !(n$34 == 10)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 456,
+        "column_number": 18,
+        "description": "prune, !(n$35 == 9)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"9\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 459,
+        "column_number": 9,
+        "description": "store, &#GB<parser.c>$g_parser_currentChar, n$22",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 489,
+        "column_number": 9,
+        "description": "prune, (n$15 == 10)",
+        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 503,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 556,
+        "column_number": 9,
+        "description": "store, &cThis, n$23",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 559,
+        "column_number": 9,
+        "description": "prune, (n$17 == 92)",
+        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"92\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 571,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 610,
+        "column_number": 13,
+        "description": "store, &c, n$1",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 612,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 877,
+        "column_number": 9,
+        "description": "store, &s[0], n$16",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 881,
+        "column_number": 9,
+        "description": "prune, (n$4 == 92)",
+        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"92\"]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "funct1.c",
+        "line_number": 1798,
+        "column_number": 2,
+        "description": "call, fprintRTF",
+        "feature": "[\"Call\",\"fprintRTF\"]"
+      },
+      {
+        "level": 0,
+        "filename": "main.c",
+        "line_number": 834,
+        "column_number": 5,
+        "description": "format_string, vsnprintf, n$30",
+        "feature": "[\"FormatString\",\"vsnprintf\",[\"Var\"]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 439,
+        "column_number": 19,
+        "description": "input, getc",
+        "feature": "[\"Input\",\"getc\"]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 439,
+        "column_number": 9,
+        "description": "store, &thechar, n$51",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 449,
+        "column_number": 13,
+        "description": "prune, !(n$23 == 13)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"13\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 454,
+        "column_number": 20,
+        "description": "prune, !(n$34 == 10)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 456,
+        "column_number": 18,
+        "description": "prune, !(n$35 == 9)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"9\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 459,
+        "column_number": 9,
+        "description": "store, &#GB<parser.c>$g_parser_currentChar, n$22",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 489,
+        "column_number": 9,
+        "description": "prune, (n$15 == 10)",
+        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 503,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 556,
+        "column_number": 9,
+        "description": "store, &cThis, n$23",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 559,
+        "column_number": 9,
+        "description": "prune, (n$17 == 92)",
+        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"92\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 571,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 610,
+        "column_number": 13,
+        "description": "store, &c, n$1",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 612,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 875,
+        "column_number": 5,
+        "description": "store, &s[0], n$19",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 876,
+        "column_number": 9,
+        "description": "prune, (n$15 == 10)",
+        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 881,
+        "column_number": 9,
+        "description": "prune, (n$4 == 92)",
+        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"92\"]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "funct1.c",
+        "line_number": 1798,
+        "column_number": 2,
+        "description": "call, fprintRTF",
+        "feature": "[\"Call\",\"fprintRTF\"]"
+      },
+      {
+        "level": 0,
+        "filename": "main.c",
+        "line_number": 834,
+        "column_number": 5,
+        "description": "format_string, vsnprintf, n$30",
+        "feature": "[\"FormatString\",\"vsnprintf\",[\"Var\"]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 439,
+        "column_number": 19,
+        "description": "input, getc",
+        "feature": "[\"Input\",\"getc\"]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 439,
+        "column_number": 9,
+        "description": "store, &thechar, n$51",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 449,
+        "column_number": 13,
+        "description": "prune, !(n$23 == 13)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"13\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 454,
+        "column_number": 20,
+        "description": "prune, !(n$34 == 10)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 456,
+        "column_number": 18,
+        "description": "prune, !(n$35 == 9)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"9\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 459,
+        "column_number": 9,
+        "description": "store, &#GB<parser.c>$g_parser_currentChar, n$22",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 489,
+        "column_number": 9,
+        "description": "prune, (n$15 == 10)",
+        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 503,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 556,
+        "column_number": 9,
+        "description": "store, &cThis, n$23",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 559,
+        "column_number": 9,
+        "description": "prune, (n$17 == 92)",
+        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"92\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 571,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 610,
+        "column_number": 13,
+        "description": "store, &c, n$1",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 612,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 875,
+        "column_number": 5,
+        "description": "store, &s[0], n$19",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 876,
+        "column_number": 9,
+        "description": "prune, !(n$15 == 10)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 881,
+        "column_number": 9,
+        "description": "prune, (n$4 == 92)",
+        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"92\"]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "funct1.c",
+        "line_number": 1798,
+        "column_number": 2,
+        "description": "call, fprintRTF",
+        "feature": "[\"Call\",\"fprintRTF\"]"
+      },
+      {
+        "level": 0,
+        "filename": "main.c",
+        "line_number": 834,
+        "column_number": 5,
+        "description": "format_string, vsnprintf, n$30",
+        "feature": "[\"FormatString\",\"vsnprintf\",[\"Var\"]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 439,
+        "column_number": 19,
+        "description": "input, getc",
+        "feature": "[\"Input\",\"getc\"]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 439,
+        "column_number": 9,
+        "description": "store, &thechar, n$51",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 449,
+        "column_number": 13,
+        "description": "prune, !(n$23 == 13)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"13\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 454,
+        "column_number": 20,
+        "description": "prune, !(n$34 == 10)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 456,
+        "column_number": 18,
+        "description": "prune, !(n$35 == 9)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"9\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 459,
+        "column_number": 9,
+        "description": "store, &#GB<parser.c>$g_parser_currentChar, n$22",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 489,
+        "column_number": 9,
+        "description": "prune, (n$15 == 10)",
+        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 503,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 556,
+        "column_number": 9,
+        "description": "store, &cThis, n$23",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 559,
+        "column_number": 9,
+        "description": "prune, !(n$17 == 92)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"92\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 571,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 610,
+        "column_number": 13,
+        "description": "store, &c, n$1",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 612,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 877,
+        "column_number": 9,
+        "description": "store, &s[0], n$16",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 881,
+        "column_number": 9,
+        "description": "prune, (n$4 == 92)",
+        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"92\"]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "funct1.c",
+        "line_number": 1798,
+        "column_number": 2,
+        "description": "call, fprintRTF",
+        "feature": "[\"Call\",\"fprintRTF\"]"
+      },
+      {
+        "level": 0,
+        "filename": "main.c",
+        "line_number": 834,
+        "column_number": 5,
+        "description": "format_string, vsnprintf, n$30",
+        "feature": "[\"FormatString\",\"vsnprintf\",[\"Var\"]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 439,
+        "column_number": 19,
+        "description": "input, getc",
+        "feature": "[\"Input\",\"getc\"]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 439,
+        "column_number": 9,
+        "description": "store, &thechar, n$51",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 449,
+        "column_number": 13,
+        "description": "prune, !(n$23 == 13)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"13\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 454,
+        "column_number": 20,
+        "description": "prune, !(n$34 == 10)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 456,
+        "column_number": 18,
+        "description": "prune, !(n$35 == 9)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"9\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 459,
+        "column_number": 9,
+        "description": "store, &#GB<parser.c>$g_parser_currentChar, n$22",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 489,
+        "column_number": 9,
+        "description": "prune, (n$15 == 10)",
+        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 503,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 556,
+        "column_number": 9,
+        "description": "store, &cThis, n$23",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 559,
+        "column_number": 9,
+        "description": "prune, !(n$17 == 92)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"92\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 571,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 610,
+        "column_number": 13,
+        "description": "store, &c, n$1",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 612,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 875,
+        "column_number": 5,
+        "description": "store, &s[0], n$19",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 876,
+        "column_number": 9,
+        "description": "prune, (n$15 == 10)",
+        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 881,
+        "column_number": 9,
+        "description": "prune, (n$4 == 92)",
+        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"92\"]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "funct1.c",
+        "line_number": 1798,
+        "column_number": 2,
+        "description": "call, fprintRTF",
+        "feature": "[\"Call\",\"fprintRTF\"]"
+      },
+      {
+        "level": 0,
+        "filename": "main.c",
+        "line_number": 834,
+        "column_number": 5,
+        "description": "format_string, vsnprintf, n$30",
+        "feature": "[\"FormatString\",\"vsnprintf\",[\"Var\"]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 439,
+        "column_number": 19,
+        "description": "input, getc",
+        "feature": "[\"Input\",\"getc\"]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 439,
+        "column_number": 9,
+        "description": "store, &thechar, n$51",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 449,
+        "column_number": 13,
+        "description": "prune, !(n$23 == 13)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"13\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 454,
+        "column_number": 20,
+        "description": "prune, !(n$34 == 10)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 456,
+        "column_number": 18,
+        "description": "prune, !(n$35 == 9)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"9\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 459,
+        "column_number": 9,
+        "description": "store, &#GB<parser.c>$g_parser_currentChar, n$22",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 489,
+        "column_number": 9,
+        "description": "prune, (n$15 == 10)",
+        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 503,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 556,
+        "column_number": 9,
+        "description": "store, &cThis, n$23",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 559,
+        "column_number": 9,
+        "description": "prune, !(n$17 == 92)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"92\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 571,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 610,
+        "column_number": 13,
+        "description": "store, &c, n$1",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 612,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 875,
+        "column_number": 5,
+        "description": "store, &s[0], n$19",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 876,
+        "column_number": 9,
+        "description": "prune, !(n$15 == 10)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 881,
+        "column_number": 9,
+        "description": "prune, (n$4 == 92)",
+        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"92\"]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "funct1.c",
+        "line_number": 1798,
+        "column_number": 2,
+        "description": "call, fprintRTF",
+        "feature": "[\"Call\",\"fprintRTF\"]"
+      },
+      {
+        "level": 0,
+        "filename": "main.c",
+        "line_number": 834,
+        "column_number": 5,
+        "description": "format_string, vsnprintf, n$30",
+        "feature": "[\"FormatString\",\"vsnprintf\",[\"Var\"]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 439,
+        "column_number": 19,
+        "description": "input, getc",
+        "feature": "[\"Input\",\"getc\"]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 439,
+        "column_number": 9,
+        "description": "store, &thechar, n$51",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 449,
+        "column_number": 13,
+        "description": "prune, !(n$23 == 13)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"13\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 454,
+        "column_number": 20,
+        "description": "prune, !(n$34 == 10)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 456,
+        "column_number": 18,
+        "description": "prune, !(n$35 == 9)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"9\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 459,
+        "column_number": 9,
+        "description": "store, &#GB<parser.c>$g_parser_currentChar, n$22",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 489,
+        "column_number": 9,
+        "description": "prune, (n$15 == 10)",
+        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 503,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 551,
+        "column_number": 5,
+        "description": "store, &cThis, n$28",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 559,
+        "column_number": 9,
+        "description": "prune, (n$17 == 92)",
+        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"92\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 571,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 610,
+        "column_number": 13,
+        "description": "store, &c, n$1",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 612,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 877,
+        "column_number": 9,
+        "description": "store, &s[0], n$16",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 881,
+        "column_number": 9,
+        "description": "prune, (n$4 == 92)",
+        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"92\"]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "funct1.c",
+        "line_number": 1798,
+        "column_number": 2,
+        "description": "call, fprintRTF",
+        "feature": "[\"Call\",\"fprintRTF\"]"
+      },
+      {
+        "level": 0,
+        "filename": "main.c",
+        "line_number": 834,
+        "column_number": 5,
+        "description": "format_string, vsnprintf, n$30",
+        "feature": "[\"FormatString\",\"vsnprintf\",[\"Var\"]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 439,
+        "column_number": 19,
+        "description": "input, getc",
+        "feature": "[\"Input\",\"getc\"]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 439,
+        "column_number": 9,
+        "description": "store, &thechar, n$51",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 449,
+        "column_number": 13,
+        "description": "prune, !(n$23 == 13)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"13\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 454,
+        "column_number": 20,
+        "description": "prune, !(n$34 == 10)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 456,
+        "column_number": 18,
+        "description": "prune, !(n$35 == 9)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"9\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 459,
+        "column_number": 9,
+        "description": "store, &#GB<parser.c>$g_parser_currentChar, n$22",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 489,
+        "column_number": 9,
+        "description": "prune, (n$15 == 10)",
+        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 503,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 551,
+        "column_number": 5,
+        "description": "store, &cThis, n$28",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 559,
+        "column_number": 9,
+        "description": "prune, (n$17 == 92)",
+        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"92\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 571,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 610,
+        "column_number": 13,
+        "description": "store, &c, n$1",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 612,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 875,
+        "column_number": 5,
+        "description": "store, &s[0], n$19",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 876,
+        "column_number": 9,
+        "description": "prune, (n$15 == 10)",
+        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 881,
+        "column_number": 9,
+        "description": "prune, (n$4 == 92)",
+        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"92\"]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "funct1.c",
+        "line_number": 1798,
+        "column_number": 2,
+        "description": "call, fprintRTF",
+        "feature": "[\"Call\",\"fprintRTF\"]"
+      },
+      {
+        "level": 0,
+        "filename": "main.c",
+        "line_number": 834,
+        "column_number": 5,
+        "description": "format_string, vsnprintf, n$30",
+        "feature": "[\"FormatString\",\"vsnprintf\",[\"Var\"]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 439,
+        "column_number": 19,
+        "description": "input, getc",
+        "feature": "[\"Input\",\"getc\"]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 439,
+        "column_number": 9,
+        "description": "store, &thechar, n$51",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 449,
+        "column_number": 13,
+        "description": "prune, !(n$23 == 13)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"13\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 454,
+        "column_number": 20,
+        "description": "prune, !(n$34 == 10)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 456,
+        "column_number": 18,
+        "description": "prune, !(n$35 == 9)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"9\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 459,
+        "column_number": 9,
+        "description": "store, &#GB<parser.c>$g_parser_currentChar, n$22",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 489,
+        "column_number": 9,
+        "description": "prune, (n$15 == 10)",
+        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 503,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 551,
+        "column_number": 5,
+        "description": "store, &cThis, n$28",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 559,
+        "column_number": 9,
+        "description": "prune, (n$17 == 92)",
+        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"92\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 571,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 610,
+        "column_number": 13,
+        "description": "store, &c, n$1",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 612,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 875,
+        "column_number": 5,
+        "description": "store, &s[0], n$19",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 876,
+        "column_number": 9,
+        "description": "prune, !(n$15 == 10)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 881,
+        "column_number": 9,
+        "description": "prune, (n$4 == 92)",
+        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"92\"]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "funct1.c",
+        "line_number": 1798,
+        "column_number": 2,
+        "description": "call, fprintRTF",
+        "feature": "[\"Call\",\"fprintRTF\"]"
+      },
+      {
+        "level": 0,
+        "filename": "main.c",
+        "line_number": 834,
+        "column_number": 5,
+        "description": "format_string, vsnprintf, n$30",
+        "feature": "[\"FormatString\",\"vsnprintf\",[\"Var\"]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 439,
+        "column_number": 19,
+        "description": "input, getc",
+        "feature": "[\"Input\",\"getc\"]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 439,
+        "column_number": 9,
+        "description": "store, &thechar, n$51",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 449,
+        "column_number": 13,
+        "description": "prune, !(n$23 == 13)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"13\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 454,
+        "column_number": 20,
+        "description": "prune, !(n$34 == 10)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 456,
+        "column_number": 18,
+        "description": "prune, !(n$35 == 9)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"9\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 459,
+        "column_number": 9,
+        "description": "store, &#GB<parser.c>$g_parser_currentChar, n$22",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 489,
+        "column_number": 9,
+        "description": "prune, (n$15 == 10)",
+        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 503,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 551,
+        "column_number": 5,
+        "description": "store, &cThis, n$28",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 559,
+        "column_number": 9,
+        "description": "prune, !(n$17 == 92)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"92\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 571,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 610,
+        "column_number": 13,
+        "description": "store, &c, n$1",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 612,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 877,
+        "column_number": 9,
+        "description": "store, &s[0], n$16",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 881,
+        "column_number": 9,
+        "description": "prune, (n$4 == 92)",
+        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"92\"]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "funct1.c",
+        "line_number": 1798,
+        "column_number": 2,
+        "description": "call, fprintRTF",
+        "feature": "[\"Call\",\"fprintRTF\"]"
+      },
+      {
+        "level": 0,
+        "filename": "main.c",
+        "line_number": 834,
+        "column_number": 5,
+        "description": "format_string, vsnprintf, n$30",
+        "feature": "[\"FormatString\",\"vsnprintf\",[\"Var\"]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 439,
+        "column_number": 19,
+        "description": "input, getc",
+        "feature": "[\"Input\",\"getc\"]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 439,
+        "column_number": 9,
+        "description": "store, &thechar, n$51",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 449,
+        "column_number": 13,
+        "description": "prune, !(n$23 == 13)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"13\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 454,
+        "column_number": 20,
+        "description": "prune, !(n$34 == 10)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 456,
+        "column_number": 18,
+        "description": "prune, !(n$35 == 9)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"9\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 459,
+        "column_number": 9,
+        "description": "store, &#GB<parser.c>$g_parser_currentChar, n$22",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 489,
+        "column_number": 9,
+        "description": "prune, (n$15 == 10)",
+        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 503,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 551,
+        "column_number": 5,
+        "description": "store, &cThis, n$28",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 559,
+        "column_number": 9,
+        "description": "prune, !(n$17 == 92)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"92\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 571,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 610,
+        "column_number": 13,
+        "description": "store, &c, n$1",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 612,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 875,
+        "column_number": 5,
+        "description": "store, &s[0], n$19",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 876,
+        "column_number": 9,
+        "description": "prune, (n$15 == 10)",
+        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 881,
+        "column_number": 9,
+        "description": "prune, (n$4 == 92)",
+        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"92\"]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "funct1.c",
+        "line_number": 1798,
+        "column_number": 2,
+        "description": "call, fprintRTF",
+        "feature": "[\"Call\",\"fprintRTF\"]"
+      },
+      {
+        "level": 0,
+        "filename": "main.c",
+        "line_number": 834,
+        "column_number": 5,
+        "description": "format_string, vsnprintf, n$30",
+        "feature": "[\"FormatString\",\"vsnprintf\",[\"Var\"]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 439,
+        "column_number": 19,
+        "description": "input, getc",
+        "feature": "[\"Input\",\"getc\"]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 439,
+        "column_number": 9,
+        "description": "store, &thechar, n$51",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 449,
+        "column_number": 13,
+        "description": "prune, !(n$23 == 13)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"13\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 454,
+        "column_number": 20,
+        "description": "prune, !(n$34 == 10)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 456,
+        "column_number": 18,
+        "description": "prune, !(n$35 == 9)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"9\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 459,
+        "column_number": 9,
+        "description": "store, &#GB<parser.c>$g_parser_currentChar, n$22",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 489,
+        "column_number": 9,
+        "description": "prune, (n$15 == 10)",
+        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 503,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 551,
+        "column_number": 5,
+        "description": "store, &cThis, n$28",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 559,
+        "column_number": 9,
+        "description": "prune, !(n$17 == 92)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"92\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 571,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 610,
+        "column_number": 13,
+        "description": "store, &c, n$1",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 612,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 875,
+        "column_number": 5,
+        "description": "store, &s[0], n$19",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 876,
+        "column_number": 9,
+        "description": "prune, !(n$15 == 10)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 881,
+        "column_number": 9,
+        "description": "prune, (n$4 == 92)",
+        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"92\"]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "funct1.c",
+        "line_number": 1798,
+        "column_number": 2,
+        "description": "call, fprintRTF",
+        "feature": "[\"Call\",\"fprintRTF\"]"
+      },
+      {
+        "level": 0,
+        "filename": "main.c",
+        "line_number": 834,
+        "column_number": 5,
+        "description": "format_string, vsnprintf, n$30",
+        "feature": "[\"FormatString\",\"vsnprintf\",[\"Var\"]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 439,
+        "column_number": 19,
+        "description": "input, getc",
+        "feature": "[\"Input\",\"getc\"]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 439,
+        "column_number": 9,
+        "description": "store, &thechar, n$51",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 449,
+        "column_number": 13,
+        "description": "prune, !(n$23 == 13)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"13\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 454,
+        "column_number": 20,
+        "description": "prune, !(n$34 == 10)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 456,
+        "column_number": 18,
+        "description": "prune, !(n$35 == 9)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"9\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 459,
+        "column_number": 9,
+        "description": "store, &#GB<parser.c>$g_parser_currentChar, n$22",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 489,
+        "column_number": 9,
+        "description": "prune, !(n$15 == 10)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 503,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 556,
+        "column_number": 9,
+        "description": "store, &cThis, n$23",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 559,
+        "column_number": 9,
+        "description": "prune, (n$17 == 92)",
+        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"92\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 571,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 610,
+        "column_number": 13,
+        "description": "store, &c, n$1",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 612,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 877,
+        "column_number": 9,
+        "description": "store, &s[0], n$16",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 881,
+        "column_number": 9,
+        "description": "prune, (n$4 == 92)",
+        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"92\"]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "funct1.c",
+        "line_number": 1798,
+        "column_number": 2,
+        "description": "call, fprintRTF",
+        "feature": "[\"Call\",\"fprintRTF\"]"
+      },
+      {
+        "level": 0,
+        "filename": "main.c",
+        "line_number": 834,
+        "column_number": 5,
+        "description": "format_string, vsnprintf, n$30",
+        "feature": "[\"FormatString\",\"vsnprintf\",[\"Var\"]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 439,
+        "column_number": 19,
+        "description": "input, getc",
+        "feature": "[\"Input\",\"getc\"]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 439,
+        "column_number": 9,
+        "description": "store, &thechar, n$51",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 449,
+        "column_number": 13,
+        "description": "prune, !(n$23 == 13)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"13\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 454,
+        "column_number": 20,
+        "description": "prune, !(n$34 == 10)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 456,
+        "column_number": 18,
+        "description": "prune, !(n$35 == 9)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"9\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 459,
+        "column_number": 9,
+        "description": "store, &#GB<parser.c>$g_parser_currentChar, n$22",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 489,
+        "column_number": 9,
+        "description": "prune, !(n$15 == 10)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 503,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 556,
+        "column_number": 9,
+        "description": "store, &cThis, n$23",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 559,
+        "column_number": 9,
+        "description": "prune, (n$17 == 92)",
+        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"92\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 571,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 610,
+        "column_number": 13,
+        "description": "store, &c, n$1",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 612,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 875,
+        "column_number": 5,
+        "description": "store, &s[0], n$19",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 876,
+        "column_number": 9,
+        "description": "prune, (n$15 == 10)",
+        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 881,
+        "column_number": 9,
+        "description": "prune, (n$4 == 92)",
+        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"92\"]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "funct1.c",
+        "line_number": 1798,
+        "column_number": 2,
+        "description": "call, fprintRTF",
+        "feature": "[\"Call\",\"fprintRTF\"]"
+      },
+      {
+        "level": 0,
+        "filename": "main.c",
+        "line_number": 834,
+        "column_number": 5,
+        "description": "format_string, vsnprintf, n$30",
+        "feature": "[\"FormatString\",\"vsnprintf\",[\"Var\"]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 439,
+        "column_number": 19,
+        "description": "input, getc",
+        "feature": "[\"Input\",\"getc\"]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 439,
+        "column_number": 9,
+        "description": "store, &thechar, n$51",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 449,
+        "column_number": 13,
+        "description": "prune, !(n$23 == 13)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"13\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 454,
+        "column_number": 20,
+        "description": "prune, !(n$34 == 10)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 456,
+        "column_number": 18,
+        "description": "prune, !(n$35 == 9)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"9\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 459,
+        "column_number": 9,
+        "description": "store, &#GB<parser.c>$g_parser_currentChar, n$22",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 489,
+        "column_number": 9,
+        "description": "prune, !(n$15 == 10)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 503,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 556,
+        "column_number": 9,
+        "description": "store, &cThis, n$23",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 559,
+        "column_number": 9,
+        "description": "prune, (n$17 == 92)",
+        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"92\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 571,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 610,
+        "column_number": 13,
+        "description": "store, &c, n$1",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 612,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 875,
+        "column_number": 5,
+        "description": "store, &s[0], n$19",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 876,
+        "column_number": 9,
+        "description": "prune, !(n$15 == 10)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 881,
+        "column_number": 9,
+        "description": "prune, (n$4 == 92)",
+        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"92\"]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "funct1.c",
+        "line_number": 1798,
+        "column_number": 2,
+        "description": "call, fprintRTF",
+        "feature": "[\"Call\",\"fprintRTF\"]"
+      },
+      {
+        "level": 0,
+        "filename": "main.c",
+        "line_number": 834,
+        "column_number": 5,
+        "description": "format_string, vsnprintf, n$30",
+        "feature": "[\"FormatString\",\"vsnprintf\",[\"Var\"]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 439,
+        "column_number": 19,
+        "description": "input, getc",
+        "feature": "[\"Input\",\"getc\"]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 439,
+        "column_number": 9,
+        "description": "store, &thechar, n$51",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 449,
+        "column_number": 13,
+        "description": "prune, !(n$23 == 13)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"13\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 454,
+        "column_number": 20,
+        "description": "prune, !(n$34 == 10)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 456,
+        "column_number": 18,
+        "description": "prune, !(n$35 == 9)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"9\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 459,
+        "column_number": 9,
+        "description": "store, &#GB<parser.c>$g_parser_currentChar, n$22",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 489,
+        "column_number": 9,
+        "description": "prune, !(n$15 == 10)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 503,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 556,
+        "column_number": 9,
+        "description": "store, &cThis, n$23",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 559,
+        "column_number": 9,
+        "description": "prune, !(n$17 == 92)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"92\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 571,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 610,
+        "column_number": 13,
+        "description": "store, &c, n$1",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 612,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 877,
+        "column_number": 9,
+        "description": "store, &s[0], n$16",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 881,
+        "column_number": 9,
+        "description": "prune, (n$4 == 92)",
+        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"92\"]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "funct1.c",
+        "line_number": 1798,
+        "column_number": 2,
+        "description": "call, fprintRTF",
+        "feature": "[\"Call\",\"fprintRTF\"]"
+      },
+      {
+        "level": 0,
+        "filename": "main.c",
+        "line_number": 834,
+        "column_number": 5,
+        "description": "format_string, vsnprintf, n$30",
+        "feature": "[\"FormatString\",\"vsnprintf\",[\"Var\"]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 439,
+        "column_number": 19,
+        "description": "input, getc",
+        "feature": "[\"Input\",\"getc\"]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 439,
+        "column_number": 9,
+        "description": "store, &thechar, n$51",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 449,
+        "column_number": 13,
+        "description": "prune, !(n$23 == 13)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"13\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 454,
+        "column_number": 20,
+        "description": "prune, !(n$34 == 10)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 456,
+        "column_number": 18,
+        "description": "prune, !(n$35 == 9)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"9\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 459,
+        "column_number": 9,
+        "description": "store, &#GB<parser.c>$g_parser_currentChar, n$22",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 489,
+        "column_number": 9,
+        "description": "prune, !(n$15 == 10)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 503,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 556,
+        "column_number": 9,
+        "description": "store, &cThis, n$23",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 559,
+        "column_number": 9,
+        "description": "prune, !(n$17 == 92)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"92\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 571,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 610,
+        "column_number": 13,
+        "description": "store, &c, n$1",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 612,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 875,
+        "column_number": 5,
+        "description": "store, &s[0], n$19",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 876,
+        "column_number": 9,
+        "description": "prune, (n$15 == 10)",
+        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 881,
+        "column_number": 9,
+        "description": "prune, (n$4 == 92)",
+        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"92\"]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "funct1.c",
+        "line_number": 1798,
+        "column_number": 2,
+        "description": "call, fprintRTF",
+        "feature": "[\"Call\",\"fprintRTF\"]"
+      },
+      {
+        "level": 0,
+        "filename": "main.c",
+        "line_number": 834,
+        "column_number": 5,
+        "description": "format_string, vsnprintf, n$30",
+        "feature": "[\"FormatString\",\"vsnprintf\",[\"Var\"]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 439,
+        "column_number": 19,
+        "description": "input, getc",
+        "feature": "[\"Input\",\"getc\"]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 439,
+        "column_number": 9,
+        "description": "store, &thechar, n$51",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 449,
+        "column_number": 13,
+        "description": "prune, !(n$23 == 13)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"13\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 454,
+        "column_number": 20,
+        "description": "prune, !(n$34 == 10)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 456,
+        "column_number": 18,
+        "description": "prune, !(n$35 == 9)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"9\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 459,
+        "column_number": 9,
+        "description": "store, &#GB<parser.c>$g_parser_currentChar, n$22",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 489,
+        "column_number": 9,
+        "description": "prune, !(n$15 == 10)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 503,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 556,
+        "column_number": 9,
+        "description": "store, &cThis, n$23",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 559,
+        "column_number": 9,
+        "description": "prune, !(n$17 == 92)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"92\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 571,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 610,
+        "column_number": 13,
+        "description": "store, &c, n$1",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 612,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 875,
+        "column_number": 5,
+        "description": "store, &s[0], n$19",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 876,
+        "column_number": 9,
+        "description": "prune, !(n$15 == 10)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 881,
+        "column_number": 9,
+        "description": "prune, (n$4 == 92)",
+        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"92\"]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "funct1.c",
+        "line_number": 1798,
+        "column_number": 2,
+        "description": "call, fprintRTF",
+        "feature": "[\"Call\",\"fprintRTF\"]"
+      },
+      {
+        "level": 0,
+        "filename": "main.c",
+        "line_number": 834,
+        "column_number": 5,
+        "description": "format_string, vsnprintf, n$30",
+        "feature": "[\"FormatString\",\"vsnprintf\",[\"Var\"]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 439,
+        "column_number": 19,
+        "description": "input, getc",
+        "feature": "[\"Input\",\"getc\"]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 439,
+        "column_number": 9,
+        "description": "store, &thechar, n$51",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 449,
+        "column_number": 13,
+        "description": "prune, !(n$23 == 13)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"13\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 454,
+        "column_number": 20,
+        "description": "prune, !(n$34 == 10)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 456,
+        "column_number": 18,
+        "description": "prune, !(n$35 == 9)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"9\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 459,
+        "column_number": 9,
+        "description": "store, &#GB<parser.c>$g_parser_currentChar, n$22",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 489,
+        "column_number": 9,
+        "description": "prune, !(n$15 == 10)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 503,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 551,
+        "column_number": 5,
+        "description": "store, &cThis, n$28",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 559,
+        "column_number": 9,
+        "description": "prune, (n$17 == 92)",
+        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"92\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 571,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 610,
+        "column_number": 13,
+        "description": "store, &c, n$1",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 612,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 877,
+        "column_number": 9,
+        "description": "store, &s[0], n$16",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 881,
+        "column_number": 9,
+        "description": "prune, (n$4 == 92)",
+        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"92\"]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "funct1.c",
+        "line_number": 1798,
+        "column_number": 2,
+        "description": "call, fprintRTF",
+        "feature": "[\"Call\",\"fprintRTF\"]"
+      },
+      {
+        "level": 0,
+        "filename": "main.c",
+        "line_number": 834,
+        "column_number": 5,
+        "description": "format_string, vsnprintf, n$30",
+        "feature": "[\"FormatString\",\"vsnprintf\",[\"Var\"]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 439,
+        "column_number": 19,
+        "description": "input, getc",
+        "feature": "[\"Input\",\"getc\"]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 439,
+        "column_number": 9,
+        "description": "store, &thechar, n$51",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 449,
+        "column_number": 13,
+        "description": "prune, !(n$23 == 13)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"13\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 454,
+        "column_number": 20,
+        "description": "prune, !(n$34 == 10)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 456,
+        "column_number": 18,
+        "description": "prune, !(n$35 == 9)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"9\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 459,
+        "column_number": 9,
+        "description": "store, &#GB<parser.c>$g_parser_currentChar, n$22",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 489,
+        "column_number": 9,
+        "description": "prune, !(n$15 == 10)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 503,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 551,
+        "column_number": 5,
+        "description": "store, &cThis, n$28",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 559,
+        "column_number": 9,
+        "description": "prune, (n$17 == 92)",
+        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"92\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 571,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 610,
+        "column_number": 13,
+        "description": "store, &c, n$1",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 612,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 875,
+        "column_number": 5,
+        "description": "store, &s[0], n$19",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 876,
+        "column_number": 9,
+        "description": "prune, (n$15 == 10)",
+        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 881,
+        "column_number": 9,
+        "description": "prune, (n$4 == 92)",
+        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"92\"]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "funct1.c",
+        "line_number": 1798,
+        "column_number": 2,
+        "description": "call, fprintRTF",
+        "feature": "[\"Call\",\"fprintRTF\"]"
+      },
+      {
+        "level": 0,
+        "filename": "main.c",
+        "line_number": 834,
+        "column_number": 5,
+        "description": "format_string, vsnprintf, n$30",
+        "feature": "[\"FormatString\",\"vsnprintf\",[\"Var\"]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 439,
+        "column_number": 19,
+        "description": "input, getc",
+        "feature": "[\"Input\",\"getc\"]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 439,
+        "column_number": 9,
+        "description": "store, &thechar, n$51",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 449,
+        "column_number": 13,
+        "description": "prune, !(n$23 == 13)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"13\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 454,
+        "column_number": 20,
+        "description": "prune, !(n$34 == 10)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 456,
+        "column_number": 18,
+        "description": "prune, !(n$35 == 9)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"9\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 459,
+        "column_number": 9,
+        "description": "store, &#GB<parser.c>$g_parser_currentChar, n$22",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 489,
+        "column_number": 9,
+        "description": "prune, !(n$15 == 10)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 503,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 551,
+        "column_number": 5,
+        "description": "store, &cThis, n$28",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 559,
+        "column_number": 9,
+        "description": "prune, (n$17 == 92)",
+        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"92\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 571,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 610,
+        "column_number": 13,
+        "description": "store, &c, n$1",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 612,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 875,
+        "column_number": 5,
+        "description": "store, &s[0], n$19",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 876,
+        "column_number": 9,
+        "description": "prune, !(n$15 == 10)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 881,
+        "column_number": 9,
+        "description": "prune, (n$4 == 92)",
+        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"92\"]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "funct1.c",
+        "line_number": 1798,
+        "column_number": 2,
+        "description": "call, fprintRTF",
+        "feature": "[\"Call\",\"fprintRTF\"]"
+      },
+      {
+        "level": 0,
+        "filename": "main.c",
+        "line_number": 834,
+        "column_number": 5,
+        "description": "format_string, vsnprintf, n$30",
+        "feature": "[\"FormatString\",\"vsnprintf\",[\"Var\"]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 439,
+        "column_number": 19,
+        "description": "input, getc",
+        "feature": "[\"Input\",\"getc\"]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 439,
+        "column_number": 9,
+        "description": "store, &thechar, n$51",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 449,
+        "column_number": 13,
+        "description": "prune, !(n$23 == 13)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"13\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 454,
+        "column_number": 20,
+        "description": "prune, !(n$34 == 10)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 456,
+        "column_number": 18,
+        "description": "prune, !(n$35 == 9)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"9\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 459,
+        "column_number": 9,
+        "description": "store, &#GB<parser.c>$g_parser_currentChar, n$22",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 489,
+        "column_number": 9,
+        "description": "prune, !(n$15 == 10)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 503,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 551,
+        "column_number": 5,
+        "description": "store, &cThis, n$28",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 559,
+        "column_number": 9,
+        "description": "prune, !(n$17 == 92)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"92\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 571,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 610,
+        "column_number": 13,
+        "description": "store, &c, n$1",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 612,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 877,
+        "column_number": 9,
+        "description": "store, &s[0], n$16",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 881,
+        "column_number": 9,
+        "description": "prune, (n$4 == 92)",
+        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"92\"]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "funct1.c",
+        "line_number": 1798,
+        "column_number": 2,
+        "description": "call, fprintRTF",
+        "feature": "[\"Call\",\"fprintRTF\"]"
+      },
+      {
+        "level": 0,
+        "filename": "main.c",
+        "line_number": 834,
+        "column_number": 5,
+        "description": "format_string, vsnprintf, n$30",
+        "feature": "[\"FormatString\",\"vsnprintf\",[\"Var\"]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 439,
+        "column_number": 19,
+        "description": "input, getc",
+        "feature": "[\"Input\",\"getc\"]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 439,
+        "column_number": 9,
+        "description": "store, &thechar, n$51",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 449,
+        "column_number": 13,
+        "description": "prune, !(n$23 == 13)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"13\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 454,
+        "column_number": 20,
+        "description": "prune, !(n$34 == 10)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 456,
+        "column_number": 18,
+        "description": "prune, !(n$35 == 9)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"9\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 459,
+        "column_number": 9,
+        "description": "store, &#GB<parser.c>$g_parser_currentChar, n$22",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 489,
+        "column_number": 9,
+        "description": "prune, !(n$15 == 10)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 503,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 551,
+        "column_number": 5,
+        "description": "store, &cThis, n$28",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 559,
+        "column_number": 9,
+        "description": "prune, !(n$17 == 92)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"92\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 571,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 610,
+        "column_number": 13,
+        "description": "store, &c, n$1",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 612,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 875,
+        "column_number": 5,
+        "description": "store, &s[0], n$19",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 876,
+        "column_number": 9,
+        "description": "prune, (n$15 == 10)",
+        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 881,
+        "column_number": 9,
+        "description": "prune, (n$4 == 92)",
+        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"92\"]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "funct1.c",
+        "line_number": 1798,
+        "column_number": 2,
+        "description": "call, fprintRTF",
+        "feature": "[\"Call\",\"fprintRTF\"]"
+      },
+      {
+        "level": 0,
+        "filename": "main.c",
+        "line_number": 834,
+        "column_number": 5,
+        "description": "format_string, vsnprintf, n$30",
+        "feature": "[\"FormatString\",\"vsnprintf\",[\"Var\"]]"
+      }
+    ],
+    [
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 439,
+        "column_number": 19,
+        "description": "input, getc",
+        "feature": "[\"Input\",\"getc\"]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 439,
+        "column_number": 9,
+        "description": "store, &thechar, n$51",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 449,
+        "column_number": 13,
+        "description": "prune, !(n$23 == 13)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"13\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 454,
+        "column_number": 20,
+        "description": "prune, !(n$34 == 10)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 456,
+        "column_number": 18,
+        "description": "prune, !(n$35 == 9)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"9\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 459,
+        "column_number": 9,
+        "description": "store, &#GB<parser.c>$g_parser_currentChar, n$22",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 489,
+        "column_number": 9,
+        "description": "prune, !(n$15 == 10)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 503,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 551,
+        "column_number": 5,
+        "description": "store, &cThis, n$28",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 559,
+        "column_number": 9,
+        "description": "prune, !(n$17 == 92)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"92\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 571,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 610,
+        "column_number": 13,
+        "description": "store, &c, n$1",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 612,
+        "column_number": 5,
+        "description": "store, &return, n$0",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 875,
+        "column_number": 5,
+        "description": "store, &s[0], n$19",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 876,
+        "column_number": 9,
+        "description": "prune, !(n$15 == 10)",
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "parser.c",
+        "line_number": 881,
+        "column_number": 9,
+        "description": "prune, (n$4 == 92)",
+        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"92\"]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "funct1.c",
+        "line_number": 1798,
+        "column_number": 2,
+        "description": "call, fprintRTF",
+        "feature": "[\"Call\",\"fprintRTF\"]"
+      },
+      {
+        "level": 0,
+        "filename": "main.c",
+        "line_number": 834,
+        "column_number": 5,
+        "description": "format_string, vsnprintf, n$30",
+        "feature": "[\"FormatString\",\"vsnprintf\",[\"Var\"]]"
+      }
+    ]
+  ],
+  "key": "funct1.c|CmdKeywords|API_MISUSE",
+  "hash": "d4ed869de015ce7e7b3648e228da791e",
+  "bug_type_hum": "Api Misuse",
+  "extras": {
+    "bug_src_loc": {
+      "file": "parser.c",
+      "lnum": 439,
+      "cnum": 19,
+      "enum": 0
+    }
+  }
+}

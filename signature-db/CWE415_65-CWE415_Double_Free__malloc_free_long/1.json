@@ -1,0 +1,49 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "DoubleFree.",
+  "severity": "ERROR",
+  "line": 27,
+  "column": 5,
+  "procedure": "CWE415_Double_Free__malloc_free_long_65_bad",
+  "procedure_start_line": 27,
+  "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_long_65b.c",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_long_65a.c",
+        "line_number": 34,
+        "column_number": 20,
+        "description": "allocate, malloc",
+        "feature": "[\"Allocate\",\"malloc\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_long_65a.c",
+        "line_number": 37,
+        "column_number": 5,
+        "description": "free, free, n$3",
+        "feature": "[\"Free\",\"free\",[\"Var\"]]"
+      },
+      {
+        "level": 1,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_long_65a.c",
+        "line_number": 39,
+        "column_number": 5,
+        "description": "call, CWE415_Double_Free__malloc_free_long_65b_badSink",
+        "feature": "[\"Call\",\"CWE415_Double_Free__malloc_free_long_65b_badSink\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_long_65b.c",
+        "line_number": 27,
+        "column_number": 5,
+        "description": "free, free, n$0",
+        "feature": "[\"Free\",\"free\",[\"Var\"]]"
+      }
+    ]
+  ],
+  "key": "CWE415_Double_Free__malloc_free_long_65a.c|CWE415_Double_Free__malloc_free_long_65_bad|API_MISUSE",
+  "hash": "f93f36d6c5bae1d883dc3aed3ef3d0e0",
+  "bug_type_hum": "Api Misuse"
+}

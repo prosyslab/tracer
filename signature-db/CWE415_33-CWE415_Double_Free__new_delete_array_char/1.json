@@ -1,0 +1,41 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "DoubleFree.",
+  "severity": "ERROR",
+  "line": 39,
+  "column": 9,
+  "procedure": "CWE415_Double_Free__new_delete_array_char_33::bad",
+  "procedure_start_line": 27,
+  "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__new_delete_array_char_33.cpp",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__new_delete_array_char_33.cpp",
+        "line_number": 33,
+        "column_number": 12,
+        "description": "allocate, __new_array",
+        "feature": "[\"Allocate\",\"__new_array\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__new_delete_array_char_33.cpp",
+        "line_number": 35,
+        "column_number": 5,
+        "description": "free, __delete_array, n$4",
+        "feature": "[\"Free\",\"__delete_array\",[\"Var\"]]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__new_delete_array_char_33.cpp",
+        "line_number": 39,
+        "column_number": 9,
+        "description": "free, __delete_array, n$0",
+        "feature": "[\"Free\",\"__delete_array\",[\"Var\"]]"
+      }
+    ]
+  ],
+  "key": "CWE415_Double_Free__new_delete_array_char_33.cpp|CWE415_Double_Free__new_delete_array_char_33::bad|API_MISUSE",
+  "hash": "27ff1523bc58b9f91be22609c4a61547",
+  "bug_type_hum": "Api Misuse"
+}

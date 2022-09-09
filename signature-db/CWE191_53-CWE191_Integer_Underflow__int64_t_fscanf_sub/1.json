@@ -1,0 +1,73 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "IntUnderflow.",
+  "severity": "ERROR",
+  "line": 27,
+  "column": 9,
+  "procedure": "CWE191_Integer_Underflow__int64_t_fscanf_sub_53_bad",
+  "procedure_start_line": 26,
+  "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s01/CWE191_Integer_Underflow__int64_t_fscanf_sub_53d.c",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s01/CWE191_Integer_Underflow__int64_t_fscanf_sub_53a.c",
+        "line_number": 31,
+        "column_number": 5,
+        "description": "input, fscanf",
+        "feature": "[\"Input\",\"fscanf\"]"
+      },
+      {
+        "level": 1,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s01/CWE191_Integer_Underflow__int64_t_fscanf_sub_53a.c",
+        "line_number": 32,
+        "column_number": 5,
+        "description": "call, CWE191_Integer_Underflow__int64_t_fscanf_sub_53b_badSink",
+        "feature": "[\"Call\",\"CWE191_Integer_Underflow__int64_t_fscanf_sub_53b_badSink\"]"
+      },
+      {
+        "level": 1,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s01/CWE191_Integer_Underflow__int64_t_fscanf_sub_53b.c",
+        "line_number": 27,
+        "column_number": 5,
+        "description": "call, CWE191_Integer_Underflow__int64_t_fscanf_sub_53c_badSink",
+        "feature": "[\"Call\",\"CWE191_Integer_Underflow__int64_t_fscanf_sub_53c_badSink\"]"
+      },
+      {
+        "level": 1,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s01/CWE191_Integer_Underflow__int64_t_fscanf_sub_53c.c",
+        "line_number": 27,
+        "column_number": 5,
+        "description": "call, CWE191_Integer_Underflow__int64_t_fscanf_sub_53d_badSink",
+        "feature": "[\"Call\",\"CWE191_Integer_Underflow__int64_t_fscanf_sub_53d_badSink\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s01/CWE191_Integer_Underflow__int64_t_fscanf_sub_53d.c",
+        "line_number": 26,
+        "column_number": 9,
+        "description": "store, &result, (n$2 - 1)",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Const\",[\"Cint\",\"1\"]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s01/CWE191_Integer_Underflow__int64_t_fscanf_sub_53d.c",
+        "line_number": 27,
+        "column_number": 9,
+        "description": "int_underflow, printLongLongLine, n$0",
+        "feature": "[\"IntUnderflow\",\"printLongLongLine\",[\"Var\"]]"
+      }
+    ]
+  ],
+  "key": "CWE191_Integer_Underflow__int64_t_fscanf_sub_53a.c|CWE191_Integer_Underflow__int64_t_fscanf_sub_53_bad|API_MISUSE",
+  "hash": "27fae26530eea5c38425902f246163b9",
+  "bug_type_hum": "Api Misuse",
+  "extras": {
+    "bug_src_loc": {
+      "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s01/CWE191_Integer_Underflow__int64_t_fscanf_sub_53a.c",
+      "lnum": 31,
+      "cnum": 5,
+      "enum": 0
+    }
+  }
+}

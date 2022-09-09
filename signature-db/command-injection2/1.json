@@ -1,0 +1,49 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "CmdInjection.",
+  "severity": "ERROR",
+  "line": 13,
+  "column": 3,
+  "procedure": "main",
+  "procedure_start_line": 10,
+  "file": "tutorial/command-injection2.c",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "tutorial/command-injection2.c",
+        "line_number": 10,
+        "column_number": 1,
+        "description": "input, main",
+        "feature": "[\"Input\",\"main\"]"
+      },
+      {
+        "level": 0,
+        "filename": "tutorial/command-injection2.c",
+        "line_number": 12,
+        "column_number": 3,
+        "description": "library_call, strcat, &cmd, n$2",
+        "feature": "[\"LibraryCall\",\"strcat\",\"&cmd, n$2\"]"
+      },
+      {
+        "level": 0,
+        "filename": "tutorial/command-injection2.c",
+        "line_number": 13,
+        "column_number": 3,
+        "description": "cmd_injection, system, &cmd",
+        "feature": "[\"CmdInjection\",\"system\",[\"Var\"]]"
+      }
+    ]
+  ],
+  "key": "command-injection2.c|main|API_MISUSE",
+  "hash": "585b2001b92788ebf112b7f078ffd1a6",
+  "bug_type_hum": "Api Misuse",
+  "extras": {
+    "bug_src_loc": {
+      "file": "tutorial/command-injection2.c",
+      "lnum": 10,
+      "cnum": 1,
+      "enum": 0
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "IntUnderflow.",
+  "severity": "ERROR",
+  "line": 49,
+  "column": 9,
+  "procedure": "CWE191_Integer_Underflow__int_fgets_sub_83::bad",
+  "procedure_start_line": 26,
+  "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s02/CWE191_Integer_Underflow__int_fgets_sub_83_bad.cpp",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s02/CWE191_Integer_Underflow__int_fgets_sub_83_bad.cpp",
+        "line_number": 32,
+        "column_number": 13,
+        "description": "input, fgets",
+        "feature": "[\"Input\",\"fgets\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s02/CWE191_Integer_Underflow__int_fgets_sub_83_bad.cpp",
+        "line_number": 35,
+        "column_number": 13,
+        "description": "store, n$2.data, n$3",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 1,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s02/CWE191_Integer_Underflow__int_fgets_sub_83a.cpp",
+        "line_number": 32,
+        "column_number": 1,
+        "description": "call, CWE191_Integer_Underflow__int_fgets_sub_83::CWE191_Integer_Underflow__int_fgets_sub_83_bad::~CWE191_Integer_Underflow__int_fgets_sub_83_bad",
+        "feature": "[\"Call\",\"CWE191_Integer_Underflow__int_fgets_sub_83::CWE191_Integer_Underflow__int_fgets_sub_83_bad::~CWE191_Integer_Underflow__int_fgets_sub_83_bad\"]"
+      },
+      {
+        "level": 1,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s02/CWE191_Integer_Underflow__int_fgets_sub_83_bad.cpp",
+        "line_number": 51,
+        "column_number": 1,
+        "description": "call, CWE191_Integer_Underflow__int_fgets_sub_83::CWE191_Integer_Underflow__int_fgets_sub_83_bad::__infer_inner_destructor_~CWE191_Integer_Underflow__int_fgets_sub_83_bad",
+        "feature": "[\"Call\",\"CWE191_Integer_Underflow__int_fgets_sub_83::CWE191_Integer_Underflow__int_fgets_sub_83_bad::__infer_inner_destructor_~CWE191_Integer_Underflow__int_fgets_sub_83_bad\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s02/CWE191_Integer_Underflow__int_fgets_sub_83_bad.cpp",
+        "line_number": 48,
+        "column_number": 9,
+        "description": "store, &result, (n$5 - 1)",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Const\",[\"Cint\",\"1\"]]]]"
+      },
+      {
+        "level": 1,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s02/CWE191_Integer_Underflow__int_fgets_sub_83_bad.cpp",
+        "line_number": 49,
+        "column_number": 9,
+        "description": "int_underflow, printIntLine, n$2",
+        "feature": "[\"IntUnderflow\",\"printIntLine\",[\"Var\"]]"
+      }
+    ]
+  ],
+  "key": "CWE191_Integer_Underflow__int_fgets_sub_83a.cpp|CWE191_Integer_Underflow__int_fgets_sub_83::bad|API_MISUSE",
+  "hash": "b08feec89d96d68aa7fe14c32435f41d",
+  "bug_type_hum": "Api Misuse",
+  "extras": {
+    "bug_src_loc": {
+      "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s02/CWE191_Integer_Underflow__int_fgets_sub_83_bad.cpp",
+      "lnum": 32,
+      "cnum": 13,
+      "enum": 0
+    }
+  }
+}

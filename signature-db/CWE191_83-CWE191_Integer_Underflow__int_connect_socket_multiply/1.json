@@ -1,0 +1,81 @@
+{
+  "bug_type": "API_MISUSE",
+  "qualifier": "IntOverflow.",
+  "severity": "ERROR",
+  "line": 113,
+  "column": 9,
+  "procedure": "CWE191_Integer_Underflow__int_connect_socket_multiply_83::bad",
+  "procedure_start_line": 26,
+  "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s02/CWE191_Integer_Underflow__int_connect_socket_multiply_83_bad.cpp",
+  "bug_trace": [
+    [
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s02/CWE191_Integer_Underflow__int_connect_socket_multiply_83_bad.cpp",
+        "line_number": 83,
+        "column_number": 26,
+        "description": "input, recv",
+        "feature": "[\"Input\",\"recv\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s02/CWE191_Integer_Underflow__int_connect_socket_multiply_83_bad.cpp",
+        "line_number": 91,
+        "column_number": 13,
+        "description": "store, n$5.data, n$6",
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+      },
+      {
+        "level": 1,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s02/CWE191_Integer_Underflow__int_connect_socket_multiply_83a.cpp",
+        "line_number": 32,
+        "column_number": 1,
+        "description": "call, CWE191_Integer_Underflow__int_connect_socket_multiply_83::CWE191_Integer_Underflow__int_connect_socket_multiply_83_bad::~CWE191_Integer_Underflow__int_connect_socket_multiply_83_bad",
+        "feature": "[\"Call\",\"CWE191_Integer_Underflow__int_connect_socket_multiply_83::CWE191_Integer_Underflow__int_connect_socket_multiply_83_bad::~CWE191_Integer_Underflow__int_connect_socket_multiply_83_bad\"]"
+      },
+      {
+        "level": 1,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s02/CWE191_Integer_Underflow__int_connect_socket_multiply_83_bad.cpp",
+        "line_number": 115,
+        "column_number": 1,
+        "description": "call, CWE191_Integer_Underflow__int_connect_socket_multiply_83::CWE191_Integer_Underflow__int_connect_socket_multiply_83_bad::__infer_inner_destructor_~CWE191_Integer_Underflow__int_connect_socket_multiply_83_bad",
+        "feature": "[\"Call\",\"CWE191_Integer_Underflow__int_connect_socket_multiply_83::CWE191_Integer_Underflow__int_connect_socket_multiply_83_bad::__infer_inner_destructor_~CWE191_Integer_Underflow__int_connect_socket_multiply_83_bad\"]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s02/CWE191_Integer_Underflow__int_connect_socket_multiply_83_bad.cpp",
+        "line_number": 109,
+        "column_number": 8,
+        "description": "prune, (n$3 < 0)",
+        "feature": "[\"Prune\",[\"BinOp\",\"<\",[\"Var\"],[\"Const\",[\"Cint\",\"0\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s02/CWE191_Integer_Underflow__int_connect_socket_multiply_83_bad.cpp",
+        "line_number": 112,
+        "column_number": 9,
+        "description": "store, &result, (n$7 * 2)",
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"*\",[\"Var\"],[\"Const\",[\"Cint\",\"2\"]]]]"
+      },
+      {
+        "level": 0,
+        "filename": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s02/CWE191_Integer_Underflow__int_connect_socket_multiply_83_bad.cpp",
+        "line_number": 113,
+        "column_number": 9,
+        "description": "int_overflow, printIntLine, n$4",
+        "feature": "[\"IntOverflow\",\"printIntLine\",[\"Var\"]]"
+      }
+    ]
+  ],
+  "key": "CWE191_Integer_Underflow__int_connect_socket_multiply_83a.cpp|CWE191_Integer_Underflow__int_connect_socket_multiply_83::bad|API_MISUSE",
+  "hash": "a9c2d22565a6bef2d50e80b08d195120",
+  "bug_type_hum": "Api Misuse",
+  "extras": {
+    "bug_src_loc": {
+      "file": "/home/wooseok/workspace/infer-experiment/juliet-test-suite-c/testcases/CWE191_Integer_Underflow/s02/CWE191_Integer_Underflow__int_connect_socket_multiply_83_bad.cpp",
+      "lnum": 83,
+      "cnum": 26,
+      "enum": 0
+    }
+  }
+}
