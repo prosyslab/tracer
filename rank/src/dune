@@ -1,0 +1,6 @@
+(executable
+ (name main)
+ (modules main rank infer feature options location)
+ (libraries str unix)
+ (preprocess
+  (pps ppx_compare ppx_deriving.std ppx_deriving_yojson)))

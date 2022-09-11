@@ -3,6 +3,7 @@
 import argparse
 import subprocess
 import json
+import os
 
 from pathlib import Path
 
@@ -10,7 +11,9 @@ USE_AFTER_FREE = 'USE_AFTER_FREE'
 USE_AFTER_DELETE = 'USE_AFTER_DELETE'
 
 
-def run_infer_debian(package):
+def run_tracer_debian(package):
+    os.mkdir('result')
+
     subprocess.run(
         ['./bin/run-infer-debian.sh', '-p', package, '-i', '--pulse-only'])
 
@@ -29,6 +32,8 @@ def run_infer_debian(package):
     subprocess.run(
         ['./bin/run-infer-debian.sh', '-p', package, '-i', infer_options])
 
+    subprocess.run(['./rank/tracer', 'result', '-feat', 'high'])
+
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
@@ -38,4 +43,4 @@ if __name__ == '__main__':
     parser.add_argument('--package')
     args = parser.parse_args()
     if args.debian:
-        run_infer_debian(args.package)
+        run_tracer_debian(args.package)
