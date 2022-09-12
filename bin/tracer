@@ -4,21 +4,24 @@ import argparse
 import subprocess
 import json
 import os
+import shutil
 
 from pathlib import Path
 
 USE_AFTER_FREE = 'USE_AFTER_FREE'
 USE_AFTER_DELETE = 'USE_AFTER_DELETE'
 
+RESULT_DIR = 'infer-result'
 
-def run_tracer_debian(package):
-    os.mkdir('result')
+
+def run_tracer(package, script):
+    os.mkdir(RESULT_DIR)
 
     subprocess.run(
-        ['./bin/run-infer-debian.sh', '-p', package, '-i', '--pulse-only'])
+        [script, '-p', package, '-o', RESULT_DIR, '-i', '--pulse-only'])
 
     report = open(
-        Path('.') / 'result' / package / 'infer-out' / 'report.json', 'r')
+        Path('.') / RESULT_DIR / package / 'infer-out' / 'report.json', 'r')
     report_json = json.load(report)
     uaf_lines = []
     for alarm in report_json:
@@ -30,9 +33,11 @@ def run_tracer_debian(package):
     for line in uaf_lines:
         infer_options += f' --uaf-lines {line}'
     subprocess.run(
-        ['./bin/run-infer-debian.sh', '-p', package, '-i', infer_options])
+        [script, '-p', package, '-o', RESULT_DIR, '-i', infer_options])
 
-    subprocess.run(['./rank/tracer', 'result', '-feat', 'high'])
+    subprocess.run(['./rank/tracer', RESULT_DIR, '-feat', 'high'])
+
+    shutil.rmtree(RESULT_DIR)
 
 
 if __name__ == '__main__':
@@ -42,5 +47,10 @@ if __name__ == '__main__':
                         action=argparse.BooleanOptionalAction)
     parser.add_argument('--package')
     args = parser.parse_args()
+
     if args.debian:
-        run_tracer_debian(args.package)
+        script = './bin/run-infer-debian.sh'
+    else:
+        script = './bin/run-infer.sh'
+
+    run_tracer(args.package, script)
