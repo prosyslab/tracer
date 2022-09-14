@@ -2,11 +2,7 @@
 
 # install dependencies
 sudo apt-get update
-sudo apt-get install -y g++ cmake autoconf libgmp-dev libmpfr-dev libsqlite3-dev m4 pkg-config zlib1g-dev gcc make software-properties-common
-
-sudo add-apt-repository ppa:avsm/ppa
-sudo apt-get update
-sudo apt-get install -y opam
+sudo apt-get install -y sqlite3 curl opam g++ cmake autoconf libgmp-dev libmpfr-dev libsqlite3-dev m4 pkg-config zlib1g-dev gcc make
 
 # init submodule
 git submodule init
@@ -19,6 +15,7 @@ popd
 
 # build ranking system
 eval $(opam env)
+opam install ppx_deriving_yojson
 pushd rank
 make
 popd
