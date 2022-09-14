@@ -1,17 +1,13 @@
-# Tracer: Signature-based Static Analysis for Detecting Recurring Vulnerabilities
-
-Repository for "Tracer: Signature-based Static Analysis for Detecting Recurring Vulnerabilities",
-which appeared in CCS 2022.
-
+# Tracer
+[Tracer](https://prosys.kaist.ac.kr/tracer/) is a signature-based static analyzer for detecting recurring vulnerabilities.
 
 ## Installation
-
-For installation, you can execute `build.sh`.
+Run the following command to install Tracer:
 ```
 $ ./build.sh
 ```
-It installs all dependencies and tools needed by the Tracer.
-
+Tracer is implemented on top of [Infer](https://github.com/facebook/infer).
+The above command will install all the dependencies, Infer, and Tracer.
 
 ## Usage
 
