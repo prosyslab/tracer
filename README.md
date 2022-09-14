@@ -6,12 +6,12 @@ Run the following command to install Tracer:
 ```
 $ ./build.sh
 ```
-Tracer is implemented on top of [Infer](https://github.com/facebook/infer).
+Tracer is implemented on top of [Infer](https://github.com/prosyslab/tracer-infer/tree/master).
 The above command will install all the dependencies, Infer, and Tracer.
 
 ## Usage
 
-To run the Tracer, Python 3.9 or above is required.
+To run Tracer, Python 3.9 or above is required.
 
 For debian package,
 ```
