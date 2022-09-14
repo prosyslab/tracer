@@ -3,3 +3,4 @@ all:
 	ln -sf _build/default/src/main.exe tracer
 clean:
 	dune clean
+	rm -rf tracer
