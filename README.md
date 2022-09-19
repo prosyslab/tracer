@@ -23,16 +23,29 @@ For non-debian package,
 $ ./bin/tracer --package [PACKAGE_NAME]
 ```
 
-Also, for non-debian package, it has to include `build.sh` which contains build commands for Infer.
+We assume the target package contains a well-defined Makefile for `make` and `make clean`.
 
-```bash
-#!/bin/bash
+Both commands generate `tracer-out` with the analysis results of the Tracer.
 
-# write your build command here
-./configure
-$INFER_BIN capture -- make
+## Example
 
-cp -r infer-out $OUT
+```
+$ ./bin/tracer --debian --package htmldoc
 ```
 
-Both commands generate `tracer-out` that has the summanrized results of the Tracer.
+The above command analyzes debian package `htmldoc` and creates `tracer-out` in the root directory.
+
+In `tracer-out`, there are two report files.
+
+```
+$ ls -al tracer-out
+total 456
+drwxrwxr-x  2 wooseok wooseok   4096 Sep 19 12:58 .
+drwxrwxr-x 11 wooseok wooseok   4096 Sep 19 12:58 ..
+-rw-rw-r--  1 wooseok wooseok 446947 Sep 19 12:58 htmldoc.json
+-rw-rw-r--  1 wooseok wooseok   6374 Sep 19 12:58 htmldoc.txt
+```
+
+`txt` file contains summarized results for all reported alarms.
+
+`json` file contains more detailed information like top-scored signature and features.
