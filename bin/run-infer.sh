@@ -41,26 +41,17 @@ if [ ! -d "$OUT_DIR" ]; then
   exit 1
 fi
 
-BUILD=/src/$PACKAGE/build.sh
-INFER_OUT=infer-out
-OUT=/out/$INFER_OUT
+INFER_BIN=../tracer-infer/infer/bin/infer
 
-BASE_IMAGE=prosyslab/bug-bench-base
+pushd $PACKAGE
+$INFER_BIN capture -- make
+make clean
+popd
 
-CONTAINER_IMAGE=$(docker run -i -v $INFER_DIR/:/infer --detach $BASE_IMAGE timeout $TIMEOUT /bin/bash)
-docker cp $PACKAGE $CONTAINER_IMAGE:/src
-docker exec $CONTAINER_IMAGE bash -c "cd /src/$PACKAGE && $BUILD"
-
-RESULT_DIR=$OUT_DIR/$PACKAGE
-
-rm -rf $RESULT_DIR
+RESULT_DIR=$PROJECT_HOME/infer-result/$PACKAGE
 mkdir $RESULT_DIR
+cp -r $PACKAGE/infer-out $RESULT_DIR
 
 pushd $RESULT_DIR
-
-docker cp $CONTAINER_IMAGE:$OUT .
-docker stop $CONTAINER_IMAGE
-
 timeout $TIMEOUT $INFER_DIR/infer/bin/infer analyze $INFER_OPTIONS
-
 popd
