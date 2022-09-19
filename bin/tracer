@@ -14,14 +14,24 @@ USE_AFTER_DELETE = 'USE_AFTER_DELETE'
 RESULT_DIR = 'infer-result'
 
 
-def run_tracer(package, script):
+def run_tracer(package, script, is_debian):
     os.mkdir(RESULT_DIR)
 
-    subprocess.run(
-        [script, '-p', package, '-o', RESULT_DIR, '-i', '--pulse-only'])
+    if is_debian:
+        subprocess.run(
+            [script, '-p', package, '-o', RESULT_DIR, '-i', '--pulse-only'])
+    else:
+        subprocess.run(
+            [script, '-p', package, '-o', RESULT_DIR, '-a', 'capture'])
+
+        subprocess.run([
+            script, '-p', package, '-o', RESULT_DIR, '-i', '--pulse-only',
+            '-a', 'analyze'
+        ])
 
     report = open(
-        Path('.') / RESULT_DIR / package / 'infer-out' / 'report.json', 'r')
+        Path('.') / RESULT_DIR / os.path.basename(package) / 'infer-out' /
+        'report.json', 'r')
     report_json = json.load(report)
     uaf_lines = []
     for alarm in report_json:
@@ -32,8 +42,15 @@ def run_tracer(package, script):
     infer_options = '--api-misuse-only --api-misuse-max-fp 5 --api-misuse-max-set 10'
     for line in uaf_lines:
         infer_options += f' --uaf-lines {line}'
-    subprocess.run(
-        [script, '-p', package, '-o', RESULT_DIR, '-i', infer_options])
+
+    if is_debian:
+        subprocess.run(
+            [script, '-p', package, '-o', RESULT_DIR, '-i', infer_options])
+    else:
+        subprocess.run([
+            script, '-p', package, '-o', RESULT_DIR, '-i', infer_options, '-a',
+            'analyze'
+        ])
 
     subprocess.run(['./rank/tracer', RESULT_DIR, '-feat', 'high'])
 
@@ -49,8 +66,10 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     if args.debian:
+        is_debian = True
         script = './bin/run-infer-debian.sh'
     else:
+        is_debian = False
         script = './bin/run-infer.sh'
 
-    run_tracer(args.package, script)
+    run_tracer(args.package, script, is_debian)

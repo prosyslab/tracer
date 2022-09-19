@@ -10,22 +10,23 @@ INFER_DIR=$PROJECT_HOME/tracer-infer
 OUT_DIR=$PROJECT_HOME/result
 TIMEOUT=3600
 
-while getopts ":p:o:t:i:" opt; do
+while getopts ":p:o:t:i:a:" opt; do
   case $opt in
-    p) PACKAGE=$OPTARG ;;
-    o) OUT_DIR=$(readlink -e $OPTARG) ;;
-    t) TIMEOUT=$OPTARG ;;
-    i) INFER_OPTIONS=$OPTARG ;;
-    \?)
-      echo >&2 "Invalid option -$OPTARG"
-      usage
-      exit 1
-      ;;
-    :)
-      echo >&2 "Option -$OPTARG requires an argument."
-      usage
-      exit 1
-      ;;
+  p) PACKAGE=$OPTARG ;;
+  o) OUT_DIR=$(readlink -e $OPTARG) ;;
+  t) TIMEOUT=$OPTARG ;;
+  i) INFER_OPTIONS=$OPTARG ;;
+  a) ACTION=$OPTARG ;;
+  \?)
+    echo >&2 "Invalid option -$OPTARG"
+    usage
+    exit 1
+    ;;
+  :)
+    echo >&2 "Option -$OPTARG requires an argument."
+    usage
+    exit 1
+    ;;
   esac
 done
 
@@ -41,17 +42,19 @@ if [ ! -d "$OUT_DIR" ]; then
   exit 1
 fi
 
-INFER_BIN=../tracer-infer/infer/bin/infer
+DIR_NAME=$(basename $PACKAGE)
+INFER_BIN=$INFER_DIR/infer/bin/infer
+RESULT_DIR=$PROJECT_HOME/infer-result/$DIR_NAME
 
-pushd $PACKAGE
-$INFER_BIN capture -- make
-make clean
-popd
+if [ $ACTION == "capture" ]; then
+  pushd $PACKAGE
+  $INFER_BIN capture -- make
+  popd
 
-RESULT_DIR=$PROJECT_HOME/infer-result/$PACKAGE
-mkdir -p $RESULT_DIR
-cp -r $PACKAGE/infer-out $RESULT_DIR
-
-pushd $RESULT_DIR
-timeout $TIMEOUT $INFER_DIR/infer/bin/infer analyze $INFER_OPTIONS
-popd
+  mkdir -p $RESULT_DIR
+  cp -r $PACKAGE/infer-out $RESULT_DIR
+elif [ $ACTION == "analyze" ]; then
+  pushd $RESULT_DIR
+  timeout $TIMEOUT $INFER_DIR/infer/bin/infer analyze $INFER_OPTIONS
+  popd
+fi
