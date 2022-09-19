@@ -12,20 +12,20 @@ TIMEOUT=3600
 
 while getopts ":p:o:t:i:" opt; do
   case $opt in
-  p) PACKAGE=$OPTARG ;;
-  o) OUT_DIR=$(readlink -e $OPTARG) ;;
-  t) TIMEOUT=$OPTARG ;;
-  i) INFER_OPTIONS=$OPTARG ;;
-  \?)
-    echo >&2 "Invalid option -$OPTARG"
-    usage
-    exit 1
-    ;;
-  :)
-    echo >&2 "Option -$OPTARG requires an argument."
-    usage
-    exit 1
-    ;;
+    p) PACKAGE=$OPTARG ;;
+    o) OUT_DIR=$(readlink -e $OPTARG) ;;
+    t) TIMEOUT=$OPTARG ;;
+    i) INFER_OPTIONS=$OPTARG ;;
+    \?)
+      echo >&2 "Invalid option -$OPTARG"
+      usage
+      exit 1
+      ;;
+    :)
+      echo >&2 "Option -$OPTARG requires an argument."
+      usage
+      exit 1
+      ;;
   esac
 done
 
@@ -49,7 +49,7 @@ make clean
 popd
 
 RESULT_DIR=$PROJECT_HOME/infer-result/$PACKAGE
-mkdir $RESULT_DIR
+mkdir -p $RESULT_DIR
 cp -r $PACKAGE/infer-out $RESULT_DIR
 
 pushd $RESULT_DIR

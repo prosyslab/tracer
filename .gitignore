@@ -2,3 +2,5 @@ rank/_build
 rank/tracer
 rank/.ocamlformat
 tracer-out
+infer-out
+*.o
