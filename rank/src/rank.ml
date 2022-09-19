@@ -71,11 +71,11 @@ module Make (FeatVec : Feature.FEAT_VEC) = struct
   end
 
   let maximum_feature_trace traces =
-    ( traces
+    (traces
     |> List.map (fun tr -> (tr, FeatVec.of_trace tr))
     |> List.sort (fun (_, fv1) (_, fv2) ->
            FeatVec.num_of_features fv2 - FeatVec.num_of_features fv1)
-    |> List.nth_opt )
+    |> List.nth_opt)
       0
 
   let filter_vectors_no_filter target_vectors = target_vectors
@@ -165,8 +165,10 @@ module Make (FeatVec : Feature.FEAT_VEC) = struct
     let wreport =
       List.fold_left
         (fun lst { Infer.Alarm.bug_type; src; sink; traces } ->
-          let wtraces = compute_weighted_traces signatures traces in
-          WeightedAlarm.make program src sink bug_type wtraces :: lst)
+          if 0 <= Location.get_line src && 0 <= Location.get_line sink then
+            let wtraces = compute_weighted_traces signatures traces in
+            WeightedAlarm.make program src sink bug_type wtraces :: lst
+          else lst)
         [] report
       |> List.sort WeightedAlarm.compare
     in
