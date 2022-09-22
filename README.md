@@ -49,4 +49,3 @@ The analysis results will be stored in the `tracer-out` directory that will be c
 In `tracer-out`, there are two report files:
 - `[PACKAGE_NAME].txt`: a summarized report for all alarms.
 - `[PACKAGE_NAME].json`: a detailed report for each alarm such as top-ranked signatures, features, and scores.
-nformation like top-scored signature and features.
