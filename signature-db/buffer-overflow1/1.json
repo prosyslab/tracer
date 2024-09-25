@@ -16,7 +16,7 @@
         "column_number": 11,
         "description": "input, getenv",
         "feature": "[\"Input\",\"getenv\"]",
-        "code": "https://github.com/prosyslab-warehouse/owasp-tutorial-buffer-overflow1/blob/master/tutorial/buffer-overflow1.c#L10"
+        "code": "https://github.com/prosyslab-warehouse/owasp-tutorial/blob/master/tutorial/buffer-overflow1.c#L10"
       },
       {
         "level": 0,
@@ -25,7 +25,7 @@
         "column_number": 5,
         "description": "buffer_overflow, sprintf, n$2",
         "feature": "[\"BufferOverflow\",\"sprintf\",[\"Var\"]]",
-        "code": "https://github.com/prosyslab-warehouse/owasp-tutorial-buffer-overflow1/blob/master/tutorial/buffer-overflow1.c#L12"
+        "code": "https://github.com/prosyslab-warehouse/owasp-tutorial/blob/master/tutorial/buffer-overflow1.c#L12"
       }
     ]
   ],
@@ -40,5 +40,5 @@
       "enum": 0
     }
   },
-  "repository": "https://github.com/prosyslab-warehouse/owasp-tutorial-buffer_overflow1"
+  "repository": "https://github.com/prosyslab-warehouse/owasp-tutorial"
 }
