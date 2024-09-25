@@ -15,7 +15,8 @@
         "line_number": 31,
         "column_number": 9,
         "description": "input, fscanf",
-        "feature": "[\"Input\",\"fscanf\"]"
+        "feature": "[\"Input\",\"fscanf\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE191_Integer_Underflow/s02/CWE191_Integer_Underflow__int_fscanf_multiply_15.c#L31"
       },
       {
         "level": 0,
@@ -23,7 +24,8 @@
         "line_number": 41,
         "column_number": 12,
         "description": "prune, (n$3 < 0)",
-        "feature": "[\"Prune\",[\"BinOp\",\"<\",[\"Var\"],[\"Const\",[\"Cint\",\"0\"]]]]"
+        "feature": "[\"Prune\",[\"BinOp\",\"<\",[\"Var\"],[\"Const\",[\"Cint\",\"0\"]]]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE191_Integer_Underflow/s02/CWE191_Integer_Underflow__int_fscanf_multiply_15.c#L41"
       },
       {
         "level": 0,
@@ -31,7 +33,8 @@
         "line_number": 44,
         "column_number": 13,
         "description": "store, &result, (n$6 * 2)",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"*\",[\"Var\"],[\"Const\",[\"Cint\",\"2\"]]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"*\",[\"Var\"],[\"Const\",[\"Cint\",\"2\"]]]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE191_Integer_Underflow/s02/CWE191_Integer_Underflow__int_fscanf_multiply_15.c#L44"
       },
       {
         "level": 0,
@@ -39,7 +42,8 @@
         "line_number": 45,
         "column_number": 13,
         "description": "int_overflow, printIntLine, n$4",
-        "feature": "[\"IntOverflow\",\"printIntLine\",[\"Var\"]]"
+        "feature": "[\"IntOverflow\",\"printIntLine\",[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE191_Integer_Underflow/s02/CWE191_Integer_Underflow__int_fscanf_multiply_15.c#L45"
       }
     ]
   ],
@@ -53,5 +57,6 @@
       "cnum": 9,
       "enum": 0
     }
-  }
+  },
+  "repository": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE191_Integer_Underflow/s02/CWE191_Integer_Underflow__int_fscanf_multiply_15.c"
 }

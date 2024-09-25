@@ -15,7 +15,8 @@
         "line_number": 71,
         "column_number": 21,
         "description": "input, fgets",
-        "feature": "[\"Input\",\"fgets\"]"
+        "feature": "[\"Input\",\"fgets\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE78_OS_Command_Injection/s03/CWE78_OS_Command_Injection__char_file_execlp_66a.c#L71"
       },
       {
         "level": 1,
@@ -23,7 +24,8 @@
         "line_number": 83,
         "column_number": 5,
         "description": "call, CWE78_OS_Command_Injection__char_file_execlp_66b_badSink",
-        "feature": "[\"Call\",\"CWE78_OS_Command_Injection__char_file_execlp_66b_badSink\"]"
+        "feature": "[\"Call\",\"CWE78_OS_Command_Injection__char_file_execlp_66b_badSink\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE78_OS_Command_Injection/s03/CWE78_OS_Command_Injection__char_file_execlp_66a.c#L83"
       },
       {
         "level": 0,
@@ -31,7 +33,8 @@
         "line_number": 58,
         "column_number": 5,
         "description": "cmd_injection, execlp, n$0",
-        "feature": "[\"CmdInjection\",\"execlp\",[\"Var\"]]"
+        "feature": "[\"CmdInjection\",\"execlp\",[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE78_OS_Command_Injection/s03/CWE78_OS_Command_Injection__char_file_execlp_66b.c#L58"
       }
     ]
   ],
@@ -45,5 +48,6 @@
       "cnum": 21,
       "enum": 0
     }
-  }
+  },
+  "repository": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE78_OS_Command_Injection/s03/CWE78_OS_Command_Injection__char_file_execlp_66b.c"
 }

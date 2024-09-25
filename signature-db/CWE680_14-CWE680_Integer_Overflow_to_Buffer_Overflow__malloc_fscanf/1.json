@@ -15,7 +15,8 @@
         "line_number": 29,
         "column_number": 9,
         "description": "input, fscanf",
-        "feature": "[\"Input\",\"fscanf\"]"
+        "feature": "[\"Input\",\"fscanf\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE680_Integer_Overflow_to_Buffer_Overflow/CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_fscanf_14.c#L29"
       },
       {
         "level": 0,
@@ -23,7 +24,8 @@
         "line_number": 36,
         "column_number": 28,
         "description": "int_overflow, malloc, (()n$15 * sizeof(t=;nbytes=4))",
-        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tint\",[\"IInt\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tint\",[\"IInt\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE680_Integer_Overflow_to_Buffer_Overflow/CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_fscanf_14.c#L36"
       }
     ]
   ],
@@ -37,5 +39,6 @@
       "cnum": 9,
       "enum": 0
     }
-  }
+  },
+  "repository": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE680_Integer_Overflow_to_Buffer_Overflow/CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_fscanf_14.c"
 }

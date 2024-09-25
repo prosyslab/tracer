@@ -15,7 +15,8 @@
         "line_number": 49,
         "column_number": 13,
         "description": "input, fgets",
-        "feature": "[\"Input\",\"fgets\"]"
+        "feature": "[\"Input\",\"fgets\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s03/CWE190_Integer_Overflow__int_fgets_square_21.c#L49"
       },
       {
         "level": 0,
@@ -23,7 +24,8 @@
         "line_number": 52,
         "column_number": 13,
         "description": "store, &data, n$4",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s03/CWE190_Integer_Overflow__int_fgets_square_21.c#L52"
       },
       {
         "level": 1,
@@ -31,7 +33,8 @@
         "line_number": 60,
         "column_number": 5,
         "description": "call, badSink",
-        "feature": "[\"Call\",\"badSink\"]"
+        "feature": "[\"Call\",\"badSink\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s03/CWE190_Integer_Overflow__int_fgets_square_21.c#L60"
       },
       {
         "level": 0,
@@ -39,7 +42,8 @@
         "line_number": 35,
         "column_number": 13,
         "description": "store, &result, (n$3 * n$4)",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"*\",[\"Var\"],[\"Var\"]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"*\",[\"Var\"],[\"Var\"]]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s03/CWE190_Integer_Overflow__int_fgets_square_21.c#L35"
       },
       {
         "level": 0,
@@ -47,7 +51,8 @@
         "line_number": 36,
         "column_number": 13,
         "description": "int_overflow, printIntLine, n$1",
-        "feature": "[\"IntOverflow\",\"printIntLine\",[\"Var\"]]"
+        "feature": "[\"IntOverflow\",\"printIntLine\",[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s03/CWE190_Integer_Overflow__int_fgets_square_21.c#L36"
       }
     ]
   ],
@@ -61,5 +66,6 @@
       "cnum": 13,
       "enum": 0
     }
-  }
+  },
+  "repository": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s03/CWE190_Integer_Overflow__int_fgets_square_21.c"
 }

@@ -15,7 +15,8 @@
         "line_number": 33,
         "column_number": 12,
         "description": "allocate, __new",
-        "feature": "[\"Allocate\",\"__new\"]"
+        "feature": "[\"Allocate\",\"__new\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_long_18.cpp#L33"
       },
       {
         "level": 0,
@@ -23,7 +24,8 @@
         "line_number": 36,
         "column_number": 5,
         "description": "free, __delete, n$5",
-        "feature": "[\"Free\",\"__delete\",[\"Var\"]]"
+        "feature": "[\"Free\",\"__delete\",[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_long_18.cpp#L36"
       },
       {
         "level": 0,
@@ -31,11 +33,13 @@
         "line_number": 40,
         "column_number": 5,
         "description": "library_call, printLongLine, n$1",
-        "feature": "[\"LibraryCall\",\"printLongLine\",\"n$1\"]"
+        "feature": "[\"LibraryCall\",\"printLongLine\",\"n$1\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_long_18.cpp#L40"
       }
     ]
   ],
   "key": "CWE416_Use_After_Free__new_delete_long_18.cpp|CWE416_Use_After_Free__new_delete_long_18::bad|API_MISUSE",
   "hash": "cf10388cc224fd5ae5b6d2200ca81f47",
-  "bug_type_hum": "Api Misuse"
+  "bug_type_hum": "Api Misuse",
+  "repository": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_long_18.cpp"
 }

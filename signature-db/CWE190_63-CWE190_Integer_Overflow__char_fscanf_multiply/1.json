@@ -15,7 +15,8 @@
         "line_number": 30,
         "column_number": 5,
         "description": "input, fscanf",
-        "feature": "[\"Input\",\"fscanf\"]"
+        "feature": "[\"Input\",\"fscanf\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s01/CWE190_Integer_Overflow__char_fscanf_multiply_63a.c#L30"
       },
       {
         "level": 1,
@@ -23,7 +24,8 @@
         "line_number": 31,
         "column_number": 5,
         "description": "call, CWE190_Integer_Overflow__char_fscanf_multiply_63b_badSink",
-        "feature": "[\"Call\",\"CWE190_Integer_Overflow__char_fscanf_multiply_63b_badSink\"]"
+        "feature": "[\"Call\",\"CWE190_Integer_Overflow__char_fscanf_multiply_63b_badSink\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s01/CWE190_Integer_Overflow__char_fscanf_multiply_63a.c#L31"
       },
       {
         "level": 0,
@@ -31,7 +33,8 @@
         "line_number": 24,
         "column_number": 5,
         "description": "store, &data, n$7",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s01/CWE190_Integer_Overflow__char_fscanf_multiply_63b.c#L24"
       },
       {
         "level": 0,
@@ -39,7 +42,8 @@
         "line_number": 25,
         "column_number": 8,
         "description": "prune, (n$0 > 0)",
-        "feature": "[\"Prune\",[\"BinOp\",\">\",[\"Var\"],[\"Const\",[\"Cint\",\"0\"]]]]"
+        "feature": "[\"Prune\",[\"BinOp\",\">\",[\"Var\"],[\"Const\",[\"Cint\",\"0\"]]]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s01/CWE190_Integer_Overflow__char_fscanf_multiply_63b.c#L25"
       },
       {
         "level": 0,
@@ -47,7 +51,8 @@
         "line_number": 28,
         "column_number": 9,
         "description": "store, &result, (n$3 * 2)",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"*\",[\"Var\"],[\"Const\",[\"Cint\",\"2\"]]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"*\",[\"Var\"],[\"Const\",[\"Cint\",\"2\"]]]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s01/CWE190_Integer_Overflow__char_fscanf_multiply_63b.c#L28"
       },
       {
         "level": 0,
@@ -55,7 +60,8 @@
         "line_number": 29,
         "column_number": 9,
         "description": "int_overflow, printHexCharLine, n$1",
-        "feature": "[\"IntOverflow\",\"printHexCharLine\",[\"Var\"]]"
+        "feature": "[\"IntOverflow\",\"printHexCharLine\",[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s01/CWE190_Integer_Overflow__char_fscanf_multiply_63b.c#L29"
       }
     ]
   ],
@@ -69,5 +75,6 @@
       "cnum": 5,
       "enum": 0
     }
-  }
+  },
+  "repository": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s01/CWE190_Integer_Overflow__char_fscanf_multiply_63b.c"
 }

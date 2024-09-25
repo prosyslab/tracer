@@ -15,7 +15,8 @@
         "line_number": 52,
         "column_number": 30,
         "description": "input, getenv",
-        "feature": "[\"Input\",\"getenv\"]"
+        "feature": "[\"Input\",\"getenv\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE78_OS_Command_Injection/s02/CWE78_OS_Command_Injection__char_environment_popen_42.c#L52"
       },
       {
         "level": 0,
@@ -23,7 +24,8 @@
         "line_number": 57,
         "column_number": 13,
         "description": "library_call, strncat, (n$2 + n$3), n$4",
-        "feature": "[\"LibraryCall\",\"strncat\",\"(n$2 + n$3), n$4\"]"
+        "feature": "[\"LibraryCall\",\"strncat\",\"(n$2 + n$3), n$4\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE78_OS_Command_Injection/s02/CWE78_OS_Command_Injection__char_environment_popen_42.c#L57"
       },
       {
         "level": 0,
@@ -31,7 +33,8 @@
         "line_number": 72,
         "column_number": 16,
         "description": "cmd_injection, popen, n$5",
-        "feature": "[\"CmdInjection\",\"popen\",[\"Var\"]]"
+        "feature": "[\"CmdInjection\",\"popen\",[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE78_OS_Command_Injection/s02/CWE78_OS_Command_Injection__char_environment_popen_42.c#L72"
       }
     ]
   ],
@@ -45,5 +48,6 @@
       "cnum": 30,
       "enum": 0
     }
-  }
+  },
+  "repository": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE78_OS_Command_Injection/s02/CWE78_OS_Command_Injection__char_environment_popen_42.c"
 }

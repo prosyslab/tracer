@@ -15,7 +15,8 @@
         "line_number": 192,
         "column_number": 13,
         "description": "input, fread",
-        "feature": "[\"Input\",\"fread\"]"
+        "feature": "[\"Input\",\"fread\"]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L192"
       },
       {
         "level": 1,
@@ -23,7 +24,8 @@
         "line_number": 196,
         "column_number": 28,
         "description": "call, png_get_uint_32",
-        "feature": "[\"Call\",\"png_get_uint_32\"]"
+        "feature": "[\"Call\",\"png_get_uint_32\"]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L196"
       },
       {
         "level": 0,
@@ -31,7 +33,8 @@
         "line_number": 56,
         "column_number": 4,
         "description": "store, &i, ((((()n$2 << 24) + (()n$4 << 16)) + (()n$6 << 8)) + ()n$8)",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"8\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"8\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/libpng/pngrutil.c#L56"
       },
       {
         "level": 0,
@@ -39,7 +42,8 @@
         "line_number": 61,
         "column_number": 4,
         "description": "store, &return, n$0",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/libpng/pngrutil.c#L61"
       },
       {
         "level": 0,
@@ -47,7 +51,8 @@
         "line_number": 196,
         "column_number": 9,
         "description": "store, &count, n$247",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L196"
       },
       {
         "level": 0,
@@ -55,7 +60,8 @@
         "line_number": 197,
         "column_number": 13,
         "description": "prune, !(n$242 == ()0)",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L197"
       },
       {
         "level": 0,
@@ -63,7 +69,8 @@
         "line_number": 240,
         "column_number": 13,
         "description": "store, n$182.strip_offsets_count, n$183",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L240"
       },
       {
         "level": 0,
@@ -71,7 +78,8 @@
         "line_number": 350,
         "column_number": 9,
         "description": "store, &count, n$50",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L350"
       },
       {
         "level": 0,
@@ -79,7 +87,8 @@
         "line_number": 351,
         "column_number": 13,
         "description": "prune, !(n$42 == ()0)",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L351"
       },
       {
         "level": 0,
@@ -87,7 +96,8 @@
         "line_number": 351,
         "column_number": 27,
         "description": "prune, !(n$43 > n$45)",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">\",[\"Var\"],[\"Var\"]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">\",[\"Var\"],[\"Var\"]]]]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L351"
       },
       {
         "level": 0,
@@ -95,7 +105,8 @@
         "line_number": 353,
         "column_number": 43,
         "description": "int_overflow, malloc, (n$40 * sizeof(t=;nbytes=8))",
-        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"*\",[\"Var\"],[\"Sizeof\",{\"desc\":[\"Tint\",[\"ILong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"*\",[\"Var\"],[\"Sizeof\",{\"desc\":[\"Tint\",[\"ILong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L353"
       }
     ],
     [
@@ -105,7 +116,8 @@
         "line_number": 192,
         "column_number": 13,
         "description": "input, fread",
-        "feature": "[\"Input\",\"fread\"]"
+        "feature": "[\"Input\",\"fread\"]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L192"
       },
       {
         "level": 1,
@@ -113,7 +125,8 @@
         "line_number": 196,
         "column_number": 28,
         "description": "call, bmp_get_dword",
-        "feature": "[\"Call\",\"bmp_get_dword\"]"
+        "feature": "[\"Call\",\"bmp_get_dword\"]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L196"
       },
       {
         "level": 0,
@@ -121,7 +134,8 @@
         "line_number": 102,
         "column_number": 4,
         "description": "store, &return, (((()n$1 + (()n$3 << 8)) + (()n$5 << 16)) + (()n$7 << 24))",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"24\"]]]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"24\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/pngxrbmp.c#L102"
       },
       {
         "level": 0,
@@ -129,7 +143,8 @@
         "line_number": 196,
         "column_number": 9,
         "description": "store, &count, n$247",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L196"
       },
       {
         "level": 0,
@@ -137,7 +152,8 @@
         "line_number": 197,
         "column_number": 13,
         "description": "prune, !(n$242 == ()0)",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L197"
       },
       {
         "level": 0,
@@ -145,7 +161,8 @@
         "line_number": 240,
         "column_number": 13,
         "description": "store, n$182.strip_offsets_count, n$183",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L240"
       },
       {
         "level": 0,
@@ -153,7 +170,8 @@
         "line_number": 350,
         "column_number": 9,
         "description": "store, &count, n$50",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L350"
       },
       {
         "level": 0,
@@ -161,7 +179,8 @@
         "line_number": 351,
         "column_number": 13,
         "description": "prune, !(n$42 == ()0)",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L351"
       },
       {
         "level": 0,
@@ -169,7 +188,8 @@
         "line_number": 351,
         "column_number": 27,
         "description": "prune, !(n$43 > n$45)",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">\",[\"Var\"],[\"Var\"]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">\",[\"Var\"],[\"Var\"]]]]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L351"
       },
       {
         "level": 0,
@@ -177,7 +197,8 @@
         "line_number": 353,
         "column_number": 43,
         "description": "int_overflow, malloc, (n$40 * sizeof(t=;nbytes=8))",
-        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"*\",[\"Var\"],[\"Sizeof\",{\"desc\":[\"Tint\",[\"ILong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"*\",[\"Var\"],[\"Sizeof\",{\"desc\":[\"Tint\",[\"ILong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L353"
       }
     ],
     [
@@ -187,7 +208,8 @@
         "line_number": 192,
         "column_number": 13,
         "description": "input, fread",
-        "feature": "[\"Input\",\"fread\"]"
+        "feature": "[\"Input\",\"fread\"]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L192"
       },
       {
         "level": 1,
@@ -195,7 +217,8 @@
         "line_number": 195,
         "column_number": 20,
         "description": "call, bmp_get_word",
-        "feature": "[\"Call\",\"bmp_get_word\"]"
+        "feature": "[\"Call\",\"bmp_get_word\"]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L195"
       },
       {
         "level": 1,
@@ -203,7 +226,8 @@
         "line_number": 196,
         "column_number": 28,
         "description": "call, png_get_uint_32",
-        "feature": "[\"Call\",\"png_get_uint_32\"]"
+        "feature": "[\"Call\",\"png_get_uint_32\"]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L196"
       },
       {
         "level": 0,
@@ -211,7 +235,8 @@
         "line_number": 56,
         "column_number": 4,
         "description": "store, &i, ((((()n$2 << 24) + (()n$4 << 16)) + (()n$6 << 8)) + ()n$8)",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"8\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"8\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/libpng/pngrutil.c#L56"
       },
       {
         "level": 0,
@@ -219,7 +244,8 @@
         "line_number": 61,
         "column_number": 4,
         "description": "store, &return, n$0",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/libpng/pngrutil.c#L61"
       },
       {
         "level": 0,
@@ -227,7 +253,8 @@
         "line_number": 196,
         "column_number": 9,
         "description": "store, &count, n$247",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L196"
       },
       {
         "level": 0,
@@ -235,7 +262,8 @@
         "line_number": 197,
         "column_number": 13,
         "description": "prune, !(n$242 == ()0)",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L197"
       },
       {
         "level": 0,
@@ -243,7 +271,8 @@
         "line_number": 240,
         "column_number": 13,
         "description": "store, n$182.strip_offsets_count, n$183",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L240"
       },
       {
         "level": 0,
@@ -251,7 +280,8 @@
         "line_number": 350,
         "column_number": 9,
         "description": "store, &count, n$50",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L350"
       },
       {
         "level": 0,
@@ -259,7 +289,8 @@
         "line_number": 351,
         "column_number": 13,
         "description": "prune, !(n$42 == ()0)",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L351"
       },
       {
         "level": 0,
@@ -267,7 +298,8 @@
         "line_number": 351,
         "column_number": 27,
         "description": "prune, !(n$43 > n$45)",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">\",[\"Var\"],[\"Var\"]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">\",[\"Var\"],[\"Var\"]]]]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L351"
       },
       {
         "level": 0,
@@ -275,7 +307,8 @@
         "line_number": 353,
         "column_number": 43,
         "description": "int_overflow, malloc, (n$40 * sizeof(t=;nbytes=8))",
-        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"*\",[\"Var\"],[\"Sizeof\",{\"desc\":[\"Tint\",[\"ILong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"*\",[\"Var\"],[\"Sizeof\",{\"desc\":[\"Tint\",[\"ILong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L353"
       }
     ],
     [
@@ -285,7 +318,8 @@
         "line_number": 192,
         "column_number": 13,
         "description": "input, fread",
-        "feature": "[\"Input\",\"fread\"]"
+        "feature": "[\"Input\",\"fread\"]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L192"
       },
       {
         "level": 1,
@@ -293,7 +327,8 @@
         "line_number": 195,
         "column_number": 20,
         "description": "call, bmp_get_word",
-        "feature": "[\"Call\",\"bmp_get_word\"]"
+        "feature": "[\"Call\",\"bmp_get_word\"]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L195"
       },
       {
         "level": 1,
@@ -301,7 +336,8 @@
         "line_number": 196,
         "column_number": 28,
         "description": "call, bmp_get_dword",
-        "feature": "[\"Call\",\"bmp_get_dword\"]"
+        "feature": "[\"Call\",\"bmp_get_dword\"]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L196"
       },
       {
         "level": 0,
@@ -309,7 +345,8 @@
         "line_number": 102,
         "column_number": 4,
         "description": "store, &return, (((()n$1 + (()n$3 << 8)) + (()n$5 << 16)) + (()n$7 << 24))",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"24\"]]]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"24\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/pngxrbmp.c#L102"
       },
       {
         "level": 0,
@@ -317,7 +354,8 @@
         "line_number": 196,
         "column_number": 9,
         "description": "store, &count, n$247",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L196"
       },
       {
         "level": 0,
@@ -325,7 +363,8 @@
         "line_number": 197,
         "column_number": 13,
         "description": "prune, !(n$242 == ()0)",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L197"
       },
       {
         "level": 0,
@@ -333,7 +372,8 @@
         "line_number": 240,
         "column_number": 13,
         "description": "store, n$182.strip_offsets_count, n$183",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L240"
       },
       {
         "level": 0,
@@ -341,7 +381,8 @@
         "line_number": 350,
         "column_number": 9,
         "description": "store, &count, n$50",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L350"
       },
       {
         "level": 0,
@@ -349,7 +390,8 @@
         "line_number": 351,
         "column_number": 13,
         "description": "prune, !(n$42 == ()0)",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L351"
       },
       {
         "level": 0,
@@ -357,7 +399,8 @@
         "line_number": 351,
         "column_number": 27,
         "description": "prune, !(n$43 > n$45)",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">\",[\"Var\"],[\"Var\"]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">\",[\"Var\"],[\"Var\"]]]]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L351"
       },
       {
         "level": 0,
@@ -365,7 +408,8 @@
         "line_number": 353,
         "column_number": 43,
         "description": "int_overflow, malloc, (n$40 * sizeof(t=;nbytes=8))",
-        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"*\",[\"Var\"],[\"Sizeof\",{\"desc\":[\"Tint\",[\"ILong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"*\",[\"Var\"],[\"Sizeof\",{\"desc\":[\"Tint\",[\"ILong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L353"
       }
     ],
     [
@@ -375,7 +419,8 @@
         "line_number": 192,
         "column_number": 13,
         "description": "input, fread",
-        "feature": "[\"Input\",\"fread\"]"
+        "feature": "[\"Input\",\"fread\"]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L192"
       },
       {
         "level": 1,
@@ -383,7 +428,8 @@
         "line_number": 194,
         "column_number": 20,
         "description": "call, bmp_get_word",
-        "feature": "[\"Call\",\"bmp_get_word\"]"
+        "feature": "[\"Call\",\"bmp_get_word\"]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L194"
       },
       {
         "level": 1,
@@ -391,7 +437,8 @@
         "line_number": 196,
         "column_number": 28,
         "description": "call, png_get_uint_32",
-        "feature": "[\"Call\",\"png_get_uint_32\"]"
+        "feature": "[\"Call\",\"png_get_uint_32\"]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L196"
       },
       {
         "level": 0,
@@ -399,7 +446,8 @@
         "line_number": 56,
         "column_number": 4,
         "description": "store, &i, ((((()n$2 << 24) + (()n$4 << 16)) + (()n$6 << 8)) + ()n$8)",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"8\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"8\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/libpng/pngrutil.c#L56"
       },
       {
         "level": 0,
@@ -407,7 +455,8 @@
         "line_number": 61,
         "column_number": 4,
         "description": "store, &return, n$0",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/libpng/pngrutil.c#L61"
       },
       {
         "level": 0,
@@ -415,7 +464,8 @@
         "line_number": 196,
         "column_number": 9,
         "description": "store, &count, n$247",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L196"
       },
       {
         "level": 0,
@@ -423,7 +473,8 @@
         "line_number": 197,
         "column_number": 13,
         "description": "prune, !(n$242 == ()0)",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L197"
       },
       {
         "level": 0,
@@ -431,7 +482,8 @@
         "line_number": 240,
         "column_number": 13,
         "description": "store, n$182.strip_offsets_count, n$183",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L240"
       },
       {
         "level": 0,
@@ -439,7 +491,8 @@
         "line_number": 350,
         "column_number": 9,
         "description": "store, &count, n$50",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L350"
       },
       {
         "level": 0,
@@ -447,7 +500,8 @@
         "line_number": 351,
         "column_number": 13,
         "description": "prune, !(n$42 == ()0)",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L351"
       },
       {
         "level": 0,
@@ -455,7 +509,8 @@
         "line_number": 351,
         "column_number": 27,
         "description": "prune, !(n$43 > n$45)",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">\",[\"Var\"],[\"Var\"]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">\",[\"Var\"],[\"Var\"]]]]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L351"
       },
       {
         "level": 0,
@@ -463,7 +518,8 @@
         "line_number": 353,
         "column_number": 43,
         "description": "int_overflow, malloc, (n$40 * sizeof(t=;nbytes=8))",
-        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"*\",[\"Var\"],[\"Sizeof\",{\"desc\":[\"Tint\",[\"ILong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"*\",[\"Var\"],[\"Sizeof\",{\"desc\":[\"Tint\",[\"ILong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L353"
       }
     ],
     [
@@ -473,7 +529,8 @@
         "line_number": 192,
         "column_number": 13,
         "description": "input, fread",
-        "feature": "[\"Input\",\"fread\"]"
+        "feature": "[\"Input\",\"fread\"]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L192"
       },
       {
         "level": 1,
@@ -481,7 +538,8 @@
         "line_number": 194,
         "column_number": 20,
         "description": "call, bmp_get_word",
-        "feature": "[\"Call\",\"bmp_get_word\"]"
+        "feature": "[\"Call\",\"bmp_get_word\"]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L194"
       },
       {
         "level": 1,
@@ -489,7 +547,8 @@
         "line_number": 196,
         "column_number": 28,
         "description": "call, bmp_get_dword",
-        "feature": "[\"Call\",\"bmp_get_dword\"]"
+        "feature": "[\"Call\",\"bmp_get_dword\"]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L196"
       },
       {
         "level": 0,
@@ -497,7 +556,8 @@
         "line_number": 102,
         "column_number": 4,
         "description": "store, &return, (((()n$1 + (()n$3 << 8)) + (()n$5 << 16)) + (()n$7 << 24))",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"24\"]]]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"24\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/pngxrbmp.c#L102"
       },
       {
         "level": 0,
@@ -505,7 +565,8 @@
         "line_number": 196,
         "column_number": 9,
         "description": "store, &count, n$247",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L196"
       },
       {
         "level": 0,
@@ -513,7 +574,8 @@
         "line_number": 197,
         "column_number": 13,
         "description": "prune, !(n$242 == ()0)",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L197"
       },
       {
         "level": 0,
@@ -521,7 +583,8 @@
         "line_number": 240,
         "column_number": 13,
         "description": "store, n$182.strip_offsets_count, n$183",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L240"
       },
       {
         "level": 0,
@@ -529,7 +592,8 @@
         "line_number": 350,
         "column_number": 9,
         "description": "store, &count, n$50",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L350"
       },
       {
         "level": 0,
@@ -537,7 +601,8 @@
         "line_number": 351,
         "column_number": 13,
         "description": "prune, !(n$42 == ()0)",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L351"
       },
       {
         "level": 0,
@@ -545,7 +610,8 @@
         "line_number": 351,
         "column_number": 27,
         "description": "prune, !(n$43 > n$45)",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">\",[\"Var\"],[\"Var\"]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">\",[\"Var\"],[\"Var\"]]]]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L351"
       },
       {
         "level": 0,
@@ -553,7 +619,8 @@
         "line_number": 353,
         "column_number": 43,
         "description": "int_overflow, malloc, (n$40 * sizeof(t=;nbytes=8))",
-        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"*\",[\"Var\"],[\"Sizeof\",{\"desc\":[\"Tint\",[\"ILong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"*\",[\"Var\"],[\"Sizeof\",{\"desc\":[\"Tint\",[\"ILong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L353"
       }
     ],
     [
@@ -563,7 +630,8 @@
         "line_number": 192,
         "column_number": 13,
         "description": "input, fread",
-        "feature": "[\"Input\",\"fread\"]"
+        "feature": "[\"Input\",\"fread\"]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L192"
       },
       {
         "level": 1,
@@ -571,7 +639,8 @@
         "line_number": 194,
         "column_number": 20,
         "description": "call, bmp_get_word",
-        "feature": "[\"Call\",\"bmp_get_word\"]"
+        "feature": "[\"Call\",\"bmp_get_word\"]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L194"
       },
       {
         "level": 1,
@@ -579,7 +648,8 @@
         "line_number": 195,
         "column_number": 20,
         "description": "call, bmp_get_word",
-        "feature": "[\"Call\",\"bmp_get_word\"]"
+        "feature": "[\"Call\",\"bmp_get_word\"]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L195"
       },
       {
         "level": 1,
@@ -587,7 +657,8 @@
         "line_number": 196,
         "column_number": 28,
         "description": "call, png_get_uint_32",
-        "feature": "[\"Call\",\"png_get_uint_32\"]"
+        "feature": "[\"Call\",\"png_get_uint_32\"]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L196"
       },
       {
         "level": 0,
@@ -595,7 +666,8 @@
         "line_number": 56,
         "column_number": 4,
         "description": "store, &i, ((((()n$2 << 24) + (()n$4 << 16)) + (()n$6 << 8)) + ()n$8)",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"8\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"8\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/libpng/pngrutil.c#L56"
       },
       {
         "level": 0,
@@ -603,7 +675,8 @@
         "line_number": 61,
         "column_number": 4,
         "description": "store, &return, n$0",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/libpng/pngrutil.c#L61"
       },
       {
         "level": 0,
@@ -611,7 +684,8 @@
         "line_number": 196,
         "column_number": 9,
         "description": "store, &count, n$247",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L196"
       },
       {
         "level": 0,
@@ -619,7 +693,8 @@
         "line_number": 197,
         "column_number": 13,
         "description": "prune, !(n$242 == ()0)",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L197"
       },
       {
         "level": 0,
@@ -627,7 +702,8 @@
         "line_number": 240,
         "column_number": 13,
         "description": "store, n$182.strip_offsets_count, n$183",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L240"
       },
       {
         "level": 0,
@@ -635,7 +711,8 @@
         "line_number": 350,
         "column_number": 9,
         "description": "store, &count, n$50",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L350"
       },
       {
         "level": 0,
@@ -643,7 +720,8 @@
         "line_number": 351,
         "column_number": 13,
         "description": "prune, !(n$42 == ()0)",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L351"
       },
       {
         "level": 0,
@@ -651,7 +729,8 @@
         "line_number": 351,
         "column_number": 27,
         "description": "prune, !(n$43 > n$45)",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">\",[\"Var\"],[\"Var\"]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">\",[\"Var\"],[\"Var\"]]]]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L351"
       },
       {
         "level": 0,
@@ -659,7 +738,8 @@
         "line_number": 353,
         "column_number": 43,
         "description": "int_overflow, malloc, (n$40 * sizeof(t=;nbytes=8))",
-        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"*\",[\"Var\"],[\"Sizeof\",{\"desc\":[\"Tint\",[\"ILong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"*\",[\"Var\"],[\"Sizeof\",{\"desc\":[\"Tint\",[\"ILong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L353"
       }
     ],
     [
@@ -669,7 +749,8 @@
         "line_number": 192,
         "column_number": 13,
         "description": "input, fread",
-        "feature": "[\"Input\",\"fread\"]"
+        "feature": "[\"Input\",\"fread\"]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L192"
       },
       {
         "level": 1,
@@ -677,7 +758,8 @@
         "line_number": 194,
         "column_number": 20,
         "description": "call, bmp_get_word",
-        "feature": "[\"Call\",\"bmp_get_word\"]"
+        "feature": "[\"Call\",\"bmp_get_word\"]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L194"
       },
       {
         "level": 1,
@@ -685,7 +767,8 @@
         "line_number": 195,
         "column_number": 20,
         "description": "call, bmp_get_word",
-        "feature": "[\"Call\",\"bmp_get_word\"]"
+        "feature": "[\"Call\",\"bmp_get_word\"]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L195"
       },
       {
         "level": 1,
@@ -693,7 +776,8 @@
         "line_number": 196,
         "column_number": 28,
         "description": "call, bmp_get_dword",
-        "feature": "[\"Call\",\"bmp_get_dword\"]"
+        "feature": "[\"Call\",\"bmp_get_dword\"]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L196"
       },
       {
         "level": 0,
@@ -701,7 +785,8 @@
         "line_number": 102,
         "column_number": 4,
         "description": "store, &return, (((()n$1 + (()n$3 << 8)) + (()n$5 << 16)) + (()n$7 << 24))",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"24\"]]]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Const\",[\"Cint\",\"24\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/pngxrbmp.c#L102"
       },
       {
         "level": 0,
@@ -709,7 +794,8 @@
         "line_number": 196,
         "column_number": 9,
         "description": "store, &count, n$247",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L196"
       },
       {
         "level": 0,
@@ -717,7 +803,8 @@
         "line_number": 197,
         "column_number": 13,
         "description": "prune, !(n$242 == ()0)",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L197"
       },
       {
         "level": 0,
@@ -725,7 +812,8 @@
         "line_number": 240,
         "column_number": 13,
         "description": "store, n$182.strip_offsets_count, n$183",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L240"
       },
       {
         "level": 0,
@@ -733,7 +821,8 @@
         "line_number": 350,
         "column_number": 9,
         "description": "store, &count, n$50",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L350"
       },
       {
         "level": 0,
@@ -741,7 +830,8 @@
         "line_number": 351,
         "column_number": 13,
         "description": "prune, !(n$42 == ()0)",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L351"
       },
       {
         "level": 0,
@@ -749,7 +839,8 @@
         "line_number": 351,
         "column_number": 27,
         "description": "prune, !(n$43 > n$45)",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">\",[\"Var\"],[\"Var\"]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">\",[\"Var\"],[\"Var\"]]]]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L351"
       },
       {
         "level": 0,
@@ -757,7 +848,8 @@
         "line_number": 353,
         "column_number": 43,
         "description": "int_overflow, malloc, (n$40 * sizeof(t=;nbytes=8))",
-        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"*\",[\"Var\"],[\"Sizeof\",{\"desc\":[\"Tint\",[\"ILong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"*\",[\"Var\"],[\"Sizeof\",{\"desc\":[\"Tint\",[\"ILong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]",
+        "code": "https://github.com/prosyslab-warehouse/optipng-0.5.3/blob/master/lib/pngxtern/minitiff/tiffread.c#L353"
       }
     ]
   ],
@@ -771,5 +863,6 @@
       "cnum": 13,
       "enum": 0
     }
-  }
+  },
+  "repository": "https://github.com/prosyslab-warehouse/optipng-0.5.3"
 }

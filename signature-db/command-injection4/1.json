@@ -15,7 +15,8 @@
         "line_number": 7,
         "column_number": 1,
         "description": "input, main",
-        "feature": "[\"Input\",\"main\"]"
+        "feature": "[\"Input\",\"main\"]",
+        "code": "https://github.com/prosyslab-warehouse/owasp-tutorial-command-injection4/blob/master/tutorial/command-injection4.c#L7"
       },
       {
         "level": 0,
@@ -23,7 +24,8 @@
         "line_number": 18,
         "column_number": 3,
         "description": "library_call, strcat, &command, n$2",
-        "feature": "[\"LibraryCall\",\"strcat\",\"&command, n$2\"]"
+        "feature": "[\"LibraryCall\",\"strcat\",\"&command, n$2\"]",
+        "code": "https://github.com/prosyslab-warehouse/owasp-tutorial-command-injection4/blob/master/tutorial/command-injection4.c#L18"
       },
       {
         "level": 0,
@@ -31,7 +33,8 @@
         "line_number": 20,
         "column_number": 3,
         "description": "cmd_injection, system, &command",
-        "feature": "[\"CmdInjection\",\"system\",[\"Var\"]]"
+        "feature": "[\"CmdInjection\",\"system\",[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/owasp-tutorial-command-injection4/blob/master/tutorial/command-injection4.c#L20"
       }
     ]
   ],
@@ -45,5 +48,6 @@
       "cnum": 1,
       "enum": 0
     }
-  }
+  },
+  "repository": "https://github.com/prosyslab-warehouse/owasp-tutorial-command-injection4"
 }

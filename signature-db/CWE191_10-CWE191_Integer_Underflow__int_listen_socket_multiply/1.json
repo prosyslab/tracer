@@ -15,7 +15,8 @@
         "line_number": 94,
         "column_number": 30,
         "description": "input, recv",
-        "feature": "[\"Input\",\"recv\"]"
+        "feature": "[\"Input\",\"recv\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE191_Integer_Underflow/s02/CWE191_Integer_Underflow__int_listen_socket_multiply_10.c#L94"
       },
       {
         "level": 0,
@@ -23,7 +24,8 @@
         "line_number": 102,
         "column_number": 17,
         "description": "store, &data, n$20",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE191_Integer_Underflow/s02/CWE191_Integer_Underflow__int_listen_socket_multiply_10.c#L102"
       },
       {
         "level": 0,
@@ -31,7 +33,8 @@
         "line_number": 123,
         "column_number": 12,
         "description": "prune, (n$1 < 0)",
-        "feature": "[\"Prune\",[\"BinOp\",\"<\",[\"Var\"],[\"Const\",[\"Cint\",\"0\"]]]]"
+        "feature": "[\"Prune\",[\"BinOp\",\"<\",[\"Var\"],[\"Const\",[\"Cint\",\"0\"]]]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE191_Integer_Underflow/s02/CWE191_Integer_Underflow__int_listen_socket_multiply_10.c#L123"
       },
       {
         "level": 0,
@@ -39,7 +42,8 @@
         "line_number": 126,
         "column_number": 13,
         "description": "store, &result, (n$4 * 2)",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"*\",[\"Var\"],[\"Const\",[\"Cint\",\"2\"]]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"*\",[\"Var\"],[\"Const\",[\"Cint\",\"2\"]]]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE191_Integer_Underflow/s02/CWE191_Integer_Underflow__int_listen_socket_multiply_10.c#L126"
       },
       {
         "level": 0,
@@ -47,7 +51,8 @@
         "line_number": 127,
         "column_number": 13,
         "description": "int_overflow, printIntLine, n$2",
-        "feature": "[\"IntOverflow\",\"printIntLine\",[\"Var\"]]"
+        "feature": "[\"IntOverflow\",\"printIntLine\",[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE191_Integer_Underflow/s02/CWE191_Integer_Underflow__int_listen_socket_multiply_10.c#L127"
       }
     ]
   ],
@@ -61,5 +66,6 @@
       "cnum": 30,
       "enum": 0
     }
-  }
+  },
+  "repository": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE191_Integer_Underflow/s02/CWE191_Integer_Underflow__int_listen_socket_multiply_10.c"
 }

@@ -15,7 +15,8 @@
         "line_number": 41,
         "column_number": 17,
         "description": "input, fgets",
-        "feature": "[\"Input\",\"fgets\"]"
+        "feature": "[\"Input\",\"fgets\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_54a.c#L41"
       },
       {
         "level": 1,
@@ -23,7 +24,8 @@
         "line_number": 59,
         "column_number": 5,
         "description": "call, CWE134_Uncontrolled_Format_String__char_console_printf_54b_badSink",
-        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_console_printf_54b_badSink\"]"
+        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_console_printf_54b_badSink\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_54a.c#L59"
       },
       {
         "level": 1,
@@ -31,7 +33,8 @@
         "line_number": 31,
         "column_number": 5,
         "description": "call, CWE134_Uncontrolled_Format_String__char_console_printf_54c_badSink",
-        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_console_printf_54c_badSink\"]"
+        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_console_printf_54c_badSink\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_54b.c#L31"
       },
       {
         "level": 1,
@@ -39,7 +42,8 @@
         "line_number": 31,
         "column_number": 5,
         "description": "call, CWE134_Uncontrolled_Format_String__char_console_printf_54d_badSink",
-        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_console_printf_54d_badSink\"]"
+        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_console_printf_54d_badSink\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_54c.c#L31"
       },
       {
         "level": 1,
@@ -47,7 +51,8 @@
         "line_number": 31,
         "column_number": 5,
         "description": "call, CWE134_Uncontrolled_Format_String__char_console_printf_54e_badSink",
-        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_console_printf_54e_badSink\"]"
+        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_console_printf_54e_badSink\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_54d.c#L31"
       },
       {
         "level": 0,
@@ -55,7 +60,8 @@
         "line_number": 29,
         "column_number": 5,
         "description": "format_string, printf, n$0",
-        "feature": "[\"FormatString\",\"printf\",[\"Var\"]]"
+        "feature": "[\"FormatString\",\"printf\",[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_54e.c#L29"
       }
     ],
     [
@@ -65,7 +71,8 @@
         "line_number": 41,
         "column_number": 17,
         "description": "input, fgets",
-        "feature": "[\"Input\",\"fgets\"]"
+        "feature": "[\"Input\",\"fgets\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_54a.c#L41"
       },
       {
         "level": 0,
@@ -73,7 +80,8 @@
         "line_number": 46,
         "column_number": 36,
         "description": "prune, (n$11 == 10)",
-        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]"
+        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_54a.c#L46"
       },
       {
         "level": 1,
@@ -81,7 +89,8 @@
         "line_number": 59,
         "column_number": 5,
         "description": "call, CWE134_Uncontrolled_Format_String__char_console_printf_54b_badSink",
-        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_console_printf_54b_badSink\"]"
+        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_console_printf_54b_badSink\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_54a.c#L59"
       },
       {
         "level": 1,
@@ -89,7 +98,8 @@
         "line_number": 31,
         "column_number": 5,
         "description": "call, CWE134_Uncontrolled_Format_String__char_console_printf_54c_badSink",
-        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_console_printf_54c_badSink\"]"
+        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_console_printf_54c_badSink\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_54b.c#L31"
       },
       {
         "level": 1,
@@ -97,7 +107,8 @@
         "line_number": 31,
         "column_number": 5,
         "description": "call, CWE134_Uncontrolled_Format_String__char_console_printf_54d_badSink",
-        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_console_printf_54d_badSink\"]"
+        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_console_printf_54d_badSink\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_54c.c#L31"
       },
       {
         "level": 1,
@@ -105,7 +116,8 @@
         "line_number": 31,
         "column_number": 5,
         "description": "call, CWE134_Uncontrolled_Format_String__char_console_printf_54e_badSink",
-        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_console_printf_54e_badSink\"]"
+        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_console_printf_54e_badSink\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_54d.c#L31"
       },
       {
         "level": 0,
@@ -113,7 +125,8 @@
         "line_number": 29,
         "column_number": 5,
         "description": "format_string, printf, n$0",
-        "feature": "[\"FormatString\",\"printf\",[\"Var\"]]"
+        "feature": "[\"FormatString\",\"printf\",[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_54e.c#L29"
       }
     ],
     [
@@ -123,7 +136,8 @@
         "line_number": 41,
         "column_number": 17,
         "description": "input, fgets",
-        "feature": "[\"Input\",\"fgets\"]"
+        "feature": "[\"Input\",\"fgets\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_54a.c#L41"
       },
       {
         "level": 0,
@@ -131,7 +145,8 @@
         "line_number": 46,
         "column_number": 36,
         "description": "prune, !(n$11 == 10)",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_54a.c#L46"
       },
       {
         "level": 1,
@@ -139,7 +154,8 @@
         "line_number": 59,
         "column_number": 5,
         "description": "call, CWE134_Uncontrolled_Format_String__char_console_printf_54b_badSink",
-        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_console_printf_54b_badSink\"]"
+        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_console_printf_54b_badSink\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_54a.c#L59"
       },
       {
         "level": 1,
@@ -147,7 +163,8 @@
         "line_number": 31,
         "column_number": 5,
         "description": "call, CWE134_Uncontrolled_Format_String__char_console_printf_54c_badSink",
-        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_console_printf_54c_badSink\"]"
+        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_console_printf_54c_badSink\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_54b.c#L31"
       },
       {
         "level": 1,
@@ -155,7 +172,8 @@
         "line_number": 31,
         "column_number": 5,
         "description": "call, CWE134_Uncontrolled_Format_String__char_console_printf_54d_badSink",
-        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_console_printf_54d_badSink\"]"
+        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_console_printf_54d_badSink\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_54c.c#L31"
       },
       {
         "level": 1,
@@ -163,7 +181,8 @@
         "line_number": 31,
         "column_number": 5,
         "description": "call, CWE134_Uncontrolled_Format_String__char_console_printf_54e_badSink",
-        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_console_printf_54e_badSink\"]"
+        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_console_printf_54e_badSink\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_54d.c#L31"
       },
       {
         "level": 0,
@@ -171,7 +190,8 @@
         "line_number": 29,
         "column_number": 5,
         "description": "format_string, printf, n$0",
-        "feature": "[\"FormatString\",\"printf\",[\"Var\"]]"
+        "feature": "[\"FormatString\",\"printf\",[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_54e.c#L29"
       }
     ],
     [
@@ -181,7 +201,8 @@
         "line_number": 41,
         "column_number": 17,
         "description": "input, fgets",
-        "feature": "[\"Input\",\"fgets\"]"
+        "feature": "[\"Input\",\"fgets\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_54a.c#L41"
       },
       {
         "level": 0,
@@ -189,7 +210,8 @@
         "line_number": 45,
         "column_number": 27,
         "description": "library_call, strlen, n$16",
-        "feature": "[\"LibraryCall\",\"strlen\",\"n$16\"]"
+        "feature": "[\"LibraryCall\",\"strlen\",\"n$16\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_54a.c#L45"
       },
       {
         "level": 1,
@@ -197,7 +219,8 @@
         "line_number": 59,
         "column_number": 5,
         "description": "call, CWE134_Uncontrolled_Format_String__char_console_printf_54b_badSink",
-        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_console_printf_54b_badSink\"]"
+        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_console_printf_54b_badSink\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_54a.c#L59"
       },
       {
         "level": 1,
@@ -205,7 +228,8 @@
         "line_number": 31,
         "column_number": 5,
         "description": "call, CWE134_Uncontrolled_Format_String__char_console_printf_54c_badSink",
-        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_console_printf_54c_badSink\"]"
+        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_console_printf_54c_badSink\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_54b.c#L31"
       },
       {
         "level": 1,
@@ -213,7 +237,8 @@
         "line_number": 31,
         "column_number": 5,
         "description": "call, CWE134_Uncontrolled_Format_String__char_console_printf_54d_badSink",
-        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_console_printf_54d_badSink\"]"
+        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_console_printf_54d_badSink\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_54c.c#L31"
       },
       {
         "level": 1,
@@ -221,7 +246,8 @@
         "line_number": 31,
         "column_number": 5,
         "description": "call, CWE134_Uncontrolled_Format_String__char_console_printf_54e_badSink",
-        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_console_printf_54e_badSink\"]"
+        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_console_printf_54e_badSink\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_54d.c#L31"
       },
       {
         "level": 0,
@@ -229,7 +255,8 @@
         "line_number": 29,
         "column_number": 5,
         "description": "format_string, printf, n$0",
-        "feature": "[\"FormatString\",\"printf\",[\"Var\"]]"
+        "feature": "[\"FormatString\",\"printf\",[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_54e.c#L29"
       }
     ],
     [
@@ -239,7 +266,8 @@
         "line_number": 41,
         "column_number": 17,
         "description": "input, fgets",
-        "feature": "[\"Input\",\"fgets\"]"
+        "feature": "[\"Input\",\"fgets\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_54a.c#L41"
       },
       {
         "level": 0,
@@ -247,7 +275,8 @@
         "line_number": 45,
         "column_number": 27,
         "description": "library_call, strlen, n$16",
-        "feature": "[\"LibraryCall\",\"strlen\",\"n$16\"]"
+        "feature": "[\"LibraryCall\",\"strlen\",\"n$16\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_54a.c#L45"
       },
       {
         "level": 0,
@@ -255,7 +284,8 @@
         "line_number": 46,
         "column_number": 36,
         "description": "prune, (n$11 == 10)",
-        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]"
+        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_54a.c#L46"
       },
       {
         "level": 1,
@@ -263,7 +293,8 @@
         "line_number": 59,
         "column_number": 5,
         "description": "call, CWE134_Uncontrolled_Format_String__char_console_printf_54b_badSink",
-        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_console_printf_54b_badSink\"]"
+        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_console_printf_54b_badSink\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_54a.c#L59"
       },
       {
         "level": 1,
@@ -271,7 +302,8 @@
         "line_number": 31,
         "column_number": 5,
         "description": "call, CWE134_Uncontrolled_Format_String__char_console_printf_54c_badSink",
-        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_console_printf_54c_badSink\"]"
+        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_console_printf_54c_badSink\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_54b.c#L31"
       },
       {
         "level": 1,
@@ -279,7 +311,8 @@
         "line_number": 31,
         "column_number": 5,
         "description": "call, CWE134_Uncontrolled_Format_String__char_console_printf_54d_badSink",
-        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_console_printf_54d_badSink\"]"
+        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_console_printf_54d_badSink\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_54c.c#L31"
       },
       {
         "level": 1,
@@ -287,7 +320,8 @@
         "line_number": 31,
         "column_number": 5,
         "description": "call, CWE134_Uncontrolled_Format_String__char_console_printf_54e_badSink",
-        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_console_printf_54e_badSink\"]"
+        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_console_printf_54e_badSink\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_54d.c#L31"
       },
       {
         "level": 0,
@@ -295,7 +329,8 @@
         "line_number": 29,
         "column_number": 5,
         "description": "format_string, printf, n$0",
-        "feature": "[\"FormatString\",\"printf\",[\"Var\"]]"
+        "feature": "[\"FormatString\",\"printf\",[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_54e.c#L29"
       }
     ],
     [
@@ -305,7 +340,8 @@
         "line_number": 41,
         "column_number": 17,
         "description": "input, fgets",
-        "feature": "[\"Input\",\"fgets\"]"
+        "feature": "[\"Input\",\"fgets\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_54a.c#L41"
       },
       {
         "level": 0,
@@ -313,7 +349,8 @@
         "line_number": 45,
         "column_number": 27,
         "description": "library_call, strlen, n$16",
-        "feature": "[\"LibraryCall\",\"strlen\",\"n$16\"]"
+        "feature": "[\"LibraryCall\",\"strlen\",\"n$16\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_54a.c#L45"
       },
       {
         "level": 0,
@@ -321,7 +358,8 @@
         "line_number": 46,
         "column_number": 36,
         "description": "prune, !(n$11 == 10)",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_54a.c#L46"
       },
       {
         "level": 1,
@@ -329,7 +367,8 @@
         "line_number": 59,
         "column_number": 5,
         "description": "call, CWE134_Uncontrolled_Format_String__char_console_printf_54b_badSink",
-        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_console_printf_54b_badSink\"]"
+        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_console_printf_54b_badSink\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_54a.c#L59"
       },
       {
         "level": 1,
@@ -337,7 +376,8 @@
         "line_number": 31,
         "column_number": 5,
         "description": "call, CWE134_Uncontrolled_Format_String__char_console_printf_54c_badSink",
-        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_console_printf_54c_badSink\"]"
+        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_console_printf_54c_badSink\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_54b.c#L31"
       },
       {
         "level": 1,
@@ -345,7 +385,8 @@
         "line_number": 31,
         "column_number": 5,
         "description": "call, CWE134_Uncontrolled_Format_String__char_console_printf_54d_badSink",
-        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_console_printf_54d_badSink\"]"
+        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_console_printf_54d_badSink\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_54c.c#L31"
       },
       {
         "level": 1,
@@ -353,7 +394,8 @@
         "line_number": 31,
         "column_number": 5,
         "description": "call, CWE134_Uncontrolled_Format_String__char_console_printf_54e_badSink",
-        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_console_printf_54e_badSink\"]"
+        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_console_printf_54e_badSink\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_54d.c#L31"
       },
       {
         "level": 0,
@@ -361,7 +403,8 @@
         "line_number": 29,
         "column_number": 5,
         "description": "format_string, printf, n$0",
-        "feature": "[\"FormatString\",\"printf\",[\"Var\"]]"
+        "feature": "[\"FormatString\",\"printf\",[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_54e.c#L29"
       }
     ]
   ],
@@ -375,5 +418,6 @@
       "cnum": 17,
       "enum": 0
     }
-  }
+  },
+  "repository": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_console_printf_54e.c"
 }

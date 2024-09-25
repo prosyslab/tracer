@@ -15,7 +15,8 @@
         "line_number": 34,
         "column_number": 5,
         "description": "input, fscanf",
-        "feature": "[\"Input\",\"fscanf\"]"
+        "feature": "[\"Input\",\"fscanf\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s05/CWE190_Integer_Overflow__unsigned_int_fscanf_square_65a.c#L34"
       },
       {
         "level": 1,
@@ -23,7 +24,8 @@
         "line_number": 36,
         "column_number": 5,
         "description": "call, CWE190_Integer_Overflow__unsigned_int_fscanf_square_65b_badSink",
-        "feature": "[\"Call\",\"CWE190_Integer_Overflow__unsigned_int_fscanf_square_65b_badSink\"]"
+        "feature": "[\"Call\",\"CWE190_Integer_Overflow__unsigned_int_fscanf_square_65b_badSink\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s05/CWE190_Integer_Overflow__unsigned_int_fscanf_square_65a.c#L36"
       },
       {
         "level": 0,
@@ -31,7 +33,8 @@
         "line_number": 28,
         "column_number": 9,
         "description": "store, &result, (n$2 * n$3)",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"*\",[\"Var\"],[\"Var\"]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"*\",[\"Var\"],[\"Var\"]]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s05/CWE190_Integer_Overflow__unsigned_int_fscanf_square_65b.c#L28"
       },
       {
         "level": 0,
@@ -39,7 +42,8 @@
         "line_number": 29,
         "column_number": 9,
         "description": "int_overflow, printUnsignedLine, n$0",
-        "feature": "[\"IntOverflow\",\"printUnsignedLine\",[\"Var\"]]"
+        "feature": "[\"IntOverflow\",\"printUnsignedLine\",[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s05/CWE190_Integer_Overflow__unsigned_int_fscanf_square_65b.c#L29"
       }
     ]
   ],
@@ -53,5 +57,6 @@
       "cnum": 5,
       "enum": 0
     }
-  }
+  },
+  "repository": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s05/CWE190_Integer_Overflow__unsigned_int_fscanf_square_65b.c"
 }

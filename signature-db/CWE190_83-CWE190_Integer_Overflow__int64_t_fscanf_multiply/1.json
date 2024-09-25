@@ -15,7 +15,8 @@
         "line_number": 29,
         "column_number": 5,
         "description": "input, fscanf",
-        "feature": "[\"Input\",\"fscanf\"]"
+        "feature": "[\"Input\",\"fscanf\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s01/CWE190_Integer_Overflow__int64_t_fscanf_multiply_83_bad.cpp#L29"
       },
       {
         "level": 1,
@@ -23,7 +24,8 @@
         "line_number": 31,
         "column_number": 1,
         "description": "call, CWE190_Integer_Overflow__int64_t_fscanf_multiply_83::CWE190_Integer_Overflow__int64_t_fscanf_multiply_83_bad::~CWE190_Integer_Overflow__int64_t_fscanf_multiply_83_bad",
-        "feature": "[\"Call\",\"CWE190_Integer_Overflow__int64_t_fscanf_multiply_83::CWE190_Integer_Overflow__int64_t_fscanf_multiply_83_bad::~CWE190_Integer_Overflow__int64_t_fscanf_multiply_83_bad\"]"
+        "feature": "[\"Call\",\"CWE190_Integer_Overflow__int64_t_fscanf_multiply_83::CWE190_Integer_Overflow__int64_t_fscanf_multiply_83_bad::~CWE190_Integer_Overflow__int64_t_fscanf_multiply_83_bad\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s01/CWE190_Integer_Overflow__int64_t_fscanf_multiply_83a.cpp#L31"
       },
       {
         "level": 1,
@@ -31,7 +33,8 @@
         "line_number": 40,
         "column_number": 1,
         "description": "call, CWE190_Integer_Overflow__int64_t_fscanf_multiply_83::CWE190_Integer_Overflow__int64_t_fscanf_multiply_83_bad::__infer_inner_destructor_~CWE190_Integer_Overflow__int64_t_fscanf_multiply_83_bad",
-        "feature": "[\"Call\",\"CWE190_Integer_Overflow__int64_t_fscanf_multiply_83::CWE190_Integer_Overflow__int64_t_fscanf_multiply_83_bad::__infer_inner_destructor_~CWE190_Integer_Overflow__int64_t_fscanf_multiply_83_bad\"]"
+        "feature": "[\"Call\",\"CWE190_Integer_Overflow__int64_t_fscanf_multiply_83::CWE190_Integer_Overflow__int64_t_fscanf_multiply_83_bad::__infer_inner_destructor_~CWE190_Integer_Overflow__int64_t_fscanf_multiply_83_bad\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s01/CWE190_Integer_Overflow__int64_t_fscanf_multiply_83_bad.cpp#L40"
       },
       {
         "level": 0,
@@ -39,7 +42,8 @@
         "line_number": 34,
         "column_number": 8,
         "description": "prune, (n$3 > 0)",
-        "feature": "[\"Prune\",[\"BinOp\",\">\",[\"Var\"],[\"Const\",[\"Cint\",\"0\"]]]]"
+        "feature": "[\"Prune\",[\"BinOp\",\">\",[\"Var\"],[\"Const\",[\"Cint\",\"0\"]]]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s01/CWE190_Integer_Overflow__int64_t_fscanf_multiply_83_bad.cpp#L34"
       },
       {
         "level": 0,
@@ -47,7 +51,8 @@
         "line_number": 37,
         "column_number": 9,
         "description": "store, &result, (n$7 * 2)",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"*\",[\"Var\"],[\"Const\",[\"Cint\",\"2\"]]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"*\",[\"Var\"],[\"Const\",[\"Cint\",\"2\"]]]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s01/CWE190_Integer_Overflow__int64_t_fscanf_multiply_83_bad.cpp#L37"
       },
       {
         "level": 0,
@@ -55,7 +60,8 @@
         "line_number": 38,
         "column_number": 9,
         "description": "int_overflow, printLongLongLine, n$4",
-        "feature": "[\"IntOverflow\",\"printLongLongLine\",[\"Var\"]]"
+        "feature": "[\"IntOverflow\",\"printLongLongLine\",[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s01/CWE190_Integer_Overflow__int64_t_fscanf_multiply_83_bad.cpp#L38"
       }
     ]
   ],
@@ -69,5 +75,6 @@
       "cnum": 5,
       "enum": 0
     }
-  }
+  },
+  "repository": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s01/CWE190_Integer_Overflow__int64_t_fscanf_multiply_83_bad.cpp"
 }

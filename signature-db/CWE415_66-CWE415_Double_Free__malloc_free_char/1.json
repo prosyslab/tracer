@@ -15,7 +15,8 @@
         "line_number": 33,
         "column_number": 20,
         "description": "allocate, malloc",
-        "feature": "[\"Allocate\",\"malloc\"]"
+        "feature": "[\"Allocate\",\"malloc\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_char_66a.c#L33"
       },
       {
         "level": 0,
@@ -23,7 +24,8 @@
         "line_number": 36,
         "column_number": 5,
         "description": "free, free, n$2",
-        "feature": "[\"Free\",\"free\",[\"Var\"]]"
+        "feature": "[\"Free\",\"free\",[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_char_66a.c#L36"
       },
       {
         "level": 1,
@@ -31,7 +33,8 @@
         "line_number": 39,
         "column_number": 5,
         "description": "call, CWE415_Double_Free__malloc_free_char_66b_badSink",
-        "feature": "[\"Call\",\"CWE415_Double_Free__malloc_free_char_66b_badSink\"]"
+        "feature": "[\"Call\",\"CWE415_Double_Free__malloc_free_char_66b_badSink\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_char_66a.c#L39"
       },
       {
         "level": 0,
@@ -39,11 +42,13 @@
         "line_number": 29,
         "column_number": 5,
         "description": "free, free, n$0",
-        "feature": "[\"Free\",\"free\",[\"Var\"]]"
+        "feature": "[\"Free\",\"free\",[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_char_66b.c#L29"
       }
     ]
   ],
   "key": "CWE415_Double_Free__malloc_free_char_66a.c|CWE415_Double_Free__malloc_free_char_66_bad|API_MISUSE",
   "hash": "0b2bc85616418e71d4ef3d3b9b36da48",
-  "bug_type_hum": "Api Misuse"
+  "bug_type_hum": "Api Misuse",
+  "repository": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_char_66b.c"
 }

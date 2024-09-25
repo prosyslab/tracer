@@ -15,7 +15,8 @@
         "line_number": 4963,
         "column_number": 7,
         "description": "input, readdir",
-        "feature": "[\"Input\",\"readdir\"]"
+        "feature": "[\"Input\",\"readdir\"]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4963"
       },
       {
         "level": 1,
@@ -23,7 +24,8 @@
         "line_number": 4993,
         "column_number": 12,
         "description": "call, metafy",
-        "feature": "[\"Call\",\"metafy\"]"
+        "feature": "[\"Call\",\"metafy\"]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4993"
       },
       {
         "level": 1,
@@ -31,7 +33,8 @@
         "line_number": 4622,
         "column_number": 12,
         "description": "call, hrealloc",
-        "feature": "[\"Call\",\"hrealloc\"]"
+        "feature": "[\"Call\",\"hrealloc\"]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4622"
       },
       {
         "level": 0,
@@ -39,7 +42,8 @@
         "line_number": 700,
         "column_number": 18,
         "description": "prune, n$237",
-        "feature": "[\"Prune\",[\"Var\"]]"
+        "feature": "[\"Prune\",[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/mem.c#L700"
       },
       {
         "level": 0,
@@ -47,7 +51,8 @@
         "line_number": 726,
         "column_number": 9,
         "description": "prune, ((n$155 + n$156) < ((()n$157 + sizeof(t=;nbytes=32)) + n$159))",
-        "feature": "[\"Prune\",[\"BinOp\",\"<\",[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]],[\"Var\"]]]]"
+        "feature": "[\"Prune\",[\"BinOp\",\"<\",[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]],[\"Var\"]]]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/mem.c#L726"
       },
       {
         "level": 0,
@@ -55,7 +60,8 @@
         "line_number": 756,
         "column_number": 13,
         "description": "store, &return, n$190",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/mem.c#L756"
       },
       {
         "level": 0,
@@ -63,7 +69,8 @@
         "line_number": 4622,
         "column_number": 6,
         "description": "store, &buf, ()n$48",
-        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4622"
       },
       {
         "level": 0,
@@ -71,7 +78,8 @@
         "line_number": 4661,
         "column_number": 5,
         "description": "store, &return, n$0",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4661"
       },
       {
         "level": 0,
@@ -79,7 +87,8 @@
         "line_number": 4993,
         "column_number": 5,
         "description": "store, &return, n$1",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4993"
       },
       {
         "level": 0,
@@ -87,7 +96,8 @@
         "line_number": 1663,
         "column_number": 11,
         "description": "store, &fn, n$43",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L1663"
       },
       {
         "level": 0,
@@ -95,7 +105,8 @@
         "line_number": 1665,
         "column_number": 4,
         "description": "buffer_overflow, sprintf, n$55",
-        "feature": "[\"BufferOverflow\",\"sprintf\",[\"Var\"]]"
+        "feature": "[\"BufferOverflow\",\"sprintf\",[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L1665"
       }
     ],
     [
@@ -105,7 +116,8 @@
         "line_number": 4963,
         "column_number": 7,
         "description": "input, readdir",
-        "feature": "[\"Input\",\"readdir\"]"
+        "feature": "[\"Input\",\"readdir\"]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4963"
       },
       {
         "level": 1,
@@ -113,7 +125,8 @@
         "line_number": 4993,
         "column_number": 12,
         "description": "call, metafy",
-        "feature": "[\"Call\",\"metafy\"]"
+        "feature": "[\"Call\",\"metafy\"]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4993"
       },
       {
         "level": 1,
@@ -121,7 +134,8 @@
         "line_number": 4622,
         "column_number": 12,
         "description": "call, hrealloc",
-        "feature": "[\"Call\",\"hrealloc\"]"
+        "feature": "[\"Call\",\"hrealloc\"]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4622"
       },
       {
         "level": 0,
@@ -129,7 +143,8 @@
         "line_number": 700,
         "column_number": 18,
         "description": "prune, n$237",
-        "feature": "[\"Prune\",[\"Var\"]]"
+        "feature": "[\"Prune\",[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/mem.c#L700"
       },
       {
         "level": 0,
@@ -137,7 +152,8 @@
         "line_number": 726,
         "column_number": 9,
         "description": "prune, !((n$155 + n$156) < ((()n$157 + sizeof(t=;nbytes=32)) + n$159))",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]],[\"Var\"]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]],[\"Var\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/mem.c#L726"
       },
       {
         "level": 0,
@@ -145,7 +161,8 @@
         "line_number": 770,
         "column_number": 9,
         "description": "prune, !(n$67 == (()n$68 + sizeof(t=;nbytes=32)))",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/mem.c#L770"
       },
       {
         "level": 0,
@@ -153,7 +170,8 @@
         "line_number": 867,
         "column_number": 2,
         "description": "store, &return, n$6",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/mem.c#L867"
       },
       {
         "level": 0,
@@ -161,7 +179,8 @@
         "line_number": 4622,
         "column_number": 6,
         "description": "store, &buf, ()n$48",
-        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4622"
       },
       {
         "level": 0,
@@ -169,7 +188,8 @@
         "line_number": 4661,
         "column_number": 5,
         "description": "store, &return, n$0",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4661"
       },
       {
         "level": 0,
@@ -177,7 +197,8 @@
         "line_number": 4993,
         "column_number": 5,
         "description": "store, &return, n$1",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4993"
       },
       {
         "level": 0,
@@ -185,7 +206,8 @@
         "line_number": 1663,
         "column_number": 11,
         "description": "store, &fn, n$43",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L1663"
       },
       {
         "level": 0,
@@ -193,7 +215,8 @@
         "line_number": 1665,
         "column_number": 4,
         "description": "buffer_overflow, sprintf, n$55",
-        "feature": "[\"BufferOverflow\",\"sprintf\",[\"Var\"]]"
+        "feature": "[\"BufferOverflow\",\"sprintf\",[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L1665"
       }
     ],
     [
@@ -203,7 +226,8 @@
         "line_number": 4963,
         "column_number": 7,
         "description": "input, readdir",
-        "feature": "[\"Input\",\"readdir\"]"
+        "feature": "[\"Input\",\"readdir\"]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4963"
       },
       {
         "level": 1,
@@ -211,7 +235,8 @@
         "line_number": 4993,
         "column_number": 12,
         "description": "call, metafy",
-        "feature": "[\"Call\",\"metafy\"]"
+        "feature": "[\"Call\",\"metafy\"]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4993"
       },
       {
         "level": 1,
@@ -219,7 +244,8 @@
         "line_number": 4622,
         "column_number": 12,
         "description": "call, hrealloc",
-        "feature": "[\"Call\",\"hrealloc\"]"
+        "feature": "[\"Call\",\"hrealloc\"]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4622"
       },
       {
         "level": 0,
@@ -227,7 +253,8 @@
         "line_number": 700,
         "column_number": 18,
         "description": "prune, n$237",
-        "feature": "[\"Prune\",[\"Var\"]]"
+        "feature": "[\"Prune\",[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/mem.c#L700"
       },
       {
         "level": 0,
@@ -235,7 +262,8 @@
         "line_number": 711,
         "column_number": 6,
         "description": "prune, (n$225 >= (()n$226 + sizeof(t=;nbytes=32)))",
-        "feature": "[\"Prune\",[\"BinOp\",\">=\",[\"Var\"],[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]"
+        "feature": "[\"Prune\",[\"BinOp\",\">=\",[\"Var\"],[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/mem.c#L711"
       },
       {
         "level": 0,
@@ -243,7 +271,8 @@
         "line_number": 711,
         "column_number": 23,
         "description": "prune, (n$227 < ((()n$228 + sizeof(t=;nbytes=32)) + (n$230 - sizeof(t=;nbytes=32))))",
-        "feature": "[\"Prune\",[\"BinOp\",\"<\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]],[\"BinOp\",\"-\",[\"Var\"],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]]"
+        "feature": "[\"Prune\",[\"BinOp\",\"<\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]],[\"BinOp\",\"-\",[\"Var\"],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/mem.c#L711"
       },
       {
         "level": 0,
@@ -251,7 +280,8 @@
         "line_number": 726,
         "column_number": 9,
         "description": "prune, ((n$155 + n$156) < ((()n$157 + sizeof(t=;nbytes=32)) + n$159))",
-        "feature": "[\"Prune\",[\"BinOp\",\"<\",[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]],[\"Var\"]]]]"
+        "feature": "[\"Prune\",[\"BinOp\",\"<\",[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]],[\"Var\"]]]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/mem.c#L726"
       },
       {
         "level": 0,
@@ -259,7 +289,8 @@
         "line_number": 756,
         "column_number": 13,
         "description": "store, &return, n$190",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/mem.c#L756"
       },
       {
         "level": 0,
@@ -267,7 +298,8 @@
         "line_number": 4622,
         "column_number": 6,
         "description": "store, &buf, ()n$48",
-        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4622"
       },
       {
         "level": 0,
@@ -275,7 +307,8 @@
         "line_number": 4661,
         "column_number": 5,
         "description": "store, &return, n$0",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4661"
       },
       {
         "level": 0,
@@ -283,7 +316,8 @@
         "line_number": 4993,
         "column_number": 5,
         "description": "store, &return, n$1",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4993"
       },
       {
         "level": 0,
@@ -291,7 +325,8 @@
         "line_number": 1663,
         "column_number": 11,
         "description": "store, &fn, n$43",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L1663"
       },
       {
         "level": 0,
@@ -299,7 +334,8 @@
         "line_number": 1665,
         "column_number": 4,
         "description": "buffer_overflow, sprintf, n$55",
-        "feature": "[\"BufferOverflow\",\"sprintf\",[\"Var\"]]"
+        "feature": "[\"BufferOverflow\",\"sprintf\",[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L1665"
       }
     ],
     [
@@ -309,7 +345,8 @@
         "line_number": 4963,
         "column_number": 7,
         "description": "input, readdir",
-        "feature": "[\"Input\",\"readdir\"]"
+        "feature": "[\"Input\",\"readdir\"]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4963"
       },
       {
         "level": 1,
@@ -317,7 +354,8 @@
         "line_number": 4993,
         "column_number": 12,
         "description": "call, metafy",
-        "feature": "[\"Call\",\"metafy\"]"
+        "feature": "[\"Call\",\"metafy\"]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4993"
       },
       {
         "level": 1,
@@ -325,7 +363,8 @@
         "line_number": 4622,
         "column_number": 12,
         "description": "call, hrealloc",
-        "feature": "[\"Call\",\"hrealloc\"]"
+        "feature": "[\"Call\",\"hrealloc\"]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4622"
       },
       {
         "level": 0,
@@ -333,7 +372,8 @@
         "line_number": 700,
         "column_number": 18,
         "description": "prune, n$237",
-        "feature": "[\"Prune\",[\"Var\"]]"
+        "feature": "[\"Prune\",[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/mem.c#L700"
       },
       {
         "level": 0,
@@ -341,7 +381,8 @@
         "line_number": 711,
         "column_number": 6,
         "description": "prune, (n$225 >= (()n$226 + sizeof(t=;nbytes=32)))",
-        "feature": "[\"Prune\",[\"BinOp\",\">=\",[\"Var\"],[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]"
+        "feature": "[\"Prune\",[\"BinOp\",\">=\",[\"Var\"],[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/mem.c#L711"
       },
       {
         "level": 0,
@@ -349,7 +390,8 @@
         "line_number": 711,
         "column_number": 23,
         "description": "prune, (n$227 < ((()n$228 + sizeof(t=;nbytes=32)) + (n$230 - sizeof(t=;nbytes=32))))",
-        "feature": "[\"Prune\",[\"BinOp\",\"<\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]],[\"BinOp\",\"-\",[\"Var\"],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]]"
+        "feature": "[\"Prune\",[\"BinOp\",\"<\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]],[\"BinOp\",\"-\",[\"Var\"],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/mem.c#L711"
       },
       {
         "level": 0,
@@ -357,7 +399,8 @@
         "line_number": 726,
         "column_number": 9,
         "description": "prune, !((n$155 + n$156) < ((()n$157 + sizeof(t=;nbytes=32)) + n$159))",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]],[\"Var\"]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]],[\"Var\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/mem.c#L726"
       },
       {
         "level": 0,
@@ -365,7 +408,8 @@
         "line_number": 770,
         "column_number": 9,
         "description": "prune, !(n$67 == (()n$68 + sizeof(t=;nbytes=32)))",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/mem.c#L770"
       },
       {
         "level": 0,
@@ -373,7 +417,8 @@
         "line_number": 867,
         "column_number": 2,
         "description": "store, &return, n$6",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/mem.c#L867"
       },
       {
         "level": 0,
@@ -381,7 +426,8 @@
         "line_number": 4622,
         "column_number": 6,
         "description": "store, &buf, ()n$48",
-        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4622"
       },
       {
         "level": 0,
@@ -389,7 +435,8 @@
         "line_number": 4661,
         "column_number": 5,
         "description": "store, &return, n$0",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4661"
       },
       {
         "level": 0,
@@ -397,7 +444,8 @@
         "line_number": 4993,
         "column_number": 5,
         "description": "store, &return, n$1",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4993"
       },
       {
         "level": 0,
@@ -405,7 +453,8 @@
         "line_number": 1663,
         "column_number": 11,
         "description": "store, &fn, n$43",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L1663"
       },
       {
         "level": 0,
@@ -413,7 +462,8 @@
         "line_number": 1665,
         "column_number": 4,
         "description": "buffer_overflow, sprintf, n$55",
-        "feature": "[\"BufferOverflow\",\"sprintf\",[\"Var\"]]"
+        "feature": "[\"BufferOverflow\",\"sprintf\",[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L1665"
       }
     ],
     [
@@ -423,7 +473,8 @@
         "line_number": 4963,
         "column_number": 7,
         "description": "input, readdir",
-        "feature": "[\"Input\",\"readdir\"]"
+        "feature": "[\"Input\",\"readdir\"]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4963"
       },
       {
         "level": 1,
@@ -431,7 +482,8 @@
         "line_number": 4993,
         "column_number": 12,
         "description": "call, metafy",
-        "feature": "[\"Call\",\"metafy\"]"
+        "feature": "[\"Call\",\"metafy\"]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4993"
       },
       {
         "level": 1,
@@ -439,7 +491,8 @@
         "line_number": 4622,
         "column_number": 12,
         "description": "call, hrealloc",
-        "feature": "[\"Call\",\"hrealloc\"]"
+        "feature": "[\"Call\",\"hrealloc\"]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4622"
       },
       {
         "level": 0,
@@ -447,7 +500,8 @@
         "line_number": 700,
         "column_number": 18,
         "description": "prune, n$237",
-        "feature": "[\"Prune\",[\"Var\"]]"
+        "feature": "[\"Prune\",[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/mem.c#L700"
       },
       {
         "level": 0,
@@ -455,7 +509,8 @@
         "line_number": 711,
         "column_number": 6,
         "description": "prune, (n$225 >= (()n$226 + sizeof(t=;nbytes=32)))",
-        "feature": "[\"Prune\",[\"BinOp\",\">=\",[\"Var\"],[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]"
+        "feature": "[\"Prune\",[\"BinOp\",\">=\",[\"Var\"],[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/mem.c#L711"
       },
       {
         "level": 0,
@@ -463,7 +518,8 @@
         "line_number": 711,
         "column_number": 23,
         "description": "prune, !(n$227 < ((()n$228 + sizeof(t=;nbytes=32)) + (n$230 - sizeof(t=;nbytes=32))))",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]],[\"BinOp\",\"-\",[\"Var\"],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]],[\"BinOp\",\"-\",[\"Var\"],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/mem.c#L711"
       },
       {
         "level": 0,
@@ -471,7 +527,8 @@
         "line_number": 726,
         "column_number": 9,
         "description": "prune, ((n$155 + n$156) < ((()n$157 + sizeof(t=;nbytes=32)) + n$159))",
-        "feature": "[\"Prune\",[\"BinOp\",\"<\",[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]],[\"Var\"]]]]"
+        "feature": "[\"Prune\",[\"BinOp\",\"<\",[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]],[\"Var\"]]]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/mem.c#L726"
       },
       {
         "level": 0,
@@ -479,7 +536,8 @@
         "line_number": 756,
         "column_number": 13,
         "description": "store, &return, n$190",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/mem.c#L756"
       },
       {
         "level": 0,
@@ -487,7 +545,8 @@
         "line_number": 4622,
         "column_number": 6,
         "description": "store, &buf, ()n$48",
-        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4622"
       },
       {
         "level": 0,
@@ -495,7 +554,8 @@
         "line_number": 4661,
         "column_number": 5,
         "description": "store, &return, n$0",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4661"
       },
       {
         "level": 0,
@@ -503,7 +563,8 @@
         "line_number": 4993,
         "column_number": 5,
         "description": "store, &return, n$1",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4993"
       },
       {
         "level": 0,
@@ -511,7 +572,8 @@
         "line_number": 1663,
         "column_number": 11,
         "description": "store, &fn, n$43",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L1663"
       },
       {
         "level": 0,
@@ -519,7 +581,8 @@
         "line_number": 1665,
         "column_number": 4,
         "description": "buffer_overflow, sprintf, n$55",
-        "feature": "[\"BufferOverflow\",\"sprintf\",[\"Var\"]]"
+        "feature": "[\"BufferOverflow\",\"sprintf\",[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L1665"
       }
     ],
     [
@@ -529,7 +592,8 @@
         "line_number": 4963,
         "column_number": 7,
         "description": "input, readdir",
-        "feature": "[\"Input\",\"readdir\"]"
+        "feature": "[\"Input\",\"readdir\"]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4963"
       },
       {
         "level": 1,
@@ -537,7 +601,8 @@
         "line_number": 4993,
         "column_number": 12,
         "description": "call, metafy",
-        "feature": "[\"Call\",\"metafy\"]"
+        "feature": "[\"Call\",\"metafy\"]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4993"
       },
       {
         "level": 1,
@@ -545,7 +610,8 @@
         "line_number": 4622,
         "column_number": 12,
         "description": "call, hrealloc",
-        "feature": "[\"Call\",\"hrealloc\"]"
+        "feature": "[\"Call\",\"hrealloc\"]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4622"
       },
       {
         "level": 0,
@@ -553,7 +619,8 @@
         "line_number": 700,
         "column_number": 18,
         "description": "prune, n$237",
-        "feature": "[\"Prune\",[\"Var\"]]"
+        "feature": "[\"Prune\",[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/mem.c#L700"
       },
       {
         "level": 0,
@@ -561,7 +628,8 @@
         "line_number": 711,
         "column_number": 6,
         "description": "prune, (n$225 >= (()n$226 + sizeof(t=;nbytes=32)))",
-        "feature": "[\"Prune\",[\"BinOp\",\">=\",[\"Var\"],[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]"
+        "feature": "[\"Prune\",[\"BinOp\",\">=\",[\"Var\"],[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/mem.c#L711"
       },
       {
         "level": 0,
@@ -569,7 +637,8 @@
         "line_number": 711,
         "column_number": 23,
         "description": "prune, !(n$227 < ((()n$228 + sizeof(t=;nbytes=32)) + (n$230 - sizeof(t=;nbytes=32))))",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]],[\"BinOp\",\"-\",[\"Var\"],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]],[\"BinOp\",\"-\",[\"Var\"],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/mem.c#L711"
       },
       {
         "level": 0,
@@ -577,7 +646,8 @@
         "line_number": 726,
         "column_number": 9,
         "description": "prune, !((n$155 + n$156) < ((()n$157 + sizeof(t=;nbytes=32)) + n$159))",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]],[\"Var\"]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]],[\"Var\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/mem.c#L726"
       },
       {
         "level": 0,
@@ -585,7 +655,8 @@
         "line_number": 770,
         "column_number": 9,
         "description": "prune, !(n$67 == (()n$68 + sizeof(t=;nbytes=32)))",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/mem.c#L770"
       },
       {
         "level": 0,
@@ -593,7 +664,8 @@
         "line_number": 867,
         "column_number": 2,
         "description": "store, &return, n$6",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/mem.c#L867"
       },
       {
         "level": 0,
@@ -601,7 +673,8 @@
         "line_number": 4622,
         "column_number": 6,
         "description": "store, &buf, ()n$48",
-        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4622"
       },
       {
         "level": 0,
@@ -609,7 +682,8 @@
         "line_number": 4661,
         "column_number": 5,
         "description": "store, &return, n$0",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4661"
       },
       {
         "level": 0,
@@ -617,7 +691,8 @@
         "line_number": 4993,
         "column_number": 5,
         "description": "store, &return, n$1",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4993"
       },
       {
         "level": 0,
@@ -625,7 +700,8 @@
         "line_number": 1663,
         "column_number": 11,
         "description": "store, &fn, n$43",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L1663"
       },
       {
         "level": 0,
@@ -633,7 +709,8 @@
         "line_number": 1665,
         "column_number": 4,
         "description": "buffer_overflow, sprintf, n$55",
-        "feature": "[\"BufferOverflow\",\"sprintf\",[\"Var\"]]"
+        "feature": "[\"BufferOverflow\",\"sprintf\",[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L1665"
       }
     ],
     [
@@ -643,7 +720,8 @@
         "line_number": 4963,
         "column_number": 7,
         "description": "input, readdir",
-        "feature": "[\"Input\",\"readdir\"]"
+        "feature": "[\"Input\",\"readdir\"]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4963"
       },
       {
         "level": 1,
@@ -651,7 +729,8 @@
         "line_number": 4993,
         "column_number": 12,
         "description": "call, metafy",
-        "feature": "[\"Call\",\"metafy\"]"
+        "feature": "[\"Call\",\"metafy\"]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4993"
       },
       {
         "level": 1,
@@ -659,7 +738,8 @@
         "line_number": 4622,
         "column_number": 12,
         "description": "call, hrealloc",
-        "feature": "[\"Call\",\"hrealloc\"]"
+        "feature": "[\"Call\",\"hrealloc\"]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4622"
       },
       {
         "level": 0,
@@ -667,7 +747,8 @@
         "line_number": 700,
         "column_number": 18,
         "description": "prune, n$237",
-        "feature": "[\"Prune\",[\"Var\"]]"
+        "feature": "[\"Prune\",[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/mem.c#L700"
       },
       {
         "level": 0,
@@ -675,7 +756,8 @@
         "line_number": 711,
         "column_number": 6,
         "description": "prune, (n$225 >= (()n$226 + sizeof(t=;nbytes=32)))",
-        "feature": "[\"Prune\",[\"BinOp\",\">=\",[\"Var\"],[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]"
+        "feature": "[\"Prune\",[\"BinOp\",\">=\",[\"Var\"],[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/mem.c#L711"
       },
       {
         "level": 0,
@@ -683,7 +765,8 @@
         "line_number": 711,
         "column_number": 23,
         "description": "prune, !(n$227 < ((()n$228 + sizeof(t=;nbytes=32)) + (n$230 - sizeof(t=;nbytes=32))))",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]],[\"BinOp\",\"-\",[\"Var\"],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]],[\"BinOp\",\"-\",[\"Var\"],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/mem.c#L711"
       },
       {
         "level": 0,
@@ -691,7 +774,8 @@
         "line_number": 711,
         "column_number": 6,
         "description": "prune, (n$225 >= (()n$226 + sizeof(t=;nbytes=32)))",
-        "feature": "[\"Prune\",[\"BinOp\",\">=\",[\"Var\"],[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]"
+        "feature": "[\"Prune\",[\"BinOp\",\">=\",[\"Var\"],[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/mem.c#L711"
       },
       {
         "level": 0,
@@ -699,7 +783,8 @@
         "line_number": 711,
         "column_number": 23,
         "description": "prune, (n$227 < ((()n$228 + sizeof(t=;nbytes=32)) + (n$230 - sizeof(t=;nbytes=32))))",
-        "feature": "[\"Prune\",[\"BinOp\",\"<\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]],[\"BinOp\",\"-\",[\"Var\"],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]]"
+        "feature": "[\"Prune\",[\"BinOp\",\"<\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]],[\"BinOp\",\"-\",[\"Var\"],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/mem.c#L711"
       },
       {
         "level": 0,
@@ -707,7 +792,8 @@
         "line_number": 726,
         "column_number": 9,
         "description": "prune, ((n$155 + n$156) < ((()n$157 + sizeof(t=;nbytes=32)) + n$159))",
-        "feature": "[\"Prune\",[\"BinOp\",\"<\",[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]],[\"Var\"]]]]"
+        "feature": "[\"Prune\",[\"BinOp\",\"<\",[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]],[\"Var\"]]]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/mem.c#L726"
       },
       {
         "level": 0,
@@ -715,7 +801,8 @@
         "line_number": 756,
         "column_number": 13,
         "description": "store, &return, n$190",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/mem.c#L756"
       },
       {
         "level": 0,
@@ -723,7 +810,8 @@
         "line_number": 4622,
         "column_number": 6,
         "description": "store, &buf, ()n$48",
-        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4622"
       },
       {
         "level": 0,
@@ -731,7 +819,8 @@
         "line_number": 4661,
         "column_number": 5,
         "description": "store, &return, n$0",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4661"
       },
       {
         "level": 0,
@@ -739,7 +828,8 @@
         "line_number": 4993,
         "column_number": 5,
         "description": "store, &return, n$1",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4993"
       },
       {
         "level": 0,
@@ -747,7 +837,8 @@
         "line_number": 1663,
         "column_number": 11,
         "description": "store, &fn, n$43",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L1663"
       },
       {
         "level": 0,
@@ -755,7 +846,8 @@
         "line_number": 1665,
         "column_number": 4,
         "description": "buffer_overflow, sprintf, n$55",
-        "feature": "[\"BufferOverflow\",\"sprintf\",[\"Var\"]]"
+        "feature": "[\"BufferOverflow\",\"sprintf\",[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L1665"
       }
     ],
     [
@@ -765,7 +857,8 @@
         "line_number": 4963,
         "column_number": 7,
         "description": "input, readdir",
-        "feature": "[\"Input\",\"readdir\"]"
+        "feature": "[\"Input\",\"readdir\"]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4963"
       },
       {
         "level": 1,
@@ -773,7 +866,8 @@
         "line_number": 4993,
         "column_number": 12,
         "description": "call, metafy",
-        "feature": "[\"Call\",\"metafy\"]"
+        "feature": "[\"Call\",\"metafy\"]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4993"
       },
       {
         "level": 1,
@@ -781,7 +875,8 @@
         "line_number": 4622,
         "column_number": 12,
         "description": "call, hrealloc",
-        "feature": "[\"Call\",\"hrealloc\"]"
+        "feature": "[\"Call\",\"hrealloc\"]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4622"
       },
       {
         "level": 0,
@@ -789,7 +884,8 @@
         "line_number": 700,
         "column_number": 18,
         "description": "prune, n$237",
-        "feature": "[\"Prune\",[\"Var\"]]"
+        "feature": "[\"Prune\",[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/mem.c#L700"
       },
       {
         "level": 0,
@@ -797,7 +893,8 @@
         "line_number": 711,
         "column_number": 6,
         "description": "prune, (n$225 >= (()n$226 + sizeof(t=;nbytes=32)))",
-        "feature": "[\"Prune\",[\"BinOp\",\">=\",[\"Var\"],[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]"
+        "feature": "[\"Prune\",[\"BinOp\",\">=\",[\"Var\"],[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/mem.c#L711"
       },
       {
         "level": 0,
@@ -805,7 +902,8 @@
         "line_number": 711,
         "column_number": 23,
         "description": "prune, !(n$227 < ((()n$228 + sizeof(t=;nbytes=32)) + (n$230 - sizeof(t=;nbytes=32))))",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]],[\"BinOp\",\"-\",[\"Var\"],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]],[\"BinOp\",\"-\",[\"Var\"],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/mem.c#L711"
       },
       {
         "level": 0,
@@ -813,7 +911,8 @@
         "line_number": 711,
         "column_number": 6,
         "description": "prune, (n$225 >= (()n$226 + sizeof(t=;nbytes=32)))",
-        "feature": "[\"Prune\",[\"BinOp\",\">=\",[\"Var\"],[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]"
+        "feature": "[\"Prune\",[\"BinOp\",\">=\",[\"Var\"],[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/mem.c#L711"
       },
       {
         "level": 0,
@@ -821,7 +920,8 @@
         "line_number": 711,
         "column_number": 23,
         "description": "prune, (n$227 < ((()n$228 + sizeof(t=;nbytes=32)) + (n$230 - sizeof(t=;nbytes=32))))",
-        "feature": "[\"Prune\",[\"BinOp\",\"<\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]],[\"BinOp\",\"-\",[\"Var\"],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]]"
+        "feature": "[\"Prune\",[\"BinOp\",\"<\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]],[\"BinOp\",\"-\",[\"Var\"],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/mem.c#L711"
       },
       {
         "level": 0,
@@ -829,7 +929,8 @@
         "line_number": 726,
         "column_number": 9,
         "description": "prune, !((n$155 + n$156) < ((()n$157 + sizeof(t=;nbytes=32)) + n$159))",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]],[\"Var\"]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]],[\"Var\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/mem.c#L726"
       },
       {
         "level": 0,
@@ -837,7 +938,8 @@
         "line_number": 770,
         "column_number": 9,
         "description": "prune, !(n$67 == (()n$68 + sizeof(t=;nbytes=32)))",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/mem.c#L770"
       },
       {
         "level": 0,
@@ -845,7 +947,8 @@
         "line_number": 867,
         "column_number": 2,
         "description": "store, &return, n$6",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/mem.c#L867"
       },
       {
         "level": 0,
@@ -853,7 +956,8 @@
         "line_number": 4622,
         "column_number": 6,
         "description": "store, &buf, ()n$48",
-        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4622"
       },
       {
         "level": 0,
@@ -861,7 +965,8 @@
         "line_number": 4661,
         "column_number": 5,
         "description": "store, &return, n$0",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4661"
       },
       {
         "level": 0,
@@ -869,7 +974,8 @@
         "line_number": 4993,
         "column_number": 5,
         "description": "store, &return, n$1",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4993"
       },
       {
         "level": 0,
@@ -877,7 +983,8 @@
         "line_number": 1663,
         "column_number": 11,
         "description": "store, &fn, n$43",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L1663"
       },
       {
         "level": 0,
@@ -885,7 +992,8 @@
         "line_number": 1665,
         "column_number": 4,
         "description": "buffer_overflow, sprintf, n$55",
-        "feature": "[\"BufferOverflow\",\"sprintf\",[\"Var\"]]"
+        "feature": "[\"BufferOverflow\",\"sprintf\",[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L1665"
       }
     ],
     [
@@ -895,7 +1003,8 @@
         "line_number": 4963,
         "column_number": 7,
         "description": "input, readdir",
-        "feature": "[\"Input\",\"readdir\"]"
+        "feature": "[\"Input\",\"readdir\"]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4963"
       },
       {
         "level": 1,
@@ -903,7 +1012,8 @@
         "line_number": 4993,
         "column_number": 12,
         "description": "call, metafy",
-        "feature": "[\"Call\",\"metafy\"]"
+        "feature": "[\"Call\",\"metafy\"]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4993"
       },
       {
         "level": 1,
@@ -911,7 +1021,8 @@
         "line_number": 4622,
         "column_number": 12,
         "description": "call, hrealloc",
-        "feature": "[\"Call\",\"hrealloc\"]"
+        "feature": "[\"Call\",\"hrealloc\"]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4622"
       },
       {
         "level": 0,
@@ -919,7 +1030,8 @@
         "line_number": 700,
         "column_number": 18,
         "description": "prune, n$237",
-        "feature": "[\"Prune\",[\"Var\"]]"
+        "feature": "[\"Prune\",[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/mem.c#L700"
       },
       {
         "level": 0,
@@ -927,7 +1039,8 @@
         "line_number": 711,
         "column_number": 6,
         "description": "prune, !(n$225 >= (()n$226 + sizeof(t=;nbytes=32)))",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">=\",[\"Var\"],[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">=\",[\"Var\"],[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/mem.c#L711"
       },
       {
         "level": 0,
@@ -935,7 +1048,8 @@
         "line_number": 726,
         "column_number": 9,
         "description": "prune, ((n$155 + n$156) < ((()n$157 + sizeof(t=;nbytes=32)) + n$159))",
-        "feature": "[\"Prune\",[\"BinOp\",\"<\",[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]],[\"Var\"]]]]"
+        "feature": "[\"Prune\",[\"BinOp\",\"<\",[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]],[\"Var\"]]]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/mem.c#L726"
       },
       {
         "level": 0,
@@ -943,7 +1057,8 @@
         "line_number": 756,
         "column_number": 13,
         "description": "store, &return, n$190",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/mem.c#L756"
       },
       {
         "level": 0,
@@ -951,7 +1066,8 @@
         "line_number": 4622,
         "column_number": 6,
         "description": "store, &buf, ()n$48",
-        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4622"
       },
       {
         "level": 0,
@@ -959,7 +1075,8 @@
         "line_number": 4661,
         "column_number": 5,
         "description": "store, &return, n$0",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4661"
       },
       {
         "level": 0,
@@ -967,7 +1084,8 @@
         "line_number": 4993,
         "column_number": 5,
         "description": "store, &return, n$1",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4993"
       },
       {
         "level": 0,
@@ -975,7 +1093,8 @@
         "line_number": 1663,
         "column_number": 11,
         "description": "store, &fn, n$43",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L1663"
       },
       {
         "level": 0,
@@ -983,7 +1102,8 @@
         "line_number": 1665,
         "column_number": 4,
         "description": "buffer_overflow, sprintf, n$55",
-        "feature": "[\"BufferOverflow\",\"sprintf\",[\"Var\"]]"
+        "feature": "[\"BufferOverflow\",\"sprintf\",[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L1665"
       }
     ],
     [
@@ -993,7 +1113,8 @@
         "line_number": 4963,
         "column_number": 7,
         "description": "input, readdir",
-        "feature": "[\"Input\",\"readdir\"]"
+        "feature": "[\"Input\",\"readdir\"]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4963"
       },
       {
         "level": 1,
@@ -1001,7 +1122,8 @@
         "line_number": 4993,
         "column_number": 12,
         "description": "call, metafy",
-        "feature": "[\"Call\",\"metafy\"]"
+        "feature": "[\"Call\",\"metafy\"]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4993"
       },
       {
         "level": 1,
@@ -1009,7 +1131,8 @@
         "line_number": 4622,
         "column_number": 12,
         "description": "call, hrealloc",
-        "feature": "[\"Call\",\"hrealloc\"]"
+        "feature": "[\"Call\",\"hrealloc\"]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4622"
       },
       {
         "level": 0,
@@ -1017,7 +1140,8 @@
         "line_number": 700,
         "column_number": 18,
         "description": "prune, n$237",
-        "feature": "[\"Prune\",[\"Var\"]]"
+        "feature": "[\"Prune\",[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/mem.c#L700"
       },
       {
         "level": 0,
@@ -1025,7 +1149,8 @@
         "line_number": 711,
         "column_number": 6,
         "description": "prune, !(n$225 >= (()n$226 + sizeof(t=;nbytes=32)))",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">=\",[\"Var\"],[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">=\",[\"Var\"],[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/mem.c#L711"
       },
       {
         "level": 0,
@@ -1033,7 +1158,8 @@
         "line_number": 726,
         "column_number": 9,
         "description": "prune, !((n$155 + n$156) < ((()n$157 + sizeof(t=;nbytes=32)) + n$159))",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]],[\"Var\"]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]],[\"Var\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/mem.c#L726"
       },
       {
         "level": 0,
@@ -1041,7 +1167,8 @@
         "line_number": 770,
         "column_number": 9,
         "description": "prune, !(n$67 == (()n$68 + sizeof(t=;nbytes=32)))",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/mem.c#L770"
       },
       {
         "level": 0,
@@ -1049,7 +1176,8 @@
         "line_number": 867,
         "column_number": 2,
         "description": "store, &return, n$6",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/mem.c#L867"
       },
       {
         "level": 0,
@@ -1057,7 +1185,8 @@
         "line_number": 4622,
         "column_number": 6,
         "description": "store, &buf, ()n$48",
-        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4622"
       },
       {
         "level": 0,
@@ -1065,7 +1194,8 @@
         "line_number": 4661,
         "column_number": 5,
         "description": "store, &return, n$0",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4661"
       },
       {
         "level": 0,
@@ -1073,7 +1203,8 @@
         "line_number": 4993,
         "column_number": 5,
         "description": "store, &return, n$1",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4993"
       },
       {
         "level": 0,
@@ -1081,7 +1212,8 @@
         "line_number": 1663,
         "column_number": 11,
         "description": "store, &fn, n$43",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L1663"
       },
       {
         "level": 0,
@@ -1089,7 +1221,8 @@
         "line_number": 1665,
         "column_number": 4,
         "description": "buffer_overflow, sprintf, n$55",
-        "feature": "[\"BufferOverflow\",\"sprintf\",[\"Var\"]]"
+        "feature": "[\"BufferOverflow\",\"sprintf\",[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L1665"
       }
     ],
     [
@@ -1099,7 +1232,8 @@
         "line_number": 4963,
         "column_number": 7,
         "description": "input, readdir",
-        "feature": "[\"Input\",\"readdir\"]"
+        "feature": "[\"Input\",\"readdir\"]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4963"
       },
       {
         "level": 1,
@@ -1107,7 +1241,8 @@
         "line_number": 4993,
         "column_number": 12,
         "description": "call, metafy",
-        "feature": "[\"Call\",\"metafy\"]"
+        "feature": "[\"Call\",\"metafy\"]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4993"
       },
       {
         "level": 1,
@@ -1115,7 +1250,8 @@
         "line_number": 4622,
         "column_number": 12,
         "description": "call, hrealloc",
-        "feature": "[\"Call\",\"hrealloc\"]"
+        "feature": "[\"Call\",\"hrealloc\"]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4622"
       },
       {
         "level": 0,
@@ -1123,7 +1259,8 @@
         "line_number": 700,
         "column_number": 18,
         "description": "prune, n$237",
-        "feature": "[\"Prune\",[\"Var\"]]"
+        "feature": "[\"Prune\",[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/mem.c#L700"
       },
       {
         "level": 0,
@@ -1131,7 +1268,8 @@
         "line_number": 711,
         "column_number": 6,
         "description": "prune, !(n$225 >= (()n$226 + sizeof(t=;nbytes=32)))",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">=\",[\"Var\"],[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">=\",[\"Var\"],[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/mem.c#L711"
       },
       {
         "level": 0,
@@ -1139,7 +1277,8 @@
         "line_number": 711,
         "column_number": 6,
         "description": "prune, (n$225 >= (()n$226 + sizeof(t=;nbytes=32)))",
-        "feature": "[\"Prune\",[\"BinOp\",\">=\",[\"Var\"],[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]"
+        "feature": "[\"Prune\",[\"BinOp\",\">=\",[\"Var\"],[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/mem.c#L711"
       },
       {
         "level": 0,
@@ -1147,7 +1286,8 @@
         "line_number": 711,
         "column_number": 23,
         "description": "prune, (n$227 < ((()n$228 + sizeof(t=;nbytes=32)) + (n$230 - sizeof(t=;nbytes=32))))",
-        "feature": "[\"Prune\",[\"BinOp\",\"<\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]],[\"BinOp\",\"-\",[\"Var\"],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]]"
+        "feature": "[\"Prune\",[\"BinOp\",\"<\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]],[\"BinOp\",\"-\",[\"Var\"],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/mem.c#L711"
       },
       {
         "level": 0,
@@ -1155,7 +1295,8 @@
         "line_number": 726,
         "column_number": 9,
         "description": "prune, ((n$155 + n$156) < ((()n$157 + sizeof(t=;nbytes=32)) + n$159))",
-        "feature": "[\"Prune\",[\"BinOp\",\"<\",[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]],[\"Var\"]]]]"
+        "feature": "[\"Prune\",[\"BinOp\",\"<\",[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]],[\"Var\"]]]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/mem.c#L726"
       },
       {
         "level": 0,
@@ -1163,7 +1304,8 @@
         "line_number": 756,
         "column_number": 13,
         "description": "store, &return, n$190",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/mem.c#L756"
       },
       {
         "level": 0,
@@ -1171,7 +1313,8 @@
         "line_number": 4622,
         "column_number": 6,
         "description": "store, &buf, ()n$48",
-        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4622"
       },
       {
         "level": 0,
@@ -1179,7 +1322,8 @@
         "line_number": 4661,
         "column_number": 5,
         "description": "store, &return, n$0",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4661"
       },
       {
         "level": 0,
@@ -1187,7 +1331,8 @@
         "line_number": 4993,
         "column_number": 5,
         "description": "store, &return, n$1",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4993"
       },
       {
         "level": 0,
@@ -1195,7 +1340,8 @@
         "line_number": 1663,
         "column_number": 11,
         "description": "store, &fn, n$43",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L1663"
       },
       {
         "level": 0,
@@ -1203,7 +1349,8 @@
         "line_number": 1665,
         "column_number": 4,
         "description": "buffer_overflow, sprintf, n$55",
-        "feature": "[\"BufferOverflow\",\"sprintf\",[\"Var\"]]"
+        "feature": "[\"BufferOverflow\",\"sprintf\",[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L1665"
       }
     ],
     [
@@ -1213,7 +1360,8 @@
         "line_number": 4963,
         "column_number": 7,
         "description": "input, readdir",
-        "feature": "[\"Input\",\"readdir\"]"
+        "feature": "[\"Input\",\"readdir\"]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4963"
       },
       {
         "level": 1,
@@ -1221,7 +1369,8 @@
         "line_number": 4993,
         "column_number": 12,
         "description": "call, metafy",
-        "feature": "[\"Call\",\"metafy\"]"
+        "feature": "[\"Call\",\"metafy\"]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4993"
       },
       {
         "level": 1,
@@ -1229,7 +1378,8 @@
         "line_number": 4622,
         "column_number": 12,
         "description": "call, hrealloc",
-        "feature": "[\"Call\",\"hrealloc\"]"
+        "feature": "[\"Call\",\"hrealloc\"]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4622"
       },
       {
         "level": 0,
@@ -1237,7 +1387,8 @@
         "line_number": 700,
         "column_number": 18,
         "description": "prune, n$237",
-        "feature": "[\"Prune\",[\"Var\"]]"
+        "feature": "[\"Prune\",[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/mem.c#L700"
       },
       {
         "level": 0,
@@ -1245,7 +1396,8 @@
         "line_number": 711,
         "column_number": 6,
         "description": "prune, !(n$225 >= (()n$226 + sizeof(t=;nbytes=32)))",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">=\",[\"Var\"],[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">=\",[\"Var\"],[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/mem.c#L711"
       },
       {
         "level": 0,
@@ -1253,7 +1405,8 @@
         "line_number": 711,
         "column_number": 6,
         "description": "prune, (n$225 >= (()n$226 + sizeof(t=;nbytes=32)))",
-        "feature": "[\"Prune\",[\"BinOp\",\">=\",[\"Var\"],[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]"
+        "feature": "[\"Prune\",[\"BinOp\",\">=\",[\"Var\"],[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/mem.c#L711"
       },
       {
         "level": 0,
@@ -1261,7 +1414,8 @@
         "line_number": 711,
         "column_number": 23,
         "description": "prune, (n$227 < ((()n$228 + sizeof(t=;nbytes=32)) + (n$230 - sizeof(t=;nbytes=32))))",
-        "feature": "[\"Prune\",[\"BinOp\",\"<\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]],[\"BinOp\",\"-\",[\"Var\"],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]]"
+        "feature": "[\"Prune\",[\"BinOp\",\"<\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]],[\"BinOp\",\"-\",[\"Var\"],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/mem.c#L711"
       },
       {
         "level": 0,
@@ -1269,7 +1423,8 @@
         "line_number": 726,
         "column_number": 9,
         "description": "prune, !((n$155 + n$156) < ((()n$157 + sizeof(t=;nbytes=32)) + n$159))",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]],[\"Var\"]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]],[\"BinOp\",\"+\",[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]],[\"Var\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/mem.c#L726"
       },
       {
         "level": 0,
@@ -1277,7 +1432,8 @@
         "line_number": 770,
         "column_number": 9,
         "description": "prune, !(n$67 == (()n$68 + sizeof(t=;nbytes=32)))",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"BinOp\",\"+\",[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"heap\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/mem.c#L770"
       },
       {
         "level": 0,
@@ -1285,7 +1441,8 @@
         "line_number": 867,
         "column_number": 2,
         "description": "store, &return, n$6",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/mem.c#L867"
       },
       {
         "level": 0,
@@ -1293,7 +1450,8 @@
         "line_number": 4622,
         "column_number": 6,
         "description": "store, &buf, ()n$48",
-        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4622"
       },
       {
         "level": 0,
@@ -1301,7 +1459,8 @@
         "line_number": 4661,
         "column_number": 5,
         "description": "store, &return, n$0",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4661"
       },
       {
         "level": 0,
@@ -1309,7 +1468,8 @@
         "line_number": 4993,
         "column_number": 5,
         "description": "store, &return, n$1",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4993"
       },
       {
         "level": 0,
@@ -1317,7 +1477,8 @@
         "line_number": 1663,
         "column_number": 11,
         "description": "store, &fn, n$43",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L1663"
       },
       {
         "level": 0,
@@ -1325,7 +1486,8 @@
         "line_number": 1665,
         "column_number": 4,
         "description": "buffer_overflow, sprintf, n$55",
-        "feature": "[\"BufferOverflow\",\"sprintf\",[\"Var\"]]"
+        "feature": "[\"BufferOverflow\",\"sprintf\",[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L1665"
       }
     ],
     [
@@ -1335,7 +1497,8 @@
         "line_number": 4963,
         "column_number": 7,
         "description": "input, readdir",
-        "feature": "[\"Input\",\"readdir\"]"
+        "feature": "[\"Input\",\"readdir\"]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4963"
       },
       {
         "level": 1,
@@ -1343,7 +1506,8 @@
         "line_number": 4993,
         "column_number": 12,
         "description": "call, metafy",
-        "feature": "[\"Call\",\"metafy\"]"
+        "feature": "[\"Call\",\"metafy\"]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4993"
       },
       {
         "level": 1,
@@ -1351,7 +1515,8 @@
         "line_number": 4622,
         "column_number": 12,
         "description": "call, hrealloc",
-        "feature": "[\"Call\",\"hrealloc\"]"
+        "feature": "[\"Call\",\"hrealloc\"]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4622"
       },
       {
         "level": 0,
@@ -1359,7 +1524,8 @@
         "line_number": 699,
         "column_number": 2,
         "description": "store, &return, n$244",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/mem.c#L699"
       },
       {
         "level": 0,
@@ -1367,7 +1533,8 @@
         "line_number": 4622,
         "column_number": 6,
         "description": "store, &buf, ()n$48",
-        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tptr\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Pk_pointer\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4622"
       },
       {
         "level": 0,
@@ -1375,7 +1542,8 @@
         "line_number": 4661,
         "column_number": 5,
         "description": "store, &return, n$0",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4661"
       },
       {
         "level": 0,
@@ -1383,7 +1551,8 @@
         "line_number": 4993,
         "column_number": 5,
         "description": "store, &return, n$1",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L4993"
       },
       {
         "level": 0,
@@ -1391,7 +1560,8 @@
         "line_number": 1663,
         "column_number": 11,
         "description": "store, &fn, n$43",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L1663"
       },
       {
         "level": 0,
@@ -1399,7 +1569,8 @@
         "line_number": 1665,
         "column_number": 4,
         "description": "buffer_overflow, sprintf, n$55",
-        "feature": "[\"BufferOverflow\",\"sprintf\",[\"Var\"]]"
+        "feature": "[\"BufferOverflow\",\"sprintf\",[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/zsh-5.4.2/blob/master/Src/utils.c#L1665"
       }
     ]
   ],
@@ -1413,5 +1584,6 @@
       "cnum": 7,
       "enum": 0
     }
-  }
+  },
+  "repository": "https://github.com/prosyslab-warehouse/zsh-5.4.2"
 }

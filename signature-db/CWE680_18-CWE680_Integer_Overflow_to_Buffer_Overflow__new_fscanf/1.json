@@ -15,7 +15,8 @@
         "line_number": 32,
         "column_number": 5,
         "description": "input, fscanf",
-        "feature": "[\"Input\",\"fscanf\"]"
+        "feature": "[\"Input\",\"fscanf\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE680_Integer_Overflow_to_Buffer_Overflow/CWE680_Integer_Overflow_to_Buffer_Overflow__new_fscanf_18.cpp#L32"
       },
       {
         "level": 0,
@@ -23,7 +24,8 @@
         "line_number": 37,
         "column_number": 9,
         "description": "store, &dataBytes, (()n$13 * sizeof(t=;nbytes=4))",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tint\",[\"IInt\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tint\",[\"IInt\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE680_Integer_Overflow_to_Buffer_Overflow/CWE680_Integer_Overflow_to_Buffer_Overflow__new_fscanf_18.cpp#L37"
       },
       {
         "level": 0,
@@ -31,7 +33,8 @@
         "line_number": 38,
         "column_number": 28,
         "description": "int_overflow, __new_array, (sizeof(t=;nbytes=1) * n$11)",
-        "feature": "[\"IntOverflow\",\"__new_array\",[\"BinOp\",\"*\",[\"Sizeof\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}],[\"Var\"]]]"
+        "feature": "[\"IntOverflow\",\"__new_array\",[\"BinOp\",\"*\",[\"Sizeof\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}],[\"Var\"]]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE680_Integer_Overflow_to_Buffer_Overflow/CWE680_Integer_Overflow_to_Buffer_Overflow__new_fscanf_18.cpp#L38"
       }
     ]
   ],
@@ -45,5 +48,6 @@
       "cnum": 5,
       "enum": 0
     }
-  }
+  },
+  "repository": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE680_Integer_Overflow_to_Buffer_Overflow/CWE680_Integer_Overflow_to_Buffer_Overflow__new_fscanf_18.cpp"
 }

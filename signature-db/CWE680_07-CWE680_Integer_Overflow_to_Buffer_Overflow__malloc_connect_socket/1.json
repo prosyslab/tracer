@@ -15,7 +15,8 @@
         "line_number": 90,
         "column_number": 30,
         "description": "input, recv",
-        "feature": "[\"Input\",\"recv\"]"
+        "feature": "[\"Input\",\"recv\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE680_Integer_Overflow_to_Buffer_Overflow/CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_connect_socket_07.c#L90"
       },
       {
         "level": 0,
@@ -23,7 +24,8 @@
         "line_number": 98,
         "column_number": 17,
         "description": "store, &data, n$23",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE680_Integer_Overflow_to_Buffer_Overflow/CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_connect_socket_07.c#L98"
       },
       {
         "level": 0,
@@ -31,7 +33,8 @@
         "line_number": 118,
         "column_number": 28,
         "description": "int_overflow, malloc, (()n$15 * sizeof(t=;nbytes=4))",
-        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tint\",[\"IInt\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tint\",[\"IInt\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE680_Integer_Overflow_to_Buffer_Overflow/CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_connect_socket_07.c#L118"
       }
     ]
   ],
@@ -45,5 +48,6 @@
       "cnum": 30,
       "enum": 0
     }
-  }
+  },
+  "repository": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE680_Integer_Overflow_to_Buffer_Overflow/CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_connect_socket_07.c"
 }

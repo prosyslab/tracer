@@ -15,7 +15,8 @@
         "line_number": 126,
         "column_number": 12,
         "description": "input, fread",
-        "feature": "[\"Input\",\"fread\"]"
+        "feature": "[\"Input\",\"fread\"]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L126"
       },
       {
         "level": 1,
@@ -23,7 +24,8 @@
         "line_number": 132,
         "column_number": 30,
         "description": "call, ToS",
-        "feature": "[\"Call\",\"ToS\"]"
+        "feature": "[\"Call\",\"ToS\"]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L132"
       },
       {
         "level": 0,
@@ -31,7 +33,8 @@
         "line_number": 483,
         "column_number": 3,
         "description": "store, &return, (n$1 | (n$3 << 8))",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"|\",[\"Var\"],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"|\",[\"Var\"],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L483"
       },
       {
         "level": 0,
@@ -39,7 +42,8 @@
         "line_number": 132,
         "column_number": 7,
         "description": "store, &#GB<in_bmp.cpp>$Bitmap_Head.biBitCnt, ()n$96",
-        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IUShort\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IUShort\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L132"
       },
       {
         "level": 0,
@@ -47,7 +51,8 @@
         "line_number": 170,
         "column_number": 40,
         "description": "prune, (n$64 <= 8)",
-        "feature": "[\"Prune\",[\"BinOp\",\"<=\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]]"
+        "feature": "[\"Prune\",[\"BinOp\",\"<=\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L170"
       },
       {
         "level": 0,
@@ -55,7 +60,8 @@
         "line_number": 188,
         "column_number": 3,
         "description": "store, &rowbytes, (((((n$29 * ()n$30) - ()1) / ()32) * ()4) + ()4)",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"*\",[\"BinOp\",\"/\",[\"BinOp\",\"-\",[\"BinOp\",\"*\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"1\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"32\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"4\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"4\"]]]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"*\",[\"BinOp\",\"/\",[\"BinOp\",\"-\",[\"BinOp\",\"*\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"1\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"32\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"4\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"4\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L188"
       },
       {
         "level": 1,
@@ -63,7 +69,8 @@
         "line_number": 206,
         "column_number": 18,
         "description": "call, ReadImage",
-        "feature": "[\"Call\",\"ReadImage\"]"
+        "feature": "[\"Call\",\"ReadImage\"]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L206"
       },
       {
         "level": 0,
@@ -71,7 +78,8 @@
         "line_number": 281,
         "column_number": 3,
         "description": "int_overflow, __new_array, (sizeof(t=;nbytes=1) * n$293)",
-        "feature": "[\"IntOverflow\",\"__new_array\",[\"BinOp\",\"*\",[\"Sizeof\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}],[\"Var\"]]]"
+        "feature": "[\"IntOverflow\",\"__new_array\",[\"BinOp\",\"*\",[\"Sizeof\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}],[\"Var\"]]]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L281"
       }
     ],
     [
@@ -81,7 +89,8 @@
         "line_number": 126,
         "column_number": 12,
         "description": "input, fread",
-        "feature": "[\"Input\",\"fread\"]"
+        "feature": "[\"Input\",\"fread\"]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L126"
       },
       {
         "level": 1,
@@ -89,7 +98,8 @@
         "line_number": 131,
         "column_number": 30,
         "description": "call, ToS",
-        "feature": "[\"Call\",\"ToS\"]"
+        "feature": "[\"Call\",\"ToS\"]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L131"
       },
       {
         "level": 1,
@@ -97,7 +107,8 @@
         "line_number": 132,
         "column_number": 30,
         "description": "call, ToS",
-        "feature": "[\"Call\",\"ToS\"]"
+        "feature": "[\"Call\",\"ToS\"]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L132"
       },
       {
         "level": 0,
@@ -105,7 +116,8 @@
         "line_number": 483,
         "column_number": 3,
         "description": "store, &return, (n$1 | (n$3 << 8))",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"|\",[\"Var\"],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"|\",[\"Var\"],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L483"
       },
       {
         "level": 0,
@@ -113,7 +125,8 @@
         "line_number": 132,
         "column_number": 7,
         "description": "store, &#GB<in_bmp.cpp>$Bitmap_Head.biBitCnt, ()n$96",
-        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IUShort\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IUShort\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L132"
       },
       {
         "level": 0,
@@ -121,7 +134,8 @@
         "line_number": 170,
         "column_number": 40,
         "description": "prune, (n$64 <= 8)",
-        "feature": "[\"Prune\",[\"BinOp\",\"<=\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]]"
+        "feature": "[\"Prune\",[\"BinOp\",\"<=\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L170"
       },
       {
         "level": 0,
@@ -129,7 +143,8 @@
         "line_number": 188,
         "column_number": 3,
         "description": "store, &rowbytes, (((((n$29 * ()n$30) - ()1) / ()32) * ()4) + ()4)",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"*\",[\"BinOp\",\"/\",[\"BinOp\",\"-\",[\"BinOp\",\"*\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"1\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"32\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"4\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"4\"]]]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"*\",[\"BinOp\",\"/\",[\"BinOp\",\"-\",[\"BinOp\",\"*\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"1\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"32\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"4\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"4\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L188"
       },
       {
         "level": 1,
@@ -137,7 +152,8 @@
         "line_number": 206,
         "column_number": 18,
         "description": "call, ReadImage",
-        "feature": "[\"Call\",\"ReadImage\"]"
+        "feature": "[\"Call\",\"ReadImage\"]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L206"
       },
       {
         "level": 0,
@@ -145,7 +161,8 @@
         "line_number": 281,
         "column_number": 3,
         "description": "int_overflow, __new_array, (sizeof(t=;nbytes=1) * n$293)",
-        "feature": "[\"IntOverflow\",\"__new_array\",[\"BinOp\",\"*\",[\"Sizeof\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}],[\"Var\"]]]"
+        "feature": "[\"IntOverflow\",\"__new_array\",[\"BinOp\",\"*\",[\"Sizeof\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}],[\"Var\"]]]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L281"
       }
     ],
     [
@@ -155,7 +172,8 @@
         "line_number": 126,
         "column_number": 12,
         "description": "input, fread",
-        "feature": "[\"Input\",\"fread\"]"
+        "feature": "[\"Input\",\"fread\"]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L126"
       },
       {
         "level": 1,
@@ -163,7 +181,8 @@
         "line_number": 130,
         "column_number": 30,
         "description": "call, ToL",
-        "feature": "[\"Call\",\"ToL\"]"
+        "feature": "[\"Call\",\"ToL\"]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L130"
       },
       {
         "level": 1,
@@ -171,7 +190,8 @@
         "line_number": 132,
         "column_number": 30,
         "description": "call, ToS",
-        "feature": "[\"Call\",\"ToS\"]"
+        "feature": "[\"Call\",\"ToS\"]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L132"
       },
       {
         "level": 0,
@@ -179,7 +199,8 @@
         "line_number": 483,
         "column_number": 3,
         "description": "store, &return, (n$1 | (n$3 << 8))",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"|\",[\"Var\"],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"|\",[\"Var\"],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L483"
       },
       {
         "level": 0,
@@ -187,7 +208,8 @@
         "line_number": 132,
         "column_number": 7,
         "description": "store, &#GB<in_bmp.cpp>$Bitmap_Head.biBitCnt, ()n$96",
-        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IUShort\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IUShort\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L132"
       },
       {
         "level": 0,
@@ -195,7 +217,8 @@
         "line_number": 170,
         "column_number": 40,
         "description": "prune, (n$64 <= 8)",
-        "feature": "[\"Prune\",[\"BinOp\",\"<=\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]]"
+        "feature": "[\"Prune\",[\"BinOp\",\"<=\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L170"
       },
       {
         "level": 0,
@@ -203,7 +226,8 @@
         "line_number": 188,
         "column_number": 3,
         "description": "store, &rowbytes, (((((n$29 * ()n$30) - ()1) / ()32) * ()4) + ()4)",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"*\",[\"BinOp\",\"/\",[\"BinOp\",\"-\",[\"BinOp\",\"*\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"1\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"32\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"4\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"4\"]]]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"*\",[\"BinOp\",\"/\",[\"BinOp\",\"-\",[\"BinOp\",\"*\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"1\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"32\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"4\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"4\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L188"
       },
       {
         "level": 1,
@@ -211,7 +235,8 @@
         "line_number": 206,
         "column_number": 18,
         "description": "call, ReadImage",
-        "feature": "[\"Call\",\"ReadImage\"]"
+        "feature": "[\"Call\",\"ReadImage\"]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L206"
       },
       {
         "level": 0,
@@ -219,7 +244,8 @@
         "line_number": 281,
         "column_number": 3,
         "description": "int_overflow, __new_array, (sizeof(t=;nbytes=1) * n$293)",
-        "feature": "[\"IntOverflow\",\"__new_array\",[\"BinOp\",\"*\",[\"Sizeof\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}],[\"Var\"]]]"
+        "feature": "[\"IntOverflow\",\"__new_array\",[\"BinOp\",\"*\",[\"Sizeof\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}],[\"Var\"]]]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L281"
       }
     ],
     [
@@ -229,7 +255,8 @@
         "line_number": 126,
         "column_number": 12,
         "description": "input, fread",
-        "feature": "[\"Input\",\"fread\"]"
+        "feature": "[\"Input\",\"fread\"]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L126"
       },
       {
         "level": 1,
@@ -237,7 +264,8 @@
         "line_number": 130,
         "column_number": 30,
         "description": "call, ToL",
-        "feature": "[\"Call\",\"ToL\"]"
+        "feature": "[\"Call\",\"ToL\"]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L130"
       },
       {
         "level": 1,
@@ -245,7 +273,8 @@
         "line_number": 131,
         "column_number": 30,
         "description": "call, ToS",
-        "feature": "[\"Call\",\"ToS\"]"
+        "feature": "[\"Call\",\"ToS\"]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L131"
       },
       {
         "level": 1,
@@ -253,7 +282,8 @@
         "line_number": 132,
         "column_number": 30,
         "description": "call, ToS",
-        "feature": "[\"Call\",\"ToS\"]"
+        "feature": "[\"Call\",\"ToS\"]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L132"
       },
       {
         "level": 0,
@@ -261,7 +291,8 @@
         "line_number": 483,
         "column_number": 3,
         "description": "store, &return, (n$1 | (n$3 << 8))",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"|\",[\"Var\"],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"|\",[\"Var\"],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L483"
       },
       {
         "level": 0,
@@ -269,7 +300,8 @@
         "line_number": 132,
         "column_number": 7,
         "description": "store, &#GB<in_bmp.cpp>$Bitmap_Head.biBitCnt, ()n$96",
-        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IUShort\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IUShort\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L132"
       },
       {
         "level": 0,
@@ -277,7 +309,8 @@
         "line_number": 170,
         "column_number": 40,
         "description": "prune, (n$64 <= 8)",
-        "feature": "[\"Prune\",[\"BinOp\",\"<=\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]]"
+        "feature": "[\"Prune\",[\"BinOp\",\"<=\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L170"
       },
       {
         "level": 0,
@@ -285,7 +318,8 @@
         "line_number": 188,
         "column_number": 3,
         "description": "store, &rowbytes, (((((n$29 * ()n$30) - ()1) / ()32) * ()4) + ()4)",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"*\",[\"BinOp\",\"/\",[\"BinOp\",\"-\",[\"BinOp\",\"*\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"1\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"32\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"4\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"4\"]]]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"*\",[\"BinOp\",\"/\",[\"BinOp\",\"-\",[\"BinOp\",\"*\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"1\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"32\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"4\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"4\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L188"
       },
       {
         "level": 1,
@@ -293,7 +327,8 @@
         "line_number": 206,
         "column_number": 18,
         "description": "call, ReadImage",
-        "feature": "[\"Call\",\"ReadImage\"]"
+        "feature": "[\"Call\",\"ReadImage\"]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L206"
       },
       {
         "level": 0,
@@ -301,7 +336,8 @@
         "line_number": 281,
         "column_number": 3,
         "description": "int_overflow, __new_array, (sizeof(t=;nbytes=1) * n$293)",
-        "feature": "[\"IntOverflow\",\"__new_array\",[\"BinOp\",\"*\",[\"Sizeof\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}],[\"Var\"]]]"
+        "feature": "[\"IntOverflow\",\"__new_array\",[\"BinOp\",\"*\",[\"Sizeof\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}],[\"Var\"]]]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L281"
       }
     ],
     [
@@ -311,7 +347,8 @@
         "line_number": 126,
         "column_number": 12,
         "description": "input, fread",
-        "feature": "[\"Input\",\"fread\"]"
+        "feature": "[\"Input\",\"fread\"]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L126"
       },
       {
         "level": 1,
@@ -319,7 +356,8 @@
         "line_number": 129,
         "column_number": 30,
         "description": "call, ToL",
-        "feature": "[\"Call\",\"ToL\"]"
+        "feature": "[\"Call\",\"ToL\"]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L129"
       },
       {
         "level": 1,
@@ -327,7 +365,8 @@
         "line_number": 132,
         "column_number": 30,
         "description": "call, ToS",
-        "feature": "[\"Call\",\"ToS\"]"
+        "feature": "[\"Call\",\"ToS\"]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L132"
       },
       {
         "level": 0,
@@ -335,7 +374,8 @@
         "line_number": 483,
         "column_number": 3,
         "description": "store, &return, (n$1 | (n$3 << 8))",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"|\",[\"Var\"],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"|\",[\"Var\"],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L483"
       },
       {
         "level": 0,
@@ -343,7 +383,8 @@
         "line_number": 132,
         "column_number": 7,
         "description": "store, &#GB<in_bmp.cpp>$Bitmap_Head.biBitCnt, ()n$96",
-        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IUShort\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IUShort\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L132"
       },
       {
         "level": 0,
@@ -351,7 +392,8 @@
         "line_number": 170,
         "column_number": 40,
         "description": "prune, (n$64 <= 8)",
-        "feature": "[\"Prune\",[\"BinOp\",\"<=\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]]"
+        "feature": "[\"Prune\",[\"BinOp\",\"<=\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L170"
       },
       {
         "level": 0,
@@ -359,7 +401,8 @@
         "line_number": 188,
         "column_number": 3,
         "description": "store, &rowbytes, (((((n$29 * ()n$30) - ()1) / ()32) * ()4) + ()4)",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"*\",[\"BinOp\",\"/\",[\"BinOp\",\"-\",[\"BinOp\",\"*\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"1\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"32\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"4\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"4\"]]]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"*\",[\"BinOp\",\"/\",[\"BinOp\",\"-\",[\"BinOp\",\"*\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"1\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"32\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"4\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"4\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L188"
       },
       {
         "level": 1,
@@ -367,7 +410,8 @@
         "line_number": 206,
         "column_number": 18,
         "description": "call, ReadImage",
-        "feature": "[\"Call\",\"ReadImage\"]"
+        "feature": "[\"Call\",\"ReadImage\"]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L206"
       },
       {
         "level": 0,
@@ -375,7 +419,8 @@
         "line_number": 281,
         "column_number": 3,
         "description": "int_overflow, __new_array, (sizeof(t=;nbytes=1) * n$293)",
-        "feature": "[\"IntOverflow\",\"__new_array\",[\"BinOp\",\"*\",[\"Sizeof\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}],[\"Var\"]]]"
+        "feature": "[\"IntOverflow\",\"__new_array\",[\"BinOp\",\"*\",[\"Sizeof\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}],[\"Var\"]]]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L281"
       }
     ],
     [
@@ -385,7 +430,8 @@
         "line_number": 126,
         "column_number": 12,
         "description": "input, fread",
-        "feature": "[\"Input\",\"fread\"]"
+        "feature": "[\"Input\",\"fread\"]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L126"
       },
       {
         "level": 1,
@@ -393,7 +439,8 @@
         "line_number": 129,
         "column_number": 30,
         "description": "call, ToL",
-        "feature": "[\"Call\",\"ToL\"]"
+        "feature": "[\"Call\",\"ToL\"]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L129"
       },
       {
         "level": 1,
@@ -401,7 +448,8 @@
         "line_number": 131,
         "column_number": 30,
         "description": "call, ToS",
-        "feature": "[\"Call\",\"ToS\"]"
+        "feature": "[\"Call\",\"ToS\"]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L131"
       },
       {
         "level": 1,
@@ -409,7 +457,8 @@
         "line_number": 132,
         "column_number": 30,
         "description": "call, ToS",
-        "feature": "[\"Call\",\"ToS\"]"
+        "feature": "[\"Call\",\"ToS\"]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L132"
       },
       {
         "level": 0,
@@ -417,7 +466,8 @@
         "line_number": 483,
         "column_number": 3,
         "description": "store, &return, (n$1 | (n$3 << 8))",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"|\",[\"Var\"],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"|\",[\"Var\"],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L483"
       },
       {
         "level": 0,
@@ -425,7 +475,8 @@
         "line_number": 132,
         "column_number": 7,
         "description": "store, &#GB<in_bmp.cpp>$Bitmap_Head.biBitCnt, ()n$96",
-        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IUShort\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IUShort\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L132"
       },
       {
         "level": 0,
@@ -433,7 +484,8 @@
         "line_number": 170,
         "column_number": 40,
         "description": "prune, (n$64 <= 8)",
-        "feature": "[\"Prune\",[\"BinOp\",\"<=\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]]"
+        "feature": "[\"Prune\",[\"BinOp\",\"<=\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L170"
       },
       {
         "level": 0,
@@ -441,7 +493,8 @@
         "line_number": 188,
         "column_number": 3,
         "description": "store, &rowbytes, (((((n$29 * ()n$30) - ()1) / ()32) * ()4) + ()4)",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"*\",[\"BinOp\",\"/\",[\"BinOp\",\"-\",[\"BinOp\",\"*\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"1\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"32\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"4\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"4\"]]]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"*\",[\"BinOp\",\"/\",[\"BinOp\",\"-\",[\"BinOp\",\"*\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"1\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"32\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"4\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"4\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L188"
       },
       {
         "level": 1,
@@ -449,7 +502,8 @@
         "line_number": 206,
         "column_number": 18,
         "description": "call, ReadImage",
-        "feature": "[\"Call\",\"ReadImage\"]"
+        "feature": "[\"Call\",\"ReadImage\"]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L206"
       },
       {
         "level": 0,
@@ -457,7 +511,8 @@
         "line_number": 281,
         "column_number": 3,
         "description": "int_overflow, __new_array, (sizeof(t=;nbytes=1) * n$293)",
-        "feature": "[\"IntOverflow\",\"__new_array\",[\"BinOp\",\"*\",[\"Sizeof\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}],[\"Var\"]]]"
+        "feature": "[\"IntOverflow\",\"__new_array\",[\"BinOp\",\"*\",[\"Sizeof\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}],[\"Var\"]]]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L281"
       }
     ],
     [
@@ -467,7 +522,8 @@
         "line_number": 126,
         "column_number": 12,
         "description": "input, fread",
-        "feature": "[\"Input\",\"fread\"]"
+        "feature": "[\"Input\",\"fread\"]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L126"
       },
       {
         "level": 1,
@@ -475,7 +531,8 @@
         "line_number": 129,
         "column_number": 30,
         "description": "call, ToL",
-        "feature": "[\"Call\",\"ToL\"]"
+        "feature": "[\"Call\",\"ToL\"]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L129"
       },
       {
         "level": 1,
@@ -483,7 +540,8 @@
         "line_number": 130,
         "column_number": 30,
         "description": "call, ToL",
-        "feature": "[\"Call\",\"ToL\"]"
+        "feature": "[\"Call\",\"ToL\"]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L130"
       },
       {
         "level": 1,
@@ -491,7 +549,8 @@
         "line_number": 132,
         "column_number": 30,
         "description": "call, ToS",
-        "feature": "[\"Call\",\"ToS\"]"
+        "feature": "[\"Call\",\"ToS\"]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L132"
       },
       {
         "level": 0,
@@ -499,7 +558,8 @@
         "line_number": 483,
         "column_number": 3,
         "description": "store, &return, (n$1 | (n$3 << 8))",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"|\",[\"Var\"],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"|\",[\"Var\"],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L483"
       },
       {
         "level": 0,
@@ -507,7 +567,8 @@
         "line_number": 132,
         "column_number": 7,
         "description": "store, &#GB<in_bmp.cpp>$Bitmap_Head.biBitCnt, ()n$96",
-        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IUShort\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IUShort\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L132"
       },
       {
         "level": 0,
@@ -515,7 +576,8 @@
         "line_number": 170,
         "column_number": 40,
         "description": "prune, (n$64 <= 8)",
-        "feature": "[\"Prune\",[\"BinOp\",\"<=\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]]"
+        "feature": "[\"Prune\",[\"BinOp\",\"<=\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L170"
       },
       {
         "level": 0,
@@ -523,7 +585,8 @@
         "line_number": 188,
         "column_number": 3,
         "description": "store, &rowbytes, (((((n$29 * ()n$30) - ()1) / ()32) * ()4) + ()4)",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"*\",[\"BinOp\",\"/\",[\"BinOp\",\"-\",[\"BinOp\",\"*\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"1\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"32\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"4\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"4\"]]]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"*\",[\"BinOp\",\"/\",[\"BinOp\",\"-\",[\"BinOp\",\"*\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"1\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"32\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"4\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"4\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L188"
       },
       {
         "level": 1,
@@ -531,7 +594,8 @@
         "line_number": 206,
         "column_number": 18,
         "description": "call, ReadImage",
-        "feature": "[\"Call\",\"ReadImage\"]"
+        "feature": "[\"Call\",\"ReadImage\"]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L206"
       },
       {
         "level": 0,
@@ -539,7 +603,8 @@
         "line_number": 281,
         "column_number": 3,
         "description": "int_overflow, __new_array, (sizeof(t=;nbytes=1) * n$293)",
-        "feature": "[\"IntOverflow\",\"__new_array\",[\"BinOp\",\"*\",[\"Sizeof\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}],[\"Var\"]]]"
+        "feature": "[\"IntOverflow\",\"__new_array\",[\"BinOp\",\"*\",[\"Sizeof\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}],[\"Var\"]]]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L281"
       }
     ],
     [
@@ -549,7 +614,8 @@
         "line_number": 126,
         "column_number": 12,
         "description": "input, fread",
-        "feature": "[\"Input\",\"fread\"]"
+        "feature": "[\"Input\",\"fread\"]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L126"
       },
       {
         "level": 1,
@@ -557,7 +623,8 @@
         "line_number": 129,
         "column_number": 30,
         "description": "call, ToL",
-        "feature": "[\"Call\",\"ToL\"]"
+        "feature": "[\"Call\",\"ToL\"]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L129"
       },
       {
         "level": 1,
@@ -565,7 +632,8 @@
         "line_number": 130,
         "column_number": 30,
         "description": "call, ToL",
-        "feature": "[\"Call\",\"ToL\"]"
+        "feature": "[\"Call\",\"ToL\"]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L130"
       },
       {
         "level": 1,
@@ -573,7 +641,8 @@
         "line_number": 131,
         "column_number": 30,
         "description": "call, ToS",
-        "feature": "[\"Call\",\"ToS\"]"
+        "feature": "[\"Call\",\"ToS\"]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L131"
       },
       {
         "level": 1,
@@ -581,7 +650,8 @@
         "line_number": 132,
         "column_number": 30,
         "description": "call, ToS",
-        "feature": "[\"Call\",\"ToS\"]"
+        "feature": "[\"Call\",\"ToS\"]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L132"
       },
       {
         "level": 0,
@@ -589,7 +659,8 @@
         "line_number": 483,
         "column_number": 3,
         "description": "store, &return, (n$1 | (n$3 << 8))",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"|\",[\"Var\"],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"|\",[\"Var\"],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L483"
       },
       {
         "level": 0,
@@ -597,7 +668,8 @@
         "line_number": 132,
         "column_number": 7,
         "description": "store, &#GB<in_bmp.cpp>$Bitmap_Head.biBitCnt, ()n$96",
-        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IUShort\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IUShort\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L132"
       },
       {
         "level": 0,
@@ -605,7 +677,8 @@
         "line_number": 170,
         "column_number": 40,
         "description": "prune, (n$64 <= 8)",
-        "feature": "[\"Prune\",[\"BinOp\",\"<=\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]]"
+        "feature": "[\"Prune\",[\"BinOp\",\"<=\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L170"
       },
       {
         "level": 0,
@@ -613,7 +686,8 @@
         "line_number": 188,
         "column_number": 3,
         "description": "store, &rowbytes, (((((n$29 * ()n$30) - ()1) / ()32) * ()4) + ()4)",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"*\",[\"BinOp\",\"/\",[\"BinOp\",\"-\",[\"BinOp\",\"*\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"1\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"32\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"4\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"4\"]]]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"*\",[\"BinOp\",\"/\",[\"BinOp\",\"-\",[\"BinOp\",\"*\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"1\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"32\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"4\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"4\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L188"
       },
       {
         "level": 1,
@@ -621,7 +695,8 @@
         "line_number": 206,
         "column_number": 18,
         "description": "call, ReadImage",
-        "feature": "[\"Call\",\"ReadImage\"]"
+        "feature": "[\"Call\",\"ReadImage\"]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L206"
       },
       {
         "level": 0,
@@ -629,7 +704,8 @@
         "line_number": 281,
         "column_number": 3,
         "description": "int_overflow, __new_array, (sizeof(t=;nbytes=1) * n$293)",
-        "feature": "[\"IntOverflow\",\"__new_array\",[\"BinOp\",\"*\",[\"Sizeof\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}],[\"Var\"]]]"
+        "feature": "[\"IntOverflow\",\"__new_array\",[\"BinOp\",\"*\",[\"Sizeof\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}],[\"Var\"]]]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L281"
       }
     ],
     [
@@ -639,7 +715,8 @@
         "line_number": 126,
         "column_number": 12,
         "description": "input, fread",
-        "feature": "[\"Input\",\"fread\"]"
+        "feature": "[\"Input\",\"fread\"]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L126"
       },
       {
         "level": 1,
@@ -647,7 +724,8 @@
         "line_number": 129,
         "column_number": 30,
         "description": "call, ToL",
-        "feature": "[\"Call\",\"ToL\"]"
+        "feature": "[\"Call\",\"ToL\"]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L129"
       },
       {
         "level": 0,
@@ -655,7 +733,8 @@
         "line_number": 477,
         "column_number": 3,
         "description": "store, &return, (((n$1 | (n$3 << 8)) | (n$5 << 16)) | (n$7 << 24))",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"Var\"],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"24\"]]]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"Var\"],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"24\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L477"
       },
       {
         "level": 0,
@@ -663,7 +742,8 @@
         "line_number": 129,
         "column_number": 7,
         "description": "store, &#GB<in_bmp.cpp>$Bitmap_Head.biWidth, ()n$99",
-        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L129"
       },
       {
         "level": 0,
@@ -671,7 +751,8 @@
         "line_number": 188,
         "column_number": 3,
         "description": "store, &rowbytes, (((((n$29 * ()n$30) - ()1) / ()32) * ()4) + ()4)",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"*\",[\"BinOp\",\"/\",[\"BinOp\",\"-\",[\"BinOp\",\"*\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"1\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"32\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"4\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"4\"]]]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"*\",[\"BinOp\",\"/\",[\"BinOp\",\"-\",[\"BinOp\",\"*\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"1\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"32\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"4\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"4\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L188"
       },
       {
         "level": 1,
@@ -679,7 +760,8 @@
         "line_number": 206,
         "column_number": 18,
         "description": "call, ReadImage",
-        "feature": "[\"Call\",\"ReadImage\"]"
+        "feature": "[\"Call\",\"ReadImage\"]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L206"
       },
       {
         "level": 0,
@@ -687,7 +769,8 @@
         "line_number": 281,
         "column_number": 3,
         "description": "int_overflow, __new_array, (sizeof(t=;nbytes=1) * n$293)",
-        "feature": "[\"IntOverflow\",\"__new_array\",[\"BinOp\",\"*\",[\"Sizeof\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}],[\"Var\"]]]"
+        "feature": "[\"IntOverflow\",\"__new_array\",[\"BinOp\",\"*\",[\"Sizeof\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}],[\"Var\"]]]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L281"
       }
     ],
     [
@@ -697,7 +780,8 @@
         "line_number": 126,
         "column_number": 12,
         "description": "input, fread",
-        "feature": "[\"Input\",\"fread\"]"
+        "feature": "[\"Input\",\"fread\"]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L126"
       },
       {
         "level": 1,
@@ -705,7 +789,8 @@
         "line_number": 129,
         "column_number": 30,
         "description": "call, ToL",
-        "feature": "[\"Call\",\"ToL\"]"
+        "feature": "[\"Call\",\"ToL\"]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L129"
       },
       {
         "level": 0,
@@ -713,7 +798,8 @@
         "line_number": 477,
         "column_number": 3,
         "description": "store, &return, (((n$1 | (n$3 << 8)) | (n$5 << 16)) | (n$7 << 24))",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"Var\"],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"24\"]]]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"Var\"],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"24\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L477"
       },
       {
         "level": 0,
@@ -721,7 +807,8 @@
         "line_number": 129,
         "column_number": 7,
         "description": "store, &#GB<in_bmp.cpp>$Bitmap_Head.biWidth, ()n$99",
-        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L129"
       },
       {
         "level": 0,
@@ -729,7 +816,8 @@
         "line_number": 175,
         "column_number": 36,
         "description": "prune, (n$54 == ()0)",
-        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]"
+        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L175"
       },
       {
         "level": 0,
@@ -737,7 +825,8 @@
         "line_number": 188,
         "column_number": 3,
         "description": "store, &rowbytes, (((((n$29 * ()n$30) - ()1) / ()32) * ()4) + ()4)",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"*\",[\"BinOp\",\"/\",[\"BinOp\",\"-\",[\"BinOp\",\"*\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"1\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"32\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"4\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"4\"]]]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"*\",[\"BinOp\",\"/\",[\"BinOp\",\"-\",[\"BinOp\",\"*\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"1\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"32\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"4\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"4\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L188"
       },
       {
         "level": 1,
@@ -745,7 +834,8 @@
         "line_number": 206,
         "column_number": 18,
         "description": "call, ReadImage",
-        "feature": "[\"Call\",\"ReadImage\"]"
+        "feature": "[\"Call\",\"ReadImage\"]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L206"
       },
       {
         "level": 0,
@@ -753,7 +843,8 @@
         "line_number": 281,
         "column_number": 3,
         "description": "int_overflow, __new_array, (sizeof(t=;nbytes=1) * n$293)",
-        "feature": "[\"IntOverflow\",\"__new_array\",[\"BinOp\",\"*\",[\"Sizeof\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}],[\"Var\"]]]"
+        "feature": "[\"IntOverflow\",\"__new_array\",[\"BinOp\",\"*\",[\"Sizeof\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}],[\"Var\"]]]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L281"
       }
     ],
     [
@@ -763,7 +854,8 @@
         "line_number": 126,
         "column_number": 12,
         "description": "input, fread",
-        "feature": "[\"Input\",\"fread\"]"
+        "feature": "[\"Input\",\"fread\"]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L126"
       },
       {
         "level": 1,
@@ -771,7 +863,8 @@
         "line_number": 129,
         "column_number": 30,
         "description": "call, ToL",
-        "feature": "[\"Call\",\"ToL\"]"
+        "feature": "[\"Call\",\"ToL\"]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L129"
       },
       {
         "level": 0,
@@ -779,7 +872,8 @@
         "line_number": 477,
         "column_number": 3,
         "description": "store, &return, (((n$1 | (n$3 << 8)) | (n$5 << 16)) | (n$7 << 24))",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"Var\"],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"24\"]]]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"Var\"],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"16\"]]]],[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"24\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L477"
       },
       {
         "level": 0,
@@ -787,7 +881,8 @@
         "line_number": 129,
         "column_number": 7,
         "description": "store, &#GB<in_bmp.cpp>$Bitmap_Head.biWidth, ()n$99",
-        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L129"
       },
       {
         "level": 0,
@@ -795,7 +890,8 @@
         "line_number": 175,
         "column_number": 36,
         "description": "prune, !(n$54 == ()0)",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L175"
       },
       {
         "level": 0,
@@ -803,7 +899,8 @@
         "line_number": 188,
         "column_number": 3,
         "description": "store, &rowbytes, (((((n$29 * ()n$30) - ()1) / ()32) * ()4) + ()4)",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"*\",[\"BinOp\",\"/\",[\"BinOp\",\"-\",[\"BinOp\",\"*\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"1\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"32\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"4\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"4\"]]]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"BinOp\",\"*\",[\"BinOp\",\"/\",[\"BinOp\",\"-\",[\"BinOp\",\"*\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"1\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"32\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"4\"]]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"4\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L188"
       },
       {
         "level": 1,
@@ -811,7 +908,8 @@
         "line_number": 206,
         "column_number": 18,
         "description": "call, ReadImage",
-        "feature": "[\"Call\",\"ReadImage\"]"
+        "feature": "[\"Call\",\"ReadImage\"]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L206"
       },
       {
         "level": 0,
@@ -819,7 +917,8 @@
         "line_number": 281,
         "column_number": 3,
         "description": "int_overflow, __new_array, (sizeof(t=;nbytes=1) * n$293)",
-        "feature": "[\"IntOverflow\",\"__new_array\",[\"BinOp\",\"*\",[\"Sizeof\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}],[\"Var\"]]]"
+        "feature": "[\"IntOverflow\",\"__new_array\",[\"BinOp\",\"*\",[\"Sizeof\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}],[\"Var\"]]]",
+        "code": "https://github.com/prosyslab-warehouse/sam2p-0.49.4/blob/master/input-bmp.ci#L281"
       }
     ]
   ],
@@ -833,5 +932,6 @@
       "cnum": 12,
       "enum": 0
     }
-  }
+  },
+  "repository": "https://github.com/prosyslab-warehouse/sam2p-0.49.4"
 }

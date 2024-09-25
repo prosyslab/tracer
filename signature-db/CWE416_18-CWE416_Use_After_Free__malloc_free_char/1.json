@@ -15,7 +15,8 @@
         "line_number": 31,
         "column_number": 20,
         "description": "allocate, malloc",
-        "feature": "[\"Allocate\",\"malloc\"]"
+        "feature": "[\"Allocate\",\"malloc\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__malloc_free_char_18.c#L31"
       },
       {
         "level": 0,
@@ -23,11 +24,13 @@
         "line_number": 36,
         "column_number": 5,
         "description": "free, free, n$4",
-        "feature": "[\"Free\",\"free\",[\"Var\"]]"
+        "feature": "[\"Free\",\"free\",[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__malloc_free_char_18.c#L36"
       }
     ]
   ],
   "key": "CWE416_Use_After_Free__malloc_free_char_18.c|CWE416_Use_After_Free__malloc_free_char_18_bad|API_MISUSE",
   "hash": "d14f462e1853b5b27a9014dd6e102753",
-  "bug_type_hum": "Api Misuse"
+  "bug_type_hum": "Api Misuse",
+  "repository": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__malloc_free_char_18.c"
 }

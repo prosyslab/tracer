@@ -15,7 +15,8 @@
         "line_number": 111,
         "column_number": 30,
         "description": "input, recv",
-        "feature": "[\"Input\",\"recv\"]"
+        "feature": "[\"Input\",\"recv\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE134_Uncontrolled_Format_String/s03/CWE134_Uncontrolled_Format_String__char_listen_socket_vfprintf_17.c#L111"
       },
       {
         "level": 1,
@@ -23,7 +24,8 @@
         "line_number": 149,
         "column_number": 9,
         "description": "call, badVaSinkB",
-        "feature": "[\"Call\",\"badVaSinkB\"]"
+        "feature": "[\"Call\",\"badVaSinkB\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE134_Uncontrolled_Format_String/s03/CWE134_Uncontrolled_Format_String__char_listen_socket_vfprintf_17.c#L149"
       },
       {
         "level": 0,
@@ -31,7 +33,8 @@
         "line_number": 54,
         "column_number": 9,
         "description": "format_string, vfprintf, n$2",
-        "feature": "[\"FormatString\",\"vfprintf\",[\"Var\"]]"
+        "feature": "[\"FormatString\",\"vfprintf\",[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE134_Uncontrolled_Format_String/s03/CWE134_Uncontrolled_Format_String__char_listen_socket_vfprintf_17.c#L54"
       }
     ]
   ],
@@ -45,5 +48,6 @@
       "cnum": 30,
       "enum": 0
     }
-  }
+  },
+  "repository": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE134_Uncontrolled_Format_String/s03/CWE134_Uncontrolled_Format_String__char_listen_socket_vfprintf_17.c"
 }

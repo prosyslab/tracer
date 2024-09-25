@@ -15,7 +15,8 @@
         "line_number": 56,
         "column_number": 25,
         "description": "input, fgets",
-        "feature": "[\"Input\",\"fgets\"]"
+        "feature": "[\"Input\",\"fgets\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE134_Uncontrolled_Format_String/s02/CWE134_Uncontrolled_Format_String__char_file_snprintf_10.c#L56"
       },
       {
         "level": 0,
@@ -23,7 +24,8 @@
         "line_number": 72,
         "column_number": 13,
         "description": "format_string, snprintf, n$2",
-        "feature": "[\"FormatString\",\"snprintf\",[\"Var\"]]"
+        "feature": "[\"FormatString\",\"snprintf\",[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE134_Uncontrolled_Format_String/s02/CWE134_Uncontrolled_Format_String__char_file_snprintf_10.c#L72"
       }
     ]
   ],
@@ -37,5 +39,6 @@
       "cnum": 25,
       "enum": 0
     }
-  }
+  },
+  "repository": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE134_Uncontrolled_Format_String/s02/CWE134_Uncontrolled_Format_String__char_file_snprintf_10.c"
 }

@@ -15,7 +15,8 @@
         "line_number": 349,
         "column_number": 15,
         "description": "input, fread",
-        "feature": "[\"Input\",\"fread\"]"
+        "feature": "[\"Input\",\"fread\"]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L349"
       },
       {
         "level": 1,
@@ -23,7 +24,8 @@
         "line_number": 368,
         "column_number": 14,
         "description": "call, load_icon",
-        "feature": "[\"Call\",\"load_icon\"]"
+        "feature": "[\"Call\",\"load_icon\"]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L368"
       },
       {
         "level": 1,
@@ -31,7 +33,8 @@
         "line_number": 251,
         "column_number": 8,
         "description": "call, load_resources",
-        "feature": "[\"Call\",\"load_resources\"]"
+        "feature": "[\"Call\",\"load_resources\"]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L251"
       },
       {
         "level": 0,
@@ -39,7 +42,8 @@
         "line_number": 95,
         "column_number": 7,
         "description": "store, &blocklen, (((((n$114 & 255) << 24) | ((n$116 & 65280) << 8)) | ((n$118 & 16711680) >> 8)) | ((n$120 & 4278190080) >> 24))",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"255\"]]],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"65280\"]]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"16711680\"]]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"4278190080\"]]],[\"Const\",[\"Cint\",\"24\"]]]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"255\"]]],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"65280\"]]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"16711680\"]]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"4278190080\"]]],[\"Const\",[\"Cint\",\"24\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L95"
       },
       {
         "level": 0,
@@ -47,7 +51,8 @@
         "line_number": 98,
         "column_number": 11,
         "description": "prune, !(n$107 > (n$108 - (n$109 - n$110)))",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Var\"]]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Var\"]]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L98"
       },
       {
         "level": 0,
@@ -55,7 +60,8 @@
         "line_number": 158,
         "column_number": 8,
         "description": "store, n$29, (()n$30 - sizeof(t=;nbytes=8))",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"IcnsBlockHeader\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"IcnsBlockHeader\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L158"
       },
       {
         "level": 1,
@@ -63,7 +69,8 @@
         "line_number": 262,
         "column_number": 12,
         "description": "call, gdk_pixbuf_loader_write",
-        "feature": "[\"Call\",\"gdk_pixbuf_loader_write\"]"
+        "feature": "[\"Call\",\"gdk_pixbuf_loader_write\"]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L262"
       },
       {
         "level": 0,
@@ -71,7 +78,8 @@
         "line_number": 507,
         "column_number": 13,
         "description": "prune, (n$31 > ()0)",
-        "feature": "[\"Prune\",[\"BinOp\",\">\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]"
+        "feature": "[\"Prune\",[\"BinOp\",\">\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/gdk-pixbuf-loader.c#L507"
       },
       {
         "level": 1,
@@ -79,7 +87,8 @@
         "line_number": 511,
         "column_number": 33,
         "description": "call, gdk_pixbuf_loader_eat_header_write",
-        "feature": "[\"Call\",\"gdk_pixbuf_loader_eat_header_write\"]"
+        "feature": "[\"Call\",\"gdk_pixbuf_loader_eat_header_write\"]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/gdk-pixbuf-loader.c#L511"
       },
       {
         "level": 0,
@@ -87,7 +96,8 @@
         "line_number": 458,
         "column_number": 19,
         "description": "prune, !(()(4096 - n$20) < n$21)",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"-\",[\"Const\",[\"Cint\",\"4096\"]],[\"Var\"]]],[\"Var\"]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"-\",[\"Const\",[\"Cint\",\"4096\"]],[\"Var\"]]],[\"Var\"]]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/gdk-pixbuf-loader.c#L458"
       },
       {
         "level": 0,
@@ -95,7 +105,8 @@
         "line_number": 458,
         "column_number": 19,
         "description": "store, &n_bytes, n$24",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/gdk-pixbuf-loader.c#L458"
       },
       {
         "level": 1,
@@ -103,7 +114,8 @@
         "line_number": 459,
         "column_number": 9,
         "description": "int_underflow, memcpy, ()n$17",
-        "feature": "[\"IntUnderflow\",\"memcpy\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]"
+        "feature": "[\"IntUnderflow\",\"memcpy\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/gdk-pixbuf-loader.c#L459"
       }
     ],
     [
@@ -113,7 +125,8 @@
         "line_number": 349,
         "column_number": 15,
         "description": "input, fread",
-        "feature": "[\"Input\",\"fread\"]"
+        "feature": "[\"Input\",\"fread\"]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L349"
       },
       {
         "level": 1,
@@ -121,7 +134,8 @@
         "line_number": 368,
         "column_number": 14,
         "description": "call, load_icon",
-        "feature": "[\"Call\",\"load_icon\"]"
+        "feature": "[\"Call\",\"load_icon\"]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L368"
       },
       {
         "level": 1,
@@ -129,7 +143,8 @@
         "line_number": 251,
         "column_number": 8,
         "description": "call, load_resources",
-        "feature": "[\"Call\",\"load_resources\"]"
+        "feature": "[\"Call\",\"load_resources\"]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L251"
       },
       {
         "level": 0,
@@ -137,7 +152,8 @@
         "line_number": 95,
         "column_number": 7,
         "description": "store, &blocklen, (((((n$114 & 255) << 24) | ((n$116 & 65280) << 8)) | ((n$118 & 16711680) >> 8)) | ((n$120 & 4278190080) >> 24))",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"255\"]]],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"65280\"]]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"16711680\"]]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"4278190080\"]]],[\"Const\",[\"Cint\",\"24\"]]]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"255\"]]],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"65280\"]]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"16711680\"]]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"4278190080\"]]],[\"Const\",[\"Cint\",\"24\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L95"
       },
       {
         "level": 0,
@@ -145,7 +161,8 @@
         "line_number": 98,
         "column_number": 11,
         "description": "prune, !(n$107 > (n$108 - (n$109 - n$110)))",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Var\"]]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Var\"]]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L98"
       },
       {
         "level": 0,
@@ -153,7 +170,8 @@
         "line_number": 158,
         "column_number": 8,
         "description": "store, n$29, (()n$30 - sizeof(t=;nbytes=8))",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"IcnsBlockHeader\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"IcnsBlockHeader\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L158"
       },
       {
         "level": 0,
@@ -161,7 +179,8 @@
         "line_number": 121,
         "column_number": 5,
         "description": "store, n$83, (n$84 - ()4)",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"4\"]]]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"4\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L121"
       },
       {
         "level": 1,
@@ -169,7 +188,8 @@
         "line_number": 262,
         "column_number": 12,
         "description": "call, gdk_pixbuf_loader_write",
-        "feature": "[\"Call\",\"gdk_pixbuf_loader_write\"]"
+        "feature": "[\"Call\",\"gdk_pixbuf_loader_write\"]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L262"
       },
       {
         "level": 0,
@@ -177,7 +197,8 @@
         "line_number": 507,
         "column_number": 13,
         "description": "prune, (n$31 > ()0)",
-        "feature": "[\"Prune\",[\"BinOp\",\">\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]"
+        "feature": "[\"Prune\",[\"BinOp\",\">\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/gdk-pixbuf-loader.c#L507"
       },
       {
         "level": 1,
@@ -185,7 +206,8 @@
         "line_number": 511,
         "column_number": 33,
         "description": "call, gdk_pixbuf_loader_eat_header_write",
-        "feature": "[\"Call\",\"gdk_pixbuf_loader_eat_header_write\"]"
+        "feature": "[\"Call\",\"gdk_pixbuf_loader_eat_header_write\"]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/gdk-pixbuf-loader.c#L511"
       },
       {
         "level": 0,
@@ -193,7 +215,8 @@
         "line_number": 458,
         "column_number": 19,
         "description": "prune, !(()(4096 - n$20) < n$21)",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"-\",[\"Const\",[\"Cint\",\"4096\"]],[\"Var\"]]],[\"Var\"]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"-\",[\"Const\",[\"Cint\",\"4096\"]],[\"Var\"]]],[\"Var\"]]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/gdk-pixbuf-loader.c#L458"
       },
       {
         "level": 0,
@@ -201,7 +224,8 @@
         "line_number": 458,
         "column_number": 19,
         "description": "store, &n_bytes, n$24",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/gdk-pixbuf-loader.c#L458"
       },
       {
         "level": 1,
@@ -209,7 +233,8 @@
         "line_number": 459,
         "column_number": 9,
         "description": "int_underflow, memcpy, ()n$17",
-        "feature": "[\"IntUnderflow\",\"memcpy\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]"
+        "feature": "[\"IntUnderflow\",\"memcpy\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/gdk-pixbuf-loader.c#L459"
       }
     ],
     [
@@ -219,7 +244,8 @@
         "line_number": 349,
         "column_number": 15,
         "description": "input, fread",
-        "feature": "[\"Input\",\"fread\"]"
+        "feature": "[\"Input\",\"fread\"]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L349"
       },
       {
         "level": 1,
@@ -227,7 +253,8 @@
         "line_number": 368,
         "column_number": 14,
         "description": "call, load_icon",
-        "feature": "[\"Call\",\"load_icon\"]"
+        "feature": "[\"Call\",\"load_icon\"]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L368"
       },
       {
         "level": 1,
@@ -235,7 +262,8 @@
         "line_number": 251,
         "column_number": 8,
         "description": "call, load_resources",
-        "feature": "[\"Call\",\"load_resources\"]"
+        "feature": "[\"Call\",\"load_resources\"]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L251"
       },
       {
         "level": 0,
@@ -243,7 +271,8 @@
         "line_number": 95,
         "column_number": 7,
         "description": "store, &blocklen, (((((n$114 & 255) << 24) | ((n$116 & 65280) << 8)) | ((n$118 & 16711680) >> 8)) | ((n$120 & 4278190080) >> 24))",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"255\"]]],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"65280\"]]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"16711680\"]]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"4278190080\"]]],[\"Const\",[\"Cint\",\"24\"]]]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"255\"]]],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"65280\"]]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"16711680\"]]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"4278190080\"]]],[\"Const\",[\"Cint\",\"24\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L95"
       },
       {
         "level": 0,
@@ -251,7 +280,8 @@
         "line_number": 98,
         "column_number": 11,
         "description": "prune, !(n$107 > (n$108 - (n$109 - n$110)))",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Var\"]]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Var\"]]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L98"
       },
       {
         "level": 0,
@@ -259,7 +289,8 @@
         "line_number": 146,
         "column_number": 8,
         "description": "store, n$46, (()n$47 - sizeof(t=;nbytes=8))",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"IcnsBlockHeader\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"IcnsBlockHeader\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L146"
       },
       {
         "level": 1,
@@ -267,7 +298,8 @@
         "line_number": 262,
         "column_number": 12,
         "description": "call, gdk_pixbuf_loader_write",
-        "feature": "[\"Call\",\"gdk_pixbuf_loader_write\"]"
+        "feature": "[\"Call\",\"gdk_pixbuf_loader_write\"]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L262"
       },
       {
         "level": 0,
@@ -275,7 +307,8 @@
         "line_number": 507,
         "column_number": 13,
         "description": "prune, (n$31 > ()0)",
-        "feature": "[\"Prune\",[\"BinOp\",\">\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]"
+        "feature": "[\"Prune\",[\"BinOp\",\">\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/gdk-pixbuf-loader.c#L507"
       },
       {
         "level": 1,
@@ -283,7 +316,8 @@
         "line_number": 511,
         "column_number": 33,
         "description": "call, gdk_pixbuf_loader_eat_header_write",
-        "feature": "[\"Call\",\"gdk_pixbuf_loader_eat_header_write\"]"
+        "feature": "[\"Call\",\"gdk_pixbuf_loader_eat_header_write\"]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/gdk-pixbuf-loader.c#L511"
       },
       {
         "level": 0,
@@ -291,7 +325,8 @@
         "line_number": 458,
         "column_number": 19,
         "description": "prune, !(()(4096 - n$20) < n$21)",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"-\",[\"Const\",[\"Cint\",\"4096\"]],[\"Var\"]]],[\"Var\"]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"-\",[\"Const\",[\"Cint\",\"4096\"]],[\"Var\"]]],[\"Var\"]]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/gdk-pixbuf-loader.c#L458"
       },
       {
         "level": 0,
@@ -299,7 +334,8 @@
         "line_number": 458,
         "column_number": 19,
         "description": "store, &n_bytes, n$24",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/gdk-pixbuf-loader.c#L458"
       },
       {
         "level": 1,
@@ -307,7 +343,8 @@
         "line_number": 459,
         "column_number": 9,
         "description": "int_underflow, memcpy, ()n$17",
-        "feature": "[\"IntUnderflow\",\"memcpy\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]"
+        "feature": "[\"IntUnderflow\",\"memcpy\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/gdk-pixbuf-loader.c#L459"
       }
     ],
     [
@@ -317,7 +354,8 @@
         "line_number": 349,
         "column_number": 15,
         "description": "input, fread",
-        "feature": "[\"Input\",\"fread\"]"
+        "feature": "[\"Input\",\"fread\"]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L349"
       },
       {
         "level": 1,
@@ -325,7 +363,8 @@
         "line_number": 368,
         "column_number": 14,
         "description": "call, load_icon",
-        "feature": "[\"Call\",\"load_icon\"]"
+        "feature": "[\"Call\",\"load_icon\"]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L368"
       },
       {
         "level": 1,
@@ -333,7 +372,8 @@
         "line_number": 251,
         "column_number": 8,
         "description": "call, load_resources",
-        "feature": "[\"Call\",\"load_resources\"]"
+        "feature": "[\"Call\",\"load_resources\"]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L251"
       },
       {
         "level": 0,
@@ -341,7 +381,8 @@
         "line_number": 95,
         "column_number": 7,
         "description": "store, &blocklen, (((((n$114 & 255) << 24) | ((n$116 & 65280) << 8)) | ((n$118 & 16711680) >> 8)) | ((n$120 & 4278190080) >> 24))",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"255\"]]],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"65280\"]]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"16711680\"]]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"4278190080\"]]],[\"Const\",[\"Cint\",\"24\"]]]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"255\"]]],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"65280\"]]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"16711680\"]]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"4278190080\"]]],[\"Const\",[\"Cint\",\"24\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L95"
       },
       {
         "level": 0,
@@ -349,7 +390,8 @@
         "line_number": 98,
         "column_number": 11,
         "description": "prune, !(n$107 > (n$108 - (n$109 - n$110)))",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Var\"]]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Var\"]]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L98"
       },
       {
         "level": 0,
@@ -357,7 +399,8 @@
         "line_number": 146,
         "column_number": 8,
         "description": "store, n$46, (()n$47 - sizeof(t=;nbytes=8))",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"IcnsBlockHeader\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"IcnsBlockHeader\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L146"
       },
       {
         "level": 0,
@@ -365,7 +408,8 @@
         "line_number": 121,
         "column_number": 5,
         "description": "store, n$83, (n$84 - ()4)",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"4\"]]]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"4\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L121"
       },
       {
         "level": 1,
@@ -373,7 +417,8 @@
         "line_number": 262,
         "column_number": 12,
         "description": "call, gdk_pixbuf_loader_write",
-        "feature": "[\"Call\",\"gdk_pixbuf_loader_write\"]"
+        "feature": "[\"Call\",\"gdk_pixbuf_loader_write\"]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L262"
       },
       {
         "level": 0,
@@ -381,7 +426,8 @@
         "line_number": 507,
         "column_number": 13,
         "description": "prune, (n$31 > ()0)",
-        "feature": "[\"Prune\",[\"BinOp\",\">\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]"
+        "feature": "[\"Prune\",[\"BinOp\",\">\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/gdk-pixbuf-loader.c#L507"
       },
       {
         "level": 1,
@@ -389,7 +435,8 @@
         "line_number": 511,
         "column_number": 33,
         "description": "call, gdk_pixbuf_loader_eat_header_write",
-        "feature": "[\"Call\",\"gdk_pixbuf_loader_eat_header_write\"]"
+        "feature": "[\"Call\",\"gdk_pixbuf_loader_eat_header_write\"]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/gdk-pixbuf-loader.c#L511"
       },
       {
         "level": 0,
@@ -397,7 +444,8 @@
         "line_number": 458,
         "column_number": 19,
         "description": "prune, !(()(4096 - n$20) < n$21)",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"-\",[\"Const\",[\"Cint\",\"4096\"]],[\"Var\"]]],[\"Var\"]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"-\",[\"Const\",[\"Cint\",\"4096\"]],[\"Var\"]]],[\"Var\"]]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/gdk-pixbuf-loader.c#L458"
       },
       {
         "level": 0,
@@ -405,7 +453,8 @@
         "line_number": 458,
         "column_number": 19,
         "description": "store, &n_bytes, n$24",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/gdk-pixbuf-loader.c#L458"
       },
       {
         "level": 1,
@@ -413,7 +462,8 @@
         "line_number": 459,
         "column_number": 9,
         "description": "int_underflow, memcpy, ()n$17",
-        "feature": "[\"IntUnderflow\",\"memcpy\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]"
+        "feature": "[\"IntUnderflow\",\"memcpy\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/gdk-pixbuf-loader.c#L459"
       }
     ],
     [
@@ -423,7 +473,8 @@
         "line_number": 349,
         "column_number": 15,
         "description": "input, fread",
-        "feature": "[\"Input\",\"fread\"]"
+        "feature": "[\"Input\",\"fread\"]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L349"
       },
       {
         "level": 1,
@@ -431,7 +482,8 @@
         "line_number": 368,
         "column_number": 14,
         "description": "call, load_icon",
-        "feature": "[\"Call\",\"load_icon\"]"
+        "feature": "[\"Call\",\"load_icon\"]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L368"
       },
       {
         "level": 1,
@@ -439,7 +491,8 @@
         "line_number": 251,
         "column_number": 8,
         "description": "call, load_resources",
-        "feature": "[\"Call\",\"load_resources\"]"
+        "feature": "[\"Call\",\"load_resources\"]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L251"
       },
       {
         "level": 0,
@@ -447,7 +500,8 @@
         "line_number": 95,
         "column_number": 7,
         "description": "store, &blocklen, (((((n$114 & 255) << 24) | ((n$116 & 65280) << 8)) | ((n$118 & 16711680) >> 8)) | ((n$120 & 4278190080) >> 24))",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"255\"]]],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"65280\"]]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"16711680\"]]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"4278190080\"]]],[\"Const\",[\"Cint\",\"24\"]]]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"255\"]]],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"65280\"]]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"16711680\"]]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"4278190080\"]]],[\"Const\",[\"Cint\",\"24\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L95"
       },
       {
         "level": 0,
@@ -455,7 +509,8 @@
         "line_number": 98,
         "column_number": 11,
         "description": "prune, !(n$107 > (n$108 - (n$109 - n$110)))",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Var\"]]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Var\"]]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L98"
       },
       {
         "level": 0,
@@ -463,7 +518,8 @@
         "line_number": 134,
         "column_number": 8,
         "description": "store, n$63, (()n$64 - sizeof(t=;nbytes=8))",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"IcnsBlockHeader\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"IcnsBlockHeader\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L134"
       },
       {
         "level": 1,
@@ -471,7 +527,8 @@
         "line_number": 262,
         "column_number": 12,
         "description": "call, gdk_pixbuf_loader_write",
-        "feature": "[\"Call\",\"gdk_pixbuf_loader_write\"]"
+        "feature": "[\"Call\",\"gdk_pixbuf_loader_write\"]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L262"
       },
       {
         "level": 0,
@@ -479,7 +536,8 @@
         "line_number": 507,
         "column_number": 13,
         "description": "prune, (n$31 > ()0)",
-        "feature": "[\"Prune\",[\"BinOp\",\">\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]"
+        "feature": "[\"Prune\",[\"BinOp\",\">\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/gdk-pixbuf-loader.c#L507"
       },
       {
         "level": 1,
@@ -487,7 +545,8 @@
         "line_number": 511,
         "column_number": 33,
         "description": "call, gdk_pixbuf_loader_eat_header_write",
-        "feature": "[\"Call\",\"gdk_pixbuf_loader_eat_header_write\"]"
+        "feature": "[\"Call\",\"gdk_pixbuf_loader_eat_header_write\"]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/gdk-pixbuf-loader.c#L511"
       },
       {
         "level": 0,
@@ -495,7 +554,8 @@
         "line_number": 458,
         "column_number": 19,
         "description": "prune, !(()(4096 - n$20) < n$21)",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"-\",[\"Const\",[\"Cint\",\"4096\"]],[\"Var\"]]],[\"Var\"]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"-\",[\"Const\",[\"Cint\",\"4096\"]],[\"Var\"]]],[\"Var\"]]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/gdk-pixbuf-loader.c#L458"
       },
       {
         "level": 0,
@@ -503,7 +563,8 @@
         "line_number": 458,
         "column_number": 19,
         "description": "store, &n_bytes, n$24",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/gdk-pixbuf-loader.c#L458"
       },
       {
         "level": 1,
@@ -511,7 +572,8 @@
         "line_number": 459,
         "column_number": 9,
         "description": "int_underflow, memcpy, ()n$17",
-        "feature": "[\"IntUnderflow\",\"memcpy\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]"
+        "feature": "[\"IntUnderflow\",\"memcpy\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/gdk-pixbuf-loader.c#L459"
       }
     ],
     [
@@ -521,7 +583,8 @@
         "line_number": 349,
         "column_number": 15,
         "description": "input, fread",
-        "feature": "[\"Input\",\"fread\"]"
+        "feature": "[\"Input\",\"fread\"]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L349"
       },
       {
         "level": 1,
@@ -529,7 +592,8 @@
         "line_number": 368,
         "column_number": 14,
         "description": "call, load_icon",
-        "feature": "[\"Call\",\"load_icon\"]"
+        "feature": "[\"Call\",\"load_icon\"]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L368"
       },
       {
         "level": 1,
@@ -537,7 +601,8 @@
         "line_number": 251,
         "column_number": 8,
         "description": "call, load_resources",
-        "feature": "[\"Call\",\"load_resources\"]"
+        "feature": "[\"Call\",\"load_resources\"]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L251"
       },
       {
         "level": 0,
@@ -545,7 +610,8 @@
         "line_number": 95,
         "column_number": 7,
         "description": "store, &blocklen, (((((n$114 & 255) << 24) | ((n$116 & 65280) << 8)) | ((n$118 & 16711680) >> 8)) | ((n$120 & 4278190080) >> 24))",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"255\"]]],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"65280\"]]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"16711680\"]]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"4278190080\"]]],[\"Const\",[\"Cint\",\"24\"]]]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"255\"]]],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"65280\"]]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"16711680\"]]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"4278190080\"]]],[\"Const\",[\"Cint\",\"24\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L95"
       },
       {
         "level": 0,
@@ -553,7 +619,8 @@
         "line_number": 98,
         "column_number": 11,
         "description": "prune, !(n$107 > (n$108 - (n$109 - n$110)))",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Var\"]]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Var\"]]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L98"
       },
       {
         "level": 0,
@@ -561,7 +628,8 @@
         "line_number": 134,
         "column_number": 8,
         "description": "store, n$63, (()n$64 - sizeof(t=;nbytes=8))",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"IcnsBlockHeader\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"IcnsBlockHeader\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L134"
       },
       {
         "level": 0,
@@ -569,7 +637,8 @@
         "line_number": 121,
         "column_number": 5,
         "description": "store, n$83, (n$84 - ()4)",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"4\"]]]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"4\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L121"
       },
       {
         "level": 1,
@@ -577,7 +646,8 @@
         "line_number": 262,
         "column_number": 12,
         "description": "call, gdk_pixbuf_loader_write",
-        "feature": "[\"Call\",\"gdk_pixbuf_loader_write\"]"
+        "feature": "[\"Call\",\"gdk_pixbuf_loader_write\"]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L262"
       },
       {
         "level": 0,
@@ -585,7 +655,8 @@
         "line_number": 507,
         "column_number": 13,
         "description": "prune, (n$31 > ()0)",
-        "feature": "[\"Prune\",[\"BinOp\",\">\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]"
+        "feature": "[\"Prune\",[\"BinOp\",\">\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/gdk-pixbuf-loader.c#L507"
       },
       {
         "level": 1,
@@ -593,7 +664,8 @@
         "line_number": 511,
         "column_number": 33,
         "description": "call, gdk_pixbuf_loader_eat_header_write",
-        "feature": "[\"Call\",\"gdk_pixbuf_loader_eat_header_write\"]"
+        "feature": "[\"Call\",\"gdk_pixbuf_loader_eat_header_write\"]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/gdk-pixbuf-loader.c#L511"
       },
       {
         "level": 0,
@@ -601,7 +673,8 @@
         "line_number": 458,
         "column_number": 19,
         "description": "prune, !(()(4096 - n$20) < n$21)",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"-\",[\"Const\",[\"Cint\",\"4096\"]],[\"Var\"]]],[\"Var\"]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"-\",[\"Const\",[\"Cint\",\"4096\"]],[\"Var\"]]],[\"Var\"]]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/gdk-pixbuf-loader.c#L458"
       },
       {
         "level": 0,
@@ -609,7 +682,8 @@
         "line_number": 458,
         "column_number": 19,
         "description": "store, &n_bytes, n$24",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/gdk-pixbuf-loader.c#L458"
       },
       {
         "level": 1,
@@ -617,7 +691,8 @@
         "line_number": 459,
         "column_number": 9,
         "description": "int_underflow, memcpy, ()n$17",
-        "feature": "[\"IntUnderflow\",\"memcpy\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]"
+        "feature": "[\"IntUnderflow\",\"memcpy\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/gdk-pixbuf-loader.c#L459"
       }
     ],
     [
@@ -627,7 +702,8 @@
         "line_number": 349,
         "column_number": 15,
         "description": "input, fread",
-        "feature": "[\"Input\",\"fread\"]"
+        "feature": "[\"Input\",\"fread\"]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L349"
       },
       {
         "level": 1,
@@ -635,7 +711,8 @@
         "line_number": 368,
         "column_number": 14,
         "description": "call, load_icon",
-        "feature": "[\"Call\",\"load_icon\"]"
+        "feature": "[\"Call\",\"load_icon\"]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L368"
       },
       {
         "level": 1,
@@ -643,7 +720,8 @@
         "line_number": 251,
         "column_number": 8,
         "description": "call, load_resources",
-        "feature": "[\"Call\",\"load_resources\"]"
+        "feature": "[\"Call\",\"load_resources\"]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L251"
       },
       {
         "level": 0,
@@ -651,7 +729,8 @@
         "line_number": 95,
         "column_number": 7,
         "description": "store, &blocklen, (((((n$114 & 255) << 24) | ((n$116 & 65280) << 8)) | ((n$118 & 16711680) >> 8)) | ((n$120 & 4278190080) >> 24))",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"255\"]]],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"65280\"]]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"16711680\"]]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"4278190080\"]]],[\"Const\",[\"Cint\",\"24\"]]]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"255\"]]],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"65280\"]]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"16711680\"]]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"4278190080\"]]],[\"Const\",[\"Cint\",\"24\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L95"
       },
       {
         "level": 0,
@@ -659,7 +738,8 @@
         "line_number": 98,
         "column_number": 11,
         "description": "prune, !(n$107 > (n$108 - (n$109 - n$110)))",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Var\"]]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Var\"]]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L98"
       },
       {
         "level": 0,
@@ -667,7 +747,8 @@
         "line_number": 117,
         "column_number": 8,
         "description": "store, n$89, (()n$90 - sizeof(t=;nbytes=8))",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"IcnsBlockHeader\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"IcnsBlockHeader\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L117"
       },
       {
         "level": 1,
@@ -675,7 +756,8 @@
         "line_number": 262,
         "column_number": 12,
         "description": "call, gdk_pixbuf_loader_write",
-        "feature": "[\"Call\",\"gdk_pixbuf_loader_write\"]"
+        "feature": "[\"Call\",\"gdk_pixbuf_loader_write\"]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L262"
       },
       {
         "level": 0,
@@ -683,7 +765,8 @@
         "line_number": 507,
         "column_number": 13,
         "description": "prune, (n$31 > ()0)",
-        "feature": "[\"Prune\",[\"BinOp\",\">\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]"
+        "feature": "[\"Prune\",[\"BinOp\",\">\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/gdk-pixbuf-loader.c#L507"
       },
       {
         "level": 1,
@@ -691,7 +774,8 @@
         "line_number": 511,
         "column_number": 33,
         "description": "call, gdk_pixbuf_loader_eat_header_write",
-        "feature": "[\"Call\",\"gdk_pixbuf_loader_eat_header_write\"]"
+        "feature": "[\"Call\",\"gdk_pixbuf_loader_eat_header_write\"]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/gdk-pixbuf-loader.c#L511"
       },
       {
         "level": 0,
@@ -699,7 +783,8 @@
         "line_number": 458,
         "column_number": 19,
         "description": "prune, !(()(4096 - n$20) < n$21)",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"-\",[\"Const\",[\"Cint\",\"4096\"]],[\"Var\"]]],[\"Var\"]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"-\",[\"Const\",[\"Cint\",\"4096\"]],[\"Var\"]]],[\"Var\"]]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/gdk-pixbuf-loader.c#L458"
       },
       {
         "level": 0,
@@ -707,7 +792,8 @@
         "line_number": 458,
         "column_number": 19,
         "description": "store, &n_bytes, n$24",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/gdk-pixbuf-loader.c#L458"
       },
       {
         "level": 1,
@@ -715,7 +801,8 @@
         "line_number": 459,
         "column_number": 9,
         "description": "int_underflow, memcpy, ()n$17",
-        "feature": "[\"IntUnderflow\",\"memcpy\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]"
+        "feature": "[\"IntUnderflow\",\"memcpy\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/gdk-pixbuf-loader.c#L459"
       }
     ],
     [
@@ -725,7 +812,8 @@
         "line_number": 349,
         "column_number": 15,
         "description": "input, fread",
-        "feature": "[\"Input\",\"fread\"]"
+        "feature": "[\"Input\",\"fread\"]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L349"
       },
       {
         "level": 1,
@@ -733,7 +821,8 @@
         "line_number": 368,
         "column_number": 14,
         "description": "call, load_icon",
-        "feature": "[\"Call\",\"load_icon\"]"
+        "feature": "[\"Call\",\"load_icon\"]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L368"
       },
       {
         "level": 1,
@@ -741,7 +830,8 @@
         "line_number": 251,
         "column_number": 8,
         "description": "call, load_resources",
-        "feature": "[\"Call\",\"load_resources\"]"
+        "feature": "[\"Call\",\"load_resources\"]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L251"
       },
       {
         "level": 0,
@@ -749,7 +839,8 @@
         "line_number": 95,
         "column_number": 7,
         "description": "store, &blocklen, (((((n$114 & 255) << 24) | ((n$116 & 65280) << 8)) | ((n$118 & 16711680) >> 8)) | ((n$120 & 4278190080) >> 24))",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"255\"]]],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"65280\"]]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"16711680\"]]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"4278190080\"]]],[\"Const\",[\"Cint\",\"24\"]]]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"255\"]]],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"65280\"]]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"16711680\"]]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"4278190080\"]]],[\"Const\",[\"Cint\",\"24\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L95"
       },
       {
         "level": 0,
@@ -757,7 +848,8 @@
         "line_number": 98,
         "column_number": 11,
         "description": "prune, !(n$107 > (n$108 - (n$109 - n$110)))",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Var\"]]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Var\"]]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L98"
       },
       {
         "level": 0,
@@ -765,7 +857,8 @@
         "line_number": 117,
         "column_number": 8,
         "description": "store, n$89, (()n$90 - sizeof(t=;nbytes=8))",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"IcnsBlockHeader\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"IcnsBlockHeader\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L117"
       },
       {
         "level": 0,
@@ -773,7 +866,8 @@
         "line_number": 121,
         "column_number": 5,
         "description": "store, n$83, (n$84 - ()4)",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"4\"]]]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"4\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L121"
       },
       {
         "level": 1,
@@ -781,7 +875,8 @@
         "line_number": 262,
         "column_number": 12,
         "description": "call, gdk_pixbuf_loader_write",
-        "feature": "[\"Call\",\"gdk_pixbuf_loader_write\"]"
+        "feature": "[\"Call\",\"gdk_pixbuf_loader_write\"]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L262"
       },
       {
         "level": 0,
@@ -789,7 +884,8 @@
         "line_number": 507,
         "column_number": 13,
         "description": "prune, (n$31 > ()0)",
-        "feature": "[\"Prune\",[\"BinOp\",\">\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]"
+        "feature": "[\"Prune\",[\"BinOp\",\">\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/gdk-pixbuf-loader.c#L507"
       },
       {
         "level": 1,
@@ -797,7 +893,8 @@
         "line_number": 511,
         "column_number": 33,
         "description": "call, gdk_pixbuf_loader_eat_header_write",
-        "feature": "[\"Call\",\"gdk_pixbuf_loader_eat_header_write\"]"
+        "feature": "[\"Call\",\"gdk_pixbuf_loader_eat_header_write\"]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/gdk-pixbuf-loader.c#L511"
       },
       {
         "level": 0,
@@ -805,7 +902,8 @@
         "line_number": 458,
         "column_number": 19,
         "description": "prune, !(()(4096 - n$20) < n$21)",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"-\",[\"Const\",[\"Cint\",\"4096\"]],[\"Var\"]]],[\"Var\"]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"-\",[\"Const\",[\"Cint\",\"4096\"]],[\"Var\"]]],[\"Var\"]]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/gdk-pixbuf-loader.c#L458"
       },
       {
         "level": 0,
@@ -813,7 +911,8 @@
         "line_number": 458,
         "column_number": 19,
         "description": "store, &n_bytes, n$24",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/gdk-pixbuf-loader.c#L458"
       },
       {
         "level": 1,
@@ -821,7 +920,8 @@
         "line_number": 459,
         "column_number": 9,
         "description": "int_underflow, memcpy, ()n$17",
-        "feature": "[\"IntUnderflow\",\"memcpy\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]"
+        "feature": "[\"IntUnderflow\",\"memcpy\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/gdk-pixbuf-loader.c#L459"
       }
     ],
     [
@@ -831,7 +931,8 @@
         "line_number": 349,
         "column_number": 15,
         "description": "input, fread",
-        "feature": "[\"Input\",\"fread\"]"
+        "feature": "[\"Input\",\"fread\"]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L349"
       },
       {
         "level": 1,
@@ -839,7 +940,8 @@
         "line_number": 368,
         "column_number": 14,
         "description": "call, load_icon",
-        "feature": "[\"Call\",\"load_icon\"]"
+        "feature": "[\"Call\",\"load_icon\"]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L368"
       },
       {
         "level": 1,
@@ -847,7 +949,8 @@
         "line_number": 251,
         "column_number": 8,
         "description": "call, load_resources",
-        "feature": "[\"Call\",\"load_resources\"]"
+        "feature": "[\"Call\",\"load_resources\"]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L251"
       },
       {
         "level": 0,
@@ -855,7 +958,8 @@
         "line_number": 95,
         "column_number": 7,
         "description": "store, &blocklen, (((((n$114 & 255) << 24) | ((n$116 & 65280) << 8)) | ((n$118 & 16711680) >> 8)) | ((n$120 & 4278190080) >> 24))",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"255\"]]],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"65280\"]]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"16711680\"]]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"4278190080\"]]],[\"Const\",[\"Cint\",\"24\"]]]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"255\"]]],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"65280\"]]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"16711680\"]]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"4278190080\"]]],[\"Const\",[\"Cint\",\"24\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L95"
       },
       {
         "level": 0,
@@ -863,7 +967,8 @@
         "line_number": 98,
         "column_number": 11,
         "description": "prune, !(n$107 > (n$108 - (n$109 - n$110)))",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Var\"]]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Var\"]]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L98"
       },
       {
         "level": 0,
@@ -871,7 +976,8 @@
         "line_number": 117,
         "column_number": 8,
         "description": "store, n$89, (()n$90 - sizeof(t=;nbytes=8))",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"IcnsBlockHeader\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"IcnsBlockHeader\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L117"
       },
       {
         "level": 0,
@@ -879,7 +985,8 @@
         "line_number": 121,
         "column_number": 5,
         "description": "store, n$83, (n$84 - ()4)",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"4\"]]]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"4\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L121"
       },
       {
         "level": 0,
@@ -887,7 +994,8 @@
         "line_number": 121,
         "column_number": 5,
         "description": "store, n$83, (n$84 - ()4)",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"4\"]]]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"4\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L121"
       },
       {
         "level": 1,
@@ -895,7 +1003,8 @@
         "line_number": 262,
         "column_number": 12,
         "description": "call, gdk_pixbuf_loader_write",
-        "feature": "[\"Call\",\"gdk_pixbuf_loader_write\"]"
+        "feature": "[\"Call\",\"gdk_pixbuf_loader_write\"]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L262"
       },
       {
         "level": 0,
@@ -903,7 +1012,8 @@
         "line_number": 507,
         "column_number": 13,
         "description": "prune, (n$31 > ()0)",
-        "feature": "[\"Prune\",[\"BinOp\",\">\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]"
+        "feature": "[\"Prune\",[\"BinOp\",\">\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/gdk-pixbuf-loader.c#L507"
       },
       {
         "level": 1,
@@ -911,7 +1021,8 @@
         "line_number": 511,
         "column_number": 33,
         "description": "call, gdk_pixbuf_loader_eat_header_write",
-        "feature": "[\"Call\",\"gdk_pixbuf_loader_eat_header_write\"]"
+        "feature": "[\"Call\",\"gdk_pixbuf_loader_eat_header_write\"]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/gdk-pixbuf-loader.c#L511"
       },
       {
         "level": 0,
@@ -919,7 +1030,8 @@
         "line_number": 458,
         "column_number": 19,
         "description": "prune, !(()(4096 - n$20) < n$21)",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"-\",[\"Const\",[\"Cint\",\"4096\"]],[\"Var\"]]],[\"Var\"]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"-\",[\"Const\",[\"Cint\",\"4096\"]],[\"Var\"]]],[\"Var\"]]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/gdk-pixbuf-loader.c#L458"
       },
       {
         "level": 0,
@@ -927,7 +1039,8 @@
         "line_number": 458,
         "column_number": 19,
         "description": "store, &n_bytes, n$24",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/gdk-pixbuf-loader.c#L458"
       },
       {
         "level": 1,
@@ -935,7 +1048,8 @@
         "line_number": 459,
         "column_number": 9,
         "description": "int_underflow, memcpy, ()n$17",
-        "feature": "[\"IntUnderflow\",\"memcpy\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]"
+        "feature": "[\"IntUnderflow\",\"memcpy\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/gdk-pixbuf-loader.c#L459"
       }
     ],
     [
@@ -945,7 +1059,8 @@
         "line_number": 349,
         "column_number": 15,
         "description": "input, fread",
-        "feature": "[\"Input\",\"fread\"]"
+        "feature": "[\"Input\",\"fread\"]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L349"
       },
       {
         "level": 1,
@@ -953,7 +1068,8 @@
         "line_number": 368,
         "column_number": 14,
         "description": "call, load_icon",
-        "feature": "[\"Call\",\"load_icon\"]"
+        "feature": "[\"Call\",\"load_icon\"]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L368"
       },
       {
         "level": 1,
@@ -961,7 +1077,8 @@
         "line_number": 251,
         "column_number": 8,
         "description": "call, load_resources",
-        "feature": "[\"Call\",\"load_resources\"]"
+        "feature": "[\"Call\",\"load_resources\"]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L251"
       },
       {
         "level": 0,
@@ -969,7 +1086,8 @@
         "line_number": 95,
         "column_number": 7,
         "description": "store, &blocklen, (((((n$114 & 255) << 24) | ((n$116 & 65280) << 8)) | ((n$118 & 16711680) >> 8)) | ((n$120 & 4278190080) >> 24))",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"255\"]]],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"65280\"]]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"16711680\"]]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"4278190080\"]]],[\"Const\",[\"Cint\",\"24\"]]]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"255\"]]],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"65280\"]]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"16711680\"]]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"4278190080\"]]],[\"Const\",[\"Cint\",\"24\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L95"
       },
       {
         "level": 0,
@@ -977,7 +1095,8 @@
         "line_number": 98,
         "column_number": 11,
         "description": "prune, !(n$107 > (n$108 - (n$109 - n$110)))",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Var\"]]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Var\"]]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L98"
       },
       {
         "level": 0,
@@ -985,7 +1104,8 @@
         "line_number": 109,
         "column_number": 8,
         "description": "store, n$100, (()n$101 - sizeof(t=;nbytes=8))",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"IcnsBlockHeader\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"IcnsBlockHeader\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L109"
       },
       {
         "level": 1,
@@ -993,7 +1113,8 @@
         "line_number": 262,
         "column_number": 12,
         "description": "call, gdk_pixbuf_loader_write",
-        "feature": "[\"Call\",\"gdk_pixbuf_loader_write\"]"
+        "feature": "[\"Call\",\"gdk_pixbuf_loader_write\"]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L262"
       },
       {
         "level": 0,
@@ -1001,7 +1122,8 @@
         "line_number": 507,
         "column_number": 13,
         "description": "prune, (n$31 > ()0)",
-        "feature": "[\"Prune\",[\"BinOp\",\">\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]"
+        "feature": "[\"Prune\",[\"BinOp\",\">\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/gdk-pixbuf-loader.c#L507"
       },
       {
         "level": 1,
@@ -1009,7 +1131,8 @@
         "line_number": 511,
         "column_number": 33,
         "description": "call, gdk_pixbuf_loader_eat_header_write",
-        "feature": "[\"Call\",\"gdk_pixbuf_loader_eat_header_write\"]"
+        "feature": "[\"Call\",\"gdk_pixbuf_loader_eat_header_write\"]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/gdk-pixbuf-loader.c#L511"
       },
       {
         "level": 0,
@@ -1017,7 +1140,8 @@
         "line_number": 458,
         "column_number": 19,
         "description": "prune, !(()(4096 - n$20) < n$21)",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"-\",[\"Const\",[\"Cint\",\"4096\"]],[\"Var\"]]],[\"Var\"]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"-\",[\"Const\",[\"Cint\",\"4096\"]],[\"Var\"]]],[\"Var\"]]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/gdk-pixbuf-loader.c#L458"
       },
       {
         "level": 0,
@@ -1025,7 +1149,8 @@
         "line_number": 458,
         "column_number": 19,
         "description": "store, &n_bytes, n$24",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/gdk-pixbuf-loader.c#L458"
       },
       {
         "level": 1,
@@ -1033,7 +1158,8 @@
         "line_number": 459,
         "column_number": 9,
         "description": "int_underflow, memcpy, ()n$17",
-        "feature": "[\"IntUnderflow\",\"memcpy\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]"
+        "feature": "[\"IntUnderflow\",\"memcpy\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/gdk-pixbuf-loader.c#L459"
       }
     ],
     [
@@ -1043,7 +1169,8 @@
         "line_number": 349,
         "column_number": 15,
         "description": "input, fread",
-        "feature": "[\"Input\",\"fread\"]"
+        "feature": "[\"Input\",\"fread\"]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L349"
       },
       {
         "level": 1,
@@ -1051,7 +1178,8 @@
         "line_number": 368,
         "column_number": 14,
         "description": "call, load_icon",
-        "feature": "[\"Call\",\"load_icon\"]"
+        "feature": "[\"Call\",\"load_icon\"]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L368"
       },
       {
         "level": 1,
@@ -1059,7 +1187,8 @@
         "line_number": 251,
         "column_number": 8,
         "description": "call, load_resources",
-        "feature": "[\"Call\",\"load_resources\"]"
+        "feature": "[\"Call\",\"load_resources\"]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L251"
       },
       {
         "level": 0,
@@ -1067,7 +1196,8 @@
         "line_number": 95,
         "column_number": 7,
         "description": "store, &blocklen, (((((n$114 & 255) << 24) | ((n$116 & 65280) << 8)) | ((n$118 & 16711680) >> 8)) | ((n$120 & 4278190080) >> 24))",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"255\"]]],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"65280\"]]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"16711680\"]]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"4278190080\"]]],[\"Const\",[\"Cint\",\"24\"]]]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"255\"]]],[\"Const\",[\"Cint\",\"24\"]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"65280\"]]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"16711680\"]]],[\"Const\",[\"Cint\",\"8\"]]]],[\"BinOp\",\"<<\",[\"BinOp\",\"&\",[\"Var\"],[\"Const\",[\"Cint\",\"4278190080\"]]],[\"Const\",[\"Cint\",\"24\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L95"
       },
       {
         "level": 0,
@@ -1075,7 +1205,8 @@
         "line_number": 98,
         "column_number": 11,
         "description": "prune, !(n$107 > (n$108 - (n$109 - n$110)))",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Var\"]]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Var\"]]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L98"
       },
       {
         "level": 0,
@@ -1083,7 +1214,8 @@
         "line_number": 109,
         "column_number": 8,
         "description": "store, n$100, (()n$101 - sizeof(t=;nbytes=8))",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"IcnsBlockHeader\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tstruct\",[\"CStruct\",[\"IcnsBlockHeader\"]]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L109"
       },
       {
         "level": 0,
@@ -1091,7 +1223,8 @@
         "line_number": 121,
         "column_number": 5,
         "description": "store, n$83, (n$84 - ()4)",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"4\"]]]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"4\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L121"
       },
       {
         "level": 1,
@@ -1099,7 +1232,8 @@
         "line_number": 262,
         "column_number": 12,
         "description": "call, gdk_pixbuf_loader_write",
-        "feature": "[\"Call\",\"gdk_pixbuf_loader_write\"]"
+        "feature": "[\"Call\",\"gdk_pixbuf_loader_write\"]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/io-icns.c#L262"
       },
       {
         "level": 0,
@@ -1107,7 +1241,8 @@
         "line_number": 507,
         "column_number": 13,
         "description": "prune, (n$31 > ()0)",
-        "feature": "[\"Prune\",[\"BinOp\",\">\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]"
+        "feature": "[\"Prune\",[\"BinOp\",\">\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/gdk-pixbuf-loader.c#L507"
       },
       {
         "level": 1,
@@ -1115,7 +1250,8 @@
         "line_number": 511,
         "column_number": 33,
         "description": "call, gdk_pixbuf_loader_eat_header_write",
-        "feature": "[\"Call\",\"gdk_pixbuf_loader_eat_header_write\"]"
+        "feature": "[\"Call\",\"gdk_pixbuf_loader_eat_header_write\"]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/gdk-pixbuf-loader.c#L511"
       },
       {
         "level": 0,
@@ -1123,7 +1259,8 @@
         "line_number": 458,
         "column_number": 19,
         "description": "prune, !(()(4096 - n$20) < n$21)",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"-\",[\"Const\",[\"Cint\",\"4096\"]],[\"Var\"]]],[\"Var\"]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"<\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"-\",[\"Const\",[\"Cint\",\"4096\"]],[\"Var\"]]],[\"Var\"]]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/gdk-pixbuf-loader.c#L458"
       },
       {
         "level": 0,
@@ -1131,7 +1268,8 @@
         "line_number": 458,
         "column_number": 19,
         "description": "store, &n_bytes, n$24",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/gdk-pixbuf-loader.c#L458"
       },
       {
         "level": 1,
@@ -1139,7 +1277,8 @@
         "line_number": 459,
         "column_number": 9,
         "description": "int_underflow, memcpy, ()n$17",
-        "feature": "[\"IntUnderflow\",\"memcpy\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]"
+        "feature": "[\"IntUnderflow\",\"memcpy\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]]",
+        "code": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11/blob/master/gdk-pixbuf/gdk-pixbuf-loader.c#L459"
       }
     ]
   ],
@@ -1153,5 +1292,6 @@
       "cnum": 15,
       "enum": 0
     }
-  }
+  },
+  "repository": "https://github.com/prosyslab-warehouse/gdk-pixbuf-2.36.11"
 }

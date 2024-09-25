@@ -15,7 +15,8 @@
         "line_number": 50,
         "column_number": 21,
         "description": "input, fgets",
-        "feature": "[\"Input\",\"fgets\"]"
+        "feature": "[\"Input\",\"fgets\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE78_OS_Command_Injection/s02/CWE78_OS_Command_Injection__char_console_system_11.c#L50"
       },
       {
         "level": 0,
@@ -23,7 +24,8 @@
         "line_number": 70,
         "column_number": 9,
         "description": "cmd_injection, system, n$0",
-        "feature": "[\"CmdInjection\",\"system\",[\"Var\"]]"
+        "feature": "[\"CmdInjection\",\"system\",[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE78_OS_Command_Injection/s02/CWE78_OS_Command_Injection__char_console_system_11.c#L70"
       }
     ],
     [
@@ -33,7 +35,8 @@
         "line_number": 50,
         "column_number": 21,
         "description": "input, fgets",
-        "feature": "[\"Input\",\"fgets\"]"
+        "feature": "[\"Input\",\"fgets\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE78_OS_Command_Injection/s02/CWE78_OS_Command_Injection__char_console_system_11.c#L50"
       },
       {
         "level": 0,
@@ -41,7 +44,8 @@
         "line_number": 55,
         "column_number": 40,
         "description": "prune, (n$16 == 10)",
-        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]"
+        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE78_OS_Command_Injection/s02/CWE78_OS_Command_Injection__char_console_system_11.c#L55"
       },
       {
         "level": 0,
@@ -49,7 +53,8 @@
         "line_number": 70,
         "column_number": 9,
         "description": "cmd_injection, system, n$0",
-        "feature": "[\"CmdInjection\",\"system\",[\"Var\"]]"
+        "feature": "[\"CmdInjection\",\"system\",[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE78_OS_Command_Injection/s02/CWE78_OS_Command_Injection__char_console_system_11.c#L70"
       }
     ],
     [
@@ -59,7 +64,8 @@
         "line_number": 50,
         "column_number": 21,
         "description": "input, fgets",
-        "feature": "[\"Input\",\"fgets\"]"
+        "feature": "[\"Input\",\"fgets\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE78_OS_Command_Injection/s02/CWE78_OS_Command_Injection__char_console_system_11.c#L50"
       },
       {
         "level": 0,
@@ -67,7 +73,8 @@
         "line_number": 55,
         "column_number": 40,
         "description": "prune, !(n$16 == 10)",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE78_OS_Command_Injection/s02/CWE78_OS_Command_Injection__char_console_system_11.c#L55"
       },
       {
         "level": 0,
@@ -75,7 +82,8 @@
         "line_number": 70,
         "column_number": 9,
         "description": "cmd_injection, system, n$0",
-        "feature": "[\"CmdInjection\",\"system\",[\"Var\"]]"
+        "feature": "[\"CmdInjection\",\"system\",[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE78_OS_Command_Injection/s02/CWE78_OS_Command_Injection__char_console_system_11.c#L70"
       }
     ],
     [
@@ -85,7 +93,8 @@
         "line_number": 50,
         "column_number": 21,
         "description": "input, fgets",
-        "feature": "[\"Input\",\"fgets\"]"
+        "feature": "[\"Input\",\"fgets\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE78_OS_Command_Injection/s02/CWE78_OS_Command_Injection__char_console_system_11.c#L50"
       },
       {
         "level": 0,
@@ -93,7 +102,8 @@
         "line_number": 54,
         "column_number": 31,
         "description": "library_call, strlen, n$21",
-        "feature": "[\"LibraryCall\",\"strlen\",\"n$21\"]"
+        "feature": "[\"LibraryCall\",\"strlen\",\"n$21\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE78_OS_Command_Injection/s02/CWE78_OS_Command_Injection__char_console_system_11.c#L54"
       },
       {
         "level": 0,
@@ -101,7 +111,8 @@
         "line_number": 70,
         "column_number": 9,
         "description": "cmd_injection, system, n$0",
-        "feature": "[\"CmdInjection\",\"system\",[\"Var\"]]"
+        "feature": "[\"CmdInjection\",\"system\",[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE78_OS_Command_Injection/s02/CWE78_OS_Command_Injection__char_console_system_11.c#L70"
       }
     ],
     [
@@ -111,7 +122,8 @@
         "line_number": 50,
         "column_number": 21,
         "description": "input, fgets",
-        "feature": "[\"Input\",\"fgets\"]"
+        "feature": "[\"Input\",\"fgets\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE78_OS_Command_Injection/s02/CWE78_OS_Command_Injection__char_console_system_11.c#L50"
       },
       {
         "level": 0,
@@ -119,7 +131,8 @@
         "line_number": 54,
         "column_number": 31,
         "description": "library_call, strlen, n$21",
-        "feature": "[\"LibraryCall\",\"strlen\",\"n$21\"]"
+        "feature": "[\"LibraryCall\",\"strlen\",\"n$21\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE78_OS_Command_Injection/s02/CWE78_OS_Command_Injection__char_console_system_11.c#L54"
       },
       {
         "level": 0,
@@ -127,7 +140,8 @@
         "line_number": 55,
         "column_number": 40,
         "description": "prune, (n$16 == 10)",
-        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]"
+        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE78_OS_Command_Injection/s02/CWE78_OS_Command_Injection__char_console_system_11.c#L55"
       },
       {
         "level": 0,
@@ -135,7 +149,8 @@
         "line_number": 70,
         "column_number": 9,
         "description": "cmd_injection, system, n$0",
-        "feature": "[\"CmdInjection\",\"system\",[\"Var\"]]"
+        "feature": "[\"CmdInjection\",\"system\",[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE78_OS_Command_Injection/s02/CWE78_OS_Command_Injection__char_console_system_11.c#L70"
       }
     ],
     [
@@ -145,7 +160,8 @@
         "line_number": 50,
         "column_number": 21,
         "description": "input, fgets",
-        "feature": "[\"Input\",\"fgets\"]"
+        "feature": "[\"Input\",\"fgets\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE78_OS_Command_Injection/s02/CWE78_OS_Command_Injection__char_console_system_11.c#L50"
       },
       {
         "level": 0,
@@ -153,7 +169,8 @@
         "line_number": 54,
         "column_number": 31,
         "description": "library_call, strlen, n$21",
-        "feature": "[\"LibraryCall\",\"strlen\",\"n$21\"]"
+        "feature": "[\"LibraryCall\",\"strlen\",\"n$21\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE78_OS_Command_Injection/s02/CWE78_OS_Command_Injection__char_console_system_11.c#L54"
       },
       {
         "level": 0,
@@ -161,7 +178,8 @@
         "line_number": 55,
         "column_number": 40,
         "description": "prune, !(n$16 == 10)",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"10\"]]]]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE78_OS_Command_Injection/s02/CWE78_OS_Command_Injection__char_console_system_11.c#L55"
       },
       {
         "level": 0,
@@ -169,7 +187,8 @@
         "line_number": 70,
         "column_number": 9,
         "description": "cmd_injection, system, n$0",
-        "feature": "[\"CmdInjection\",\"system\",[\"Var\"]]"
+        "feature": "[\"CmdInjection\",\"system\",[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE78_OS_Command_Injection/s02/CWE78_OS_Command_Injection__char_console_system_11.c#L70"
       }
     ]
   ],
@@ -183,5 +202,6 @@
       "cnum": 21,
       "enum": 0
     }
-  }
+  },
+  "repository": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE78_OS_Command_Injection/s02/CWE78_OS_Command_Injection__char_console_system_11.c"
 }

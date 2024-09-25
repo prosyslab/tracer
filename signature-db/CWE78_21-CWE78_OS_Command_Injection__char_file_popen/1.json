@@ -15,7 +15,8 @@
         "line_number": 63,
         "column_number": 25,
         "description": "input, fgets",
-        "feature": "[\"Input\",\"fgets\"]"
+        "feature": "[\"Input\",\"fgets\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE78_OS_Command_Injection/s03/CWE78_OS_Command_Injection__char_file_popen_21.c#L63"
       },
       {
         "level": 0,
@@ -23,7 +24,8 @@
         "line_number": 87,
         "column_number": 16,
         "description": "cmd_injection, popen, n$5",
-        "feature": "[\"CmdInjection\",\"popen\",[\"Var\"]]"
+        "feature": "[\"CmdInjection\",\"popen\",[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE78_OS_Command_Injection/s03/CWE78_OS_Command_Injection__char_file_popen_21.c#L87"
       }
     ]
   ],
@@ -37,5 +39,6 @@
       "cnum": 25,
       "enum": 0
     }
-  }
+  },
+  "repository": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE78_OS_Command_Injection/s03/CWE78_OS_Command_Injection__char_file_popen_21.c"
 }

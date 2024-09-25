@@ -15,7 +15,8 @@
         "line_number": 97,
         "column_number": 26,
         "description": "input, recv",
-        "feature": "[\"Input\",\"recv\"]"
+        "feature": "[\"Input\",\"recv\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_connect_socket_snprintf_52a.c#L97"
       },
       {
         "level": 1,
@@ -23,7 +24,8 @@
         "line_number": 128,
         "column_number": 5,
         "description": "call, CWE134_Uncontrolled_Format_String__char_connect_socket_snprintf_52b_badSink",
-        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_connect_socket_snprintf_52b_badSink\"]"
+        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_connect_socket_snprintf_52b_badSink\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_connect_socket_snprintf_52a.c#L128"
       },
       {
         "level": 1,
@@ -31,7 +33,8 @@
         "line_number": 58,
         "column_number": 5,
         "description": "call, CWE134_Uncontrolled_Format_String__char_connect_socket_snprintf_52c_badSink",
-        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_connect_socket_snprintf_52c_badSink\"]"
+        "feature": "[\"Call\",\"CWE134_Uncontrolled_Format_String__char_connect_socket_snprintf_52c_badSink\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_connect_socket_snprintf_52b.c#L58"
       },
       {
         "level": 0,
@@ -39,7 +42,8 @@
         "line_number": 58,
         "column_number": 9,
         "description": "format_string, snprintf, n$1",
-        "feature": "[\"FormatString\",\"snprintf\",[\"Var\"]]"
+        "feature": "[\"FormatString\",\"snprintf\",[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_connect_socket_snprintf_52c.c#L58"
       }
     ]
   ],
@@ -53,5 +57,6 @@
       "cnum": 26,
       "enum": 0
     }
-  }
+  },
+  "repository": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE134_Uncontrolled_Format_String/s01/CWE134_Uncontrolled_Format_String__char_connect_socket_snprintf_52c.c"
 }

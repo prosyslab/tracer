@@ -15,7 +15,8 @@
         "line_number": 35,
         "column_number": 23,
         "description": "allocate, malloc",
-        "feature": "[\"Allocate\",\"malloc\"]"
+        "feature": "[\"Allocate\",\"malloc\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_int64_t_41.c#L35"
       },
       {
         "level": 0,
@@ -23,7 +24,8 @@
         "line_number": 38,
         "column_number": 5,
         "description": "free, free, n$2",
-        "feature": "[\"Free\",\"free\",[\"Var\"]]"
+        "feature": "[\"Free\",\"free\",[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_int64_t_41.c#L38"
       },
       {
         "level": 1,
@@ -31,7 +33,8 @@
         "line_number": 39,
         "column_number": 5,
         "description": "call, badSink",
-        "feature": "[\"Call\",\"badSink\"]"
+        "feature": "[\"Call\",\"badSink\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_int64_t_41.c#L39"
       },
       {
         "level": 0,
@@ -39,11 +42,13 @@
         "line_number": 27,
         "column_number": 5,
         "description": "free, free, n$0",
-        "feature": "[\"Free\",\"free\",[\"Var\"]]"
+        "feature": "[\"Free\",\"free\",[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_int64_t_41.c#L27"
       }
     ]
   ],
   "key": "CWE415_Double_Free__malloc_free_int64_t_41.c|CWE415_Double_Free__malloc_free_int64_t_41_bad|API_MISUSE",
   "hash": "96d020860fb11890dffcde9630be8176",
-  "bug_type_hum": "Api Misuse"
+  "bug_type_hum": "Api Misuse",
+  "repository": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_int64_t_41.c"
 }

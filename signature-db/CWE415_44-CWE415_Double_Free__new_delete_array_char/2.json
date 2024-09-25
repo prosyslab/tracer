@@ -15,7 +15,8 @@
         "line_number": 40,
         "column_number": 12,
         "description": "allocate, __new_array",
-        "feature": "[\"Allocate\",\"__new_array\"]"
+        "feature": "[\"Allocate\",\"__new_array\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__new_delete_array_char_44.cpp#L40"
       },
       {
         "level": 0,
@@ -23,7 +24,8 @@
         "line_number": 42,
         "column_number": 5,
         "description": "free, __delete_array, n$3",
-        "feature": "[\"Free\",\"__delete_array\",[\"Var\"]]"
+        "feature": "[\"Free\",\"__delete_array\",[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__new_delete_array_char_44.cpp#L42"
       },
       {
         "level": 1,
@@ -31,11 +33,13 @@
         "line_number": 44,
         "column_number": 5,
         "description": "call, CWE415_Double_Free__new_delete_array_char_44::badSink",
-        "feature": "[\"Call\",\"CWE415_Double_Free__new_delete_array_char_44::badSink\"]"
+        "feature": "[\"Call\",\"CWE415_Double_Free__new_delete_array_char_44::badSink\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__new_delete_array_char_44.cpp#L44"
       }
     ]
   ],
   "key": "CWE415_Double_Free__new_delete_array_char_44.cpp|CWE415_Double_Free__new_delete_array_char_44::bad|API_MISUSE",
   "hash": "5a35c1da2b7057485a64bdd94e51c998",
-  "bug_type_hum": "Api Misuse"
+  "bug_type_hum": "Api Misuse",
+  "repository": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__new_delete_array_char_44.cpp"
 }

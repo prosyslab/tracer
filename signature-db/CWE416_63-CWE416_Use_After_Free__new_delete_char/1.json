@@ -15,7 +15,8 @@
         "line_number": 35,
         "column_number": 12,
         "description": "allocate, __new",
-        "feature": "[\"Allocate\",\"__new\"]"
+        "feature": "[\"Allocate\",\"__new\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_63a.cpp#L35"
       },
       {
         "level": 0,
@@ -23,7 +24,8 @@
         "line_number": 38,
         "column_number": 5,
         "description": "free, __delete, n$1",
-        "feature": "[\"Free\",\"__delete\",[\"Var\"]]"
+        "feature": "[\"Free\",\"__delete\",[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_63a.cpp#L38"
       },
       {
         "level": 1,
@@ -31,7 +33,8 @@
         "line_number": 39,
         "column_number": 5,
         "description": "call, CWE416_Use_After_Free__new_delete_char_63::badSink",
-        "feature": "[\"Call\",\"CWE416_Use_After_Free__new_delete_char_63::badSink\"]"
+        "feature": "[\"Call\",\"CWE416_Use_After_Free__new_delete_char_63::badSink\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_63a.cpp#L39"
       },
       {
         "level": 0,
@@ -39,11 +42,13 @@
         "line_number": 31,
         "column_number": 5,
         "description": "library_call, printHexCharLine, n$1",
-        "feature": "[\"LibraryCall\",\"printHexCharLine\",\"n$1\"]"
+        "feature": "[\"LibraryCall\",\"printHexCharLine\",\"n$1\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_63b.cpp#L31"
       }
     ]
   ],
   "key": "CWE416_Use_After_Free__new_delete_char_63a.cpp|CWE416_Use_After_Free__new_delete_char_63::bad|API_MISUSE",
   "hash": "c21bcb6b73d64f244b8d8546797bc2b4",
-  "bug_type_hum": "Api Misuse"
+  "bug_type_hum": "Api Misuse",
+  "repository": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_63b.cpp"
 }

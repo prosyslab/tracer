@@ -15,7 +15,8 @@
         "line_number": 27,
         "column_number": 5,
         "description": "input, fscanf",
-        "feature": "[\"Input\",\"fscanf\"]"
+        "feature": "[\"Input\",\"fscanf\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s05/CWE190_Integer_Overflow__unsigned_int_fscanf_add_31.c#L27"
       },
       {
         "level": 0,
@@ -23,7 +24,8 @@
         "line_number": 29,
         "column_number": 9,
         "description": "store, &dataCopy, n$4",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s05/CWE190_Integer_Overflow__unsigned_int_fscanf_add_31.c#L29"
       },
       {
         "level": 0,
@@ -31,7 +33,8 @@
         "line_number": 30,
         "column_number": 9,
         "description": "store, &data, n$3",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s05/CWE190_Integer_Overflow__unsigned_int_fscanf_add_31.c#L30"
       },
       {
         "level": 0,
@@ -39,7 +42,8 @@
         "line_number": 33,
         "column_number": 13,
         "description": "store, &result, (n$2 + ()1)",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IUInt\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"1\"]]]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IUInt\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"1\"]]]]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s05/CWE190_Integer_Overflow__unsigned_int_fscanf_add_31.c#L33"
       },
       {
         "level": 0,
@@ -47,7 +51,8 @@
         "line_number": 34,
         "column_number": 13,
         "description": "int_overflow, printUnsignedLine, n$0",
-        "feature": "[\"IntOverflow\",\"printUnsignedLine\",[\"Var\"]]"
+        "feature": "[\"IntOverflow\",\"printUnsignedLine\",[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s05/CWE190_Integer_Overflow__unsigned_int_fscanf_add_31.c#L34"
       }
     ]
   ],
@@ -61,5 +66,6 @@
       "cnum": 5,
       "enum": 0
     }
-  }
+  },
+  "repository": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s05/CWE190_Integer_Overflow__unsigned_int_fscanf_add_31.c"
 }

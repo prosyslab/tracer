@@ -15,7 +15,8 @@
         "line_number": 129,
         "column_number": 7,
         "description": "input, fread",
-        "feature": "[\"Input\",\"fread\"]"
+        "feature": "[\"Input\",\"fread\"]",
+        "code": "https://github.com/prosyslab-warehouse/shntool-3.0.5/blob/master/src/core_fileio.c#L129"
       },
       {
         "level": 0,
@@ -23,7 +24,8 @@
         "line_number": 136,
         "column_number": 5,
         "description": "store, n$1, ()((n$2 << 8) | n$3)",
-        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IUShort\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]],[\"Var\"]]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IUShort\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]],[\"Var\"]]]]",
+        "code": "https://github.com/prosyslab-warehouse/shntool-3.0.5/blob/master/src/core_fileio.c#L136"
       },
       {
         "level": 0,
@@ -31,7 +33,8 @@
         "line_number": 254,
         "column_number": 3,
         "description": "store, n$116.rate, ()(((()n$118 * ()n$120) * ()n$122) / ()8)",
-        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"/\",[\"BinOp\",\"*\",[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IUInt\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Cast\",{\"desc\":[\"Tint\",[\"IUInt\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IUInt\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IUInt\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"8\"]]]]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"/\",[\"BinOp\",\"*\",[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IUInt\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Cast\",{\"desc\":[\"Tint\",[\"IUInt\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IUInt\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IUInt\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"8\"]]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/shntool-3.0.5/blob/master/src/core_wave.c#L254"
       },
       {
         "level": 1,
@@ -39,7 +42,8 @@
         "line_number": 398,
         "column_number": 15,
         "description": "call, straight_comparison",
-        "feature": "[\"Call\",\"straight_comparison\"]"
+        "feature": "[\"Call\",\"straight_comparison\"]",
+        "code": "https://github.com/prosyslab-warehouse/shntool-3.0.5/blob/master/src/mode_cmp.c#L398"
       },
       {
         "level": 1,
@@ -47,7 +51,8 @@
         "line_number": 381,
         "column_number": 10,
         "description": "call, cmp_files",
-        "feature": "[\"Call\",\"cmp_files\"]"
+        "feature": "[\"Call\",\"cmp_files\"]",
+        "code": "https://github.com/prosyslab-warehouse/shntool-3.0.5/blob/master/src/mode_cmp.c#L381"
       },
       {
         "level": 0,
@@ -55,7 +60,8 @@
         "line_number": 184,
         "column_number": 15,
         "description": "prune, !(()262144 > (n$184 * n$186))",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"262144\"]]],[\"BinOp\",\"*\",[\"Var\"],[\"Var\"]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"262144\"]]],[\"BinOp\",\"*\",[\"Var\"],[\"Var\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/shntool-3.0.5/blob/master/src/mode_cmp.c#L184"
       },
       {
         "level": 0,
@@ -63,7 +69,8 @@
         "line_number": 184,
         "column_number": 15,
         "description": "store, &xfer_size, (n$187 * n$189)",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"*\",[\"Var\"],[\"Var\"]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"*\",[\"Var\"],[\"Var\"]]]",
+        "code": "https://github.com/prosyslab-warehouse/shntool-3.0.5/blob/master/src/mode_cmp.c#L184"
       },
       {
         "level": 0,
@@ -71,7 +78,8 @@
         "line_number": 187,
         "column_number": 23,
         "description": "int_overflow, malloc, ((()2 * n$176) * sizeof(t=;nbytes=1))",
-        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"*\",[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"2\"]]],[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tint\",[\"IUChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"*\",[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"2\"]]],[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tint\",[\"IUChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]",
+        "code": "https://github.com/prosyslab-warehouse/shntool-3.0.5/blob/master/src/mode_cmp.c#L187"
       }
     ],
     [
@@ -81,7 +89,8 @@
         "line_number": 129,
         "column_number": 7,
         "description": "input, fread",
-        "feature": "[\"Input\",\"fread\"]"
+        "feature": "[\"Input\",\"fread\"]",
+        "code": "https://github.com/prosyslab-warehouse/shntool-3.0.5/blob/master/src/core_fileio.c#L129"
       },
       {
         "level": 0,
@@ -89,7 +98,8 @@
         "line_number": 136,
         "column_number": 5,
         "description": "store, n$1, ()((n$2 << 8) | n$3)",
-        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IUShort\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]],[\"Var\"]]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IUShort\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]],[\"Var\"]]]]",
+        "code": "https://github.com/prosyslab-warehouse/shntool-3.0.5/blob/master/src/core_fileio.c#L136"
       },
       {
         "level": 0,
@@ -97,7 +107,8 @@
         "line_number": 254,
         "column_number": 3,
         "description": "store, n$116.rate, ()(((()n$118 * ()n$120) * ()n$122) / ()8)",
-        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"/\",[\"BinOp\",\"*\",[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IUInt\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Cast\",{\"desc\":[\"Tint\",[\"IUInt\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IUInt\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IUInt\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"8\"]]]]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"/\",[\"BinOp\",\"*\",[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IUInt\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Cast\",{\"desc\":[\"Tint\",[\"IUInt\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IUInt\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IUInt\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"8\"]]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/shntool-3.0.5/blob/master/src/core_wave.c#L254"
       },
       {
         "level": 0,
@@ -105,7 +116,8 @@
         "line_number": 276,
         "column_number": 7,
         "description": "prune, (n$71 == ()176400)",
-        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"176400\"]]]]]"
+        "feature": "[\"Prune\",[\"BinOp\",\"==\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"176400\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/shntool-3.0.5/blob/master/src/core_wave.c#L276"
       },
       {
         "level": 1,
@@ -113,7 +125,8 @@
         "line_number": 398,
         "column_number": 15,
         "description": "call, straight_comparison",
-        "feature": "[\"Call\",\"straight_comparison\"]"
+        "feature": "[\"Call\",\"straight_comparison\"]",
+        "code": "https://github.com/prosyslab-warehouse/shntool-3.0.5/blob/master/src/mode_cmp.c#L398"
       },
       {
         "level": 1,
@@ -121,7 +134,8 @@
         "line_number": 381,
         "column_number": 10,
         "description": "call, cmp_files",
-        "feature": "[\"Call\",\"cmp_files\"]"
+        "feature": "[\"Call\",\"cmp_files\"]",
+        "code": "https://github.com/prosyslab-warehouse/shntool-3.0.5/blob/master/src/mode_cmp.c#L381"
       },
       {
         "level": 0,
@@ -129,7 +143,8 @@
         "line_number": 184,
         "column_number": 15,
         "description": "prune, !(()262144 > (n$184 * n$186))",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"262144\"]]],[\"BinOp\",\"*\",[\"Var\"],[\"Var\"]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"262144\"]]],[\"BinOp\",\"*\",[\"Var\"],[\"Var\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/shntool-3.0.5/blob/master/src/mode_cmp.c#L184"
       },
       {
         "level": 0,
@@ -137,7 +152,8 @@
         "line_number": 184,
         "column_number": 15,
         "description": "store, &xfer_size, (n$187 * n$189)",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"*\",[\"Var\"],[\"Var\"]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"*\",[\"Var\"],[\"Var\"]]]",
+        "code": "https://github.com/prosyslab-warehouse/shntool-3.0.5/blob/master/src/mode_cmp.c#L184"
       },
       {
         "level": 0,
@@ -145,7 +161,8 @@
         "line_number": 187,
         "column_number": 23,
         "description": "int_overflow, malloc, ((()2 * n$176) * sizeof(t=;nbytes=1))",
-        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"*\",[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"2\"]]],[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tint\",[\"IUChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"*\",[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"2\"]]],[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tint\",[\"IUChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]",
+        "code": "https://github.com/prosyslab-warehouse/shntool-3.0.5/blob/master/src/mode_cmp.c#L187"
       }
     ],
     [
@@ -155,7 +172,8 @@
         "line_number": 129,
         "column_number": 7,
         "description": "input, fread",
-        "feature": "[\"Input\",\"fread\"]"
+        "feature": "[\"Input\",\"fread\"]",
+        "code": "https://github.com/prosyslab-warehouse/shntool-3.0.5/blob/master/src/core_fileio.c#L129"
       },
       {
         "level": 0,
@@ -163,7 +181,8 @@
         "line_number": 136,
         "column_number": 5,
         "description": "store, n$1, ()((n$2 << 8) | n$3)",
-        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IUShort\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]],[\"Var\"]]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IUShort\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"|\",[\"BinOp\",\"<<\",[\"Var\"],[\"Const\",[\"Cint\",\"8\"]]],[\"Var\"]]]]",
+        "code": "https://github.com/prosyslab-warehouse/shntool-3.0.5/blob/master/src/core_fileio.c#L136"
       },
       {
         "level": 0,
@@ -171,7 +190,8 @@
         "line_number": 254,
         "column_number": 3,
         "description": "store, n$116.rate, ()(((()n$118 * ()n$120) * ()n$122) / ()8)",
-        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"/\",[\"BinOp\",\"*\",[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IUInt\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Cast\",{\"desc\":[\"Tint\",[\"IUInt\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IUInt\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IUInt\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"8\"]]]]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"/\",[\"BinOp\",\"*\",[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IUInt\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Cast\",{\"desc\":[\"Tint\",[\"IUInt\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IUInt\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]]],[\"Cast\",{\"desc\":[\"Tint\",[\"IUInt\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"8\"]]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/shntool-3.0.5/blob/master/src/core_wave.c#L254"
       },
       {
         "level": 0,
@@ -179,7 +199,8 @@
         "line_number": 276,
         "column_number": 7,
         "description": "prune, !(n$71 == ()176400)",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"176400\"]]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"176400\"]]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/shntool-3.0.5/blob/master/src/core_wave.c#L276"
       },
       {
         "level": 1,
@@ -187,7 +208,8 @@
         "line_number": 398,
         "column_number": 15,
         "description": "call, straight_comparison",
-        "feature": "[\"Call\",\"straight_comparison\"]"
+        "feature": "[\"Call\",\"straight_comparison\"]",
+        "code": "https://github.com/prosyslab-warehouse/shntool-3.0.5/blob/master/src/mode_cmp.c#L398"
       },
       {
         "level": 1,
@@ -195,7 +217,8 @@
         "line_number": 381,
         "column_number": 10,
         "description": "call, cmp_files",
-        "feature": "[\"Call\",\"cmp_files\"]"
+        "feature": "[\"Call\",\"cmp_files\"]",
+        "code": "https://github.com/prosyslab-warehouse/shntool-3.0.5/blob/master/src/mode_cmp.c#L381"
       },
       {
         "level": 0,
@@ -203,7 +226,8 @@
         "line_number": 184,
         "column_number": 15,
         "description": "prune, !(()262144 > (n$184 * n$186))",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"262144\"]]],[\"BinOp\",\"*\",[\"Var\"],[\"Var\"]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\">\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"262144\"]]],[\"BinOp\",\"*\",[\"Var\"],[\"Var\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/shntool-3.0.5/blob/master/src/mode_cmp.c#L184"
       },
       {
         "level": 0,
@@ -211,7 +235,8 @@
         "line_number": 184,
         "column_number": 15,
         "description": "store, &xfer_size, (n$187 * n$189)",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"*\",[\"Var\"],[\"Var\"]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"*\",[\"Var\"],[\"Var\"]]]",
+        "code": "https://github.com/prosyslab-warehouse/shntool-3.0.5/blob/master/src/mode_cmp.c#L184"
       },
       {
         "level": 0,
@@ -219,7 +244,8 @@
         "line_number": 187,
         "column_number": 23,
         "description": "int_overflow, malloc, ((()2 * n$176) * sizeof(t=;nbytes=1))",
-        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"*\",[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"2\"]]],[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tint\",[\"IUChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"*\",[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"2\"]]],[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tint\",[\"IUChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]",
+        "code": "https://github.com/prosyslab-warehouse/shntool-3.0.5/blob/master/src/mode_cmp.c#L187"
       }
     ]
   ],
@@ -233,5 +259,6 @@
       "cnum": 7,
       "enum": 0
     }
-  }
+  },
+  "repository": "https://github.com/prosyslab-warehouse/shntool-3.0.5"
 }

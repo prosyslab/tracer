@@ -15,7 +15,8 @@
         "line_number": 115,
         "column_number": 30,
         "description": "input, recv",
-        "feature": "[\"Input\",\"recv\"]"
+        "feature": "[\"Input\",\"recv\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE78_OS_Command_Injection/s01/CWE78_OS_Command_Injection__char_connect_socket_execl_05.c#L115"
       },
       {
         "level": 0,
@@ -23,7 +24,8 @@
         "line_number": 149,
         "column_number": 5,
         "description": "cmd_injection, execl, n$0",
-        "feature": "[\"CmdInjection\",\"execl\",[\"Var\"]]"
+        "feature": "[\"CmdInjection\",\"execl\",[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE78_OS_Command_Injection/s01/CWE78_OS_Command_Injection__char_connect_socket_execl_05.c#L149"
       }
     ]
   ],
@@ -37,5 +39,6 @@
       "cnum": 30,
       "enum": 0
     }
-  }
+  },
+  "repository": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE78_OS_Command_Injection/s01/CWE78_OS_Command_Injection__char_connect_socket_execl_05.c"
 }

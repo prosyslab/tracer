@@ -15,7 +15,8 @@
         "line_number": 29,
         "column_number": 9,
         "description": "input, fscanf",
-        "feature": "[\"Input\",\"fscanf\"]"
+        "feature": "[\"Input\",\"fscanf\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE191_Integer_Underflow/s04/CWE191_Integer_Underflow__unsigned_int_fscanf_postdec_12.c#L29"
       },
       {
         "level": 0,
@@ -23,7 +24,8 @@
         "line_number": 48,
         "column_number": 13,
         "description": "prune, (n$5 > ()0)",
-        "feature": "[\"Prune\",[\"BinOp\",\">\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IUInt\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]"
+        "feature": "[\"Prune\",[\"BinOp\",\">\",[\"Var\"],[\"Cast\",{\"desc\":[\"Tint\",[\"IUInt\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Const\",[\"Cint\",\"0\"]]]]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE191_Integer_Underflow/s04/CWE191_Integer_Underflow__unsigned_int_fscanf_postdec_12.c#L48"
       },
       {
         "level": 0,
@@ -31,7 +33,8 @@
         "line_number": 50,
         "column_number": 13,
         "description": "store, &data, (n$9 - 1)",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Const\",[\"Cint\",\"1\"]]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Const\",[\"Cint\",\"1\"]]]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE191_Integer_Underflow/s04/CWE191_Integer_Underflow__unsigned_int_fscanf_postdec_12.c#L50"
       },
       {
         "level": 0,
@@ -39,7 +42,8 @@
         "line_number": 51,
         "column_number": 13,
         "description": "store, &result, n$8",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE191_Integer_Underflow/s04/CWE191_Integer_Underflow__unsigned_int_fscanf_postdec_12.c#L51"
       },
       {
         "level": 1,
@@ -47,7 +51,8 @@
         "line_number": 52,
         "column_number": 13,
         "description": "int_underflow, printUnsignedLine, n$6",
-        "feature": "[\"IntUnderflow\",\"printUnsignedLine\",[\"Var\"]]"
+        "feature": "[\"IntUnderflow\",\"printUnsignedLine\",[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE191_Integer_Underflow/s04/CWE191_Integer_Underflow__unsigned_int_fscanf_postdec_12.c#L52"
       }
     ]
   ],
@@ -61,5 +66,6 @@
       "cnum": 9,
       "enum": 0
     }
-  }
+  },
+  "repository": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE191_Integer_Underflow/s04/CWE191_Integer_Underflow__unsigned_int_fscanf_postdec_12.c"
 }

@@ -15,7 +15,8 @@
         "line_number": 118,
         "column_number": 26,
         "description": "input, recv",
-        "feature": "[\"Input\",\"recv\"]"
+        "feature": "[\"Input\",\"recv\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE134_Uncontrolled_Format_String/s03/CWE134_Uncontrolled_Format_String__char_listen_socket_snprintf_21.c#L118"
       },
       {
         "level": 1,
@@ -23,7 +24,8 @@
         "line_number": 154,
         "column_number": 5,
         "description": "call, badSink",
-        "feature": "[\"Call\",\"badSink\"]"
+        "feature": "[\"Call\",\"badSink\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE134_Uncontrolled_Format_String/s03/CWE134_Uncontrolled_Format_String__char_listen_socket_snprintf_21.c#L154"
       },
       {
         "level": 0,
@@ -31,7 +33,8 @@
         "line_number": 63,
         "column_number": 13,
         "description": "format_string, snprintf, n$2",
-        "feature": "[\"FormatString\",\"snprintf\",[\"Var\"]]"
+        "feature": "[\"FormatString\",\"snprintf\",[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE134_Uncontrolled_Format_String/s03/CWE134_Uncontrolled_Format_String__char_listen_socket_snprintf_21.c#L63"
       }
     ]
   ],
@@ -45,5 +48,6 @@
       "cnum": 26,
       "enum": 0
     }
-  }
+  },
+  "repository": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE134_Uncontrolled_Format_String/s03/CWE134_Uncontrolled_Format_String__char_listen_socket_snprintf_21.c"
 }

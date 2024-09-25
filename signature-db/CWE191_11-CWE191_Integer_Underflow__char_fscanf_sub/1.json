@@ -15,7 +15,8 @@
         "line_number": 29,
         "column_number": 9,
         "description": "input, fscanf",
-        "feature": "[\"Input\",\"fscanf\"]"
+        "feature": "[\"Input\",\"fscanf\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE191_Integer_Underflow/s01/CWE191_Integer_Underflow__char_fscanf_sub_11.c#L29"
       },
       {
         "level": 0,
@@ -23,7 +24,8 @@
         "line_number": 35,
         "column_number": 13,
         "description": "store, &result, (n$3 - 1)",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Const\",[\"Cint\",\"1\"]]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Const\",[\"Cint\",\"1\"]]]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE191_Integer_Underflow/s01/CWE191_Integer_Underflow__char_fscanf_sub_11.c#L35"
       },
       {
         "level": 1,
@@ -31,7 +33,8 @@
         "line_number": 36,
         "column_number": 13,
         "description": "int_underflow, printHexCharLine, n$1",
-        "feature": "[\"IntUnderflow\",\"printHexCharLine\",[\"Var\"]]"
+        "feature": "[\"IntUnderflow\",\"printHexCharLine\",[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE191_Integer_Underflow/s01/CWE191_Integer_Underflow__char_fscanf_sub_11.c#L36"
       }
     ]
   ],
@@ -45,5 +48,6 @@
       "cnum": 9,
       "enum": 0
     }
-  }
+  },
+  "repository": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE191_Integer_Underflow/s01/CWE191_Integer_Underflow__char_fscanf_sub_11.c"
 }

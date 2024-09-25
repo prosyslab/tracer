@@ -15,7 +15,8 @@
         "line_number": 36,
         "column_number": 17,
         "description": "input, fgets",
-        "feature": "[\"Input\",\"fgets\"]"
+        "feature": "[\"Input\",\"fgets\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s03/CWE190_Integer_Overflow__int_fgets_multiply_32.c#L36"
       },
       {
         "level": 0,
@@ -23,7 +24,8 @@
         "line_number": 39,
         "column_number": 17,
         "description": "store, &data, n$12",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s03/CWE190_Integer_Overflow__int_fgets_multiply_32.c#L39"
       },
       {
         "level": 0,
@@ -31,7 +33,8 @@
         "line_number": 46,
         "column_number": 9,
         "description": "store, n$8, n$9",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s03/CWE190_Integer_Overflow__int_fgets_multiply_32.c#L46"
       },
       {
         "level": 0,
@@ -39,7 +42,8 @@
         "line_number": 49,
         "column_number": 9,
         "description": "store, &data, n$7",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s03/CWE190_Integer_Overflow__int_fgets_multiply_32.c#L49"
       },
       {
         "level": 0,
@@ -47,7 +51,8 @@
         "line_number": 50,
         "column_number": 12,
         "description": "prune, (n$0 > 0)",
-        "feature": "[\"Prune\",[\"BinOp\",\">\",[\"Var\"],[\"Const\",[\"Cint\",\"0\"]]]]"
+        "feature": "[\"Prune\",[\"BinOp\",\">\",[\"Var\"],[\"Const\",[\"Cint\",\"0\"]]]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s03/CWE190_Integer_Overflow__int_fgets_multiply_32.c#L50"
       },
       {
         "level": 0,
@@ -55,7 +60,8 @@
         "line_number": 53,
         "column_number": 13,
         "description": "store, &result, (n$3 * 2)",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"*\",[\"Var\"],[\"Const\",[\"Cint\",\"2\"]]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"*\",[\"Var\"],[\"Const\",[\"Cint\",\"2\"]]]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s03/CWE190_Integer_Overflow__int_fgets_multiply_32.c#L53"
       },
       {
         "level": 0,
@@ -63,7 +69,8 @@
         "line_number": 54,
         "column_number": 13,
         "description": "int_overflow, printIntLine, n$1",
-        "feature": "[\"IntOverflow\",\"printIntLine\",[\"Var\"]]"
+        "feature": "[\"IntOverflow\",\"printIntLine\",[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s03/CWE190_Integer_Overflow__int_fgets_multiply_32.c#L54"
       }
     ]
   ],
@@ -77,5 +84,6 @@
       "cnum": 17,
       "enum": 0
     }
-  }
+  },
+  "repository": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s03/CWE190_Integer_Overflow__int_fgets_multiply_32.c"
 }

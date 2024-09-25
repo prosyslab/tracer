@@ -15,7 +15,8 @@
         "line_number": 508,
         "column_number": 31,
         "description": "input, getenv",
-        "feature": "[\"Input\",\"getenv\"]"
+        "feature": "[\"Input\",\"getenv\"]",
+        "code": "https://github.com/prosyslab-warehouse/mp3rename-0.6/blob/master/mp3rename.c#L508"
       },
       {
         "level": 0,
@@ -23,7 +24,8 @@
         "line_number": 508,
         "column_number": 3,
         "description": "buffer_overflow, sprintf, n$20",
-        "feature": "[\"BufferOverflow\",\"sprintf\",[\"Var\"]]"
+        "feature": "[\"BufferOverflow\",\"sprintf\",[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/mp3rename-0.6/blob/master/mp3rename.c#L508"
       }
     ]
   ],
@@ -37,5 +39,6 @@
       "cnum": 31,
       "enum": 0
     }
-  }
+  },
+  "repository": "https://github.com/prosyslab-warehouse/mp3rename-0.6"
 }

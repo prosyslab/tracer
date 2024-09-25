@@ -15,7 +15,8 @@
         "line_number": 941,
         "column_number": 1,
         "description": "input, main",
-        "feature": "[\"Input\",\"main\"]"
+        "feature": "[\"Input\",\"main\"]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/main.c#L941"
       },
       {
         "level": 0,
@@ -23,7 +24,8 @@
         "line_number": 1025,
         "column_number": 6,
         "description": "prune, (n$2637 != 45)",
-        "feature": "[\"Prune\",[\"BinOp\",\"!=\",[\"Var\"],[\"Const\",[\"Cint\",\"45\"]]]]"
+        "feature": "[\"Prune\",[\"BinOp\",\"!=\",[\"Var\"],[\"Const\",[\"Cint\",\"45\"]]]]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/main.c#L1025"
       },
       {
         "level": 0,
@@ -31,7 +33,8 @@
         "line_number": 1083,
         "column_number": 9,
         "description": "prune, (n$2567 != 45)",
-        "feature": "[\"Prune\",[\"BinOp\",\"!=\",[\"Var\"],[\"Const\",[\"Cint\",\"45\"]]]]"
+        "feature": "[\"Prune\",[\"BinOp\",\"!=\",[\"Var\"],[\"Const\",[\"Cint\",\"45\"]]]]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/main.c#L1083"
       },
       {
         "level": 0,
@@ -39,7 +42,8 @@
         "line_number": 1085,
         "column_number": 11,
         "description": "library_call, strcmp, n$2573, \"/usr/lib/openssh/sftp-server\"",
-        "feature": "[\"LibraryCall\",\"strcmp\",\"n$2573, \\\"/usr/lib/openssh/sftp-server\\\"\"]"
+        "feature": "[\"LibraryCall\",\"strcmp\",\"n$2573, \\\"/usr/lib/openssh/sftp-server\\\"\"]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/main.c#L1085"
       },
       {
         "level": 0,
@@ -47,7 +51,8 @@
         "line_number": 1086,
         "column_number": 11,
         "description": "library_call, strncmp, n$2576, \"scp \"",
-        "feature": "[\"LibraryCall\",\"strncmp\",\"n$2576, \\\"scp \\\"\"]"
+        "feature": "[\"LibraryCall\",\"strncmp\",\"n$2576, \\\"scp \\\"\"]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/main.c#L1086"
       },
       {
         "level": 0,
@@ -55,7 +60,8 @@
         "line_number": 1111,
         "column_number": 6,
         "description": "prune, !(n$2523 == 45)",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"45\"]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"45\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/main.c#L1111"
       },
       {
         "level": 1,
@@ -63,7 +69,8 @@
         "line_number": 1156,
         "column_number": 3,
         "description": "call, check_output",
-        "feature": "[\"Call\",\"check_output\"]"
+        "feature": "[\"Call\",\"check_output\"]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/main.c#L1156"
       },
       {
         "level": 1,
@@ -71,7 +78,8 @@
         "line_number": 51,
         "column_number": 2,
         "description": "call, invalid_filename",
-        "feature": "[\"Call\",\"invalid_filename\"]"
+        "feature": "[\"Call\",\"invalid_filename\"]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/output.c#L51"
       },
       {
         "level": 0,
@@ -79,7 +87,8 @@
         "line_number": 278,
         "column_number": 12,
         "description": "library_call, strlen, n$20",
-        "feature": "[\"LibraryCall\",\"strlen\",\"n$20\"]"
+        "feature": "[\"LibraryCall\",\"strlen\",\"n$20\"]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/macros.c#L278"
       },
       {
         "level": 0,
@@ -87,7 +96,8 @@
         "line_number": 49,
         "column_number": 2,
         "description": "store, &outfile, n$98",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/output.c#L49"
       },
       {
         "level": 0,
@@ -95,7 +105,8 @@
         "line_number": 50,
         "column_number": 2,
         "description": "store, &outfile, (n$95 + n$94)",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]]]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/output.c#L50"
       },
       {
         "level": 0,
@@ -103,7 +114,8 @@
         "line_number": 54,
         "column_number": 6,
         "description": "library_call, strstr, n$79",
-        "feature": "[\"LibraryCall\",\"strstr\",\"n$79\"]"
+        "feature": "[\"LibraryCall\",\"strstr\",\"n$79\"]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/output.c#L54"
       },
       {
         "level": 1,
@@ -111,7 +123,8 @@
         "line_number": 54,
         "column_number": 31,
         "description": "call, is_link",
-        "feature": "[\"Call\",\"is_link\"]"
+        "feature": "[\"Call\",\"is_link\"]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/output.c#L54"
       },
       {
         "level": 0,
@@ -119,7 +132,8 @@
         "line_number": 438,
         "column_number": 6,
         "description": "prune, !(n$33 == 0)",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"0\"]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"0\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/util.c#L438"
       },
       {
         "level": 1,
@@ -127,7 +141,8 @@
         "line_number": 451,
         "column_number": 4,
         "description": "call, trim_trailing_slash_or_dot",
-        "feature": "[\"Call\",\"trim_trailing_slash_or_dot\"]"
+        "feature": "[\"Call\",\"trim_trailing_slash_or_dot\"]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/util.c#L451"
       },
       {
         "level": 0,
@@ -135,7 +150,8 @@
         "line_number": 437,
         "column_number": 2,
         "description": "prune, n$37",
-        "feature": "[\"Prune\",[\"Var\"]]"
+        "feature": "[\"Prune\",[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/util.c#L437"
       },
       {
         "level": 0,
@@ -143,7 +159,8 @@
         "line_number": 448,
         "column_number": 4,
         "description": "store, &dup, n$24",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/util.c#L448"
       },
       {
         "level": 0,
@@ -151,7 +168,8 @@
         "line_number": 449,
         "column_number": 9,
         "description": "prune, n$16",
-        "feature": "[\"Prune\",[\"Var\"]]"
+        "feature": "[\"Prune\",[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/util.c#L449"
       },
       {
         "level": 0,
@@ -159,7 +177,8 @@
         "line_number": 49,
         "column_number": 2,
         "description": "store, &outfile, n$98",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/output.c#L49"
       },
       {
         "level": 0,
@@ -167,7 +186,8 @@
         "line_number": 50,
         "column_number": 2,
         "description": "store, &outfile, (n$95 + n$94)",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]]]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/output.c#L50"
       },
       {
         "level": 1,
@@ -175,7 +195,8 @@
         "line_number": 54,
         "column_number": 51,
         "description": "call, is_dir",
-        "feature": "[\"Call\",\"is_dir\"]"
+        "feature": "[\"Call\",\"is_dir\"]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/output.c#L54"
       },
       {
         "level": 0,
@@ -183,7 +204,8 @@
         "line_number": 407,
         "column_number": 6,
         "description": "prune, !(n$28 == 0)",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"0\"]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"0\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/util.c#L407"
       },
       {
         "level": 0,
@@ -191,7 +213,8 @@
         "line_number": 413,
         "column_number": 6,
         "description": "prune, !(n$9 == 47)",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"47\"]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"47\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/util.c#L413"
       },
       {
         "level": 0,
@@ -199,7 +222,8 @@
         "line_number": 49,
         "column_number": 2,
         "description": "store, &outfile, n$98",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/output.c#L49"
       },
       {
         "level": 0,
@@ -207,7 +231,8 @@
         "line_number": 50,
         "column_number": 2,
         "description": "store, &outfile, (n$95 + n$94)",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]]]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/output.c#L50"
       },
       {
         "level": 0,
@@ -215,7 +240,8 @@
         "line_number": 79,
         "column_number": 32,
         "description": "library_call, strlen, n$48",
-        "feature": "[\"LibraryCall\",\"strlen\",\"n$48\"]"
+        "feature": "[\"LibraryCall\",\"strlen\",\"n$48\"]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/output.c#L79"
       },
       {
         "level": 0,
@@ -223,7 +249,8 @@
         "line_number": 95,
         "column_number": 3,
         "description": "library_call, sprintf, \"2>&1 | %s/firejail/ftee %s\", \"/usr/local/lib\", n$7",
-        "feature": "[\"LibraryCall\",\"sprintf\",\"\\\"2>&1 | %s/firejail/ftee %s\\\", \\\"/usr/local/lib\\\", n$7\"]"
+        "feature": "[\"LibraryCall\",\"sprintf\",\"\\\"2>&1 | %s/firejail/ftee %s\\\", \\\"/usr/local/lib\\\", n$7\"]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/output.c#L95"
       },
       {
         "level": 0,
@@ -231,7 +258,8 @@
         "line_number": 105,
         "column_number": 2,
         "description": "cmd_injection, execvp, n$2",
-        "feature": "[\"CmdInjection\",\"execvp\",[\"Var\"]]"
+        "feature": "[\"CmdInjection\",\"execvp\",[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/output.c#L105"
       }
     ],
     [
@@ -241,7 +269,8 @@
         "line_number": 941,
         "column_number": 1,
         "description": "input, main",
-        "feature": "[\"Input\",\"main\"]"
+        "feature": "[\"Input\",\"main\"]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/main.c#L941"
       },
       {
         "level": 0,
@@ -249,7 +278,8 @@
         "line_number": 1025,
         "column_number": 6,
         "description": "prune, (n$2637 != 45)",
-        "feature": "[\"Prune\",[\"BinOp\",\"!=\",[\"Var\"],[\"Const\",[\"Cint\",\"45\"]]]]"
+        "feature": "[\"Prune\",[\"BinOp\",\"!=\",[\"Var\"],[\"Const\",[\"Cint\",\"45\"]]]]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/main.c#L1025"
       },
       {
         "level": 0,
@@ -257,7 +287,8 @@
         "line_number": 1083,
         "column_number": 9,
         "description": "prune, (n$2567 != 45)",
-        "feature": "[\"Prune\",[\"BinOp\",\"!=\",[\"Var\"],[\"Const\",[\"Cint\",\"45\"]]]]"
+        "feature": "[\"Prune\",[\"BinOp\",\"!=\",[\"Var\"],[\"Const\",[\"Cint\",\"45\"]]]]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/main.c#L1083"
       },
       {
         "level": 0,
@@ -265,7 +296,8 @@
         "line_number": 1084,
         "column_number": 10,
         "description": "library_call, strcmp, n$2569, \"-c\"",
-        "feature": "[\"LibraryCall\",\"strcmp\",\"n$2569, \\\"-c\\\"\"]"
+        "feature": "[\"LibraryCall\",\"strcmp\",\"n$2569, \\\"-c\\\"\"]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/main.c#L1084"
       },
       {
         "level": 0,
@@ -273,7 +305,8 @@
         "line_number": 1085,
         "column_number": 11,
         "description": "library_call, strcmp, n$2573, \"/usr/lib/openssh/sftp-server\"",
-        "feature": "[\"LibraryCall\",\"strcmp\",\"n$2573, \\\"/usr/lib/openssh/sftp-server\\\"\"]"
+        "feature": "[\"LibraryCall\",\"strcmp\",\"n$2573, \\\"/usr/lib/openssh/sftp-server\\\"\"]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/main.c#L1085"
       },
       {
         "level": 0,
@@ -281,7 +314,8 @@
         "line_number": 1086,
         "column_number": 11,
         "description": "library_call, strncmp, n$2576, \"scp \"",
-        "feature": "[\"LibraryCall\",\"strncmp\",\"n$2576, \\\"scp \\\"\"]"
+        "feature": "[\"LibraryCall\",\"strncmp\",\"n$2576, \\\"scp \\\"\"]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/main.c#L1086"
       },
       {
         "level": 0,
@@ -289,7 +323,8 @@
         "line_number": 1111,
         "column_number": 6,
         "description": "prune, !(n$2523 == 45)",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"45\"]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"45\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/main.c#L1111"
       },
       {
         "level": 1,
@@ -297,7 +332,8 @@
         "line_number": 1156,
         "column_number": 3,
         "description": "call, check_output",
-        "feature": "[\"Call\",\"check_output\"]"
+        "feature": "[\"Call\",\"check_output\"]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/main.c#L1156"
       },
       {
         "level": 1,
@@ -305,7 +341,8 @@
         "line_number": 51,
         "column_number": 2,
         "description": "call, invalid_filename",
-        "feature": "[\"Call\",\"invalid_filename\"]"
+        "feature": "[\"Call\",\"invalid_filename\"]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/output.c#L51"
       },
       {
         "level": 0,
@@ -313,7 +350,8 @@
         "line_number": 278,
         "column_number": 12,
         "description": "library_call, strlen, n$20",
-        "feature": "[\"LibraryCall\",\"strlen\",\"n$20\"]"
+        "feature": "[\"LibraryCall\",\"strlen\",\"n$20\"]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/macros.c#L278"
       },
       {
         "level": 0,
@@ -321,7 +359,8 @@
         "line_number": 49,
         "column_number": 2,
         "description": "store, &outfile, n$98",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/output.c#L49"
       },
       {
         "level": 0,
@@ -329,7 +368,8 @@
         "line_number": 50,
         "column_number": 2,
         "description": "store, &outfile, (n$95 + n$94)",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]]]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/output.c#L50"
       },
       {
         "level": 0,
@@ -337,7 +377,8 @@
         "line_number": 54,
         "column_number": 6,
         "description": "library_call, strstr, n$79",
-        "feature": "[\"LibraryCall\",\"strstr\",\"n$79\"]"
+        "feature": "[\"LibraryCall\",\"strstr\",\"n$79\"]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/output.c#L54"
       },
       {
         "level": 1,
@@ -345,7 +386,8 @@
         "line_number": 54,
         "column_number": 31,
         "description": "call, is_link",
-        "feature": "[\"Call\",\"is_link\"]"
+        "feature": "[\"Call\",\"is_link\"]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/output.c#L54"
       },
       {
         "level": 0,
@@ -353,7 +395,8 @@
         "line_number": 438,
         "column_number": 6,
         "description": "prune, !(n$33 == 0)",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"0\"]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"0\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/util.c#L438"
       },
       {
         "level": 1,
@@ -361,7 +404,8 @@
         "line_number": 451,
         "column_number": 4,
         "description": "call, trim_trailing_slash_or_dot",
-        "feature": "[\"Call\",\"trim_trailing_slash_or_dot\"]"
+        "feature": "[\"Call\",\"trim_trailing_slash_or_dot\"]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/util.c#L451"
       },
       {
         "level": 0,
@@ -369,7 +413,8 @@
         "line_number": 437,
         "column_number": 2,
         "description": "prune, n$37",
-        "feature": "[\"Prune\",[\"Var\"]]"
+        "feature": "[\"Prune\",[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/util.c#L437"
       },
       {
         "level": 0,
@@ -377,7 +422,8 @@
         "line_number": 448,
         "column_number": 4,
         "description": "store, &dup, n$24",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/util.c#L448"
       },
       {
         "level": 0,
@@ -385,7 +431,8 @@
         "line_number": 449,
         "column_number": 9,
         "description": "prune, n$16",
-        "feature": "[\"Prune\",[\"Var\"]]"
+        "feature": "[\"Prune\",[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/util.c#L449"
       },
       {
         "level": 0,
@@ -393,7 +440,8 @@
         "line_number": 49,
         "column_number": 2,
         "description": "store, &outfile, n$98",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/output.c#L49"
       },
       {
         "level": 0,
@@ -401,7 +449,8 @@
         "line_number": 50,
         "column_number": 2,
         "description": "store, &outfile, (n$95 + n$94)",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]]]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/output.c#L50"
       },
       {
         "level": 1,
@@ -409,7 +458,8 @@
         "line_number": 54,
         "column_number": 51,
         "description": "call, is_dir",
-        "feature": "[\"Call\",\"is_dir\"]"
+        "feature": "[\"Call\",\"is_dir\"]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/output.c#L54"
       },
       {
         "level": 0,
@@ -417,7 +467,8 @@
         "line_number": 407,
         "column_number": 6,
         "description": "prune, !(n$28 == 0)",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"0\"]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"0\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/util.c#L407"
       },
       {
         "level": 0,
@@ -425,7 +476,8 @@
         "line_number": 413,
         "column_number": 6,
         "description": "prune, !(n$9 == 47)",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"47\"]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"47\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/util.c#L413"
       },
       {
         "level": 0,
@@ -433,7 +485,8 @@
         "line_number": 49,
         "column_number": 2,
         "description": "store, &outfile, n$98",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/output.c#L49"
       },
       {
         "level": 0,
@@ -441,7 +494,8 @@
         "line_number": 50,
         "column_number": 2,
         "description": "store, &outfile, (n$95 + n$94)",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]]]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/output.c#L50"
       },
       {
         "level": 0,
@@ -449,7 +503,8 @@
         "line_number": 79,
         "column_number": 32,
         "description": "library_call, strlen, n$48",
-        "feature": "[\"LibraryCall\",\"strlen\",\"n$48\"]"
+        "feature": "[\"LibraryCall\",\"strlen\",\"n$48\"]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/output.c#L79"
       },
       {
         "level": 0,
@@ -457,7 +512,8 @@
         "line_number": 95,
         "column_number": 3,
         "description": "library_call, sprintf, \"2>&1 | %s/firejail/ftee %s\", \"/usr/local/lib\", n$7",
-        "feature": "[\"LibraryCall\",\"sprintf\",\"\\\"2>&1 | %s/firejail/ftee %s\\\", \\\"/usr/local/lib\\\", n$7\"]"
+        "feature": "[\"LibraryCall\",\"sprintf\",\"\\\"2>&1 | %s/firejail/ftee %s\\\", \\\"/usr/local/lib\\\", n$7\"]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/output.c#L95"
       },
       {
         "level": 0,
@@ -465,7 +521,8 @@
         "line_number": 105,
         "column_number": 2,
         "description": "cmd_injection, execvp, n$2",
-        "feature": "[\"CmdInjection\",\"execvp\",[\"Var\"]]"
+        "feature": "[\"CmdInjection\",\"execvp\",[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/output.c#L105"
       }
     ],
     [
@@ -475,7 +532,8 @@
         "line_number": 941,
         "column_number": 1,
         "description": "input, main",
-        "feature": "[\"Input\",\"main\"]"
+        "feature": "[\"Input\",\"main\"]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/main.c#L941"
       },
       {
         "level": 0,
@@ -483,7 +541,8 @@
         "line_number": 1025,
         "column_number": 6,
         "description": "prune, !(n$2637 != 45)",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"!=\",[\"Var\"],[\"Const\",[\"Cint\",\"45\"]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"!=\",[\"Var\"],[\"Const\",[\"Cint\",\"45\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/main.c#L1025"
       },
       {
         "level": 0,
@@ -491,7 +550,8 @@
         "line_number": 1083,
         "column_number": 9,
         "description": "prune, (n$2567 != 45)",
-        "feature": "[\"Prune\",[\"BinOp\",\"!=\",[\"Var\"],[\"Const\",[\"Cint\",\"45\"]]]]"
+        "feature": "[\"Prune\",[\"BinOp\",\"!=\",[\"Var\"],[\"Const\",[\"Cint\",\"45\"]]]]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/main.c#L1083"
       },
       {
         "level": 0,
@@ -499,7 +559,8 @@
         "line_number": 1085,
         "column_number": 11,
         "description": "library_call, strcmp, n$2573, \"/usr/lib/openssh/sftp-server\"",
-        "feature": "[\"LibraryCall\",\"strcmp\",\"n$2573, \\\"/usr/lib/openssh/sftp-server\\\"\"]"
+        "feature": "[\"LibraryCall\",\"strcmp\",\"n$2573, \\\"/usr/lib/openssh/sftp-server\\\"\"]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/main.c#L1085"
       },
       {
         "level": 0,
@@ -507,7 +568,8 @@
         "line_number": 1086,
         "column_number": 11,
         "description": "library_call, strncmp, n$2576, \"scp \"",
-        "feature": "[\"LibraryCall\",\"strncmp\",\"n$2576, \\\"scp \\\"\"]"
+        "feature": "[\"LibraryCall\",\"strncmp\",\"n$2576, \\\"scp \\\"\"]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/main.c#L1086"
       },
       {
         "level": 0,
@@ -515,7 +577,8 @@
         "line_number": 1111,
         "column_number": 6,
         "description": "prune, !(n$2523 == 45)",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"45\"]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"45\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/main.c#L1111"
       },
       {
         "level": 1,
@@ -523,7 +586,8 @@
         "line_number": 1156,
         "column_number": 3,
         "description": "call, check_output",
-        "feature": "[\"Call\",\"check_output\"]"
+        "feature": "[\"Call\",\"check_output\"]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/main.c#L1156"
       },
       {
         "level": 1,
@@ -531,7 +595,8 @@
         "line_number": 51,
         "column_number": 2,
         "description": "call, invalid_filename",
-        "feature": "[\"Call\",\"invalid_filename\"]"
+        "feature": "[\"Call\",\"invalid_filename\"]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/output.c#L51"
       },
       {
         "level": 0,
@@ -539,7 +604,8 @@
         "line_number": 278,
         "column_number": 12,
         "description": "library_call, strlen, n$20",
-        "feature": "[\"LibraryCall\",\"strlen\",\"n$20\"]"
+        "feature": "[\"LibraryCall\",\"strlen\",\"n$20\"]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/macros.c#L278"
       },
       {
         "level": 0,
@@ -547,7 +613,8 @@
         "line_number": 49,
         "column_number": 2,
         "description": "store, &outfile, n$98",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/output.c#L49"
       },
       {
         "level": 0,
@@ -555,7 +622,8 @@
         "line_number": 50,
         "column_number": 2,
         "description": "store, &outfile, (n$95 + n$94)",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]]]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/output.c#L50"
       },
       {
         "level": 0,
@@ -563,7 +631,8 @@
         "line_number": 54,
         "column_number": 6,
         "description": "library_call, strstr, n$79",
-        "feature": "[\"LibraryCall\",\"strstr\",\"n$79\"]"
+        "feature": "[\"LibraryCall\",\"strstr\",\"n$79\"]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/output.c#L54"
       },
       {
         "level": 1,
@@ -571,7 +640,8 @@
         "line_number": 54,
         "column_number": 31,
         "description": "call, is_link",
-        "feature": "[\"Call\",\"is_link\"]"
+        "feature": "[\"Call\",\"is_link\"]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/output.c#L54"
       },
       {
         "level": 0,
@@ -579,7 +649,8 @@
         "line_number": 438,
         "column_number": 6,
         "description": "prune, !(n$33 == 0)",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"0\"]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"0\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/util.c#L438"
       },
       {
         "level": 1,
@@ -587,7 +658,8 @@
         "line_number": 451,
         "column_number": 4,
         "description": "call, trim_trailing_slash_or_dot",
-        "feature": "[\"Call\",\"trim_trailing_slash_or_dot\"]"
+        "feature": "[\"Call\",\"trim_trailing_slash_or_dot\"]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/util.c#L451"
       },
       {
         "level": 0,
@@ -595,7 +667,8 @@
         "line_number": 437,
         "column_number": 2,
         "description": "prune, n$37",
-        "feature": "[\"Prune\",[\"Var\"]]"
+        "feature": "[\"Prune\",[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/util.c#L437"
       },
       {
         "level": 0,
@@ -603,7 +676,8 @@
         "line_number": 448,
         "column_number": 4,
         "description": "store, &dup, n$24",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/util.c#L448"
       },
       {
         "level": 0,
@@ -611,7 +685,8 @@
         "line_number": 449,
         "column_number": 9,
         "description": "prune, n$16",
-        "feature": "[\"Prune\",[\"Var\"]]"
+        "feature": "[\"Prune\",[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/util.c#L449"
       },
       {
         "level": 0,
@@ -619,7 +694,8 @@
         "line_number": 49,
         "column_number": 2,
         "description": "store, &outfile, n$98",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/output.c#L49"
       },
       {
         "level": 0,
@@ -627,7 +703,8 @@
         "line_number": 50,
         "column_number": 2,
         "description": "store, &outfile, (n$95 + n$94)",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]]]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/output.c#L50"
       },
       {
         "level": 1,
@@ -635,7 +712,8 @@
         "line_number": 54,
         "column_number": 51,
         "description": "call, is_dir",
-        "feature": "[\"Call\",\"is_dir\"]"
+        "feature": "[\"Call\",\"is_dir\"]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/output.c#L54"
       },
       {
         "level": 0,
@@ -643,7 +721,8 @@
         "line_number": 407,
         "column_number": 6,
         "description": "prune, !(n$28 == 0)",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"0\"]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"0\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/util.c#L407"
       },
       {
         "level": 0,
@@ -651,7 +730,8 @@
         "line_number": 413,
         "column_number": 6,
         "description": "prune, !(n$9 == 47)",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"47\"]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"47\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/util.c#L413"
       },
       {
         "level": 0,
@@ -659,7 +739,8 @@
         "line_number": 49,
         "column_number": 2,
         "description": "store, &outfile, n$98",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/output.c#L49"
       },
       {
         "level": 0,
@@ -667,7 +748,8 @@
         "line_number": 50,
         "column_number": 2,
         "description": "store, &outfile, (n$95 + n$94)",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]]]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/output.c#L50"
       },
       {
         "level": 0,
@@ -675,7 +757,8 @@
         "line_number": 79,
         "column_number": 32,
         "description": "library_call, strlen, n$48",
-        "feature": "[\"LibraryCall\",\"strlen\",\"n$48\"]"
+        "feature": "[\"LibraryCall\",\"strlen\",\"n$48\"]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/output.c#L79"
       },
       {
         "level": 0,
@@ -683,7 +766,8 @@
         "line_number": 95,
         "column_number": 3,
         "description": "library_call, sprintf, \"2>&1 | %s/firejail/ftee %s\", \"/usr/local/lib\", n$7",
-        "feature": "[\"LibraryCall\",\"sprintf\",\"\\\"2>&1 | %s/firejail/ftee %s\\\", \\\"/usr/local/lib\\\", n$7\"]"
+        "feature": "[\"LibraryCall\",\"sprintf\",\"\\\"2>&1 | %s/firejail/ftee %s\\\", \\\"/usr/local/lib\\\", n$7\"]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/output.c#L95"
       },
       {
         "level": 0,
@@ -691,7 +775,8 @@
         "line_number": 105,
         "column_number": 2,
         "description": "cmd_injection, execvp, n$2",
-        "feature": "[\"CmdInjection\",\"execvp\",[\"Var\"]]"
+        "feature": "[\"CmdInjection\",\"execvp\",[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/output.c#L105"
       }
     ],
     [
@@ -701,7 +786,8 @@
         "line_number": 941,
         "column_number": 1,
         "description": "input, main",
-        "feature": "[\"Input\",\"main\"]"
+        "feature": "[\"Input\",\"main\"]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/main.c#L941"
       },
       {
         "level": 0,
@@ -709,7 +795,8 @@
         "line_number": 1025,
         "column_number": 6,
         "description": "prune, !(n$2637 != 45)",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"!=\",[\"Var\"],[\"Const\",[\"Cint\",\"45\"]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"!=\",[\"Var\"],[\"Const\",[\"Cint\",\"45\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/main.c#L1025"
       },
       {
         "level": 0,
@@ -717,7 +804,8 @@
         "line_number": 1083,
         "column_number": 9,
         "description": "prune, (n$2567 != 45)",
-        "feature": "[\"Prune\",[\"BinOp\",\"!=\",[\"Var\"],[\"Const\",[\"Cint\",\"45\"]]]]"
+        "feature": "[\"Prune\",[\"BinOp\",\"!=\",[\"Var\"],[\"Const\",[\"Cint\",\"45\"]]]]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/main.c#L1083"
       },
       {
         "level": 0,
@@ -725,7 +813,8 @@
         "line_number": 1084,
         "column_number": 10,
         "description": "library_call, strcmp, n$2569, \"-c\"",
-        "feature": "[\"LibraryCall\",\"strcmp\",\"n$2569, \\\"-c\\\"\"]"
+        "feature": "[\"LibraryCall\",\"strcmp\",\"n$2569, \\\"-c\\\"\"]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/main.c#L1084"
       },
       {
         "level": 0,
@@ -733,7 +822,8 @@
         "line_number": 1085,
         "column_number": 11,
         "description": "library_call, strcmp, n$2573, \"/usr/lib/openssh/sftp-server\"",
-        "feature": "[\"LibraryCall\",\"strcmp\",\"n$2573, \\\"/usr/lib/openssh/sftp-server\\\"\"]"
+        "feature": "[\"LibraryCall\",\"strcmp\",\"n$2573, \\\"/usr/lib/openssh/sftp-server\\\"\"]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/main.c#L1085"
       },
       {
         "level": 0,
@@ -741,7 +831,8 @@
         "line_number": 1086,
         "column_number": 11,
         "description": "library_call, strncmp, n$2576, \"scp \"",
-        "feature": "[\"LibraryCall\",\"strncmp\",\"n$2576, \\\"scp \\\"\"]"
+        "feature": "[\"LibraryCall\",\"strncmp\",\"n$2576, \\\"scp \\\"\"]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/main.c#L1086"
       },
       {
         "level": 0,
@@ -749,7 +840,8 @@
         "line_number": 1111,
         "column_number": 6,
         "description": "prune, !(n$2523 == 45)",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"45\"]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"45\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/main.c#L1111"
       },
       {
         "level": 1,
@@ -757,7 +849,8 @@
         "line_number": 1156,
         "column_number": 3,
         "description": "call, check_output",
-        "feature": "[\"Call\",\"check_output\"]"
+        "feature": "[\"Call\",\"check_output\"]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/main.c#L1156"
       },
       {
         "level": 1,
@@ -765,7 +858,8 @@
         "line_number": 51,
         "column_number": 2,
         "description": "call, invalid_filename",
-        "feature": "[\"Call\",\"invalid_filename\"]"
+        "feature": "[\"Call\",\"invalid_filename\"]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/output.c#L51"
       },
       {
         "level": 0,
@@ -773,7 +867,8 @@
         "line_number": 278,
         "column_number": 12,
         "description": "library_call, strlen, n$20",
-        "feature": "[\"LibraryCall\",\"strlen\",\"n$20\"]"
+        "feature": "[\"LibraryCall\",\"strlen\",\"n$20\"]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/macros.c#L278"
       },
       {
         "level": 0,
@@ -781,7 +876,8 @@
         "line_number": 49,
         "column_number": 2,
         "description": "store, &outfile, n$98",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/output.c#L49"
       },
       {
         "level": 0,
@@ -789,7 +885,8 @@
         "line_number": 50,
         "column_number": 2,
         "description": "store, &outfile, (n$95 + n$94)",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]]]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/output.c#L50"
       },
       {
         "level": 0,
@@ -797,7 +894,8 @@
         "line_number": 54,
         "column_number": 6,
         "description": "library_call, strstr, n$79",
-        "feature": "[\"LibraryCall\",\"strstr\",\"n$79\"]"
+        "feature": "[\"LibraryCall\",\"strstr\",\"n$79\"]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/output.c#L54"
       },
       {
         "level": 1,
@@ -805,7 +903,8 @@
         "line_number": 54,
         "column_number": 31,
         "description": "call, is_link",
-        "feature": "[\"Call\",\"is_link\"]"
+        "feature": "[\"Call\",\"is_link\"]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/output.c#L54"
       },
       {
         "level": 0,
@@ -813,7 +912,8 @@
         "line_number": 438,
         "column_number": 6,
         "description": "prune, !(n$33 == 0)",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"0\"]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"0\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/util.c#L438"
       },
       {
         "level": 1,
@@ -821,7 +921,8 @@
         "line_number": 451,
         "column_number": 4,
         "description": "call, trim_trailing_slash_or_dot",
-        "feature": "[\"Call\",\"trim_trailing_slash_or_dot\"]"
+        "feature": "[\"Call\",\"trim_trailing_slash_or_dot\"]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/util.c#L451"
       },
       {
         "level": 0,
@@ -829,7 +930,8 @@
         "line_number": 437,
         "column_number": 2,
         "description": "prune, n$37",
-        "feature": "[\"Prune\",[\"Var\"]]"
+        "feature": "[\"Prune\",[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/util.c#L437"
       },
       {
         "level": 0,
@@ -837,7 +939,8 @@
         "line_number": 448,
         "column_number": 4,
         "description": "store, &dup, n$24",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/util.c#L448"
       },
       {
         "level": 0,
@@ -845,7 +948,8 @@
         "line_number": 449,
         "column_number": 9,
         "description": "prune, n$16",
-        "feature": "[\"Prune\",[\"Var\"]]"
+        "feature": "[\"Prune\",[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/util.c#L449"
       },
       {
         "level": 0,
@@ -853,7 +957,8 @@
         "line_number": 49,
         "column_number": 2,
         "description": "store, &outfile, n$98",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/output.c#L49"
       },
       {
         "level": 0,
@@ -861,7 +966,8 @@
         "line_number": 50,
         "column_number": 2,
         "description": "store, &outfile, (n$95 + n$94)",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]]]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/output.c#L50"
       },
       {
         "level": 1,
@@ -869,7 +975,8 @@
         "line_number": 54,
         "column_number": 51,
         "description": "call, is_dir",
-        "feature": "[\"Call\",\"is_dir\"]"
+        "feature": "[\"Call\",\"is_dir\"]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/output.c#L54"
       },
       {
         "level": 0,
@@ -877,7 +984,8 @@
         "line_number": 407,
         "column_number": 6,
         "description": "prune, !(n$28 == 0)",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"0\"]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"0\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/util.c#L407"
       },
       {
         "level": 0,
@@ -885,7 +993,8 @@
         "line_number": 413,
         "column_number": 6,
         "description": "prune, !(n$9 == 47)",
-        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"47\"]]]]]"
+        "feature": "[\"Prune\",[\"UnOp\",\"!\",[\"BinOp\",\"==\",[\"Var\"],[\"Const\",[\"Cint\",\"47\"]]]]]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/util.c#L413"
       },
       {
         "level": 0,
@@ -893,7 +1002,8 @@
         "line_number": 49,
         "column_number": 2,
         "description": "store, &outfile, n$98",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/output.c#L49"
       },
       {
         "level": 0,
@@ -901,7 +1011,8 @@
         "line_number": 50,
         "column_number": 2,
         "description": "store, &outfile, (n$95 + n$94)",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"Var\"],[\"Var\"]]]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/output.c#L50"
       },
       {
         "level": 0,
@@ -909,7 +1020,8 @@
         "line_number": 79,
         "column_number": 32,
         "description": "library_call, strlen, n$48",
-        "feature": "[\"LibraryCall\",\"strlen\",\"n$48\"]"
+        "feature": "[\"LibraryCall\",\"strlen\",\"n$48\"]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/output.c#L79"
       },
       {
         "level": 0,
@@ -917,7 +1029,8 @@
         "line_number": 95,
         "column_number": 3,
         "description": "library_call, sprintf, \"2>&1 | %s/firejail/ftee %s\", \"/usr/local/lib\", n$7",
-        "feature": "[\"LibraryCall\",\"sprintf\",\"\\\"2>&1 | %s/firejail/ftee %s\\\", \\\"/usr/local/lib\\\", n$7\"]"
+        "feature": "[\"LibraryCall\",\"sprintf\",\"\\\"2>&1 | %s/firejail/ftee %s\\\", \\\"/usr/local/lib\\\", n$7\"]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/output.c#L95"
       },
       {
         "level": 0,
@@ -925,7 +1038,8 @@
         "line_number": 105,
         "column_number": 2,
         "description": "cmd_injection, execvp, n$2",
-        "feature": "[\"CmdInjection\",\"execvp\",[\"Var\"]]"
+        "feature": "[\"CmdInjection\",\"execvp\",[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/firejail-0.9.62/blob/master/src/firejail/output.c#L105"
       }
     ]
   ],
@@ -939,5 +1053,6 @@
       "cnum": 1,
       "enum": 0
     }
-  }
+  },
+  "repository": "https://github.com/prosyslab-warehouse/firejail-0.9.62"
 }

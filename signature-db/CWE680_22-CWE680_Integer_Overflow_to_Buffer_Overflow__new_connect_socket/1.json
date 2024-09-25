@@ -15,7 +15,8 @@
         "line_number": 88,
         "column_number": 30,
         "description": "input, recv",
-        "feature": "[\"Input\",\"recv\"]"
+        "feature": "[\"Input\",\"recv\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE680_Integer_Overflow_to_Buffer_Overflow/CWE680_Integer_Overflow_to_Buffer_Overflow__new_connect_socket_22b.cpp#L88"
       },
       {
         "level": 0,
@@ -23,7 +24,8 @@
         "line_number": 96,
         "column_number": 17,
         "description": "store, &data, n$7",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE680_Integer_Overflow_to_Buffer_Overflow/CWE680_Integer_Overflow_to_Buffer_Overflow__new_connect_socket_22b.cpp#L96"
       },
       {
         "level": 0,
@@ -31,7 +33,8 @@
         "line_number": 111,
         "column_number": 5,
         "description": "store, &return, n$0",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE680_Integer_Overflow_to_Buffer_Overflow/CWE680_Integer_Overflow_to_Buffer_Overflow__new_connect_socket_22b.cpp#L111"
       },
       {
         "level": 0,
@@ -39,7 +42,8 @@
         "line_number": 36,
         "column_number": 5,
         "description": "store, &data, n$16",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE680_Integer_Overflow_to_Buffer_Overflow/CWE680_Integer_Overflow_to_Buffer_Overflow__new_connect_socket_22a.cpp#L36"
       },
       {
         "level": 0,
@@ -47,7 +51,8 @@
         "line_number": 41,
         "column_number": 9,
         "description": "store, &dataBytes, (()n$14 * sizeof(t=;nbytes=4))",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tint\",[\"IInt\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tint\",[\"IInt\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE680_Integer_Overflow_to_Buffer_Overflow/CWE680_Integer_Overflow_to_Buffer_Overflow__new_connect_socket_22a.cpp#L41"
       },
       {
         "level": 0,
@@ -55,7 +60,8 @@
         "line_number": 42,
         "column_number": 28,
         "description": "int_overflow, __new_array, (sizeof(t=;nbytes=1) * n$12)",
-        "feature": "[\"IntOverflow\",\"__new_array\",[\"BinOp\",\"*\",[\"Sizeof\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}],[\"Var\"]]]"
+        "feature": "[\"IntOverflow\",\"__new_array\",[\"BinOp\",\"*\",[\"Sizeof\",{\"desc\":[\"Tint\",[\"IChar\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}],[\"Var\"]]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE680_Integer_Overflow_to_Buffer_Overflow/CWE680_Integer_Overflow_to_Buffer_Overflow__new_connect_socket_22a.cpp#L42"
       }
     ]
   ],
@@ -69,5 +75,6 @@
       "cnum": 30,
       "enum": 0
     }
-  }
+  },
+  "repository": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE680_Integer_Overflow_to_Buffer_Overflow/CWE680_Integer_Overflow_to_Buffer_Overflow__new_connect_socket_22a.cpp"
 }

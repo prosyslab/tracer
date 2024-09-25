@@ -15,7 +15,8 @@
         "line_number": 389,
         "column_number": 5,
         "description": "input, slurp_read",
-        "feature": "[\"Input\",\"slurp_read\"]"
+        "feature": "[\"Input\",\"slurp_read\"]",
+        "code": "https://github.com/prosyslab-warehouse/schismtracker-20190722/blob/master/fmt/okt.c#L389"
       },
       {
         "level": 0,
@@ -23,7 +24,8 @@
         "line_number": 390,
         "column_number": 5,
         "description": "store, &plen, n$161",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/prosyslab-warehouse/schismtracker-20190722/blob/master/fmt/okt.c#L390"
       },
       {
         "level": 1,
@@ -31,7 +33,8 @@
         "line_number": 475,
         "column_number": 2,
         "description": "int_underflow, memset, ()(256 - n$4)",
-        "feature": "[\"IntUnderflow\",\"memset\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"-\",[\"Const\",[\"Cint\",\"256\"]],[\"Var\"]]]]"
+        "feature": "[\"IntUnderflow\",\"memset\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"BinOp\",\"-\",[\"Const\",[\"Cint\",\"256\"]],[\"Var\"]]]]",
+        "code": "https://github.com/prosyslab-warehouse/schismtracker-20190722/blob/master/fmt/okt.c#L475"
       }
     ]
   ],
@@ -45,5 +48,6 @@
       "cnum": 5,
       "enum": 0
     }
-  }
+  },
+  "repository": "https://github.com/prosyslab-warehouse/schismtracker-20190722"
 }

@@ -15,7 +15,8 @@
         "line_number": 88,
         "column_number": 26,
         "description": "input, recv",
-        "feature": "[\"Input\",\"recv\"]"
+        "feature": "[\"Input\",\"recv\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s02/CWE190_Integer_Overflow__int_connect_socket_square_51a.c#L88"
       },
       {
         "level": 0,
@@ -23,7 +24,8 @@
         "line_number": 96,
         "column_number": 13,
         "description": "store, &data, n$7",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s02/CWE190_Integer_Overflow__int_connect_socket_square_51a.c#L96"
       },
       {
         "level": 1,
@@ -31,7 +33,8 @@
         "line_number": 110,
         "column_number": 5,
         "description": "call, CWE190_Integer_Overflow__int_connect_socket_square_51b_badSink",
-        "feature": "[\"Call\",\"CWE190_Integer_Overflow__int_connect_socket_square_51b_badSink\"]"
+        "feature": "[\"Call\",\"CWE190_Integer_Overflow__int_connect_socket_square_51b_badSink\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s02/CWE190_Integer_Overflow__int_connect_socket_square_51a.c#L110"
       },
       {
         "level": 0,
@@ -39,7 +42,8 @@
         "line_number": 50,
         "column_number": 9,
         "description": "store, &result, (n$2 * n$3)",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"*\",[\"Var\"],[\"Var\"]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"*\",[\"Var\"],[\"Var\"]]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s02/CWE190_Integer_Overflow__int_connect_socket_square_51b.c#L50"
       },
       {
         "level": 0,
@@ -47,7 +51,8 @@
         "line_number": 51,
         "column_number": 9,
         "description": "int_overflow, printIntLine, n$0",
-        "feature": "[\"IntOverflow\",\"printIntLine\",[\"Var\"]]"
+        "feature": "[\"IntOverflow\",\"printIntLine\",[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s02/CWE190_Integer_Overflow__int_connect_socket_square_51b.c#L51"
       }
     ]
   ],
@@ -61,5 +66,6 @@
       "cnum": 26,
       "enum": 0
     }
-  }
+  },
+  "repository": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s02/CWE190_Integer_Overflow__int_connect_socket_square_51b.c"
 }

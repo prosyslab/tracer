@@ -15,7 +15,8 @@
         "line_number": 40,
         "column_number": 16,
         "description": "allocate, __new_array",
-        "feature": "[\"Allocate\",\"__new_array\"]"
+        "feature": "[\"Allocate\",\"__new_array\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_struct_04.cpp#L40"
       },
       {
         "level": 0,
@@ -23,7 +24,8 @@
         "line_number": 42,
         "column_number": 9,
         "description": "free, __delete_array, n$6",
-        "feature": "[\"Free\",\"__delete_array\",[\"Var\"]]"
+        "feature": "[\"Free\",\"__delete_array\",[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_struct_04.cpp#L42"
       },
       {
         "level": 0,
@@ -31,11 +33,13 @@
         "line_number": 47,
         "column_number": 9,
         "description": "free, __delete_array, n$1",
-        "feature": "[\"Free\",\"__delete_array\",[\"Var\"]]"
+        "feature": "[\"Free\",\"__delete_array\",[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_struct_04.cpp#L47"
       }
     ]
   ],
   "key": "CWE415_Double_Free__new_delete_array_struct_04.cpp|CWE415_Double_Free__new_delete_array_struct_04::bad|API_MISUSE",
   "hash": "63531f0bf22eefa62b3b90b06744710e",
-  "bug_type_hum": "Api Misuse"
+  "bug_type_hum": "Api Misuse",
+  "repository": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_array_struct_04.cpp"
 }

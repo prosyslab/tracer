@@ -15,7 +15,8 @@
         "line_number": 115,
         "column_number": 26,
         "description": "input, recv",
-        "feature": "[\"Input\",\"recv\"]"
+        "feature": "[\"Input\",\"recv\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE78_OS_Command_Injection/s04/CWE78_OS_Command_Injection__char_listen_socket_system_41.c#L115"
       },
       {
         "level": 1,
@@ -23,7 +24,8 @@
         "line_number": 150,
         "column_number": 5,
         "description": "call, CWE78_OS_Command_Injection__char_listen_socket_system_41_badSink",
-        "feature": "[\"Call\",\"CWE78_OS_Command_Injection__char_listen_socket_system_41_badSink\"]"
+        "feature": "[\"Call\",\"CWE78_OS_Command_Injection__char_listen_socket_system_41_badSink\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE78_OS_Command_Injection/s04/CWE78_OS_Command_Injection__char_listen_socket_system_41.c#L150"
       },
       {
         "level": 0,
@@ -31,7 +33,8 @@
         "line_number": 59,
         "column_number": 9,
         "description": "cmd_injection, system, n$0",
-        "feature": "[\"CmdInjection\",\"system\",[\"Var\"]]"
+        "feature": "[\"CmdInjection\",\"system\",[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE78_OS_Command_Injection/s04/CWE78_OS_Command_Injection__char_listen_socket_system_41.c#L59"
       }
     ]
   ],
@@ -45,5 +48,6 @@
       "cnum": 26,
       "enum": 0
     }
-  }
+  },
+  "repository": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE78_OS_Command_Injection/s04/CWE78_OS_Command_Injection__char_listen_socket_system_41.c"
 }

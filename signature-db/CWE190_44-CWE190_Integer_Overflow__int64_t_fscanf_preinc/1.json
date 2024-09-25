@@ -15,7 +15,8 @@
         "line_number": 40,
         "column_number": 5,
         "description": "input, fscanf",
-        "feature": "[\"Input\",\"fscanf\"]"
+        "feature": "[\"Input\",\"fscanf\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s07/CWE190_Integer_Overflow__int64_t_fscanf_preinc_44.c#L40"
       },
       {
         "level": 1,
@@ -23,7 +24,8 @@
         "line_number": 42,
         "column_number": 5,
         "description": "call, badSink",
-        "feature": "[\"Call\",\"badSink\"]"
+        "feature": "[\"Call\",\"badSink\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s07/CWE190_Integer_Overflow__int64_t_fscanf_preinc_44.c#L42"
       },
       {
         "level": 0,
@@ -31,7 +33,8 @@
         "line_number": 27,
         "column_number": 9,
         "description": "store, &data, (n$3 + 1)",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"Var\"],[\"Const\",[\"Cint\",\"1\"]]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"Var\"],[\"Const\",[\"Cint\",\"1\"]]]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s07/CWE190_Integer_Overflow__int64_t_fscanf_preinc_44.c#L27"
       },
       {
         "level": 0,
@@ -39,7 +42,8 @@
         "line_number": 28,
         "column_number": 9,
         "description": "store, &result, n$2",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s07/CWE190_Integer_Overflow__int64_t_fscanf_preinc_44.c#L28"
       },
       {
         "level": 0,
@@ -47,7 +51,8 @@
         "line_number": 29,
         "column_number": 9,
         "description": "int_overflow, printLongLongLine, n$0",
-        "feature": "[\"IntOverflow\",\"printLongLongLine\",[\"Var\"]]"
+        "feature": "[\"IntOverflow\",\"printLongLongLine\",[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s07/CWE190_Integer_Overflow__int64_t_fscanf_preinc_44.c#L29"
       }
     ]
   ],
@@ -61,5 +66,6 @@
       "cnum": 5,
       "enum": 0
     }
-  }
+  },
+  "repository": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s07/CWE190_Integer_Overflow__int64_t_fscanf_preinc_44.c"
 }

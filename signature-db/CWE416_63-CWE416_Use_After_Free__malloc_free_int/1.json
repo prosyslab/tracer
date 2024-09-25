@@ -15,7 +15,8 @@
         "line_number": 32,
         "column_number": 19,
         "description": "allocate, malloc",
-        "feature": "[\"Allocate\",\"malloc\"]"
+        "feature": "[\"Allocate\",\"malloc\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__malloc_free_int_63a.c#L32"
       },
       {
         "level": 0,
@@ -23,7 +24,8 @@
         "line_number": 42,
         "column_number": 5,
         "description": "free, free, n$1",
-        "feature": "[\"Free\",\"free\",[\"Var\"]]"
+        "feature": "[\"Free\",\"free\",[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__malloc_free_int_63a.c#L42"
       },
       {
         "level": 1,
@@ -31,7 +33,8 @@
         "line_number": 43,
         "column_number": 5,
         "description": "call, CWE416_Use_After_Free__malloc_free_int_63b_badSink",
-        "feature": "[\"Call\",\"CWE416_Use_After_Free__malloc_free_int_63b_badSink\"]"
+        "feature": "[\"Call\",\"CWE416_Use_After_Free__malloc_free_int_63b_badSink\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__malloc_free_int_63a.c#L43"
       },
       {
         "level": 0,
@@ -39,11 +42,13 @@
         "line_number": 28,
         "column_number": 5,
         "description": "library_call, printIntLine, n$1",
-        "feature": "[\"LibraryCall\",\"printIntLine\",\"n$1\"]"
+        "feature": "[\"LibraryCall\",\"printIntLine\",\"n$1\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__malloc_free_int_63b.c#L28"
       }
     ]
   ],
   "key": "CWE416_Use_After_Free__malloc_free_int_63a.c|CWE416_Use_After_Free__malloc_free_int_63_bad|API_MISUSE",
   "hash": "c3fd9769edb0d82ea71123ebbadfaafa",
-  "bug_type_hum": "Api Misuse"
+  "bug_type_hum": "Api Misuse",
+  "repository": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__malloc_free_int_63b.c"
 }

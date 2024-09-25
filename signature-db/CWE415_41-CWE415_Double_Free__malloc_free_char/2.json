@@ -15,7 +15,8 @@
         "line_number": 35,
         "column_number": 20,
         "description": "allocate, malloc",
-        "feature": "[\"Allocate\",\"malloc\"]"
+        "feature": "[\"Allocate\",\"malloc\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_char_41.c#L35"
       },
       {
         "level": 0,
@@ -23,7 +24,8 @@
         "line_number": 38,
         "column_number": 5,
         "description": "free, free, n$2",
-        "feature": "[\"Free\",\"free\",[\"Var\"]]"
+        "feature": "[\"Free\",\"free\",[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_char_41.c#L38"
       },
       {
         "level": 1,
@@ -31,11 +33,13 @@
         "line_number": 39,
         "column_number": 5,
         "description": "call, badSink",
-        "feature": "[\"Call\",\"badSink\"]"
+        "feature": "[\"Call\",\"badSink\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_char_41.c#L39"
       }
     ]
   ],
   "key": "CWE415_Double_Free__malloc_free_char_41.c|CWE415_Double_Free__malloc_free_char_41_bad|API_MISUSE",
   "hash": "32112d8f40879b1fa511036e1fde9b69",
-  "bug_type_hum": "Api Misuse"
+  "bug_type_hum": "Api Misuse",
+  "repository": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_char_41.c"
 }

@@ -15,7 +15,8 @@
         "line_number": 32,
         "column_number": 29,
         "description": "allocate, malloc",
-        "feature": "[\"Allocate\",\"malloc\"]"
+        "feature": "[\"Allocate\",\"malloc\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__malloc_free_struct_63a.c#L32"
       },
       {
         "level": 0,
@@ -23,7 +24,8 @@
         "line_number": 43,
         "column_number": 5,
         "description": "free, free, n$1",
-        "feature": "[\"Free\",\"free\",[\"Var\"]]"
+        "feature": "[\"Free\",\"free\",[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__malloc_free_struct_63a.c#L43"
       },
       {
         "level": 1,
@@ -31,11 +33,13 @@
         "line_number": 44,
         "column_number": 5,
         "description": "call, CWE416_Use_After_Free__malloc_free_struct_63b_badSink",
-        "feature": "[\"Call\",\"CWE416_Use_After_Free__malloc_free_struct_63b_badSink\"]"
+        "feature": "[\"Call\",\"CWE416_Use_After_Free__malloc_free_struct_63b_badSink\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__malloc_free_struct_63a.c#L44"
       }
     ]
   ],
   "key": "CWE416_Use_After_Free__malloc_free_struct_63a.c|CWE416_Use_After_Free__malloc_free_struct_63_bad|API_MISUSE",
   "hash": "382e01a9626c412cd44cff23f60c0fc9",
-  "bug_type_hum": "Api Misuse"
+  "bug_type_hum": "Api Misuse",
+  "repository": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__malloc_free_struct_63b.c"
 }

@@ -15,7 +15,8 @@
         "line_number": 96,
         "column_number": 30,
         "description": "input, recv",
-        "feature": "[\"Input\",\"recv\"]"
+        "feature": "[\"Input\",\"recv\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s07/CWE190_Integer_Overflow__int_listen_socket_preinc_32.c#L96"
       },
       {
         "level": 0,
@@ -23,7 +24,8 @@
         "line_number": 104,
         "column_number": 17,
         "description": "store, &data, n$18",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s07/CWE190_Integer_Overflow__int_listen_socket_preinc_32.c#L104"
       },
       {
         "level": 0,
@@ -31,7 +33,8 @@
         "line_number": 122,
         "column_number": 9,
         "description": "store, n$6, n$7",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s07/CWE190_Integer_Overflow__int_listen_socket_preinc_32.c#L122"
       },
       {
         "level": 0,
@@ -39,7 +42,8 @@
         "line_number": 125,
         "column_number": 9,
         "description": "store, &data, n$5",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s07/CWE190_Integer_Overflow__int_listen_socket_preinc_32.c#L125"
       },
       {
         "level": 0,
@@ -47,7 +51,8 @@
         "line_number": 128,
         "column_number": 13,
         "description": "store, &data, (n$3 + 1)",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"Var\"],[\"Const\",[\"Cint\",\"1\"]]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"Var\"],[\"Const\",[\"Cint\",\"1\"]]]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s07/CWE190_Integer_Overflow__int_listen_socket_preinc_32.c#L128"
       },
       {
         "level": 0,
@@ -55,7 +60,8 @@
         "line_number": 129,
         "column_number": 13,
         "description": "store, &result, n$2",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s07/CWE190_Integer_Overflow__int_listen_socket_preinc_32.c#L129"
       },
       {
         "level": 0,
@@ -63,7 +69,8 @@
         "line_number": 130,
         "column_number": 13,
         "description": "int_overflow, printIntLine, n$0",
-        "feature": "[\"IntOverflow\",\"printIntLine\",[\"Var\"]]"
+        "feature": "[\"IntOverflow\",\"printIntLine\",[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s07/CWE190_Integer_Overflow__int_listen_socket_preinc_32.c#L130"
       }
     ]
   ],
@@ -77,5 +84,6 @@
       "cnum": 30,
       "enum": 0
     }
-  }
+  },
+  "repository": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s07/CWE190_Integer_Overflow__int_listen_socket_preinc_32.c"
 }

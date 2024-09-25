@@ -15,7 +15,8 @@
         "line_number": 54,
         "column_number": 30,
         "description": "input, getenv",
-        "feature": "[\"Input\",\"getenv\"]"
+        "feature": "[\"Input\",\"getenv\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE134_Uncontrolled_Format_String/s02/CWE134_Uncontrolled_Format_String__char_environment_vfprintf_01.c#L54"
       },
       {
         "level": 0,
@@ -23,7 +24,8 @@
         "line_number": 59,
         "column_number": 13,
         "description": "library_call, strncat, (n$4 + n$5), n$6",
-        "feature": "[\"LibraryCall\",\"strncat\",\"(n$4 + n$5), n$6\"]"
+        "feature": "[\"LibraryCall\",\"strncat\",\"(n$4 + n$5), n$6\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE134_Uncontrolled_Format_String/s02/CWE134_Uncontrolled_Format_String__char_environment_vfprintf_01.c#L59"
       },
       {
         "level": 1,
@@ -31,7 +33,8 @@
         "line_number": 62,
         "column_number": 5,
         "description": "call, badVaSink",
-        "feature": "[\"Call\",\"badVaSink\"]"
+        "feature": "[\"Call\",\"badVaSink\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE134_Uncontrolled_Format_String/s02/CWE134_Uncontrolled_Format_String__char_environment_vfprintf_01.c#L62"
       },
       {
         "level": 0,
@@ -39,7 +42,8 @@
         "line_number": 41,
         "column_number": 9,
         "description": "format_string, vfprintf, n$2",
-        "feature": "[\"FormatString\",\"vfprintf\",[\"Var\"]]"
+        "feature": "[\"FormatString\",\"vfprintf\",[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE134_Uncontrolled_Format_String/s02/CWE134_Uncontrolled_Format_String__char_environment_vfprintf_01.c#L41"
       }
     ]
   ],
@@ -53,5 +57,6 @@
       "cnum": 30,
       "enum": 0
     }
-  }
+  },
+  "repository": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE134_Uncontrolled_Format_String/s02/CWE134_Uncontrolled_Format_String__char_environment_vfprintf_01.c"
 }

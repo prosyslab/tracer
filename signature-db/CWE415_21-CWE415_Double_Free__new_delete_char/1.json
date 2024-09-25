@@ -15,7 +15,8 @@
         "line_number": 44,
         "column_number": 12,
         "description": "allocate, __new",
-        "feature": "[\"Allocate\",\"__new\"]"
+        "feature": "[\"Allocate\",\"__new\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_char_21.cpp#L44"
       },
       {
         "level": 0,
@@ -23,7 +24,8 @@
         "line_number": 46,
         "column_number": 5,
         "description": "free, __delete, n$2",
-        "feature": "[\"Free\",\"__delete\",[\"Var\"]]"
+        "feature": "[\"Free\",\"__delete\",[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_char_21.cpp#L46"
       },
       {
         "level": 1,
@@ -31,7 +33,8 @@
         "line_number": 48,
         "column_number": 5,
         "description": "call, CWE415_Double_Free__new_delete_char_21::badSink",
-        "feature": "[\"Call\",\"CWE415_Double_Free__new_delete_char_21::badSink\"]"
+        "feature": "[\"Call\",\"CWE415_Double_Free__new_delete_char_21::badSink\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_char_21.cpp#L48"
       },
       {
         "level": 0,
@@ -39,11 +42,13 @@
         "line_number": 35,
         "column_number": 9,
         "description": "free, __delete, n$1",
-        "feature": "[\"Free\",\"__delete\",[\"Var\"]]"
+        "feature": "[\"Free\",\"__delete\",[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_char_21.cpp#L35"
       }
     ]
   ],
   "key": "CWE415_Double_Free__new_delete_char_21.cpp|CWE415_Double_Free__new_delete_char_21::bad|API_MISUSE",
   "hash": "5cbdd5ab81036cd70e3c0912c4ba019f",
-  "bug_type_hum": "Api Misuse"
+  "bug_type_hum": "Api Misuse",
+  "repository": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE415_Double_Free/s02/CWE415_Double_Free__new_delete_char_21.cpp"
 }

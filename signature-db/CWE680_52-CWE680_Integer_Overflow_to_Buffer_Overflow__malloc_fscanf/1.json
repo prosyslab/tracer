@@ -15,7 +15,8 @@
         "line_number": 30,
         "column_number": 5,
         "description": "input, fscanf",
-        "feature": "[\"Input\",\"fscanf\"]"
+        "feature": "[\"Input\",\"fscanf\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE680_Integer_Overflow_to_Buffer_Overflow/CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_fscanf_52a.c#L30"
       },
       {
         "level": 1,
@@ -23,7 +24,8 @@
         "line_number": 31,
         "column_number": 5,
         "description": "call, CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_fscanf_52b_badSink",
-        "feature": "[\"Call\",\"CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_fscanf_52b_badSink\"]"
+        "feature": "[\"Call\",\"CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_fscanf_52b_badSink\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE680_Integer_Overflow_to_Buffer_Overflow/CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_fscanf_52a.c#L31"
       },
       {
         "level": 1,
@@ -31,7 +33,8 @@
         "line_number": 28,
         "column_number": 5,
         "description": "call, CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_fscanf_52c_badSink",
-        "feature": "[\"Call\",\"CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_fscanf_52c_badSink\"]"
+        "feature": "[\"Call\",\"CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_fscanf_52c_badSink\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE680_Integer_Overflow_to_Buffer_Overflow/CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_fscanf_52b.c#L28"
       },
       {
         "level": 0,
@@ -39,7 +42,8 @@
         "line_number": 30,
         "column_number": 28,
         "description": "int_overflow, malloc, (()n$15 * sizeof(t=;nbytes=4))",
-        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tint\",[\"IInt\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]"
+        "feature": "[\"IntOverflow\",\"malloc\",[\"BinOp\",\"*\",[\"Cast\",{\"desc\":[\"Tint\",[\"IULong\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}},[\"Var\"]],[\"Sizeof\",{\"desc\":[\"Tint\",[\"IInt\"]],\"quals\":{\"is_const\":false,\"is_restrict\":false,\"is_volatile\":false}}]]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE680_Integer_Overflow_to_Buffer_Overflow/CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_fscanf_52c.c#L30"
       }
     ]
   ],
@@ -53,5 +57,6 @@
       "cnum": 5,
       "enum": 0
     }
-  }
+  },
+  "repository": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE680_Integer_Overflow_to_Buffer_Overflow/CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_fscanf_52c.c"
 }

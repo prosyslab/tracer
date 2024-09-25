@@ -15,7 +15,8 @@
         "line_number": 88,
         "column_number": 26,
         "description": "input, recv",
-        "feature": "[\"Input\",\"recv\"]"
+        "feature": "[\"Input\",\"recv\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE191_Integer_Underflow/s05/CWE191_Integer_Underflow__int_connect_socket_predec_65a.c#L88"
       },
       {
         "level": 0,
@@ -23,7 +24,8 @@
         "line_number": 96,
         "column_number": 13,
         "description": "store, &data, n$8",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE191_Integer_Underflow/s05/CWE191_Integer_Underflow__int_connect_socket_predec_65a.c#L96"
       },
       {
         "level": 1,
@@ -31,7 +33,8 @@
         "line_number": 111,
         "column_number": 5,
         "description": "call, CWE191_Integer_Underflow__int_connect_socket_predec_65b_badSink",
-        "feature": "[\"Call\",\"CWE191_Integer_Underflow__int_connect_socket_predec_65b_badSink\"]"
+        "feature": "[\"Call\",\"CWE191_Integer_Underflow__int_connect_socket_predec_65b_badSink\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE191_Integer_Underflow/s05/CWE191_Integer_Underflow__int_connect_socket_predec_65a.c#L111"
       },
       {
         "level": 0,
@@ -39,7 +42,8 @@
         "line_number": 48,
         "column_number": 9,
         "description": "store, &data, (n$3 - 1)",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Const\",[\"Cint\",\"1\"]]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Const\",[\"Cint\",\"1\"]]]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE191_Integer_Underflow/s05/CWE191_Integer_Underflow__int_connect_socket_predec_65b.c#L48"
       },
       {
         "level": 0,
@@ -47,7 +51,8 @@
         "line_number": 49,
         "column_number": 9,
         "description": "store, &result, n$2",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE191_Integer_Underflow/s05/CWE191_Integer_Underflow__int_connect_socket_predec_65b.c#L49"
       },
       {
         "level": 1,
@@ -55,7 +60,8 @@
         "line_number": 50,
         "column_number": 9,
         "description": "int_underflow, printIntLine, n$0",
-        "feature": "[\"IntUnderflow\",\"printIntLine\",[\"Var\"]]"
+        "feature": "[\"IntUnderflow\",\"printIntLine\",[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE191_Integer_Underflow/s05/CWE191_Integer_Underflow__int_connect_socket_predec_65b.c#L50"
       }
     ]
   ],
@@ -69,5 +75,6 @@
       "cnum": 26,
       "enum": 0
     }
-  }
+  },
+  "repository": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE191_Integer_Underflow/s05/CWE191_Integer_Underflow__int_connect_socket_predec_65b.c"
 }

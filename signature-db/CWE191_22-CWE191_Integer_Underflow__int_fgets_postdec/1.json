@@ -15,7 +15,8 @@
         "line_number": 37,
         "column_number": 13,
         "description": "input, fgets",
-        "feature": "[\"Input\",\"fgets\"]"
+        "feature": "[\"Input\",\"fgets\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE191_Integer_Underflow/s04/CWE191_Integer_Underflow__int_fgets_postdec_22a.c#L37"
       },
       {
         "level": 0,
@@ -23,7 +24,8 @@
         "line_number": 40,
         "column_number": 13,
         "description": "store, &data, n$4",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE191_Integer_Underflow/s04/CWE191_Integer_Underflow__int_fgets_postdec_22a.c#L40"
       },
       {
         "level": 1,
@@ -31,7 +33,8 @@
         "line_number": 48,
         "column_number": 5,
         "description": "call, CWE191_Integer_Underflow__int_fgets_postdec_22_badSink",
-        "feature": "[\"Call\",\"CWE191_Integer_Underflow__int_fgets_postdec_22_badSink\"]"
+        "feature": "[\"Call\",\"CWE191_Integer_Underflow__int_fgets_postdec_22_badSink\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE191_Integer_Underflow/s04/CWE191_Integer_Underflow__int_fgets_postdec_22a.c#L48"
       },
       {
         "level": 0,
@@ -39,7 +42,8 @@
         "line_number": 31,
         "column_number": 13,
         "description": "store, &data, (n$4 - 1)",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Const\",[\"Cint\",\"1\"]]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"-\",[\"Var\"],[\"Const\",[\"Cint\",\"1\"]]]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE191_Integer_Underflow/s04/CWE191_Integer_Underflow__int_fgets_postdec_22b.c#L31"
       },
       {
         "level": 0,
@@ -47,7 +51,8 @@
         "line_number": 32,
         "column_number": 13,
         "description": "store, &result, n$3",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE191_Integer_Underflow/s04/CWE191_Integer_Underflow__int_fgets_postdec_22b.c#L32"
       },
       {
         "level": 1,
@@ -55,7 +60,8 @@
         "line_number": 33,
         "column_number": 13,
         "description": "int_underflow, printIntLine, n$1",
-        "feature": "[\"IntUnderflow\",\"printIntLine\",[\"Var\"]]"
+        "feature": "[\"IntUnderflow\",\"printIntLine\",[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE191_Integer_Underflow/s04/CWE191_Integer_Underflow__int_fgets_postdec_22b.c#L33"
       }
     ]
   ],
@@ -69,5 +75,6 @@
       "cnum": 13,
       "enum": 0
     }
-  }
+  },
+  "repository": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE191_Integer_Underflow/s04/CWE191_Integer_Underflow__int_fgets_postdec_22b.c"
 }

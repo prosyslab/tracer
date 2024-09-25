@@ -15,7 +15,8 @@
         "line_number": 30,
         "column_number": 5,
         "description": "input, fscanf",
-        "feature": "[\"Input\",\"fscanf\"]"
+        "feature": "[\"Input\",\"fscanf\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s06/CWE190_Integer_Overflow__short_fscanf_postinc_51a.c#L30"
       },
       {
         "level": 1,
@@ -23,7 +24,8 @@
         "line_number": 31,
         "column_number": 5,
         "description": "call, CWE190_Integer_Overflow__short_fscanf_postinc_51b_badSink",
-        "feature": "[\"Call\",\"CWE190_Integer_Overflow__short_fscanf_postinc_51b_badSink\"]"
+        "feature": "[\"Call\",\"CWE190_Integer_Overflow__short_fscanf_postinc_51b_badSink\"]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s06/CWE190_Integer_Overflow__short_fscanf_postinc_51a.c#L31"
       },
       {
         "level": 0,
@@ -31,7 +33,8 @@
         "line_number": 26,
         "column_number": 9,
         "description": "store, &data, (n$3 + 1)",
-        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"Var\"],[\"Const\",[\"Cint\",\"1\"]]]]"
+        "feature": "[\"Store\",[\"Var\"],[\"BinOp\",\"+\",[\"Var\"],[\"Const\",[\"Cint\",\"1\"]]]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s06/CWE190_Integer_Overflow__short_fscanf_postinc_51b.c#L26"
       },
       {
         "level": 0,
@@ -39,7 +42,8 @@
         "line_number": 27,
         "column_number": 9,
         "description": "store, &result, n$2",
-        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]"
+        "feature": "[\"Store\",[\"Var\"],[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s06/CWE190_Integer_Overflow__short_fscanf_postinc_51b.c#L27"
       },
       {
         "level": 0,
@@ -47,7 +51,8 @@
         "line_number": 28,
         "column_number": 9,
         "description": "int_overflow, printIntLine, n$0",
-        "feature": "[\"IntOverflow\",\"printIntLine\",[\"Var\"]]"
+        "feature": "[\"IntOverflow\",\"printIntLine\",[\"Var\"]]",
+        "code": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s06/CWE190_Integer_Overflow__short_fscanf_postinc_51b.c#L28"
       }
     ]
   ],
@@ -61,5 +66,6 @@
       "cnum": 5,
       "enum": 0
     }
-  }
+  },
+  "repository": "https://github.com/arichardson/juliet-test-suite-c/blob/master/testcases/CWE190_Integer_Overflow/s06/CWE190_Integer_Overflow__short_fscanf_postinc_51b.c"
 }
